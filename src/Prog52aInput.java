@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Prog52Input {
+public class Prog52aInput {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
