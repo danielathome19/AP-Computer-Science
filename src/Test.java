@@ -27,7 +27,6 @@ public class Test {
         --
          */
 
-
         int test = 3/4;
         System.out.println(test);
     }
