@@ -1,8 +1,6 @@
 public class Test {
     public static void main(String[] args) {
-
         int twocubed = (int)Math.pow(2, 3);  // 2^3
-
 
         int num1 = 5;
         int num2 = 5;
