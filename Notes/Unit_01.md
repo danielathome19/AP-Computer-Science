@@ -179,7 +179,7 @@ as seen in the [documentation](https://docs.oracle.com/javase/8/docs/api/java/la
 * `Math.random()`: returns a random `double` in the range \[0.0, 1.0) -- i.e., $\ge 0$ but $< 1$
 * `Math.round(a)`: rounds `a` by the standard elementary rounding definition: if a decimal is .5 or greater, round up (ceil); 
 otherwise, round down (floor) -- ( ⌊ $a$ ⌉ )
-* `Math.sqrt(a)`: returns $\sqrt(a)$
+* `Math.sqrt(a)`: returns $\sqrt{a}$
 
 Unfortunately, to properly round a number to $n$ decimal places for printing is to use String formatting, i.e.,
 using `System.out.printf("%.nf\n", val);` to round `val` to $n$ decimals. You can also use the `String.format(str, value);` function in a similar manner:
