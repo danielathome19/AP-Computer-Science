@@ -33,8 +33,8 @@ To print a variable, we can either
 print it by itself, such as `System.out.println(xyz);` or append it to the end of or between strings:
 `System.out.println("num = " + num);` or `System.out.println("x = " + x + "\ty = " + y);`.
 
-It's less common, but we can also use `System.out.printf("some formatting: %.3f", doubleval);` to 
-print out variables with specific formats (see [Format Specifiers](https://www.geeksforgeeks.org/format-specifiers-in-java/)).
+It's less common, but we can also use `System.out.printf("some formatting: %.3f\n", doubleval);` to 
+print out variables with specific formats (see [Format Specifiers](https://www.geeksforgeeks.org/format-specifiers-in-java/)) -- note that this function also does not append a line-break.
 
 For example, a file named *Hello.java* should look like the following:
 ```java
@@ -181,4 +181,16 @@ otherwise, round down (floor) -- ( ⌊ $a$ ⌉ )
 * `Math.sqrt(a)`: returns $\sqrt(a)$
 
 Unfortunately, to properly round a number to $n$ decimal places for printing is to use String formatting, i.e.,
-using `System.out.println("%.nf", val);` to round `val` to $n$ decimals.
+using `System.out.printf("%.nf\n", val);` to round `val` to $n$ decimals. You can also use the `String.format(str, value);` function in a similar manner:
+```java
+// Either...
+double x = 32.33434;
+String sf = String.format("value is %.2f", x);
+System.out.println(sf);
+
+// Or...
+System.out.println("X rounded to two decimals: " + String.format("%.2f", x) + " is a simple example.");
+```
+
+If you want to *clamp* your decimal to a number of decimals in the actual variable itself, one way that works for
+a large majority of cases is to do `double xroundedtotwodecimals = Math.round(x * 100.0) / 100.0;` -- however, note that there are equally many edge-cases that this will fail due to the *roundoff error*.
