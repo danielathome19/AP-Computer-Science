@@ -194,5 +194,6 @@ System.out.println("X rounded to two decimals: " + String.format("%.2f", x) + " 
 ```
 
 If you want to *clamp* your decimal to a number of decimals in the actual variable itself, one way that works for
-a large majority of cases is to do `double xroundedtotwodecimals = Math.round(x * 100.0) / 100.0;` -- however, note that 
+a large majority of cases is to do `double xroundedtotwodecimals = Math.round(x * 100.0) / 100.0;`, where the number of 0's
+corresponds to the number of decimal places (i.e., 1000 is 3 decimal places, 10 is 1 decimal place, etc.) -- however, note that 
 there are equally many edge-cases that this will fail due to the *roundoff error*.
