@@ -34,7 +34,8 @@ print it by itself, such as `System.out.println(xyz);` or append it to the end o
 `System.out.println("num = " + num);` or `System.out.println("x = " + x + "\ty = " + y);`.
 
 It's less common, but we can also use `System.out.printf("some formatting: %.3f\n", doubleval);` to 
-print out variables with specific formats (see [Format Specifiers](https://www.geeksforgeeks.org/format-specifiers-in-java/)) -- note that this function also does not append a line-break.
+print out variables with specific formats (see [Format Specifiers](https://www.geeksforgeeks.org/format-specifiers-in-java/)) 
+-- note that this function also does not append a line-break.
 
 For example, a file named *Hello.java* should look like the following:
 ```java
@@ -193,4 +194,5 @@ System.out.println("X rounded to two decimals: " + String.format("%.2f", x) + " 
 ```
 
 If you want to *clamp* your decimal to a number of decimals in the actual variable itself, one way that works for
-a large majority of cases is to do `double xroundedtotwodecimals = Math.round(x * 100.0) / 100.0;` -- however, note that there are equally many edge-cases that this will fail due to the *roundoff error*.
+a large majority of cases is to do `double xroundedtotwodecimals = Math.round(x * 100.0) / 100.0;` -- however, note that 
+there are equally many edge-cases that this will fail due to the *roundoff error*.
