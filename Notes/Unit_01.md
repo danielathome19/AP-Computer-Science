@@ -182,7 +182,8 @@ otherwise, round down (floor) -- ( ⌊ $a$ ⌉ )
 * `Math.sqrt(a)`: returns $\sqrt{a}$
 
 Unfortunately, to properly round a number to $n$ decimal places for printing is to use String formatting, i.e.,
-using `System.out.printf("%.nf\n", val);` to round `val` to $n$ decimals. You can also use the `String.format(str, value);` function in a similar manner:
+using `System.out.printf("%.nf\n", val);` to round `val` to $n$ decimals. You can also use the 
+`String.format(str, value);` function in a similar manner:
 ```java
 // Either...
 double x = 32.33434;
