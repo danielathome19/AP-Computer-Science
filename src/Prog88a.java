@@ -1,3 +1,6 @@
+// Daniel Szelogowski
+// 9/12/2022
+// Prog88a
 public class Prog88a {
     public static void main(String[] args) {
         // Enter number 1-13

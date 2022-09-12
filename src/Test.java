@@ -29,5 +29,11 @@ public class Test {
 
         int test = 3/4;
         System.out.println(test);
+
+        double myWallet = 2389.23885125;
+        double myWRounded = Math.round(myWallet * 100.0) / 100.0;
+
+        System.out.println(myWRounded);
+        System.out.printf("myWRounded = %.2f\n", myWRounded);
     }
 }
