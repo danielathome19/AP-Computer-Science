@@ -45,7 +45,6 @@ String c = "Hello!";
 System.out.printf("%d   %.3f   %s\n", a, b, c);
 // Prints out:
 // 50   3.142   Hello!
-
 ```
 
 For example, a file named *Hello.java* should look like the following:
@@ -56,6 +55,27 @@ public class Hello {
   }
 }
 ```
+
+As well, we can define a constant variable using the **final** keyword:
+```java
+final double E = 2.71828;
+
+// Or...
+final char endline = '\n';
+```
+
+One other trick we can do is declare multiple variables, with or without instantiating them (providing initial values):
+```java
+int x, y, z;
+x = 2;
+y = 4;
+z = 6;
+
+// Or...
+final double fedinctax = .15, statetax = .035, socsectax = .0575;
+```
+However, be careful with this, because if you do this on the AP exam and forget to provide a value, you've 
+just caused a **"Not Initialized" error** which will cost you points on the question(s).
 
 ## Comments
 There are two ways to leave a comment in Java (i.e., some text that only we can see; the compiler will 
