@@ -6,7 +6,7 @@ There are four primitive types that the AP subset focuses on:
 * **char**: a single (keyboard) character wrapped in apostraphes/single-quotes, including numbers, letters, special characters, 
 and escape characters (like `'\n'` for a newline, `'\t'` for a tab space); not tested on the AP subset but can be extremely useful
 
-While not a *primitive* type, the **String** class is extremely important -- i.e., a "string" of characters, wrapped in quotes,
+While not a *primitive* type, the **String** *class* is extremely important -- i.e., a "string" of characters, wrapped in quotes,
 such as `"Hello, world!"`.
 
 Variables, equivalent to a mathematical variable, are defined in the sequence `<TYPE> <NAME> = <VALUE>;`, such as `int x = 5;`.
