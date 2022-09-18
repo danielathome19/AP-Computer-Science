@@ -55,3 +55,8 @@ for (int i = 0; i < 10; i++)
 
 ## Iterating Through Files
 While not on the AP subset, this is an extremely useful (and real-world) skill that happens to be easier in Java than many other languages.
+
+
+
+### Exception Handling
+
