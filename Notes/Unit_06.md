@@ -14,9 +14,27 @@ Sometimes called a 1D Array or Vector, ...
 
 
 ## Array Algorithms
+To be discussed AFTER the AP curriculum...
+
+### Array Searching Algorithms
+
+#### Linear Search
 
 
-### Array Search Algorithms
+
+#### Binary Search
 
 
-### Array Sort Algorithms
+
+
+### Array Sorting Algorithms
+
+While not discussed in this class, the **Quick Sort** and **Merge Sort** algorithms are extremely important real-world sorting algorithms.
+
+#### Bubble Sort
+
+
+#### Insertion Sort
+
+
+#### Merge Sort
