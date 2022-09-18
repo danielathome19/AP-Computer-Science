@@ -1,7 +1,7 @@
 # Unit 7 - ArrayList
 UNDER CONSTRUCTION
 
-## Introduction to Dynamic Arrays/ArrayLists
+Also known as Dynamic Arrays (or erroneously, *vector* in C++), the **ArrayList** class...
 
 
 ## Traversing ArrayLists
