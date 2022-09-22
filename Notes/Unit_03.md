@@ -45,6 +45,18 @@ if (x > y) {
 }
 ```
 
+We can have as many `else if` conditions as we want, but only one `if` and (optionally) `else`:
+```java
+if (condition1) {
+  // ...
+} else if (condition2) {
+  // ...
+} else if (condition3) {
+  // ...
+} else if (condition4) {
+  // ...
+}
+
 ## Compound Conditions and Logical Operators
 Java provides 3 logical operators for compound and negated conditions:
 * `&&`: AND
