@@ -39,7 +39,20 @@ if (x > y) {
 
 
 ## Compound Conditions and Logical Operators
+Java provides 3 logical operators for compound and negated conditions:
+* `&&`: AND
+* `||`: OR
+* `!`: NOT
 
+That is, we can combine multiple conditions in the same boolean statement, for example:
+```java
+int age = 18;
+int time = 2000;
+
+if (age == 18 && time >= 2000) {
+  System.out.println("You're an adult and it's past 8 PM, might as well go to sleep!");
+}
+```
 
 ### Equivalent Conditions
 
