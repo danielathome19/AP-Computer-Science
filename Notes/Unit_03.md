@@ -36,7 +36,14 @@ if (x > y) {
 ```
 
 ### Using *else if* Statements
-
+```if (x > y) {
+  // This code will only run if x is greater than y
+} else if (x == 10) {
+  // This code will run if x is equal to 10 and less than or equal to y
+} else {
+  // This code will run if x is less than or equal to y but not equal to 10
+}
+```
 
 ## Compound Conditions and Logical Operators
 Java provides 3 logical operators for compound and negated conditions:
