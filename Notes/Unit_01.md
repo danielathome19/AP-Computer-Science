@@ -84,6 +84,8 @@ A few of the most important format specifiers to remember are:
 * `%c`: char
 * `%s`: String
 
+This technique of formatting a String (alongside the same with the String.format() function) is known as ***string interpolation*** -- we specify inside the string what type of variable we want in that spot in the text, and pass in the variable(s) as arguments in the order we want them to appear.
+
 You can also use the `","` format specifier to separate a large number with commas every third digit from the right (like hand-written numbers):
 ```java
 int x = 1000000;
