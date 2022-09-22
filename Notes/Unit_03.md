@@ -56,6 +56,7 @@ if (condition1) {
 } else if (condition4) {
   // ...
 }
+```
 
 ## Compound Conditions and Logical Operators
 Java provides 3 logical operators for compound and negated conditions:
