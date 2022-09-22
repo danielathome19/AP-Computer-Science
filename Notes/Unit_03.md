@@ -36,7 +36,8 @@ if (x > y) {
 ```
 
 ### Using *else if* Statements
-```if (x > y) {
+```java
+if (x > y) {
   // This code will only run if x is greater than y
 } else if (x == 10) {
   // This code will run if x is equal to 10 and less than or equal to y
