@@ -35,6 +35,11 @@ Not on AP subset, but...
 
 
 ## The *for* Loop
+```java
+for (int counter = 0; counter < 10; counter++) {
+  // Run some code repeatedly, 10 times in total (same as the while loop example)
+}
+```
 
 
 
