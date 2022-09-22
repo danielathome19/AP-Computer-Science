@@ -54,6 +54,13 @@ if (age == 18 && time >= 2000) {
 }
 ```
 
+Likewise, we can also check if a condition is NOT true (i.e., false):
+```java
+if (!allHomeworkCompleted()) {
+  System.out.println("Not all of your homework is completed. Back to it!");
+}
+```
+
 ### Equivalent Conditions
 
 
