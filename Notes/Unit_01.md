@@ -48,6 +48,15 @@ looks for what code we actually want to run. Hence, it's given the name "entry-p
 
 Each line of code must end in a semicolon (;) unless it ends in a curly-brace ({ or }).
 
+For example, a file named *Hello.java* should look like the following:
+```java
+public class Hello {
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+  }
+}
+```
+
 To print to the console, we either use `System.out.println("...");` to print some text with a newline/line-break, or
 `System.out.print("...");` to print the text without the added line-break. 
 
@@ -69,14 +78,13 @@ System.out.printf("%d   %.3f   %s\n", a, b, c);
 // 50   3.142   Hello!
 ```
 
-For example, a file named *Hello.java* should look like the following:
-```java
-public class Hello {
-  public static void main(String[] args) {
-    System.out.println("Hello, world!");
-  }
-}
-```
+A few of the most important format specifiers to remember are:
+* `%d`: int
+* `%f`: double (`%.#f` to round to # decimal places)
+* `%c`: char
+* `%s`: String
+
+This technique of formatting a String (alongside the same with the String.format() function) is known as ***string interpolation*** -- we specify inside the string what type of variable we want in that spot in the text, and pass in the variable(s) as arguments in the order we want them to appear.
 
 You can also use the `","` format specifier to separate a large number with commas every third digit from the right (like hand-written numbers):
 ```java

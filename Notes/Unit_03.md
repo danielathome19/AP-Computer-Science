@@ -36,10 +36,51 @@ if (x > y) {
 ```
 
 ### Using *else if* Statements
+```java
+if (x > y) {
+  // This code will only run if x is greater than y
+} else if (x == 10) {
+  // This code will run if x is equal to 10 and less than or equal to y
+} else {
+  // This code will run if x is less than or equal to y but not equal to 10
+}
+```
 
+We can have as many `else if` conditions as we want, but only one `if` and (optionally) `else`:
+```java
+if (condition1) {
+  // ...
+} else if (condition2) {
+  // ...
+} else if (condition3) {
+  // ...
+} else if (condition4) {
+  // ...
+}
+```
 
 ## Compound Conditions and Logical Operators
+Java provides 3 logical operators for compound and negated conditions:
+* `&&`: AND
+* `||`: OR
+* `!`: NOT
 
+That is, we can combine multiple conditions in the same boolean statement, for example:
+```java
+int age = 18;
+int time = 2000;
+
+if (age == 18 && time >= 2000) {
+  System.out.println("You're an adult and it's past 8 PM, might as well go to sleep!");
+}
+```
+
+Likewise, we can also check if a condition is NOT true (i.e., false):
+```java
+if (!allHomeworkCompleted()) {
+  System.out.println("Not all of your homework is completed. Back to it!");
+}
+```
 
 ### Equivalent Conditions
 
