@@ -7,6 +7,9 @@ public class GradeCalc {
         System.out.print("Enter your grade as a percent: ");
         double gp = input.nextDouble();
 
+        // boolean test = (gp >= 90);
+        // System.out.println(test);
+
         String grade = "";
         if (gp >= 90) grade = "A";
         else if (gp >= 80) grade = "B";
