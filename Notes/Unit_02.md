@@ -34,7 +34,25 @@ This is very common within classes, such as the calculation functions we will wr
 Another great example is `Math.random()`, which returns a random double within $\[0.0, 1.0\)$ but requires no arguments.
 
 ## String Methods
+The *String* class provides a [great number of methods](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) for working with text data. It is worth noting that a String is simply a mask for an array of **chars**, which means we have the ability to work with either the whole text or loop through it one letter at a time. A few of the most important/useful string methods for the AP exam include:
+* `x.length()`: returns the length of the string (i.e., the total number of characters)
+* `x.isEmpty()`: returns **true** if the length of the String is 0 (i.e., the String is empty)
+* `x.substring(end)` or `x.substring(start, end)`: returns a slice of a string either 
+  from \[0, end\) (where *end* is excluded) or \[start, end\) if a *start* is specified
+* `x.indexOf(char)`: returns the **first** index of *char* in the String, otherwise returns -1
+* `x.lastIndexOf(char)`: returns the **last** index of *char* in the String, otherwise returns -1
+* `x.charAt(index)`: returns the char at position *index* (within \[0, `x.length()` - 1\])
+* `x.trim()`: returns a copy of the String with leading and trailing whitespace omitted
+* `x.split(delimiter)`: returns an array of Strings split by either some delimiter (e.g., `","`, `" "`, or ";") or [regular expression](https://cheatography.com/davechild/cheat-sheets/regular-expressions/); useful for splitting a sentence into an array of individual words, for example
+* `x.toCharArray()`: returns the String as an array of **chars**
+* `x.toLowerCase()`: returns the String in all-lowercase form
+* `x.toUpperCase()`: returns the String in all-uppercase form
+* `x.contains(string)`: returns **true** iff (if and only if) the entirety of **string** is found in the String (case-sensitive)
+* `x.compareTo(string)`: returns a [lexicographical comparison](https://www.w3schools.com/java/ref_string_compareto.asp) of the Strings -- i.e., returns 0 if the Strings are exactly equal (case-sensitive); otherwise, returns 1 or -1
+* `x.equals(string)`: returns **true** iff the entirety of **string** equals the String (case-sensitive) 
+* `x.equalsIgnoreCase(string)`: returns **true** iff the entirety of **string** equals the String (_NOT_ case-sensitive) 
 
+Other useful functions include `format(formatStr)`, `startsWith(string)`, and `endsWith(string)`, but these are not necessarily useful for the exam.
 
 ## Wrapper Classes
 The **Integer** and **Double** classes are wrappers to wrap the primitive types **int** and **double** in objects. For example:
@@ -65,7 +83,8 @@ While this is not particularly useful in general cases, the most important conce
 You can also find the size (in bytes) of either data type using `Integer.SIZE` and `Double.SIZE`.
 
 ## The *Math* Class
-The **Math** class provides constant definitions for $\pi$ (Math.PI) and $e$ (Math.E) a great number of methods,
+The **Math** class provide
+s constant definitions for $\pi$ (Math.PI) and $e$ (Math.E) a great number of methods,
 as seen in the [documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html). A few important ones include:
 * `Math.abs(a)`: returns the absolute value of some variable `a`
 * `Math.ceil(a)`: rounds `a` ALWAYS UPWARD toward the closest integer ( ⌈ $a$ ⌉ )
