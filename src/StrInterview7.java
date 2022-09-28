@@ -8,17 +8,17 @@ public class StrInterview7 {
 
         System.out.print("Enter a string: ");
         String mytext = keyboard.nextLine();
-        mytext = mytext.toLowerCase();
+        mytext = mytext.toLowerCase().trim();
 
         int vowelcount = 0;
+        int conscount = 0;
         for (int lcv = 0; lcv < mytext.length(); lcv++) {
             char cur = mytext.charAt(lcv);
             if (cur == 'a' || cur == 'e' || cur == 'i' || cur == 'o' || cur == 'u')
                 vowelcount++;
-            // else conscount++;
+            else if (cur != ' ') conscount++;
         }
 
-        int conscount = mytext.length() - vowelcount;
         System.out.printf("# Vowels: %d\t\t# Consonants: %d\n", vowelcount, conscount);
     }
 }

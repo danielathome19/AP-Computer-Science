@@ -8,7 +8,7 @@ public class StrInterview6 {
 
         System.out.print("Enter a string: ");
         String mytext = input.nextLine();
-        mytext = mytext.toLowerCase();
+        mytext = mytext.toLowerCase().trim();
 
         int Acount = 0;
         int Bcount = 0;
