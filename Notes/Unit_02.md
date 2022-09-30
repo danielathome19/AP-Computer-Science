@@ -39,18 +39,19 @@ The *String* class provides a [great number of methods](https://docs.oracle.com/
 * `x.isEmpty()`: returns **true** if the length of the String is 0 (i.e., the String is empty)
 * `x.substring(end)` or `x.substring(start, end)`: returns a slice of a string either 
   from \[0, end\) (where *end* is excluded) or \[start, end\) if a *start* is specified
-* `x.indexOf(char)`: returns the **first** index of *char* in the String, otherwise returns -1
-* `x.lastIndexOf(char)`: returns the **last** index of *char* in the String, otherwise returns -1
-* `x.charAt(index)`: returns the char at position *index* (within \[0, `x.length()` - 1\])
+* `x.indexOf(string)`: returns the **first** index of *string* ~~or *char*~~ in the String, otherwise returns -1
+* `x.lastIndexOf(string)`: returns the **last** index of *string* ~~or *char*~~ in the String, otherwise returns -1
 * `x.trim()`: returns a copy of the String with leading and trailing whitespace omitted
 * `x.split(delimiter)`: returns an array of Strings split by either some delimiter (e.g., `","`, `" "`, or ";") or [regular expression](https://cheatography.com/davechild/cheat-sheets/regular-expressions/); useful for splitting a sentence into an array of individual words, for example
-* `x.toCharArray()`: returns the String as an array of **chars**
+
 * `x.toLowerCase()`: returns the String in all-lowercase form
 * `x.toUpperCase()`: returns the String in all-uppercase form
 * `x.contains(string)`: returns **true** iff (if and only if) the entirety of **string** is found in the String (case-sensitive)
 * `x.compareTo(string)`: returns a [lexicographical comparison](https://www.w3schools.com/java/ref_string_compareto.asp) of the Strings -- i.e., returns 0 if the Strings are exactly equal (case-sensitive); otherwise, returns 1 or -1
 * `x.equals(string)`: returns **true** iff the entirety of **string** equals the String (case-sensitive) 
-* `x.equalsIgnoreCase(string)`: returns **true** iff the entirety of **string** equals the String (_NOT_ case-sensitive) 
+* `x.equalsIgnoreCase(string)`: returns **true** iff the entirety of **string** equals the String (_NOT_ case-sensitive)
+* ~~`x.charAt(index)`~~ (**_WARNING_**: *NOT IN AP SUBSET*): returns the char at position *index* (within \[0, `x.length()` - 1\])
+* ~~`x.toCharArray()`~~ (**_WARNING_**: *NOT IN AP SUBSET*): returns the String as an array of **chars**
 
 Other useful functions include `format(formatStr)`, `startsWith(string)`, and `endsWith(string)`, but these are not necessarily useful for the exam.
 
