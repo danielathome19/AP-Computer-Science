@@ -3,7 +3,7 @@ There are four primitive types that the AP subset focuses on:
 * **int**: any whole number (Integer), positive or negative
 * **double**: any Real number (with or without a decimal), positive or negative; short-hand for "double-precision floating-point number"
 * **boolean**: either `true` or `false`
-* **char**: a single (keyboard) character wrapped in apostraphes/single-quotes, including numbers, letters, special characters, 
+* **~~char~~** (**_WARNING_**: *NOT IN AP SUBSET*): a single (keyboard) character wrapped in apostraphes/single-quotes, including numbers, letters, special characters, 
 and escape characters (like `'\n'` for a newline, `'\t'` for a tab space); not tested on the AP subset but can be extremely useful
 
 While not a *primitive* type, the **String** *class* is extremely important -- i.e., a "string" of characters, wrapped in quotes,
