@@ -96,4 +96,28 @@ While not on the AP subset, this is an extremely useful (and real-world) skill t
 
 
 ### Exception Handling
+...
+```java
+try {
+  // Run some code that may or may not throw an error
+  int x = 5;
+  int y = 0;
+  int z = x / y;
+  System.out.println(z);
+} catch (Exception e) {
+  System.out.println("Error: " + e.toString());
+}
+```
 
+We typically use this when working with files to prevent an exception when a file is missing:
+```java
+try {  // On Replit, may need to put "../data/prog285b.dat"
+    Scanner input = new Scanner(new File("data/prog285b.dat"));
+    
+    while (input.hasNext()) {
+      // ...
+    }
+} catch (IOException e) {
+    System.out.println("Can't find data file!");
+}
+```
