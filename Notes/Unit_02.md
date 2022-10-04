@@ -55,6 +55,16 @@ The *String* class provides a [great number of methods](https://docs.oracle.com/
 
 Other useful functions include `format(formatStr)`, `startsWith(string)`, and `endsWith(string)`, but these are not necessarily useful for the exam.
 
+### Primitive Types as Strings
+
+One other important note is that if we want to convert/return a primitive type (**int**, **double**, **char**, etc.) as a String, we cannot use the `.toString()` function. Instead, we can simply concatenate the variable to an empty string:
+```java
+int x = 5;
+String ret = "" + x;
+char y = 'c';
+String ret2 = "" + y;
+```
+
 ## Wrapper Classes
 The **Integer** and **Double** classes are wrappers to wrap the primitive types **int** and **double** in objects. For example:
 ```java
