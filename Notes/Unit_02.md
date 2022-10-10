@@ -91,6 +91,10 @@ While this is not particularly useful in general cases, the most important conce
 * `Double.POSITIVE_INFINITY`: returns a constant holding the negative infinity of type double
 * `Double.NEGATIVE_INFINITY`: returns a constant holding the negative infinity of type double
 
+Though they aren't on the AP subset, these classes provide two very useful functions to parse numbers from strings:
+* `Integer.parseInt(str)`: attempts to return an int from a given **String**
+* `Double.parseDouble(str)`: attempts to return an double from a given **String**
+
 You can also find the size (in bytes) of either data type using `Integer.SIZE` and `Double.SIZE`.
 
 ## The *Math* Class
