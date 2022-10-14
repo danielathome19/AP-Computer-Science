@@ -37,10 +37,6 @@ while (true) {
 ```
 
 
-### The *do-while* Loop
-Not on AP subset, but...
-
-
 
 ## The *for* Loop
 
