@@ -73,7 +73,26 @@ public class CLASS_NAME {
   }
 }
 ```
-We will break this down to its components next.
+
+Finally, we can instantiate it as a new object anywhere as follows:
+```java
+// In main, for example:
+CLASS_NAME myClassObj = new CLASS_NAME(datatypev1, datatypev2);
+myClassObj.calc();
+System.out.println("Var3: " + myClassObj.getMyVar3());
+
+// Modify the object's private values/fields/properties
+myClassObj.setMyVar1(newdatatypev1);
+myClassObj.setMyVar2(newdatatypev2);
+myClassObj.calc();
+
+// Print updated class
+myClassObj.print();
+// or, since the toString() method is implicitly called by print,
+System.out.println(myClassObj);
+```
+
+We will break this class down to its components next.
 
 
 ### Constructors
