@@ -5,7 +5,7 @@ UNDER CONSTRUCTION
 
 Methods, also known as functions, generally follow the following format:
 ```java
-<access_level: public or private> <static or blank> <datatype> <method_name>(<datatype arg1, datatype arg2, etc.>) {
+<access_level: public or private (or protected, but not on AP subset)> <static or blank> <datatype> <method_name>(<datatype arg1, datatype arg2, etc.>) {
   // ...
   // If not void: return datatype;
 }
