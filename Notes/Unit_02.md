@@ -7,23 +7,13 @@ UNDER CONSTRUCTION
 ### Instantiation
 Creating a new ***instance*** of a class is done using the `new` keyword nearly the exact same way as instantiating any other variable 
 (i.e., in the form `ClassName var1 = new ClassName(classArgsHere);`). 
-For example, we can make an instance of the **Random** class like so:
+For example, we can make an instance of the **Scanner** class like so:
 ```java
 import java.util.Random;
 // ...
 Random rand = new Random();
 int x = rand.nextInt(5, 10);
 ```
-
-Technically, (though not advised for the AP exam) we can create a new instance without typing the class name on both the left- and right-hand sides by using the `var` keyword, like so:
-```java
-import java.util.Random;
-// ...
-var rand = new Random();
-int x = rand.nextInt(5, 10);
-```
-
-There are other times where `var` can be used, but for type safety, you should ONLY use it in the case of making a new object.
 
 ## Calling Void Methods
 A **void** method is simply a function that does not return anything (contrary to something like a 
