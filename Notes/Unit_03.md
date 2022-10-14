@@ -88,4 +88,9 @@ if (!allHomeworkCompleted()) {
 ## Comparing Objects
 Perhaps the most important occurrence of object comparison in most Java programs is that of comparing **Strings**.
 
-
+...
+```java
+if (str1.equals(str2)) {
+  System.out.println("String 1 is the same as String 2");
+}
+```
