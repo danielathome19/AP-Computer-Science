@@ -9,10 +9,10 @@ Creating a new ***instance*** of a class is done using the `new` keyword nearly 
 (i.e., in the form `ClassName var1 = new ClassName(classArgsHere);`). 
 For example, we can make an instance of the **Scanner** class like so:
 ```java
-import java.util.Random;
+import java.util.Scanner;
 // ...
-Random rand = new Random();
-int x = rand.nextInt(5, 10);
+Scanner input = new Scanner();
+int x = input.nextInt();
 ```
 
 ## Calling Void Methods
