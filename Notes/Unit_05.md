@@ -12,8 +12,10 @@ Methods, also known as functions or procedures, generally follow the following f
 ```
 
 The first line of every function is known as the **Method Header** or function signature, since it tells us all core details about the function (ideally).
-That is, consider the following method header: ```public static int getRandomInt(int min, int max)```
-
+That is, consider the following method header: 
+```java
+public static int getRandomInt(int min, int max)
+```
 Clearly, this function can be accessed inside or outside of its defined class (*public*), it does not require its contained class to be instantiated first (*static*, just like we can call `Math.random()` from anywhere without making a **Math** class object), it returns an **int** value, the name is `getRandomInt`, and it takes two parameters: an `int` **min**, and an `int` **max**.
 
 For example, a basic summation function (documented with docstrings/documentation comments):
