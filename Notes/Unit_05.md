@@ -24,7 +24,7 @@ public int summation(int n) {
     sum += i;
   return sum;
 }
-``
+```
 
 ## Class Design
 
