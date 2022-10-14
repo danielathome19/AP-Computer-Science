@@ -97,7 +97,7 @@ However, this also requrires that we understand basic exception handling, as wor
 The `Scanner` class graciously provides us the ability to work with both user input AND files, so long as we pass in a `File` object 
 rather than `System.in`.
 
-For example, consider a data file structured as multiple lines of 3 numbers (of varying types) separated by a space:
+For example, consider a data file, named **mydatafile.txt** in a folder called **datafolder**, structured as multiple lines of 3 numbers (of varying types) separated by a space:
 ```
 192 8 8125.00
 203 8 3250.00
