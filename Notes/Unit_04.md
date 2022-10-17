@@ -37,10 +37,6 @@ while (true) {
 ```
 
 
-### The *do-while* Loop
-Not on AP subset, but...
-
-
 
 ## The *for* Loop
 
@@ -87,12 +83,43 @@ for (int lcv = text.length(); lcv --> 0;) {
 ```
 
 ## Iterating Through Strings
-
-
+...
+```java
+// Print each letter of the text "Hello, world!" on a separate line
+String hello = "Hello, world!";
+for (int lcv = 0; lcv < str.length(); lcv++)
+  System.out.println(str.substring(lcv, lcv + 1);
+```
 
 ## Iterating Through Files
-While not on the AP subset, this is an extremely useful (and real-world) skill that happens to be easier in Java than many other languages.
+While not on the AP subset, this is an extremely useful (and real-world) skill that happens to be easier in Java than many other languages. 
+However, this also requrires that we understand basic exception handling, as working with files is a task prone to many errors.
+The `Scanner` class graciously provides us the ability to work with both user input AND files, so long as we pass in a `File` object 
+rather than `System.in`.
 
+For example, consider a data file, named **mydatafile.txt** in a folder called **datafolder**, structured as multiple lines of 3 numbers (of varying types) separated by a space:
+```
+192 8 8125.00
+203 8 3250.00
+218 5 5000.00
+235 5 5250.00
+264 17 4150.00
+```
+
+We can grab this data using a `Scanner` and a loop that scans `while (input.hasNext())` as follows:
+```java
+try {
+    Scanner input = new Scanner(new File("datafolder/mydatafile.txt"));
+    while (input.hasNext()) {
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        double num3 = input.nextDouble();
+        // Do stuff with the data here
+    }
+} catch (IOException e) {
+    System.out.println("Can't find data file!");
+}
+```
 
 
 ### Exception Handling

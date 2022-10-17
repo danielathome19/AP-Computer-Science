@@ -83,9 +83,18 @@ if (!allHomeworkCompleted()) {
 ```
 
 ### Equivalent Conditions
+...
 
+De Morgan's Law
+
+*Greater Than* `>` is the direct opposite of *Less Than or Equal to* `<=` (and vice versa), so `!(x > y)` is the same as `(x <= y)`.
 
 ## Comparing Objects
 Perhaps the most important occurrence of object comparison in most Java programs is that of comparing **Strings**.
 
-
+...
+```java
+if (str1.equals(str2)) {
+  System.out.println("String 1 is the same as String 2");
+}
+```

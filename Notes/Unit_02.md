@@ -2,10 +2,18 @@
 UNDER CONSTRUCTION
 
 ## Objects
-
+...
 
 ### Instantiation
-
+Creating a new ***instance*** of a class is done using the `new` keyword nearly the exact same way as instantiating any other variable 
+(i.e., in the form `ClassName var1 = new ClassName(classArgsHere);`). 
+For example, we can make an instance of the **Scanner** class like so:
+```java
+import java.util.Scanner;
+// ...
+Scanner input = new Scanner();
+int x = input.nextInt();
+```
 
 ## Calling Void Methods
 A **void** method is simply a function that does not return anything (contrary to something like a 
@@ -90,6 +98,10 @@ While this is not particularly useful in general cases, the most important conce
 * `Double.NaN`: returns a constant holding a Not-a-Number (NaN) value of type double
 * `Double.POSITIVE_INFINITY`: returns a constant holding the negative infinity of type double
 * `Double.NEGATIVE_INFINITY`: returns a constant holding the negative infinity of type double
+
+Though they aren't on the AP subset, these classes provide two very useful functions to parse numbers from strings:
+* `Integer.parseInt(str)`: attempts to return an int from a given **String**
+* `Double.parseDouble(str)`: attempts to return an double from a given **String**
 
 You can also find the size (in bytes) of either data type using `Integer.SIZE` and `Double.SIZE`.
 
