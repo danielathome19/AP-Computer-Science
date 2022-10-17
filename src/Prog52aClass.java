@@ -2,18 +2,17 @@
 // Prog52aCl
 // 10/17/2022
 import java.util.Scanner;
-import static java.lang.System.out;
 
 public class Prog52aClass {
     // Driver program
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
 
-        out.print("Please enter length: ");
+        printer.print("Please enter length: ");
         int len = kbd.nextInt();
-        out.print("Please enter width: ");
+        printer.print("Please enter width: ");
         int wid = kbd.nextInt();
-        out.println();
+        printer.println();
 
         // Make a new object (instance) of Cl52a (instantiate the class)
         Cl52a wow = new Cl52a(len, wid);
