@@ -39,7 +39,7 @@ public class Cl52a {
 
     // Override Method
     public String toString() {
-        return String.format("Area: %s\nPerimeter: %s", myArea, myPerim);
+        return String.format("Area: %d\nPerimeter: %d", myArea, myPerim);
     }
 
     // Easy Print Method
