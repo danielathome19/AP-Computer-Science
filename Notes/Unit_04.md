@@ -22,21 +22,6 @@ while (counter < 10) {
 }
 ```
 
-### The *break* and *continue* Statements
-...
-
-
-It is important to note that unless we have a controller variable for a loop, we will likely need additional
-conditions within the loop to ensure we have some way to exit the loop (i.e., to prevent an infinite loop).
-Sometimes, especially for networking and video games, an infinite loop is in fact desired:
-```java
-while (true) {
-  DrawVideoGameFrames();
-  if (userWantsToExit) break;
-}
-```
-
-
 
 ## The *for* Loop
 
