@@ -1,5 +1,5 @@
 # Unit 2 - Using Objects
-UNDER CONSTRUCTION
+Objects, by definition, are *instances* of **Classes**, many of which are built into the language which we frequently use (i.e., **Scanner**, **File**, **Exception**, etc.) given the convenience they provide. A ***Class***, put simply, is a collection of methods/functions and/or variables -- **Scanner** provides us with all of the methods necessary to work with user and file input.
 
 ## Objects
 ...
