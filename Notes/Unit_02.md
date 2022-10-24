@@ -1,8 +1,41 @@
 # Unit 2 - Using Objects
-UNDER CONSTRUCTION
+Objects, by definition, are *instances* of **Classes**, many of which are built into the language which we frequently use (i.e., **Scanner**, **File**, **Exception**, etc.) given the convenience they provide. A ***Class***, put simply, is a collection of methods/functions and/or variables -- **Scanner** provides us with all of the methods necessary to work with user and file input. One of the most important concepts to remember is that *objects* cannot use the traditional `==` operator -- we need to use `obj1.equals(obj2)` instead, because `==` compares memory addresses; likewise, for making objects into Strings we need to use `obj.toString()` or we need implement a `toString()` method for the Class ourselves. 
 
 ## Objects
-...
+All types in Java are extensions of the **Object** class (for all primitive types and classes). This means that anything can be converted to an object through casting (known as **Boxing**) and back (**Unboxing**):
+```java
+int x = 5;
+
+// Box int as Object
+Object y = x;
+
+// Unbox Object as int
+int z = (int)y;
+
+System.out.println(z);
+```
+
+We can also **Autobox** primitive types to their *Wrapper Class* and unbox them:
+```java
+// Creating an Integer Object with value 10
+Integer i = new Integer(10);
+
+// Unboxing the Object
+int i1 = i;
+
+// Print statements
+System.out.println("Value of i:" + i);
+System.out.println("Value of i1: " + i1);
+
+// Autoboxing of character
+Character chr = 'a';
+
+// Auto-unboxing of Character
+char ch = chr;
+
+System.out.println("Value of ch: " + ch);
+System.out.println("Value of gfg: " + gfg);
+```
 
 ### Instantiation
 Creating a new ***instance*** of a class is done using the `new` keyword nearly the exact same way as instantiating any other variable 

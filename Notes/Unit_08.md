@@ -7,5 +7,7 @@ UNDER CONSTRUCTION
 ### 2D Arrays/Matrices
 
 
+### Nested Iteration
+
 
 ### *n*D Arrays/Tensors (3D and Beyond)

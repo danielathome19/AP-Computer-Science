@@ -71,7 +71,7 @@ public class CLASS_NAME {
   
   // Override Method
   public String toString() {
-    return String.format("Var1: %s   Var2: %s   Var3: %s", myVar1, myVar2, myVar3);
+    return String.format("Var1: %FORMAT   Var2: %FORMAT   Var3: %FORMAT", myVar1, myVar2, myVar3);
   }
   
   // Easy Print Method
