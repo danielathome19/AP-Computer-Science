@@ -1,5 +1,5 @@
 # Unit 5 - Writing Classes
-Classes are the heart of Object-Oriented Programming (OOP) -- in languages like Java, we divide programs up into multiple components, called **Classes**, to keep code organized and emphasize code reusability. Put simply, a Class is a thing that contains other things -- be it a set of functions (or *methods*), public/private variables, or simply our ***Main*** method (known as the _"Entry Point"_).
+Classes are the heart of Object-Oriented Programming (OOP) -- in languages like Java, we divide programs up into multiple components, called **Classes**, to keep code organized and emphasize code reusability. Put simply, a Class is a thing that contains other things -- be it a set of functions (or *methods*), public/private variables, or simply our ***Main*** method (known as the _"Entry Point"_). Some classes may also be instantiated as *objects*, such as the **Scanner** class.
 
 ## Writing Methods
 A **method**, also known as a function or procedure, is a block of related lines of code which may contain any valid Java syntax. Methods may or may not also return a value (such as `Math.sin(x)` which returns a double, compared to `System.out.println()` which returns nothing). As such, we can flexibly use them as reusable snippets of code as desired, allowing us to make programs more efficiently.
@@ -35,7 +35,12 @@ public int summation(int n) {
 ```
 
 ## Class Design
-
+A general-purpose Class (sometimes called a *data class* in other languages) typically consist of the following:
+* Private data
+* Constructor(s)
+* Mutator (Setter) Methods
+* Accessor (Getter) Methods
+* *Sometimes* Override Methods (such as `toString()`)
 
 The general layout for classes is as follows:
 ```java
@@ -104,6 +109,7 @@ We will break this class down to its components next.
 
 
 ### Constructors
+A **constructor** is a simple function that sets up the private data for a Class.
 
 
 ### Documentation Comments
@@ -126,7 +132,11 @@ We will break this class down to its components next.
 ### Static Variables and Methods
 
 
+
 ## Scope and Access
+Access refers to the level of accessibility a variable or method within a class is. If a method or class variable is `public`, then it can be accessed from anywhere -- within or outside of the class, including in other classes/methods. Likewise, a method/variable marked as `private` can only be accessed within its containing class.
+
+Scope ...
 
 
 ### The *this* Keyword
