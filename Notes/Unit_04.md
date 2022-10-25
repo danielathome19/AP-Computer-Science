@@ -24,14 +24,12 @@ while (counter < 10) {
 
 
 ## The *for* Loop
-
+A **for** loop is a shorthand, counter-based loop (i.e., rather than being iterating specifically on a condition only, we iterate based on some counter variable). It allows us to declare a counter, check the condition for the counter, and increment/decrement the counter all in one line of code (similar to the **while** loop example above). For example:
 ```java
 for (int counter = 0; counter < 10; counter++) {
   // Run some code repeatedly, 10 times in total (same as the while loop example)
 }
 ```
-
-
 
 Again, one must be careful (especially in hand-written code) with its use, but a one-line statement does not require curly braces:
 ```java
@@ -68,7 +66,7 @@ for (int lcv = text.length(); lcv --> 0;) {
 ```
 
 ## Iterating Through Strings
-...
+Iterating through each individual character in a **String** can be done in multiple ways (such as the `str.charAt(index)` method, but this is not on the AP subset), though we will only focus on the use of substrings. To select one character at a time, we can use `str.substring(index, index + 1)` in a **for** loop -- remember that the `substring(start, end)` method does NOT include the *end* index in the slice of the String, so we can safely iterate from index 0 to the length of the String. For example:
 ```java
 // Print each letter of the text "Hello, world!" on a separate line
 String hello = "Hello, world!";
@@ -91,7 +89,7 @@ For example, consider a data file, named **mydatafile.txt** in a folder called *
 264 17 4150.00
 ```
 
-We can grab this data using a `Scanner` and a loop that scans `while (input.hasNext())` as follows:
+Consider that each row in the data file contains 3 numbers: an **int**, an **int**, and a **double**. We can grab this data using a `Scanner` and a loop that scans `while (input.hasNext())` as follows:
 ```java
 try {
     Scanner input = new Scanner(new File("datafolder/mydatafile.txt"));
