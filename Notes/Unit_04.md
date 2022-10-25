@@ -72,8 +72,8 @@ for (int lcv = text.length(); lcv --> 0;) {
 ```java
 // Print each letter of the text "Hello, world!" on a separate line
 String hello = "Hello, world!";
-for (int lcv = 0; lcv < str.length(); lcv++)
-  System.out.println(str.substring(lcv, lcv + 1);
+for (int lcv = 0; lcv < hello.length(); lcv++)
+  System.out.println(hello.substring(lcv, lcv + 1));
 ```
 
 ## Iterating Through Files
