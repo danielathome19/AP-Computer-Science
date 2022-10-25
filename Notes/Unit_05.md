@@ -163,3 +163,27 @@ In the code above, we have three different variables, each with different *scope
 
 
 ### The *this* Keyword
+The `this` keyword simply refers to the current class when working inside a constructor or method, typically. While it lacks any specific functionality, it is useful for eliminating any possible confusion when variable names are the same between a class variable and a method argument. For example:
+```java
+public class MyClass {
+  int x;
+
+  public MyClass(int x) {
+    this.x = x;
+  }
+
+  public static void main(String[] args) {
+    MyClass thing = new MyClass(5);
+    System.out.println("Value of x = " + thing.x);
+  }
+}
+```
+
+If `this` was not used in the example above, the program would print `0` instead of `5`, as the **argument** `x` would be assigned to itself, rather than assigning the **argument** `x` to the **class variable** `x`.
+
+The `this` keyword can be used to:
+* Invoke current class constructor
+* Invoke current class method
+* Pass an argument in the constructor call
+* Pass an argument in the method call
+* Return the current class object
