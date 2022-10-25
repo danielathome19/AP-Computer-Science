@@ -52,7 +52,7 @@ for (int i = 10; i >= 0; i--) {
 ```
 
 Secondly, we can use the `--` operator in conjunction with the `>` operator to form a sort-of *step-down* **for** loop:
-```
+```java
 for (int i = 11; i --> 0;) {
   System.out.println(i);
 }
