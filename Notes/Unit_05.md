@@ -1,9 +1,10 @@
 # Unit 5 - Writing Classes
-UNDER CONSTRUCTION
+Classes are the heart of Object-Oriented Programming (OOP) -- in languages like Java, we divide programs up into multiple components, called **Classes**, to keep code organized and emphasize code reusability. Put simply, a Class is a thing that contains other things -- be it a set of functions (or *methods*), public/private variables, or simply our ***Main*** method (known as the _"Entry Point"_).
 
 ## Writing Methods
+A **method**, also known as a function or procedure, is a block of related lines of code which may contain any valid Java syntax. Methods may or may not also return a value (such as `Math.sin(x)` which returns a double, compared to `System.out.println()` which returns nothing). As such, we can flexibly use them as reusable snippets of code as desired, allowing us to make programs more efficiently.
 
-Methods, also known as functions or procedures, generally follow the following format:
+Methods generally follow the following format:
 ```java
 <access_level: public or private (or protected, but not on AP subset)> <static or blank> <datatype> <method_name>(<datatype arg1, datatype arg2, etc.>) {
   // ...
