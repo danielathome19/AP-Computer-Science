@@ -134,9 +134,32 @@ A **constructor** is a simple function that sets up the private data for a Class
 
 
 ## Scope and Access
-Access refers to the level of accessibility a variable or method within a class is. If a method or class variable is `public`, then it can be accessed from anywhere -- within or outside of the class, including in other classes/methods. Likewise, a method/variable marked as `private` can only be accessed within its containing class.
+***Access*** refers to the level of accessibility a variable or method within a class is. If a method or class variable is `public`, then it can be accessed from anywhere -- within or outside of the class, including in other classes/methods. Likewise, a method/variable marked as `private` can only be accessed within its containing class.
 
-Scope ...
+Similarly, ***scope*** refers to where exactly in the code something (usually a *variable*) is accessible. Typically, this refers to the set of curly-braces that contain the variable.
+Consider the following example:
+```java
+public static void main(String[] args) {
+  int lcv = 0;
+  while (lcv < 10) {
+    System.out.println(lcv);
+    lcv++;
+  }
+
+  // Versus
+  for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+    if (i > 8) {
+      int temp = i * 2;
+      System.out.println(temp);
+    }
+  }  
+}
+```
+In the code above, we have three different variables, each with different *scopes*:
+* `lcv` can be accessed from anywhere within `main` because it is declared outside of any block statements, such as a loop or condition (i.e, its "parent curly-braces" are the entirety of `main`)
+* `i` can only be accessed within the `for` loop, because it was declared inside of the loop -- so, anything inside the `for` loop can also access `i`
+* `temp` can only be accessed within the `if` statement inside the `for` loop -- its "parent curly-braces" are the `if` statement, whose "parent curly-braces" are the `for` loop; so, every time the loop starts a new iteration, a new `int temp` will be made inside the `if` statement
 
 
 ### The *this* Keyword
