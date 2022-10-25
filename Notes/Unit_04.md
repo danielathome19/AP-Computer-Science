@@ -121,7 +121,7 @@ try {
 
 We typically use this when working with files to prevent an exception when a file is missing:
 ```java
-try {  // On Replit, may need to put "../data/prog285b.dat"
+try {  // On Replit, may need to put "../data/prog285b.dat", or use the absolute (exact) path if neither work
     Scanner input = new Scanner(new File("data/prog285b.dat"));
     
     while (input.hasNext()) {
