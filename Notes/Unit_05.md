@@ -35,7 +35,7 @@ public int summation(int n) {
 ```
 
 ## Class Design
-A general-purpose Class (sometimes called a *data class* in other languages) typically consist of the following:
+A general-purpose Class (sometimes called a *data class* in other languages) typically consists of the following:
 * Private data
 * Constructor(s)
 * Mutator (Setter) Methods
