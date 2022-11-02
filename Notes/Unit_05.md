@@ -34,13 +34,16 @@ public int summation(int n) {
 }
 ```
 
+### Documentation Comments
+...
+
 ## Class Design
 A general-purpose Class (sometimes called a *data class* in other languages) typically consists of the following:
-* Private data
-* Constructor(s)
-* Mutator (Setter) Methods
-* Accessor (Getter) Methods
-* *Sometimes* Override Methods (such as `toString()`)
+* **Private Data:** *instance* variables (i.e., variables specific to each object created of the class) which any method in the class can access but cannot be accessed outside the class directly
+* **Constructor(s):** sets up the private data (taking in arguments for some and setting the rest to some default value, like 0)
+* **Mutator (Setter) Methods**: modify private data
+* **Accessor (Getter) Methods:** return private data
+* *Sometimes* **Override Methods (such as `toString()`):** overidden methods from the **Object** class -- usually some accessor method(s)
 
 The general layout for classes is as follows:
 ```java
@@ -110,10 +113,6 @@ We will break this class down to its components next.
 
 ### Constructors
 A **constructor** is a simple function that sets up the private data for a Class.
-
-
-### Documentation Comments
-
 
 
 ## Class Methods
