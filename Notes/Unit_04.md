@@ -15,6 +15,13 @@ from a file or for networking) or while some state has not changed (e.g., while 
 
 The syntax is very simple:
 ```java
+while (<some_condition == true>) {
+  // Run some code repeatedly until the condition becomes false
+}
+```
+
+For example, a counter-based loop:
+```java
 int counter = 0;
 while (counter < 10) {
   // Run some code repeatedly, 10 times in total
@@ -24,14 +31,12 @@ while (counter < 10) {
 
 
 ## The *for* Loop
-
+A **for** loop is a shorthand, counter-based loop (i.e., rather than being iterating specifically on a condition only, we iterate based on some counter variable). It allows us to declare a counter, check the condition for the counter, and increment/decrement the counter all in one line of code (similar to the **while** loop example above). For example:
 ```java
 for (int counter = 0; counter < 10; counter++) {
   // Run some code repeatedly, 10 times in total (same as the while loop example)
 }
 ```
-
-
 
 Again, one must be careful (especially in hand-written code) with its use, but a one-line statement does not require curly braces:
 ```java
@@ -52,7 +57,7 @@ for (int i = 10; i >= 0; i--) {
 ```
 
 Secondly, we can use the `--` operator in conjunction with the `>` operator to form a sort-of *step-down* **for** loop:
-```
+```java
 for (int i = 11; i --> 0;) {
   System.out.println(i);
 }
@@ -68,12 +73,12 @@ for (int lcv = text.length(); lcv --> 0;) {
 ```
 
 ## Iterating Through Strings
-...
+Iterating through each individual character in a **String** can be done in multiple ways (such as the `str.charAt(index)` method, but this is not on the AP subset), though we will only focus on the use of substrings. To select one character at a time, we can use `str.substring(index, index + 1)` in a **for** loop -- remember that the `substring(start, end)` method does NOT include the *end* index in the slice of the String, so we can safely iterate from index 0 to the length of the String. For example:
 ```java
 // Print each letter of the text "Hello, world!" on a separate line
 String hello = "Hello, world!";
-for (int lcv = 0; lcv < str.length(); lcv++)
-  System.out.println(str.substring(lcv, lcv + 1);
+for (int lcv = 0; lcv < hello.length(); lcv++)
+  System.out.println(hello.substring(lcv, lcv + 1));
 ```
 
 ## Iterating Through Files
@@ -91,7 +96,7 @@ For example, consider a data file, named **mydatafile.txt** in a folder called *
 264 17 4150.00
 ```
 
-We can grab this data using a `Scanner` and a loop that scans `while (input.hasNext())` as follows:
+Consider that each row in the data file contains 3 numbers: an **int**, an **int**, and a **double**. We can grab this data using a `Scanner` and a loop that scans `while (input.hasNext())` as follows:
 ```java
 try {
     Scanner input = new Scanner(new File("datafolder/mydatafile.txt"));
@@ -108,7 +113,7 @@ try {
 
 
 ### Exception Handling
-...
+The concept of **Exception Handling** refers to the process of responding to some event in the code that may be unintentional/unexpected, etc. Put simply, it is a way of preventing a program from crashing when a specified error occurs, and instead allows us to decide what to do if an **Exception** is caught. **Again, this is not on the AP subset, but is extremely useful for practical programs.** This is done using a ***try-catch*** statement, where `try` will attempt to run a block of (possibly) erroneous code, and `catch (SomeException ex)` tells us what to do if *SomeException* occurs while running the code in the `try` block. For example, catching a division by 0 error using the generic `Exception` type exception:
 ```java
 try {
   // Run some code that may or may not throw an error
@@ -123,7 +128,7 @@ try {
 
 We typically use this when working with files to prevent an exception when a file is missing:
 ```java
-try {  // On Replit, may need to put "../data/prog285b.dat"
+try {  // On Replit, may need to put "../data/prog285b.dat", or use the absolute (exact) path if neither work
     Scanner input = new Scanner(new File("data/prog285b.dat"));
     
     while (input.hasNext()) {
