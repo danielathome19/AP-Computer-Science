@@ -34,7 +34,7 @@ Note the usage of `.length` to find the size of the array, and the `[index]` ope
 // Make two arrays that store all numbers [1-5]
 int[] list1 = {1, 2, 3, 4, 5};
 // or...
-int[] list2 = new int[6];
+int[] list2 = new int[5];
 for (int lcv = 1; lcv <= 5; lcv++) 
   list2[lcv - 1] = lcv;
 
