@@ -46,7 +46,7 @@ for (int i = 0; i < 5; i++)
 ### Array Traversal
 
 
-### The *for-each* Loop
+### The *for-each* Loop (Enhanced For)
 ...
 A **for-each** loop uses the following syntax:
 ```java
