@@ -117,6 +117,9 @@ if (!allHomeworkCompleted()) {
 }
 ```
 
+### Truth Tables
+...
+
 ### Equivalent Conditions
 ...
 
