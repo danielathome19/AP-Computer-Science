@@ -56,6 +56,8 @@ for (int i = 10; i >= 0; i--) {
 }
 ```
 
+In Unit 6, we *enhance* this syntax for usage with arrays to create the **for-each** loop.
+
 Secondly, we can use the `--` operator in conjunction with the `>` operator to form a sort-of *step-down* **for** loop:
 ```java
 for (int i = 11; i --> 0;) {
