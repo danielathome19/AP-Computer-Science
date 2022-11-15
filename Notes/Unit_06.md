@@ -1,7 +1,7 @@
 # Unit 6 - Array
 UNDER CONSTRUCTION
 
-Sometimes called a 1D Array or Vector, an array is simply a list of items (typically) of the same data type. Each item is assigned a unique index, acting as a sort-of "lookup table" for the items -- however, indices begin counting at 0 in Java, rather than 1 in other languages such as Lua or R.
+Sometimes called a 1D Array or Vector, an array is simply a list of items (typically) of the same data type. Each item is assigned a unique index, acting as a sort-of "lookup table" for the items -- however, indices begin counting at 0 in Java, rather than 1 in other languages such as Lua, MATLAB, and R.
 
 
 ## Array/Vector Creation and Access
@@ -46,7 +46,7 @@ for (int i = 0; i < 5; i++)
 ### Array Traversal
 
 
-### The *for-each* Loop
+### The *for-each* Loop (Enhanced For)
 ...
 A **for-each** loop uses the following syntax:
 ```java
