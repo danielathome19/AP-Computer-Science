@@ -95,6 +95,8 @@ if (condition1) {
 ```
 
 ## Compound Conditions and Logical Operators
+More often than not, one condition is not enough to validate if we should run some snippet of code -- a realistic example would be logging in to a website: `if (username is correct AND password is correct) then log in`. We create these *compound conditional statements* using operators for **boolean operations** such as `AND`, `OR`, and `NOT`.
+
 Java provides 3 logical operators for compound and negated conditions:
 * `&&`: AND
 * `||`: OR
@@ -118,14 +120,24 @@ if (!allHomeworkCompleted()) {
 ```
 
 ### Truth Tables
-...
+Truth tables are a method of breaking down compound conditions into each of their smaller parts to deduce their result based on all possible combinations of **true** and **false**. 
+For example: the truth table for the statement ```if (A or B) and (!A and B)```
+
+| A | B | !A | A or B | (!A and B) | (A or B) and (!A and B) |
+|---|---|----|--------|------------|-------------------------|
+| T | T | F  | T      | F          | F                       |
+| T | F | F  | T      | F          | F                       |
+| F | T | T  | T      | T          | T                       |
+| F | F | T  | F      | F          | F                       |
 
 ### Equivalent Conditions
-...
+One thing we can do to make our code easier to read and organize is to optimize conditions to their reduced equivalent, often seen in the technique known as [**Guard Clauses**](https://www.youtube.com/shorts/Zmx0Ou5TNJs) (a technique often used to prevent/decrease nested *if* statements). By rewriting a condition as their opposite form, we can often drastically reduce code and/or increase readability (and possibly performance!).
 
-De Morgan's Law
+For example:
+* *Greater Than* `>` is the direct opposite of *Less Than or Equal to* `<=` (and vice versa), so `!(x > y)` is the same as `(x <= y)`.
+* Not true `!true` is the same as `false`, and vice versa.
 
-*Greater Than* `>` is the direct opposite of *Less Than or Equal to* `<=` (and vice versa), so `!(x > y)` is the same as `(x <= y)`.
+Also check out [De Morgan's Law](https://blog.penjee.com/what-is-demorgans-law-in-programming-answered-with-pics/) for one of the most important rules in *Discrete Mathematics*!
 
 ## Comparing Objects
 Perhaps the most important occurrence of object comparison in most Java programs is that of comparing **Strings**. Since a **String** is NOT a primitive type (i.e., it's a *class* that we instantiate as an ***object***), we have to use the `.equals(anotherStr)` to check if two strings contain the same exact text, case-sensitive. Using `==` on an ***object*** checks to see if two things share the exact same **memory address** in RAM.
