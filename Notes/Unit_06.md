@@ -48,6 +48,7 @@ for (int i = 0; i < 5; i++)
 
 ### The *for-each* Loop (Enhanced For)
 ...
+
 A **for-each** loop uses the following syntax:
 ```java
 for (DATATYPE tempvarname : myarray) {
@@ -55,7 +56,7 @@ for (DATATYPE tempvarname : myarray) {
 }
 ```
 
-The `:` operator equates to the word ***in***; if we wanted to loop through all ints in an integer array, for example:
+The `:` operator equates to the word ***in*** (i.e., `for 'each' (DATATYPE currentNum in DataTypeArray); if we wanted to loop through all ints in an integer array, for example:
 ```java
 int[] mynums = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 for (int temp : mynums) {
