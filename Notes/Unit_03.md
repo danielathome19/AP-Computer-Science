@@ -137,7 +137,7 @@ For example:
 * *Greater Than* `>` is the direct opposite of *Less Than or Equal to* `<=` (and vice versa), so `!(x > y)` is the same as `(x <= y)`.
 * Not true `!true` is the same as `false`, and vice versa.
 
-Also check out [De Morgan's Law](https://blog.penjee.com/what-is-demorgans-law-in-programming-answered-with-pics/) for one of the most important rules in *Discrete Mathematics*!
+Also check out [De Morgan's Law](https://blog.penjee.com/what-is-demorgans-law-in-programming-answered-with-pics/) for one of the most important rules in *Discrete Mathematics* to get a better idea of how, when, and where this is applied!
 
 ## Comparing Objects
 Perhaps the most important occurrence of object comparison in most Java programs is that of comparing **Strings**. Since a **String** is NOT a primitive type (i.e., it's a *class* that we instantiate as an ***object***), we have to use the `.equals(anotherStr)` to check if two strings contain the same exact text, case-sensitive. Using `==` on an ***object*** checks to see if two things share the exact same **memory address** in RAM.
