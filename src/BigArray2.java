@@ -6,6 +6,11 @@ import java.util.*;
 
 public class BigArray2 {
     /*
+    The input file begins with a number indicating the number of cats in the pound.
+    The rest of the input will be the cat’s name, weight, age and cost for each cat.
+    Weight and cost are doubles.
+    Create an Array and fill it with the cats from the file.
+
     1. Print out all the cats (there is no toString() available)
     2. Print the name of the 3rd cat.
     3. The last cat has gained 10 pounds. Update the weight on the object. Print the new weight.
