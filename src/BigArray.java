@@ -193,3 +193,24 @@ public class BigArray {
         return shifted;
     }
 }
+/*
+81 49 22 52 49 81 39 34 32 43 84 74 81 89 89 90 35 61 26
+81 49 22 52 49 81 39 34 32 43 84 74 81 89 89 90 35 61 26
+The middle number is 43
+Average of the first, middle, and last numbers is 50.0
+The smallest number is 22
+The larger number is 90
+81 49 90 52 49 81 39 34 32 43 84 74 81 89 89 22 35 61 26
+81 49 90 52 49 81 39 34 32 8 84 74 81 89 89 22 35 61 26
+91 59 100 62 59 91 49 44 42 18 94 84 91 99 99 32 45 71 36
+The number that was ousted is 100
+59 59
+44 84 32 36
+Is 60 in the list? false
+Is the array palindromic? false
+There are 9 numbers greater than the average
+There are 8 even numbers
+36 71 45 32 99 99 91 84 94 18 42 44 49 91 59 62 5 59 91
+36 91 59 5 62 59 91 49 44 42 18 94 84 91 99 99 32 45 71
+Sum of all digits of all elements = 199
+*/
