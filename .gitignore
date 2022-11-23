@@ -1,5 +1,6 @@
 ### IntelliJ IDEA ###
 out/
+src/ignore/
 
 ### Eclipse ###
 .apt_generated
