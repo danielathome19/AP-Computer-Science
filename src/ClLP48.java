@@ -17,6 +17,6 @@ public class ClLP48 {
     }
 
     public String toString() {
-        return "(" + myA + " " + myX0 + " + " + myC + ") % " + myM + " = " + this.nextInt();
+        return "(" + myA + " * " + myX0 + " + " + myC + ") % " + myM + " = " + this.nextInt();
     }
 }
