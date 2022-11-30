@@ -151,7 +151,6 @@ for (int spot = 0; spot < numcars; spot++) {
   System.out.println("Year: " + currentcar.getYear());
 }
 
-
 // Approach 2 (for-each loop with null-check)
 for (Car currentcar : parkinglot) {
   if (currentcar != null) {
