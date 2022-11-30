@@ -4,7 +4,7 @@ Sometimes called a 1D Array or Vector, an **array** is simply a list of items (t
 Arrays are essentially lists of **objects** -- they allow us to store multiple variables inside of one variable (i.e., an object that holds more objects). Hence, they can hold either primitive types/objects (`int`, `double`, `char`, etc.) or objects of classes (**String** and any other class we define).
 
 ## Array/Vector Creation and Access
-To declare an array, we use the `new` keyword just as if we were declaring a new Class object (like **Scanner**) along with the array *"bracket operator"* `[]`. However, we must also have a capacity in mind -- regardless of if all slots are full, we need to specify a minimum size, which **CANNOT be modified** later. This is similar to a permit-only parking lot: the parking lot has 100 spots, each numbered uniquely from 0 to 99; spots may not always be full, but we cannot add or remove spots without rebuilding the lot (theoretically). **Whenever a spot in the parking lot is empty, it has the value `null` meaning *nothing***, which we will look at a solution for below.
+To declare an array, we use the `new` keyword just as if we were declaring a new Class object (like **Scanner**) along with the array *"bracket operator"* `[]`. However, we must also have a capacity in mind -- regardless of if all slots are full, we need to specify a minimum size, which **CANNOT be modified** later. This is similar to a bookshelf or a permit-only parking lot: the parking lot has 100 spots, each numbered uniquely from 0 to 99; spots may not always be full, but we cannot add or remove spots without rebuilding the lot (theoretically). **Whenever a spot in the parking lot is empty, it has the value `null` meaning *nothing***, which we will look at a solution for below.
 
 The following syntax is used to declare an array:
 ```java
@@ -84,6 +84,87 @@ for (Person currentperson : people) {
 
 ### Null-Safe Traversal
 One issue we often encounter with arrays is that we may not always have all slots of an array filled, just like our parking lot example. When working with data files, we typically will keep a *counter* variable to track how many items are ACTUALLY in the array, rather than using the `length` property (which should really be called `capacity` instead). If we read in 50 objects from a data file, but out array has a capacity of 75, then the last 25 slots will all be `null`. If we try to call methods on these `null` objects, the program will crash -- this is a huge problem with us using a **for-each** loop instead of a normal **for** loop with our *counter* variable.
+
+Consider a data file (named **mycars.dat**, for example) that looks similar to the following, containing the ID number, make, model, and year for 50 cars:
+```
+1   Pontiac   Trans Sport   1995
+2   Chevrolet   Impala    2007
+.
+.
+.
+50    Buick   Rendesvous    2003
+```
+
+Now, we can make a simple car class to contain those four properties:
+```java
+public class Car {
+  private int myID;
+  private String myMake;
+  private String myModel;
+  private int myYear;
+  
+  public Car(int id, String make, String model, int year) {
+    myID = id;
+    myMake = make;
+    myModel = model;
+    myYear = year;
+  }
+  
+  public int getID() { return myID; }
+  public String getMake() { return myMake; }
+  public String getModel() { return myModel; }
+  public int getYear() { return myYear };
+}
+```
+
+Once we have our **data class**, we can read in all of the files from the data file. However, in case the size of the data file changes, we need to provide a buffer space (i.e., extra slots in the array) instead of counting the number of cars by hand and updating our code every time it changes -- good luck trying that with a database! Lets make an array of **Car** objects that can hold up to 100 cars, similar to our parking lot example above:
+```java
+Scanner input = new Scanner(new File("mycars.dat"));
+Car[] parkinglot = new Car[100];
+int numcars = 0;
+
+while (input.hasNext()) {
+  // Read in the information on each car
+  int id = input.nextInt();
+  String make = input.next();
+  String model = input.next();
+  int year = input.nextInt();
+  
+  // Make a new "Car object" using the information of the current car we just read in
+  Car parkedcar = new Car(id, make, model, year);
+  
+  // Increment the number of parked cars in the parking lot;
+  numcars++;
+}
+```
+
+Now, we have two options for safely printing out the information on every car without overflowing into our *buffer* space (the `null` slots): either use a **for** loop with our *counter* variable as the maxima, or use a **for-each** loop but check to make sure that the car is not equal to `null` before attempting to call methods on it:
+```java
+// Approach 1 (for loop)
+for (int spot = 0; spot < numcars; spot++) {
+  // Grab the car parked at the current spot so we do not 
+  // have to write parkinglot[spot].getSomething() every time
+  Car currentcar = parkinglot[spot];
+  System.out.println("ID: " + currentcar.getID());
+  System.out.println("Make: " + currentcar.getMake());
+  System.out.println("Model: " + currentcar.getModel());
+  System.out.println("Year: " + currentcar.getYear());
+}
+
+
+// Approach 2 (for-each loop with null-check)
+for (Car currentcar : parkinglot) {
+  if (currentcar != null) {
+    System.out.println("ID: " + currentcar.getID());
+    System.out.println("Make: " + currentcar.getMake());
+    System.out.println("Model: " + currentcar.getModel());
+    System.out.println("Year: " + currentcar.getYear());
+  } 
+  // else { currentcar is null, so don't print or call anything }
+}
+```
+
+Typically, for regular arrays, it's safer to just use a *counter* variable so we know that we won't overflow into the empty slots. However, what if we intentionally set a slot in the middle of the array to `null` like `parkinglot[5] = null;` (i.e., a parked car leaves the lot at random)? Then we have to account for null-checking even inside of our regular **for** loop! So, there are many factors we can take into account, but unless we know that we will not be removing anything from the array, it's a bit more flexible to just use a normal **for** loop with a *counter* -- then we also have the index on hand in case we need to modify our code to use it at some point later on.
 
 
 
