@@ -20,8 +20,8 @@ public class Prog602b {
             }
 
             for (int lcv = 0; lcv < list.size(); lcv++) {
-                InternetCustomer current = list.get(lcv);
-                current.setCharge();
+                InternetCustomer me = list.get(lcv);
+                me.setCharge();
             }
 
             System.out.println("Account #\t\tHours\t\tCode\t\tAmount Due");
