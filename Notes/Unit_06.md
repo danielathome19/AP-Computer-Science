@@ -41,7 +41,7 @@ for (int i = 0; i < 5; i++)
 ```
 
 ## Array Traversal
-The term ***traversal*** refers to the act of *iterating* through an array -- that is, checking multiple spots in an array using a loop, typically. This can of course be done with the `.length` property, or using a variable that is keeping track of the current size of the array (so as to not go into the "empty"/*null* slots), but Java also provides us with a simpler syntax.
+The term ***traversal*** refers to the act of *iterating* through an array -- that is, checking multiple spots in an array using a loop, typically. This can of course be done with the `.length` property, or using a variable that is keeping track of the current size of the array (so as to not go into the "empty"/*null* slots, or some form of `0` for **primitive types**), but Java also provides us with a simpler syntax.
 
 ### The *for-each* Loop (Enhanced For)
 The **Enhanced For** loop, or **for-each** loop, is a simpler syntax for a **for** loop that iterates through an entire array without the need for an index. Instead, it gives us direct access to each object in the array sequentially.
@@ -150,7 +150,6 @@ for (int spot = 0; spot < numcars; spot++) {
   System.out.println("Model: " + currentcar.getModel());
   System.out.println("Year: " + currentcar.getYear());
 }
-
 
 // Approach 2 (for-each loop with null-check)
 for (Car currentcar : parkinglot) {
