@@ -35,7 +35,70 @@ public int summation(int n) {
 ```
 
 ### Documentation Comments
-...
+Comments are a fundamental need for large projects; unless you use extremely verbose and explicit variable, class, and method names, there will be parts of your code that do not make sense to other readers (including your future self!) especially. As well, we can use comments not only to explain what code does, but what unfinished code WILL do eventually (often marked with `// TODO: _____`) -- for example, before even writing out any code, it is often useful to "sketch" out your program by breaking it down into smaller parts separated by comments describing what happens next.
+
+Another standard in programming is the concept of **documentation comments**, which your text editor or development environment often uses to provide you with mouse-hover hints on what a *method* or *class* does and/or assisting in code-completion. These are multi-line comments that begin with `/**`, a `*` on each line, and end with `*/`. These can be as simple as describing who wrote the program and when, including HTML tags:
+```java
+/**
+* <h1>Hello, World!</h1>
+* The HelloWorld program simply displays "Hello World!" to the standard output.
+* 
+*
+* @author  John Smith
+* @version 1.0
+* @since   2022-01-31
+*/
+public class HelloWorld {
+   public static void main(String[] args) {
+      System.out.println("Hello World!");
+   }
+}
+```
+
+Often, especially on the AP exam, documentation comments are used to explain the conditions for a given function, as well as the expected conditions after a function is ran. These are typically defined as follows:
+* **Precondition**: abc
+* **Postcondition**: abc
+
+For example, an AP-like question:
+```java
+** Constructs a GameBoard object having numRows rows and numCols columns.
+* Precondition: numRows > 0, numCols > 0
+* Postcondition: each tile has a 50% probability of being set to on.
+*/
+public GameBoard(int numRows, int numCols)
+{ /* to be implemented ... */ }
+```
+
+#### Javadoc Tags
+The **javadoc** tool provides a large number of standard annotations for documentation comments, such as `@return`, `@param`, and `@throws`/`@exception`, among [many others](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html#CHDBEFIF) such as the author/version/date annotations we saw previously. These allow us to specify things like descriptions of method parameters and/or what the method returns, if/what exceptions are thrown/what kind/when, deprecated methods, references to see something else, etc.
+
+For example:
+```java
+/**
+ * This method is used to add two integers. It is
+ * a simple class method used to demonstrate the
+ * various common javadoc tags.
+ * @param num1 The first integer parameter.
+ * @param num2 The second integer parameter.
+ * @return int The sum of num1 and num2.
+ */
+ public int addInt(int num1, int num2) {
+    return num1 + num2;
+ }
+
+/**
+ * This is the main method which calls the addInt method.
+ * @param args Unused.
+ * @return Nothing.
+ * @exception IOException On input error.
+ * @see IOException
+ */
+ public static void main(String args[]) throws IOException {
+    int sum = addInt(10, 20);
+    System.out.println("10 + 20 = " + sum);
+ }
+```
+
 
 ## Class Design
 A general-purpose Class (sometimes called a *data class* in other languages) typically consists of the following:
