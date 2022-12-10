@@ -196,3 +196,7 @@ While not discussed in this class, the **Quick Sort** and **Merge Sort** algorit
 
 
 #### Merge Sort
+
+
+## Vector Operations
+MATH THINGS HERE
