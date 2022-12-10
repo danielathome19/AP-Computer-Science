@@ -209,7 +209,7 @@ While not discussed in this class, the **Quick Sort** and **Merge Sort** algorit
 
 
 ## Vector Operations
-Below is a library of matrix methods based on operations found in calculus and linear algebra, which are extremely useful for statistics, machine learning, and deep learning algorithms.
+Below is a library of matrix methods based on operations found in calculus and linear algebra, which are extremely useful for statistics, machine learning, and deep learning algorithms. While these are not on the AP exam (at least explicitly), they can be very helpful for understanding the purpose of arrays in various contexts (i.e., physics, image processing, game design, etc.) especially coming from a mathematical background.
 ```java
 /* Vector Library by Daniel Szelogowski, 2022 */
 public class VectorLib {
