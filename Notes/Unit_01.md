@@ -121,6 +121,16 @@ spans across
 multiple lines
 */
 
+/*
+ * This comment
+ * also spans
+ * multiple lines
+ */
+ 
+/*
+* This comment also spans multiple lines
+*/
+
 // For documentation, these also tend to look like:
 /**
  * Sets the tool tip text.
