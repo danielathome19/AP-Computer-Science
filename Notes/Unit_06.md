@@ -170,7 +170,9 @@ Typically, for regular arrays, it's safer to just use a *counter* variable so we
 
 
 ## Array Algorithms
-To be discussed AFTER the AP curriculum... technically part of the normal AP units though
+...
+
+Although technically part of Unit 7, searching and sorting algorithms (which we generally wait to learn until after the normal AP units are complete) are much more applicable to arrays than **ArrayLists**.
 
 ### Array Searching Algorithms
 
