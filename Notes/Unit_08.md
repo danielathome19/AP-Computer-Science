@@ -15,7 +15,7 @@ UNDER CONSTRUCTION
 
 
 ## Matrix Operations
-Below is a library of matrix methods based on operations found in calculus and linear algebra, which are extremely useful for statistics, machine learning, and deep learning algorithms.
+Below is a library of matrix methods based on operations found in calculus and linear algebra, which are extremely useful for statistics, machine learning, and deep learning algorithms. Like with vector operations, while these are not on the AP exam , they can be very helpful for understanding the purpose of arrays in various contexts (i.e., physics, image processing, quantum computing, artificial intelligence, etc.) especially coming from a mathematical background.
 ```java
 /* Matrix Library by Daniel Szelogowski, 2022 */
 public class MatrixLib {
