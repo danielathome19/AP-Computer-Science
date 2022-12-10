@@ -168,13 +168,16 @@ Typically, for regular arrays, it's safer to just use a *counter* variable so we
 
 
 
-
 ## Array Algorithms
-...
+Given the amount of data that exists, it is only sensible that computer scientists design standard algorithms for many of the most common needs and operations on such data. The purpose of these algorithms can generally be classified as follows:
+* **Statistical or Property Analysis**: determining/computing the max, min, sum, average, mode, etc., checking for duplicates, or finding items with a particular property or that meet a certain criteria
+* **Searching**: efficiently finding an item in an array if it exists (linear search, binary search)
+* **Sorting**: efficiently sorting an array in some order, usually ascending or descending (bubble sort, insertion sort, selection sort, quick sort, etc.)
 
 Although technically part of Unit 7, searching and sorting algorithms (which we generally wait to learn until after the normal AP units are complete) are much more applicable to arrays than **ArrayLists**.
 
 ### Array Searching Algorithms
+...
 
 #### Linear Search
 
@@ -186,6 +189,10 @@ Although technically part of Unit 7, searching and sorting algorithms (which we 
 
 
 ### Array Sorting Algorithms
+...
+
+
+
 
 While not discussed in this class, the **Quick Sort** and **Merge Sort** algorithms are extremely important real-world sorting algorithms.
 
@@ -195,7 +202,10 @@ While not discussed in this class, the **Quick Sort** and **Merge Sort** algorit
 #### Insertion Sort
 
 
-#### Merge Sort
+#### Selection Sort
+
+
+
 
 
 ## Vector Operations
