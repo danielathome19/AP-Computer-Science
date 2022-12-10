@@ -49,9 +49,4 @@ System.out.println();
 ```
 
 ### ArrayList Algorithms
-
-
-### Searching ArrayLists
-
-
-### Sorting ArrayLists
+ArrayLists often utilize the same algorithms that we learn with *arrays* in Unit 6 -- statistical analysis (max, min, average, duplicates), linear/binary search, and all of the many sorting algorithms still apply. However, it is much less common to see examples of searching and sorting algorithms being applied to ArrayLists as opposed to arrays, since we often perform those algorithms on intentionally-capped lists of data and/or learn them using arrays that are entirely full of data. Regardless, if you can write an algorithm for an array, it is nearly identical for an ArrayList.
