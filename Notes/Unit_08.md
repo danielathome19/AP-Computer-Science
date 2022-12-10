@@ -10,4 +10,9 @@ UNDER CONSTRUCTION
 ### Nested Iteration
 
 
-### *n*D Arrays/Tensors (3D and Beyond)
+## *n*D Arrays/Tensors (3D and Beyond)
+
+
+
+## Matrix Operations
+MATH THINGS HERE
