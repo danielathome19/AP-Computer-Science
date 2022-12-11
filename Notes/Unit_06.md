@@ -196,15 +196,40 @@ Given the amount of data that exists, it is only sensible that computer scientis
 
 Although technically part of Unit 7, searching and sorting algorithms (which we generally wait to learn until after the normal AP units are complete) are much more applicable to arrays than **ArrayLists**.
 
+
 ### Array Searching Algorithms
 ...
 
-#### Linear Search
 
+#### Linear Search
+...
+
+```java
+public static int linearSearch(int[] array, int x) {
+  for (int i = 0; i < array.length; i++) {
+    if (array[i] == x) return i;
+  }
+  return -1;
+}
+```
 
 
 #### Binary Search
+...
 
+```java
+public static int binarySearch(int[] array, int x) {
+  int low = 0;
+  int high = array.length - 1;
+  while (low <= high) {
+    int mid = low + (high - low) / 2;
+    if (array[mid] == x) return mid;
+    if (array[mid] < x) low = mid + 1;
+    else high = mid - 1;
+  }
+  return -1;
+}
+```
 
 
 
@@ -212,19 +237,63 @@ Although technically part of Unit 7, searching and sorting algorithms (which we 
 ...
 
 
-
-
-While not discussed in this class, the **Quick Sort** and **Merge Sort** algorithms are extremely important real-world sorting algorithms.
-
 #### Bubble Sort
+...
+
+```java
+public static void bubbleSort(int[] array) {
+  for (int i = 0; i < array.length - 1; i++)
+    for (int j = 0; j < array.length - i - 1; j++)
+      if (array[j] > array[j + 1]) {
+        int temp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
+      }
+    }
+  }
+}
+```
 
 
 #### Insertion Sort
+...
+
+```java
+public static void insertionSort(int[] array) {
+  for (int step = 1; step < array.length; step++) {
+    int key = array[step];
+    int j = step - 1;
+    while (j >= 0 && key < array[j]) {
+      array[j + 1] = array[j];
+      --j;
+    }
+    array[j + 1] = key;
+  }
+}
+```
 
 
 #### Selection Sort
+...
+
+```java
+public static void selectionSort(int[] array) {
+  for (int step = 0; step < array.length - 1; step++) {
+    int minIndex = step;
+    for (int i = step + 1; i < array.length; i++) {
+      if (array[i] < array[minIndex]) {
+        minIndex = i;
+      }
+    }
+    int temp = array[step];
+    array[step] = array[minIndex];
+    array[minIndex] = temp;
+  }
+}
+```
 
 
+While not discussed in this class, the [**Quick Sort**](https://www.programiz.com/dsa/quick-sort) and (**Merge Sort**)[https://www.programiz.com/dsa/merge-sort] algorithms are extremely important real-world sorting algorithms. There are also sorting algorithms that do not require numeric comparison, such as [**Counting Sort**](https://www.programiz.com/dsa/counting-sort) and **Radix Sort**(https://www.programiz.com/dsa/radix-sort).
 
 
 
