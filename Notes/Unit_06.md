@@ -198,11 +198,11 @@ Although technically part of Unit 7, searching and sorting algorithms (which we 
 
 
 ### Array Searching Algorithms
-...
+Search algorithms are simply methods that provide us with different ways to find an item in an array if it exists. There are two common algorithms we typically use, either **Linear Search** for unsorted data or **Binary Search** for sorted data.
 
 
 #### Linear Search
-...
+Linear search is our typical sequential array iteration that many jump to for a simple search function. We simply iterate through the entire array from start to finish, checking to see if we find the index where the item is stored -- otherwise, we usually return -1 or `null` (depending on the type).
 
 ```java
 public static int linearSearch(int[] array, int x) {
@@ -215,7 +215,7 @@ public static int linearSearch(int[] array, int x) {
 
 
 #### Binary Search
-...
+Binary search is a slightly more complicated search algorithm that excels when the list is already sorted. The idea is much like that of finding a page in a textbook -- start by checking the middle of the list, compare the item to be found to see if we need to look on right right or left half of the list, then traverse down that half onward. Continuously check the middle item and traverse down the "hot" half until the item is found. While this algorithm is often implemented recursively (a function that calls itself; see Unit 10), we will see its iterative implementation for now.
 
 ```java
 public static int binarySearch(int[] array, int x) {
