@@ -237,7 +237,7 @@ public static int binarySearch(int[] array, int x) {
 Sorting algorithms provide us with different approaches to sorting an array -- of which there are MANY different possible choices. For now, we will learn strictly **comparison-based sorting** methods; i.e., comparing numbers and placing them in either *ascending* (least to greatest) or *descending* (greatest to least) order.
 You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html).
 
-Let's look at a few of the most elementary sorting algorithms -- bubble sort, insertion sort, and selection sort. These implementations are all in ascending order, but you can easily change them to descending order by changing the comparison operator inside the **if** statement from `>` to `<`.
+Let's look at a few of the most elementary sorting algorithms -- bubble sort, insertion sort, and selection sort. These implementations are all in ascending order, but you can easily change them to descending order by changing the comparison operator inside the conditional statement from `>` to `<`.
 
 #### Bubble Sort
 ...
