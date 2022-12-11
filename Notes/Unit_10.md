@@ -12,7 +12,7 @@ While not necessary for the AP exam, the [**Quick Sort**](https://www.programiz.
 
 
 #### Quicksort
-Quicksort is a popular, very efficient sorting algorithm that operates by dividing a list of items into two smaller sub-lists, sorting those sub-lists, and then merging the sorted sub-lists back together to form a final, sorted list. The key to quicksort is the way it divides the list into sub-lists -- a process known as partitioning. This approach to sorting through solving smaller sub-problems is known as the ***divide-and-conquer** method. Its efficiency makes it extremely *quick* even for large datasets, making it very applicable to real-world data.
+Quicksort is a popular, very efficient sorting algorithm that operates by dividing a list of items into two smaller sub-lists, sorting those sub-lists, and then merging the sorted sub-lists back together to form a final, sorted list. The key to quicksort is the way it divides the list into sub-lists -- a process known as partitioning. This approach to sorting through solving smaller sub-problems is known as the ***divide-and-conquer*** method. Its efficiency makes it extremely *quick* even for large datasets, making it very applicable to real-world data.
 
 The steps are as follows:
 1. Choose an element from the list, known as the pivot. This element will be used to divide the list into sub-lists
@@ -22,7 +22,7 @@ The steps are as follows:
 5. The final, sorted list is returned
 
 
-**Quicksort** is broken down into two methods, one for finding a partition and the other for performing the sort:
+Quicksort is broken down into two methods, one for finding a partition and the other for performing the sort:
 ```java
 private static int partition(int arr[], int low, int high) { 
   int pivot = arr[high];
@@ -57,7 +57,7 @@ public static void quickSort(int array[], int low, int high) {
 
 
 #### Merge Sort
-Merge sort is another popular and very efficient sorting algorithm that works by dividing a list of items into two smaller sub-lists, sorting those sub-lists, and then merging the sorted sub-lists back together to form a final, sorted list. This process of dividing and merging is repeated until the entire list is sorted, making this another ***divide-and-conquer*** algorithm.
+Merge sort is another popular and very efficient sorting algorithm that works by dividing a list of items into two smaller sub-lists, sorting those sub-lists, and then *merging* the sorted sub-lists back together to form a final, sorted list. This process of dividing and merging is repeated until the entire list is sorted, making this another ***divide-and-conquer*** algorithm.
 
 The steps are as follows:
 1. Divide the list of items into two smaller sub-lists. This is typically done by splitting the list in half, although other methods of dividing the list are also possible
@@ -65,7 +65,7 @@ The steps are as follows:
 3. Once the two sub-lists are sorted, we can merge them together to form a final, sorted list. This is done by comparing the first element of each sub-list and choosing the smaller of the two as the first element of the final list. We then repeat this process, comparing the second element of each sub-list, until all of the elements from both sub-lists have been added to the final list
 4. The final, sorted list is returned
 
-**Merge Sort** is also broken down into two methods, one for merging two subarrays and the other for performing the sort:
+Merge Sort is also broken down into two methods, one for merging two subarrays and the other for performing the sort:
 ```java
 private void merge(int arr[], int p, int q, int r) {
   int n1 = q - p + 1;
