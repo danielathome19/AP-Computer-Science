@@ -4,7 +4,7 @@ UNDER CONSTRUCTION
 ## Practical Uses of Recursion
 ...
 
-### Recursive Searching
+### Recursive Searching and Improved Binary Search
 ...
 
 ### Recursive Sorting and Divide-and-Conquer Algorithms
