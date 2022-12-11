@@ -1,14 +1,111 @@
 # Unit 8 - 2D Array
-UNDER CONSTRUCTION
+Often called a Matrix from its mathematical derivative, a **2D Array** is an array containing two **dimensions** or *features* of data (here, the term "dimension" is borrowed from dimensions in a *Hilbert Space* from Calculus, i.e., the "size" of a set of vectors, rather than a physical *Euclidian Space* dimension). In simpler terms, it is an array of arrays, which are typically all the same length. Here, we think of each array as being a **row** in the matrix, and each *feature* (position) refers to the **columns** in the matrix.
 
-## Multidimensional Arrays
+We can declare a 2D Array using the same syntax as a normal array (with `new` keyword), but by attaching an additional set of array braces `[size]`, like so:
+```java
+DATATYPE[][] multiDimArr = new DATATYPE[numRows][numCols];
+// However, the number of columns is technically optional, since we may have jagged arrays
+```
+Just like with any other data standard data structure, this works with any data type:
+```java
+// Create an matrix with 5 rows, 6 columns 
+// i.e., 5 internal array of length 6
+int[][] matrix = new int[5][6];
+double[][] matrix2 = new double[5][6];
+```
 
+However, we can also use the *explicit* notation, either by building each row-array individually and making an array of row-arrays, or by defining the entire matrix together:
+```java
+// Matrix-style (very common)
+int[][] mat1 = {
+    {0, 1, 2},
+    {3, 4, 5},
+    {6, 7, 8}
+};
 
-### 2D Arrays/Matrices
+// Array of arrays (more confusing to read)
+int[] row1 = {0, 1, 2};
+int[] row2 = {3, 4, 5};
+int[] row3 = {6, 7, 8};
+int[][] mat2 = {row1, row2, row3};
+```
 
+Then, we can access items based on their `[row][column]` index, much like a 1D array: `int rowOneColTwo = mat1[1][2];`
 
-### Nested Iteration
+## Multidimensional and Jagged Arrays
+2D Arrays are often classified into two different categories:
+* **Multidimensional Array (Matrix)**: an $n \cross m$ matrix (i.e., $n$ rows and $m$ columns) where all rows have the exact same length; typically declared using the explicit matrix notation or `new DATATYPE[numRows][numCols]`
+* **Jagged Array**: an array of arrays, where the inner-arrays may possibly vary in length; typically declared using the explicit jagged array notation or `new DATATYPE[numRows][]`
 
+Let's compare the two:
+```java
+// Matrix Notation
+int[][] mat1 = new int[2][3];
+int[][] mat2 = {
+    {0, 1, 2},
+    {3, 4, 5}
+};
+
+// Jagged Array Notation
+int[][] ja1 = new int[3][];
+ja1[0] = new int[]{0, 1};
+ja1[1] = new int[]{2, 3, 4};
+ja1[2] = new int[]{5};
+
+int[][] ja2 = {
+    {0, 1},
+    {2, 3, 4},
+    {5}
+};
+```
+
+### Nested Iteration for Matrix Traversal
+To both populate and traverse matrices and jagged arrays, we must use a **_for loop inside_ another _for loop_** for simplicity. For a traditional matrix (multidimensional array) where the number of columns is the same for all rows, we can loop using `matrixName.length` for the rows and `matrixName[0].length` for the columns; otherwise, we might need to use our row counter to find the length of the current row (i.e., `multiDimArrName[row].length` if we have a jagged array. 
+
+For example:
+```
+// Create and populate a matrix of ints
+int[][] powers = new int[5][3];
+for (int row = 0; row < powers.length; row++) {
+    for (int col = 0; col < powers[0].length; col++) {
+        powers[row][col] = (int)Math.pow(col + 1, row + 1);
+    }
+}
+
+// Print out the matrix
+for (int r = 0; r < powers.length; r++) {
+    for (int c = 0; c < powers[0].length; c++) {
+        System.out.print(powers[r][c] + " ");
+    }
+    System.out.println();
+}
+```
+
+However, with a jagged array, we need to use `jaggedArr[row].length` when looping through the columns. Or, more commonly, we can use a **for-each** (or *Enhanced for*) loop to grab each inner-array and loop through each of its values:
+```
+int[][] jagArr = {
+    {0, 1, 2},
+    {3, 4, 5, 6, 7},
+    {8, 9},
+    {10}
+};
+
+// Option 1: double-for
+for (int r = 0; r < jagArr.length; r++) {
+    for (int c = 0; c < jagArr[r].length; c++) {
+        System.out.print(jagArr[r][c] + " ");
+    }
+    System.out.println();
+}
+
+// Option 2: double-for-each
+for (int[] row : jagArr) {
+    for (int x : row) {
+        System.out.print(x + " ");
+    }
+    System.out.println();
+}
+```
 
 ## *n*D Arrays/Tensors (3D and Beyond)
 
