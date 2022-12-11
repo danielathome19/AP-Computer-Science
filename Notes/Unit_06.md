@@ -234,13 +234,22 @@ public static int binarySearch(int[] array, int x) {
 
 
 ### Array Sorting Algorithms
-Sorting algorithms provide us with different approaches to sorting an array -- of which there are MANY different possible choices. For now, we will learn strictly **comparison-based sorting** methods; i.e., comparing numbers and placing them in either *ascending* (least to greatest) or *descending* (greatest to least) order.
+Sorting algorithms provide us with different approaches to sorting an array -- of which there are MANY different possible choices. For now, we will learn strictly **comparison-based sorting** methods; i.e., comparing numbers and placing them in either *ascending* (least to greatest) or *descending* (greatest to least) order. Again, many of these algorithms can be performed recursively, but we will focus on their iterative implementation for now.
 You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html) or [here (alongside the running code)](https://visualgo.net/en/sorting).
 
 Let's look at a few of the most elementary sorting algorithms -- bubble sort, insertion sort, and selection sort. These implementations are all in ascending order, but you can easily change them to descending order by changing the comparison operator inside the conditional statement from `>` to `<`.
 
+If you want to truly understand when and why we use certain algorithms over others, you'll need to learn a topic called [Asymptotic Analysis](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation), or [Big-O Notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf), which provides us a means of mathematically analyzing how functions grow over time (and space) as the amount of data increases. This is typically the first true Computer Science topic that college majors learn in an infamous class known as ***Data Structures and Algorithms***.
+
 #### Bubble Sort
-...
+Bubble sort is the most crude array sorting algorithm; it is impractical for large datasets and generally slow even for small ones. However, its steps are so simple that it provides a good baseline for understanding the principles of designing sorting algorithms. 
+
+The steps are as follows:
+1. Start a loop at the first index
+2. If the first element is greater (or less than for descending order) the second element, swap them
+3. Compare the second and third elements, swapping them to be in the appropriate order
+4. Repeat the process until the last element has been reached
+5. Repeat all of the above steps until all items are sorted
 
 ```java
 public static void bubbleSort(int[] array) {
