@@ -124,8 +124,64 @@ for (int[] row : jagArr) {
 ```
 
 ## *n*D Arrays/Tensors (3D and Beyond)
+Technically, we can extend the multidimensional array syntax to any number of dimensions, i.e., an *n*D array, often referred to as a **Tensor** (which can technically be any number of dimensions but is often used when $n > 2$). For data scientists and machine learning engineers, tensors are one of the most important data structures that exists -- especially because of its use in deep learning/neural networks. Simply add an additional set of `[]` to your array initialization, or painstakingly define a jagged array of arrays explicitly:
+```java
+DATATYPE[][][] tensor = new DATATYPE[numRows][numCols][numLayers];
 
+// Or...
+int[][][] jaggedTensor = {
+    {
+        {0, 1},
+        {2, 3, 4},
+        {5}
+    },
+    {
+        {6, 7},
+        {8}
+    },
+    {
+        {9, 10} 
+    }
+};
 
+// Or, a 5D Array
+DATATYPE[][][][][] hugeTensor = new DATATYPE[x][y][z][w][alpha];
+```
+
+Likewise, to traverse a tensor (and/or populate it), add on an additional loop for every dimension:
+```java
+// Create a random 5x5x5 tensor
+int[][][] tens = new int[5][5][5];
+for (int x = 0; x < tens.length; x++) {
+    for (int y = 0; y < tens[x].length; y++) {
+        for (int z = 0; z < tens[x][y].length; z++) {
+            tens[x][y][z] = (int)(Math.random() * 9 + 1);
+        }
+    }
+}
+
+// Option 1: triple-for
+for (int x = 0; x < tens.length; x++) {
+    for (int y = 0; y < tens[x].length; y++) {
+        for (int z = 0; z < tens[x][y].length; z++) {
+            System.out.print(tens[x][y][z] + " ");
+        }
+        System.out.print("\t");
+    }
+    System.out.println();    
+}
+
+// Option 2: triple-for-each
+for (int[][] mat : tens) {
+    for (int[] vec : mat) {
+        for (int scalar : vec) {
+            System.out.print(scalar + " ");
+        }
+        System.out.print("\t");
+    }
+    System.out.println();
+}
+```
 
 ## Matrix Operations
 Below is a library of matrix methods based on operations found in calculus and linear algebra, which are extremely useful for statistics, machine learning, and deep learning algorithms. Like with vector operations, while these are not on the AP exam , they can be very helpful for understanding the purpose of arrays in various contexts (i.e., physics, image processing, quantum computing, artificial intelligence, etc.) especially coming from a mathematical background.
