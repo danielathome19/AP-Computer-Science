@@ -194,7 +194,7 @@ Given the amount of data that exists, it is only sensible that computer scientis
 * **Searching**: efficiently finding an item in an array if it exists (linear search, binary search)
 * **Sorting**: efficiently sorting an array in some order, usually ascending or descending (bubble sort, insertion sort, selection sort, quick sort, etc.)
 
-Although technically part of Unit 7, searching and sorting algorithms (which we generally wait to learn until after the normal AP units are complete) are much more applicable to arrays than **ArrayLists**.
+Although technically part of Unit 7, searching and sorting algorithms (which we generally wait to learn until after the normal AP units are complete) are much more applicable to arrays than **ArrayLists**. Unit 10 also discusses recursive array algorithms briefly.
 
 
 ### Array Searching Algorithms
@@ -314,11 +314,6 @@ public static void selectionSort(int[] array) {
   }
 }
 ```
-
-
-#### Beyond Elementary Sorting
-While not discussed in this class, the [**Quick Sort**](https://www.programiz.com/dsa/quick-sort) and [**Merge Sort**](https://www.programiz.com/dsa/merge-sort) algorithms are extremely important real-world sorting algorithms. There are also sorting algorithms that do not require numeric comparison, such as [**Counting Sort**](https://www.programiz.com/dsa/counting-sort) and [**Radix Sort**](https://www.programiz.com/dsa/radix-sort).
-
 
 
 ## Vector Operations
