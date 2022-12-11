@@ -4,7 +4,8 @@ Often called a Matrix from its mathematical derivative, a **2D Array** is an arr
 We can declare a 2D Array using the same syntax as a normal array (with `new` keyword), but by attaching an additional set of array braces `[size]`, like so:
 ```java
 DATATYPE[][] multiDimArr = new DATATYPE[numRows][numCols];
-// However, the number of columns is technically optional, since we may have jagged arrays
+// However, the number of columns is technically optional, 
+// since we may have jagged arrays
 ```
 Just like with any other data standard data structure, this works with any data type:
 ```java
@@ -63,7 +64,7 @@ int[][] ja2 = {
 To both populate and traverse matrices and jagged arrays, we must use a **_for loop inside_ another _for loop_** for simplicity. For a traditional matrix (multidimensional array) where the number of columns is the same for all rows, we can loop using `matrixName.length` for the rows and `matrixName[0].length` for the columns; otherwise, we might need to use our row counter to find the length of the current row (i.e., `multiDimArrName[row].length` if we have a jagged array. 
 
 For example:
-```
+```java
 // Create and populate a matrix of ints
 int[][] powers = new int[5][3];
 for (int row = 0; row < powers.length; row++) {
@@ -82,7 +83,7 @@ for (int r = 0; r < powers.length; r++) {
 ```
 
 However, with a jagged array, we need to use `jaggedArr[row].length` when looping through the columns. Or, more commonly, we can use a **for-each** (or *Enhanced for*) loop to grab each inner-array and loop through each of its values:
-```
+```java
 int[][] jagArr = {
     {0, 1, 2},
     {3, 4, 5, 6, 7},
