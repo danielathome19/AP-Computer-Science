@@ -293,7 +293,7 @@ public static void selectionSort(int[] array) {
 ```
 
 
-While not discussed in this class, the [**Quick Sort**](https://www.programiz.com/dsa/quick-sort) and [**Merge Sort**](https://www.programiz.com/dsa/merge-sort) algorithms are extremely important real-world sorting algorithms. There are also sorting algorithms that do not require numeric comparison, such as [**Counting Sort**](https://www.programiz.com/dsa/counting-sort) and **Radix Sort**(https://www.programiz.com/dsa/radix-sort).
+While not discussed in this class, the [**Quick Sort**](https://www.programiz.com/dsa/quick-sort) and [**Merge Sort**](https://www.programiz.com/dsa/merge-sort) algorithms are extremely important real-world sorting algorithms. There are also sorting algorithms that do not require numeric comparison, such as [**Counting Sort**](https://www.programiz.com/dsa/counting-sort) and [**Radix Sort**](https://www.programiz.com/dsa/radix-sort).
 
 
 
