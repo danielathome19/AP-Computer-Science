@@ -198,7 +198,7 @@ Although technically part of Unit 7, searching and sorting algorithms (which we 
 
 
 ### Array Searching Algorithms
-Search algorithms are simply methods that provide us with different ways to find an item in an array if it exists. There are two common algorithms we typically use, either **Linear Search** for unsorted data or **Binary Search** for sorted data.
+Search algorithms are simply methods that provide us with different ways to find an item in an array if it exists. There are two common algorithms we typically use, either **Linear Search** for unsorted data or **Binary Search** for sorted data. You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/Search.html).
 
 
 #### Linear Search
@@ -234,8 +234,10 @@ public static int binarySearch(int[] array, int x) {
 
 
 ### Array Sorting Algorithms
-...
+Sorting algorithms provide us with different approaches to sorting an array -- of which there are MANY different possible choices. For now, we will learn strictly **comparison-based sorting** methods; i.e., comparing numbers and placing them in either *ascending* (least to greatest) or *descending* (greatest to least) order.
+You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html).
 
+Let's look at a few of the most elementary sorting algorithms -- bubble sort, insertion sort, and selection sort. These implementations are all in ascending order, but you can easily change them to descending order by changing the comparison operator inside the **if** statement from `>` to `<`.
 
 #### Bubble Sort
 ...
