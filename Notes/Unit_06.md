@@ -242,14 +242,13 @@ Let's look at a few of the most elementary sorting algorithms -- bubble sort, in
 If you want to truly understand when and why we use certain algorithms over others, you'll need to learn a topic called [Asymptotic Analysis](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation), or [Big-O Notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf), which provides us a means of mathematically analyzing how functions grow over time (and space) as the amount of data increases. This is typically the first true Computer Science topic that college majors learn in an infamous class known as ***Data Structures and Algorithms***.
 
 #### Bubble Sort
-Bubble sort is the most crude array sorting algorithm; it is impractical for large datasets and generally slow even for small ones. However, its steps are so simple that it provides a good baseline for understanding the principles of designing sorting algorithms. 
+Bubble sort is the most crude array sorting algorithm; it is impractical for large datasets and generally slow even for small ones. However, its steps are so simple that it provides a good baseline for understanding the principles of designing sorting algorithms. The algorithm simply compares two adjacent values and swaps them until the entire list is sorted, *bubbling* them to the end of the list in sorted order.
 
 The steps are as follows:
-1. Start a loop at the first index
-2. If the first element is greater (or less than for descending order) the second element, swap them
-3. Compare the second and third elements, swapping them to be in the appropriate order
-4. Repeat the process until the last element has been reached
-5. Repeat all of the above steps until all items are sorted
+1. Compare the first two items in the list. If the first item is greater than the second item, swap them
+2. Compare the second and third items in the list. If the second item is greater than the third item, swap them
+3. Continue comparing and swapping pairs of items until you reach the end of the list
+4. After reaching the end of the list, start again at the beginning and repeat the process until the list is sorted
 
 ```java
 public static void bubbleSort(int[] array) {
@@ -267,7 +266,13 @@ public static void bubbleSort(int[] array) {
 
 
 #### Insertion Sort
-...
+Insertion sort is a simple but usable sorting algorithm that *inserts* values into their sorted location during each iteration, similar to how we might sort a deck of cards. We continuously place items into their correct position until the list is sorted.
+
+The steps are as follows:
+1. Start by considering the first element in the list as the sorted portion and the rest of the elements as the unsorted portion
+2. Pick the second element in the list and compare it to the first element. If the second element is smaller than the first, swap them; otherwise, leave them as they are
+3. Pick the third element in the list and compare it to the first and second elements. If it is smaller than either of them, insert it in the correct position relative to them; otherwise, leave it as it is
+4. Continue this process, taking one element at a time and inserting it into the correct position in the sorted portion of the list, until you reach the end of the list
 
 ```java
 public static void insertionSort(int[] array) {
@@ -285,7 +290,14 @@ public static void insertionSort(int[] array) {
 
 
 #### Selection Sort
-...
+Selection sort is another one of the simplest sorting algorithms that sorts values by repeatedly finding (*selecting*) the minimum (or maximum) element from the unsorted portion of the list and placing it at the beginning (or end) of the sorted portion of the list. We repeat this process until the list is sorted. It is very similar to bubble sort, but with only one exchange in each pass through the list.
+
+The steps are as follows:
+1. Start by considering the first element in the list as the sorted portion and the rest of the elements as the unsorted portion
+2. Find the minimum element in the unsorted portion of the list and swap it with the first element in the list
+3. Consider the first two elements in the list as the sorted portion and the remaining elements as the unsorted portion
+4. Find the minimum element in the unsorted portion of the list and swap it with the second element in the list
+5. Continue this process, taking one element at a time and placing it at the end of the sorted portion of the list, until you reach the end of the list
 
 ```java
 public static void selectionSort(int[] array) {
@@ -304,6 +316,7 @@ public static void selectionSort(int[] array) {
 ```
 
 
+#### Beyond Elementary Sorting
 While not discussed in this class, the [**Quick Sort**](https://www.programiz.com/dsa/quick-sort) and [**Merge Sort**](https://www.programiz.com/dsa/merge-sort) algorithms are extremely important real-world sorting algorithms. There are also sorting algorithms that do not require numeric comparison, such as [**Counting Sort**](https://www.programiz.com/dsa/counting-sort) and [**Radix Sort**](https://www.programiz.com/dsa/radix-sort).
 
 
