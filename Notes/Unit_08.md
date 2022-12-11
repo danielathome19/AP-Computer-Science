@@ -1,5 +1,12 @@
 # Unit 8 - 2D Array
-Often called a Matrix from its mathematical derivative, a **2D Array** is an array containing two **dimensions** or *features* of data (here, the term "dimension" is borrowed from dimensions in a *Hilbert Space* from Calculus, i.e., the "size" of a set of vectors, rather than a physical *Euclidian Space* dimension). In simpler terms, it is an array of arrays, which are typically all the same length. Here, we think of each array as being a **row** in the matrix, and each *feature* (position) refers to the **columns** in the matrix.
+Often called a Matrix from its mathematical derivative, a **2D Array** is an array containing two **dimensions** or *features* of data (here, the term "dimension" is borrowed from dimensions in a *Hilbert Space* from Calculus, i.e., the "size" of a set of vectors, rather than a physical *Euclidian Space* dimension). In simpler terms, it is an array of arrays, which are typically all the same length. Here, we think of each array as being a **row** in the matrix, and each *feature* (position) refers to the **columns** in the matrix. Their mathematical equivalent, matrices, are denoted using italicized uppercase letters, such as $\textit{A}$.
+
+$$
+\begin{bmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{bmatrix}
+$$
 
 We can declare a 2D Array using the same syntax as a normal array (with `new` keyword), but by attaching an additional set of array braces `[size]`, like so:
 ```java
@@ -31,7 +38,7 @@ int[] row3 = {6, 7, 8};
 int[][] mat2 = {row1, row2, row3};
 ```
 
-Then, we can access items based on their `[row][column]` index, much like a 1D array: `int rowOneColTwo = mat1[1][2];`
+Then, we can access items based on their `[row][column]` index, much like a 1D array: `int rowOneColTwo = mat1[1][2];` Likewise, we can apply many of the same algorithms from 1D arrays to 2D arrays, but there are many mathematical operations specific to matrices that are also useful, such as computing things like the determinant, eigenvalues, eigenvectors, and many more (check out finite mathematics and linear algebra!).
 
 ## Multidimensional and Jagged Arrays
 2D Arrays are often classified into two different categories:
@@ -61,7 +68,7 @@ int[][] ja2 = {
 ```
 
 ### Nested Iteration for Matrix Traversal
-To both populate and traverse matrices and jagged arrays, we must use a **_for loop inside_ another _for loop_** for simplicity. For a traditional matrix (multidimensional array) where the number of columns is the same for all rows, we can loop using `matrixName.length` for the rows and `matrixName[0].length` for the columns; otherwise, we might need to use our row counter to find the length of the current row (i.e., `multiDimArrName[row].length` if we have a jagged array. 
+To both populate and traverse matrices and jagged arrays, we must use a **_for loop inside_ another _for loop_** for simplicity. For a traditional matrix (multidimensional array) where the number of columns is the same for all rows, we can loop using `matrixName.length` for the rows and `matrixName[0].length` for the columns; otherwise, we might need to use our row counter to find the length of the current row (i.e., `multiDimArrName[row].length` if we have a jagged array. We typically loop through 2D arrays in a style known as ***Row-Major Order***, where we start at the first item of the first row, traverse to the end of the row, then start the next row at its first item (i.e., nest the *column* loop inside the *row* loop). If we nested our *row* loop inside the *column* loop instead, this would become ***Column-Major Order***.
 
 For example:
 ```java
@@ -73,9 +80,17 @@ for (int row = 0; row < powers.length; row++) {
     }
 }
 
-// Print out the matrix
+// Print out the matrix in Row-Major Order
 for (int r = 0; r < powers.length; r++) {
     for (int c = 0; c < powers[0].length; c++) {
+        System.out.print(powers[r][c] + " ");
+    }
+    System.out.println();
+}
+
+// Print out the matrix in Column-Major Order
+for (int c = 0; c < powers[0].length; c++) {
+    for (int r = 0; r < powers.length; r++) {
         System.out.print(powers[r][c] + " ");
     }
     System.out.println();
