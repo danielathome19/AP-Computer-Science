@@ -26,9 +26,9 @@ However, we can also use the *explicit* notation, either by building each row-ar
 ```java
 // Matrix-style (very common)
 int[][] mat1 = {
-    {0, 1, 2},
-    {3, 4, 5},
-    {6, 7, 8}
+  {0, 1, 2},
+  {3, 4, 5},
+  {6, 7, 8}
 };
 
 // Array of arrays (more confusing to read)
@@ -50,8 +50,8 @@ Let's compare the two:
 // Matrix Notation
 int[][] mat1 = new int[2][3];
 int[][] mat2 = {
-    {0, 1, 2},
-    {3, 4, 5}
+  {0, 1, 2},
+  {3, 4, 5}
 };
 
 // Jagged Array Notation
@@ -61,9 +61,9 @@ ja1[1] = new int[]{2, 3, 4};
 ja1[2] = new int[]{5};
 
 int[][] ja2 = {
-    {0, 1},
-    {2, 3, 4},
-    {5}
+  {0, 1},
+  {2, 3, 4},
+  {5}
 };
 ```
 
@@ -75,51 +75,51 @@ For example:
 // Create and populate a matrix of ints
 int[][] powers = new int[5][3];
 for (int row = 0; row < powers.length; row++) {
-    for (int col = 0; col < powers[0].length; col++) {
-        powers[row][col] = (int)Math.pow(col + 1, row + 1);
-    }
+  for (int col = 0; col < powers[0].length; col++) {
+    powers[row][col] = (int)Math.pow(col + 1, row + 1);
+  }
 }
 
 // Print out the matrix in Row-Major Order
 for (int r = 0; r < powers.length; r++) {
-    for (int c = 0; c < powers[0].length; c++) {
-        System.out.print(powers[r][c] + " ");
-    }
-    System.out.println();
+  for (int c = 0; c < powers[0].length; c++) {
+    System.out.print(powers[r][c] + " ");
+  }
+  System.out.println();
 }
 
 // Print out the matrix in Column-Major Order
 for (int c = 0; c < powers[0].length; c++) {
-    for (int r = 0; r < powers.length; r++) {
-        System.out.print(powers[r][c] + " ");
-    }
-    System.out.println();
+  for (int r = 0; r < powers.length; r++) {
+    System.out.print(powers[r][c] + " ");
+  }
+  System.out.println();
 }
 ```
 
 However, with a jagged array, we need to use `jaggedArr[row].length` when looping through the columns. Or, more commonly, we can use a **for-each** (or *Enhanced for*) loop to grab each inner-array and loop through each of its values:
 ```java
 int[][] jagArr = {
-    {0, 1, 2},
-    {3, 4, 5, 6, 7},
-    {8, 9},
-    {10}
+  {0, 1, 2},
+  {3, 4, 5, 6, 7},
+  {8, 9},
+  {10}
 };
 
 // Option 1: double-for
 for (int r = 0; r < jagArr.length; r++) {
-    for (int c = 0; c < jagArr[r].length; c++) {
-        System.out.print(jagArr[r][c] + " ");
-    }
-    System.out.println();
+  for (int c = 0; c < jagArr[r].length; c++) {
+    System.out.print(jagArr[r][c] + " ");
+  }
+  System.out.println();
 }
 
 // Option 2: double-for-each
 for (int[] row : jagArr) {
-    for (int x : row) {
-        System.out.print(x + " ");
-    }
-    System.out.println();
+  for (int x : row) {
+    System.out.print(x + " ");
+  }
+  System.out.println();
 }
 ```
 
@@ -130,18 +130,18 @@ DATATYPE[][][] tensor = new DATATYPE[numRows][numCols][numLayers];
 
 // Or...
 int[][][] jaggedTensor = {
-    {
-        {0, 1},
-        {2, 3, 4},
-        {5}
-    },
-    {
-        {6, 7},
-        {8}
-    },
-    {
-        {9, 10} 
-    }
+  {
+    {0, 1},
+    {2, 3, 4},
+    {5}
+  },
+  {
+    {6, 7},
+    {8}
+  },
+  {
+    {9, 10} 
+  }
 };
 
 // Or, a 5D Array
@@ -153,33 +153,33 @@ Likewise, to traverse a tensor (and/or populate it), add on an additional loop f
 // Create a random 5x5x5 tensor
 int[][][] tens = new int[5][5][5];
 for (int x = 0; x < tens.length; x++) {
-    for (int y = 0; y < tens[x].length; y++) {
-        for (int z = 0; z < tens[x][y].length; z++) {
-            tens[x][y][z] = (int)(Math.random() * 9 + 1);
-        }
+  for (int y = 0; y < tens[x].length; y++) {
+    for (int z = 0; z < tens[x][y].length; z++) {
+      tens[x][y][z] = (int)(Math.random() * 9 + 1);
     }
+  }
 }
 
 // Option 1: triple-for
 for (int x = 0; x < tens.length; x++) {
-    for (int y = 0; y < tens[x].length; y++) {
-        for (int z = 0; z < tens[x][y].length; z++) {
-            System.out.print(tens[x][y][z] + " ");
-        }
-        System.out.print("\t");
+  for (int y = 0; y < tens[x].length; y++) {
+    for (int z = 0; z < tens[x][y].length; z++) {
+      System.out.print(tens[x][y][z] + " ");
     }
-    System.out.println();    
+    System.out.print("\t");
+  }
+  System.out.println();    
 }
 
 // Option 2: triple-for-each
 for (int[][] mat : tens) {
-    for (int[] vec : mat) {
-        for (int scalar : vec) {
-            System.out.print(scalar + " ");
-        }
-        System.out.print("\t");
+  for (int[] vec : mat) {
+    for (int scalar : vec) {
+      System.out.print(scalar + " ");
     }
-    System.out.println();
+    System.out.print("\t");
+  }
+  System.out.println();
 }
 ```
 
@@ -189,126 +189,126 @@ Below is a library of matrix methods based on operations found in calculus and l
 /* Matrix Library by Daniel Szelogowski, 2022 */
 public class MatrixLib {
     
-    public static double[][] add(double[][] a, double[][] b) {
-        double[][] c = new double[a.length][a[0].length];
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++)
-                c[i][j] = a[i][j] + b[i][j];
-        return c;
-    }
+  public static double[][] add(double[][] a, double[][] b) {
+    double[][] c = new double[a.length][a[0].length];
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++)
+        c[i][j] = a[i][j] + b[i][j];
+    return c;
+  }
 
-    public static double[][] sub(double[][] a, double[][] b) {
-        double[][] c = new double[a.length][a[0].length];
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++)
-                c[i][j] = a[i][j] - b[i][j];
-        return c;
-    }
+  public static double[][] sub(double[][] a, double[][] b) {
+    double[][] c = new double[a.length][a[0].length];
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++)
+        c[i][j] = a[i][j] - b[i][j];
+    return c;
+  }
 
-    public static double[][] scalarMult(double[][] a, double b) {
-        double[][] c = new double[a.length][a[0].length];
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++)
-                c[i][j] = a[i][j] * b;
-        return c;
-    }
+  public static double[][] scalarMult(double[][] a, double b) {
+    double[][] c = new double[a.length][a[0].length];
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++)
+        c[i][j] = a[i][j] * b;
+    return c;
+  }
 
-    public static double[][] mult(double[][] a, double[][] b) {
-        double[][] c = new double[a.length][b[0].length];
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < b[0].length; j++)
-                for (int k = 0; k < a[0].length; k++)
-                    c[i][j] += a[i][k] * b[k][j];
-        return c;
-    }
+  public static double[][] mult(double[][] a, double[][] b) {
+    double[][] c = new double[a.length][b[0].length];
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < b[0].length; j++)
+        for (int k = 0; k < a[0].length; k++)
+          c[i][j] += a[i][k] * b[k][j];
+    return c;
+  }
 
-    public static double[][] transpose(double[][] a) {
-        double[][] c = new double[a[0].length][a.length];
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++)
-                c[j][i] = a[i][j];
-        return c;
-    }
+  public static double[][] transpose(double[][] a) {
+    double[][] c = new double[a[0].length][a.length];
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++)
+        c[j][i] = a[i][j];
+    return c;
+  }
 
-    public static double[][] id(double[][] a) {
-        double[][] c = new double[a.length][a[0].length];
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++)
-                if (i == j)
-                    c[i][j] = 1;
-                else
-                    c[i][j] = 0;
-        return c;
-    }
+  public static double[][] id(double[][] a) {
+    double[][] c = new double[a.length][a[0].length];
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++)
+        if (i == j)
+          c[i][j] = 1;
+        else
+          c[i][j] = 0;
+    return c;
+  }
 
-    public static double determinant(double[][] a) {
-        double det = 0;
-        if (a.length == 1) return a[0][0];
-        for (int i = 0; i < a.length; i++) {
-            double[][] sub = new double[a.length - 1][a.length - 1];
-            for (int j = 1; j < a.length; j++)
-                for (int k = 0; k < a.length; k++)
-                    if (k < i)
-                        sub[j - 1][k] = a[j][k];
-                    else if (k > i)
-                        sub[j - 1][k - 1] = a[j][k];
-            det += a[0][i] * Math.pow(-1, i) * determinant(sub);
-        }
-        return det;
+  public static double determinant(double[][] a) {
+    double det = 0;
+    if (a.length == 1) return a[0][0];
+    for (int i = 0; i < a.length; i++) {
+      double[][] sub = new double[a.length - 1][a.length - 1];
+      for (int j = 1; j < a.length; j++)
+        for (int k = 0; k < a.length; k++)
+          if (k < i)
+            sub[j - 1][k] = a[j][k];
+          else if (k > i)
+            sub[j - 1][k - 1] = a[j][k];
+      det += a[0][i] * Math.pow(-1, i) * determinant(sub);
     }
+    return det;
+  }
 
-    public static double[][] inverse(double[][] a) {
-        double[][] c = new double[a.length][a[0].length];
-        double det = determinant(a);
-        if (det == 0) return null;
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++) {
-                double[][] sub = new double[a.length - 1][a.length - 1];
-                for (int k = 0; k < a.length; k++)
-                    for (int l = 0; l < a.length; l++)
-                        if (k < i && l < j)
-                            sub[k][l] = a[k][l];
-                        else if (k < i && l > j)
-                            sub[k][l - 1] = a[k][l];
-                        else if (k > i && l < j)
-                            sub[k - 1][l] = a[k][l];
-                        else if (k > i && l > j)
-                            sub[k - 1][l - 1] = a[k][l];
-                c[i][j] = Math.pow(-1, i + j) * determinant(sub) / det;
-            }
-        return transpose(c);
-    }
+  public static double[][] inverse(double[][] a) {
+    double[][] c = new double[a.length][a[0].length];
+    double det = determinant(a);
+    if (det == 0) return null;
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++) {
+        double[][] sub = new double[a.length - 1][a.length - 1];
+        for (int k = 0; k < a.length; k++)
+          for (int l = 0; l < a.length; l++)
+            if (k < i && l < j)
+              sub[k][l] = a[k][l];
+            else if (k < i && l > j)
+              sub[k][l - 1] = a[k][l];
+            else if (k > i && l < j)
+              sub[k - 1][l] = a[k][l];
+            else if (k > i && l > j)
+              sub[k - 1][l - 1] = a[k][l];
+        c[i][j] = Math.pow(-1, i + j) * determinant(sub) / det;
+      }
+    return transpose(c);
+  }
 
-    public static double[][] convolve(double[][] a, double[][] b) {
-        double[][] c = new double[a.length][a[0].length];
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++)
-                for (int k = 0; k < b.length; k++)
-                    for (int l = 0; l < b[0].length; l++)
-                        if (i + k < a.length && j + l < a[0].length)
-                            c[i + k][j + l] += a[i][j] * b[k][l];
-        return c;
-    }
+  public static double[][] convolve(double[][] a, double[][] b) {
+    double[][] c = new double[a.length][a[0].length];
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++)
+        for (int k = 0; k < b.length; k++)
+          for (int l = 0; l < b[0].length; l++)
+            if (i + k < a.length && j + l < a[0].length)
+              c[i + k][j + l] += a[i][j] * b[k][l];
+    return c;
+  }
 
-    public static double[][] eigenvectors(double[][] a) {
-        double[][] c = new double[a.length][a[0].length];
-        double[][] id = id(a);
-        double[][] sub = sub(a, id);
-        double[][] inverse = inverse(sub);
-        for (int i = 0; i < a.length; i++)
-            for (int j = 0; j < a[0].length; j++)
-                c[i][j] = inverse[i][j] / inverse[i][j];
-        return c;
-    }
+  public static double[][] eigenvectors(double[][] a) {
+    double[][] c = new double[a.length][a[0].length];
+    double[][] id = id(a);
+    double[][] sub = sub(a, id);
+    double[][] inverse = inverse(sub);
+    for (int i = 0; i < a.length; i++)
+      for (int j = 0; j < a[0].length; j++)
+        c[i][j] = inverse[i][j] / inverse[i][j];
+    return c;
+  }
 
-    public static double[] eigenvalues(double[][] a) {
-        double[] c = new double[a.length];
-        double[][] id = id(a);
-        double[][] sub = sub(a, id);
-        double[][] inverse = inverse(sub);
-        for (int i = 0; i < a.length; i++)
-            c[i] = 1 / inverse[i][i];
-        return c;
-    }
+  public static double[] eigenvalues(double[][] a) {
+    double[] c = new double[a.length];
+    double[][] id = id(a);
+    double[][] sub = sub(a, id);
+    double[][] inverse = inverse(sub);
+    for (int i = 0; i < a.length; i++)
+      c[i] = 1 / inverse[i][i];
+    return c;
+  }
 }
 ```
