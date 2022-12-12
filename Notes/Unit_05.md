@@ -102,7 +102,7 @@ For example:
 
 ## Class Design
 A general-purpose Class (sometimes called a *data class* in other languages) typically consists of the following:
-* **Private Data:** *instance* variables (i.e., variables specific to each object created of the class) which any method in the class can access but cannot be accessed outside the class directly
+* **Private Data:** *instance* variables (i.e., variables specific to each object created of the class) which any method in the class can access but cannot be accessed outside the class directly; in good practice, we typically prefix these variable names with something like "my" or "\_", such as `private int myAge` or `private int _age`.
 * **Constructor(s):** sets up the private data (taking in arguments for some and setting the rest to some default value, like 0)
 * **Mutator (Setter) Methods**: modify private data
 * **Accessor (Getter) Methods:** return private data
@@ -175,15 +175,98 @@ We will break this class down to its components next.
 
 
 ### Constructors
-A **constructor** is a simple function that sets up the private data for a Class.
+A **Constructor** is a simple function that sets up the private data for a Class. It is a special type of method called through the `new CLASSNAME()` keyword (rather than a direct function call) that is used to initialize an object. When an object is created, the constructor is called to initialize the object and allocate memory for it. The constructor sets the initial values for the object's instance variables (the typically-private class data) and performs any other necessary initialization tasks. Constructors are typically defined with the same name as the class, and they do not have a return type.
+
+It is worth noting that we can have multiple constructors -- a process called ***"overloading"*** -- which allow us to take in varying arguments, if any. Sometimes a constructor may not even have any arguments, typically known as the **Default Constructor** since it usually sets up *default* or placeholder values for the class.
+
+For example:
+```
+public class Dog {
+  private int age;
+  private String name;
+  
+  // Default constructor
+  public Dog() {
+    age = 0;
+    name = "";
+  }
+  
+  // Normal constructor
+  public Dog(int dogAge, String dogName) {
+    age = dogAge;
+    name = dogName;
+  }
+  
+  // Overload constructor
+  public Dog(String dogName) {
+    age = 0;
+    name = dogName;
+  }
+}
+
+// Now, construct the class in 3 possible ways
+Dog dog1 = new Dog();
+Dog dog2 = new Dog("Buddy");
+Dog dog3 = new Dog(10, "Bucky");
+```
 
 
 ## Class Methods
+Functions, or **Methods**, serve a variety of purposes. They may provide us with a way to modify some class data, perform some calculations independent of any class data (static methods), or simply return some class data. Just like with constructors, these can also be **overloaded** to consume different arguments. As such, methods in Java classes can generally be classified by one of three possible categories:
+* **Accessor Methods**: return some private class variable (typically) or some result using them; may also be static
+* **Mutator Methods**: modify some private class variable(s) and possibly return something; may also be static
+* **Static Methods**: generally, perform some task independent of any class variables (that are not also static, at least)
 
 
 
 ### Accessor Methods
+In _Object-Oriented Programming_, **Accessor Methods** are functions that are used to retrieve the value of an object's instance variables using the `return` keyword, which sends the value outside of the function so we can store it in a variable. These methods, also known as _getters_, allow other objects to access the value of the instance variable without directly accessing the variable itself. This can be useful for enforcing ***encapsulation***, which is the practice of hiding the internal details of an object and exposing only the necessary information to other objects. Accessor methods are typically named using the "**get**" prefix followed by the variable name, and they return the value of the instance variable. For example, if an object has an instance variable named "_name_", the corresponding accessor method would be called `getName()`. As well, these may also be overloaded from a parent class, such as `Object` which all classes inherit from -- providing us with the `toString()` method that we can customize the behavior of.
 
+Let's look at a very simple example:
+```java
+public class Vector3 {
+  private double _x;
+  private double _y;
+  private double _z;
+  
+  public Vector3(int x, int y, int z) {
+    _x = x;
+    _y = y;
+    _z = z;
+  }
+  
+  // Getters (accessor methods)
+  public double getX() {
+    return _x;
+  }
+  
+  public double getY() {
+    return _y;
+  }
+  
+  public double getZ() {
+    return _z;
+  }
+  
+  // Overload accessor from Object class
+  public String toString() {
+    return String.format("X: %f\t Y: %f\t Z: %f", this.getX(), this.getY(), this.getZ());
+  }
+}
+
+// In main...
+Vector3 position = new Vector3(0.5, 0.75, 3);
+
+// Call the accessors and store their return value
+double xPos = position.getX();
+double yPos = position.getY();
+double zPos = position.getZ();
+System.out.println(position.toString());
+// toString is also called implicitly by println, so System.out.println(position); is sufficient
+
+// Or, call the accessors and directly utilize their return values
+System.out.printf("X: %f\t Y: %f\t Z: %f\n", position.getX(), position.getY(), position.getZ());
+```
 
 
 ### Mutator Methods
@@ -196,6 +279,8 @@ A **constructor** is a simple function that sets up the private data for a Class
 static means it belongs to the type itself rather than a specific object
 does not have to be instantiated
 ready at compile-time
+
+
 
 
 ## Scope and Access
