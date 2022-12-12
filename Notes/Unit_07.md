@@ -27,9 +27,45 @@ ArrayLists provide us with [a great number of built-in methods](https://docs.ora
 * `x.set(index, obj)`: replace the item at the specified index with the provided object
 * `x.remove(index)`: remove the item at the specified index and shift all proceeding elements down 1 position in the list
 
-Other useful methods include `contains(object)`, `indexOf(object)`, `toArray()`, and `addAll()`.
+Other useful methods include `contains(object)`, `indexOf(object)`, `toArray()`, and `addAll()`. **Take careful note that ArrayLists do not support the array `[]` operators -- you have to use `.get(index)` instead.**
 
-**Take careful note that ArrayLists do not support the array `[]` operators -- you have to use `.get(index)` instead.**
+Let's look at an example of these various method calls:
+```java
+import java.util.ArrayList;
+
+public class ArrayListExamples {
+  public static void main(String[] args) {
+    // Create an ArrayList of Strings
+    ArrayList<String> list = new ArrayList<String>();
+
+    // Add elements to the list
+    list.add("apple");
+    list.add("banana");
+    list.add("cherry");
+    list.add("blueberry");
+    list.add("grape");
+
+    // Print the size of the list
+    System.out.println("Size of list: " + list.size());
+
+    // Get the element at index 2
+    String element = list.get(2);
+    System.out.println("Element at index 2: " + element);
+
+    // Set the element at index 3 to "pineapple"
+    list.set(3, "pineapple");
+    System.out.println("Updated list: " + list);
+
+    // Remove the element at index 1
+    list.remove(1);
+    System.out.println("Updated list: " + list);
+
+    // Find the index of the "cherry" element
+    int index = list.indexOf("cherry");
+    System.out.println("Index of cherry: " + index);
+  }
+}
+```
 
 The **ArrayList** class is a type of ***generic class*** (sometimes ***template class***, such as in C++), meaning it works with any possible type of data. Generic typing is not on the AP subset, but it is extremely useful and practical (see the [Java documentation on Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/types.html)). For reference, the class signature might look something like `public class ArrayList<T> { ... }` and contain a private array of the generic type `T` like `private T[] myArray`.
 
