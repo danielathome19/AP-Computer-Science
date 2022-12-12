@@ -180,7 +180,7 @@ A **Constructor** is a simple function that sets up the private data for a Class
 It is worth noting that we can have multiple constructors -- a process called ***"overloading"*** -- which allow us to take in varying arguments, if any. Sometimes a constructor may not even have any arguments, typically known as the **Default Constructor** since it usually sets up *default* or placeholder values for the class.
 
 For example:
-```
+```java
 public class Dog {
   private int age;
   private String name;
@@ -270,7 +270,70 @@ System.out.printf("X: %f\t Y: %f\t Z: %f\n", position.getX(), position.getY(), p
 
 
 ### Mutator Methods
+Similar to _getters_, **Mutator Methods** are methods that are used to modify the value of an object's instance variables. These methods, also known as _setters_, allow other objects to change the value of the instance variable without directly accessing the variable itself, which can also be useful for enforcing encapsulation. Setters seldom return anything -- as such, we have a special type known as `void` which specifies that it returns nothing; sometimes we may even simply `return;` to exit the function earlier, such as if some condition does not pass. Mutator methods are typically named using the **set** prefix followed by the variable name, and they take a parameter that specifies the new value for the instance variable.For example, if an object has an instance variable named "_name_", the corresponding mutator method would be called `setName(String name)`; however, they may be also named something as simple as `calculate()`, which modifies numerous class variables at once. Again, these may also be overloaded to allow for varying arguments.
 
+Let's look at an example:
+```java
+public class SimpleShape {
+  private int myLength;
+  private int myWidth;
+  private int myArea;
+  
+  public SimpleShape(int length, int width) {
+    myLength = length;
+    myWidth = width;
+    myArea = 0;
+  }
+  
+  // Mutators
+  public void calcArea() {
+    myArea = myLength * myWidth;
+  }
+  
+  public void setLength(int length) {
+    myLength = length;
+  }
+  
+  public void setWidth(int width) {
+    myWidth = width;
+  }
+  
+  // We can also combine these methods
+  public void setLengthAndRecalculate(int length) {
+    myLength = length;
+    calcArea();
+  }
+  
+  public void setWidthAndRecalculate(int width) {
+    myWidth = width;
+    calcArea();
+  }
+  
+  // Accessor
+  public int getArea() {
+    return myArea;
+  }
+}
+
+// In main...
+SimpleShape shape = new SimpleShape(5, 10);
+
+// Call the mutators
+shape.calcArea();
+System.out.println(shape.getArea());
+
+shape.setLength(3);
+shape.setWidth(8);
+shape.calcArea();
+System.out.println(shape.getArea());
+
+shape.setWidthAndRecalculate(16));
+System.out.println(shape.getArea());
+
+shape.setWidth(9);
+shape.setLengthAndRecalculate(20);
+System.out.println(shape.getArea());
+```
 
 
 
@@ -279,6 +342,21 @@ System.out.printf("X: %f\t Y: %f\t Z: %f\n", position.getX(), position.getY(), p
 static means it belongs to the type itself rather than a specific object
 does not have to be instantiated
 ready at compile-time
+
+
+
+A static method is a method that belongs to a class rather than an instance of the class. This means that a static method can be called directly on the class itself, without the need to create an object of the class. Static methods are typically used to implement utility functions or to create methods that can be shared by all instances of a class.
+
+To define a static method, the `static` keyword is used before the return type in the method declaration. For example:
+```java
+public static void printHello() {
+    System.out.println("Hello!");
+}
+```
+This method can then be called directly on the class using `MyClass.printHello();`.
+
+Static methods can only access static variables and other static methods. They cannot access instance variables or instance methods because they do not have access to a specific instance of the class.
+
 
 
 
