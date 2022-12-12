@@ -361,7 +361,7 @@ The `static` keyword can be used to define static variables, static methods, and
 In general, the `static` keyword is used to define members of a class that can be accessed without an instance of the class. It is often used to create utility classes (as part of a library/package/module) or to implement methods that are common to all objects of a class.
 
 For example:
-```java:
+```java
 public class Counter {
   // Static variable
   public static int count = 0;
