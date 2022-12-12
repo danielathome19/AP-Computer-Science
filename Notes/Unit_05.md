@@ -204,6 +204,7 @@ public class Dog {
   }
 }
 
+
 // Now, construct the class in 3 possible ways
 Dog dog1 = new Dog();
 Dog dog2 = new Dog("Buddy");
@@ -253,6 +254,7 @@ public class Vector3 {
     return String.format("X: %f\t Y: %f\t Z: %f", this.getX(), this.getY(), this.getZ());
   }
 }
+
 
 // In main...
 Vector3 position = new Vector3(0.5, 0.75, 3);
@@ -322,6 +324,7 @@ public class SimpleShape {
   }
 }
 
+
 // In main...
 SimpleShape shape = new SimpleShape(5, 10);
 
@@ -378,6 +381,7 @@ public class Counter {
     incrementCount();
   }
 }
+
 
 // In main...
 // Print the initial value of the count variable
@@ -439,7 +443,7 @@ In the code above, we have three different variables, each with different *scope
 The `this` keyword simply refers to the current class when working inside a constructor or method, typically. While it lacks any specific functionality, it is useful for eliminating any possible confusion when variable names are the same between a class variable and a method argument. For example:
 ```java
 public class MyClass {
-  int x;
+  private int x;
 
   public MyClass(int x) {
     this.x = x;
