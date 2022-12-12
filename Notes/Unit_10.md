@@ -151,7 +151,7 @@ The steps are as follows:
 
 Merge Sort is also broken down into two methods, one for merging two subarrays and the other for performing the sort:
 ```java
-private void merge(int arr[], int p, int q, int r) {
+private static void merge(int arr[], int p, int q, int r) {
   int n1 = q - p + 1;
   int n2 = r - q;
   int L[] = new int[n1];
@@ -191,7 +191,7 @@ private void merge(int arr[], int p, int q, int r) {
   }
 }
 
-public void mergeSort(int array[], int l, int r) {
+public static void mergeSort(int array[], int l, int r) {
   if (l < r) {
     int m = (l + r) / 2;
     mergeSort(array, l, m);
