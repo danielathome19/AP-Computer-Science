@@ -193,6 +193,9 @@ A **constructor** is a simple function that sets up the private data for a Class
 
 ### Static Variables and Methods
 
+static means it belongs to the type itself rather than a specific object
+does not have to be instantiated
+ready at compile-time
 
 
 ## Scope and Access
