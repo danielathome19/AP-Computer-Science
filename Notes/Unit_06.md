@@ -322,76 +322,76 @@ Below is a library of matrix methods based on operations found in calculus and l
 /* Vector Library by Daniel Szelogowski, 2022 */
 public class VectorLib {
 
-    public static double[] add(double[] a, double[] b) {
-        double[] c = new double[a.length];
-        for (int i = 0; i < a.length; i++)
-            c[i] = a[i] + b[i];
-        return c;
-    }
+  public static double[] add(double[] a, double[] b) {
+    double[] c = new double[a.length];
+    for (int i = 0; i < a.length; i++)
+      c[i] = a[i] + b[i];
+    return c;
+  }
 
-    public static double[] sub(double[] a, double[] b) {
-        double[] c = new double[a.length];
-        for (int i = 0; i < a.length; i++)
-            c[i] = a[i] - b[i];
-        return c;
-    }
+  public static double[] sub(double[] a, double[] b) {
+    double[] c = new double[a.length];
+    for (int i = 0; i < a.length; i++)
+      c[i] = a[i] - b[i];
+    return c;
+  }
 
-    public static double[] scalarMult(double[] a, double b) {
-        double[] c = new double[a.length];
-        for (int i = 0; i < a.length; i++)
-            c[i] = a[i] * b;
-        return c;
-    }
+  public static double[] scalarMult(double[] a, double b) {
+    double[] c = new double[a.length];
+    for (int i = 0; i < a.length; i++)
+      c[i] = a[i] * b;
+    return c;
+  }
 
-    public static double dot(double[] a, double[] b) {
-        double c = 0;
-        for (int i = 0; i < a.length; i++)
-            c += a[i] * b[i];
-        return c;
-    }
+  public static double dot(double[] a, double[] b) {
+    double c = 0;
+    for (int i = 0; i < a.length; i++)
+      c += a[i] * b[i];
+    return c;
+  }
 
-    public static double[] cross(double[] a, double[] b) {
-        double[] c = new double[a.length];
-        c[0] = a[1] * b[2] - a[2] * b[1];
-        c[1] = a[2] * b[0] - a[0] * b[2];
-        c[2] = a[0] * b[1] - a[1] * b[0];
-        return c;
-    }
+  public static double[] cross(double[] a, double[] b) {
+    double[] c = new double[a.length];
+    c[0] = a[1] * b[2] - a[2] * b[1];
+    c[1] = a[2] * b[0] - a[0] * b[2];
+    c[2] = a[0] * b[1] - a[1] * b[0];
+    return c;
+  }
 
-    public static double[] normalize(double[] a) {
-        double[] c = new double[a.length];
-        double mag = 0;
-        for (int i = 0; i < a.length; i++)
-            mag += a[i] * a[i];
-        mag = (double) Math.sqrt(mag);
-        for (int i = 0; i < a.length; i++)
-            c[i] = a[i] / mag;
-        return c;
-    }
+  public static double[] normalize(double[] a) {
+    double[] c = new double[a.length];
+    double mag = 0;
+    for (int i = 0; i < a.length; i++)
+      mag += a[i] * a[i];
+    mag = (double) Math.sqrt(mag);
+    for (int i = 0; i < a.length; i++)
+      c[i] = a[i] / mag;
+    return c;
+  }
 
-    public static double magnitude(double[] a) {
-        double mag = 0;
-        for (int i = 0; i < a.length; i++)
-            mag += a[i] * a[i];
-        return (double) Math.sqrt(mag);
-    }
+  public static double magnitude(double[] a) {
+    double mag = 0;
+    for (int i = 0; i < a.length; i++)
+      mag += a[i] * a[i];
+    return (double) Math.sqrt(mag);
+  }
 
-    public static double angle(double[] a, double[] b) {
-        double dot = dot(a, b);
-        double magA = magnitude(a);
-        double magB = magnitude(b);
-        return (double) Math.acos(dot / (magA * magB));
-    }
+  public static double angle(double[] a, double[] b) {
+    double dot = dot(a, b);
+    double magA = magnitude(a);
+    double magB = magnitude(b);
+    return (double) Math.acos(dot / (magA * magB));
+  }
 
-    public static double[] convolve(double[] a, double[] b) {
-        double[] c = new double[a.length + b.length - 1];
-        for (int i = 0; i < c.length; i++) {
-            for (int j = 0; j < a.length; j++) {
-                if (i - j >= 0 && i - j < b.length)
-                    c[i] += a[j] * b[i - j];
-            }
-        }
-        return c;
+  public static double[] convolve(double[] a, double[] b) {
+    double[] c = new double[a.length + b.length - 1];
+    for (int i = 0; i < c.length; i++) {
+      for (int j = 0; j < a.length; j++) {
+        if (i - j >= 0 && i - j < b.length)
+          c[i] += a[j] * b[i - j];
+      }
     }
+    return c;
+  }
 }
 ```
