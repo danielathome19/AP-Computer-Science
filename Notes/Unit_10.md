@@ -1,8 +1,56 @@
 # Unit 10 - Recursion
-UNDER CONSTRUCTION
+The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* -- think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), Sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**.
+
+Consider the simplest example, a basic summation:
+```java
+public static int sum(int x) {
+  int total = 0;
+  for (int i = 1; i <= x; i++)
+    total += i;
+  return total;
+}
+```
+
+This is our standard **Iterative** approach. To make it recursive, we first need to imagine running the summation backwards, from the number down to 1 instead of the opposite:
+```java
+public static int sumBackward(int x) {
+  int total = 0;
+  for (int i = x; i > 0; i--)
+    total += i;
+  return total;
+}
+```
+Given this code, it is clear that our ending condition occurs when `x == 0`; this is known as the **Base Case**. All of our iterations will become our **Recursive Case** (the point that the method calls itself), like so:
+```java
+public static int sumRecursive(int x) {
+  if (x == 0) return 0;           // Base case
+  return x + sumRecursive(x-1);   // Recursive case
+}
+```
+As you can see, our `sumRecursive` method follows the same principle as `sumBackward`: make sure we haven't reached 0, otherwise add `x-1` to `x`. Hence, $\text{sumRecursive}(5) = 5 + 4 + 3 + 2 + 1 \to 15$.
+
+Another famous example is the **factorial** operator ( $n!$ in mathematics), which returns $n * (n-1) * (n-2) * (n-3) * \dots * (n-(n-1))$. For example, $5! = 5 * 4 * 3 * 2 * 1 \to 120$. Let's look at the code for this, both iteratively and recursively:
+```java
+// Iterative
+public static int fact(int n) {
+  int product = 1;
+  for (int i = 1; i <= n; i++)
+    product *= i;
+  return product;
+}
+
+// Recursive
+public static int factRec(int n) {
+  if (n == 1) return 1;
+  return n * factRec(n-1);
+}
+```
+
 
 ## Practical Uses of Recursion
-...
+Recursion is still (typically) iterative, but there are many approaches to recursion that can drastically increase the speed of an algorithm by breaking it down into smaller sub-problems and solving those problems through sub-problems and combining their solutions -- a concept known as the [**Divide-and-Conquer Method**](https://www.programiz.com/dsa/divide-and-conquer), which is extended to even more practical concepts such as [**Dynamic Programming**](https://www.programiz.com/dsa/dynamic-programming) and the [**Greedy Approach**](https://www.programiz.com/dsa/greedy-algorithm). As well, computer scientists study *Data Structures* that are built from recursion, such as the **Linked List** or **Binary Search Tree**, or their core methods rely on recursion such as **Graphs** and their graph search algorithms.
+
+
 
 ### Recursive Searching and Improved Binary Search
 ...
