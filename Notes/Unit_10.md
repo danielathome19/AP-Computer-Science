@@ -1,8 +1,10 @@
 # Unit 10 - Recursion
-The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* -- think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), Sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**.
+The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* -- think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**.
 
-  <img src="https://imgs.xkcd.com/comics/self_description.png" style="margin: 0 auto;">
-  <i style="text-align: center;">From <a href="https://xkcd.com/688/">xkcd #688</a></i>
+<p align="center">
+  <img src="https://imgs.xkcd.com/comics/self_description.png"><br/>
+  <i>From <a href="https://xkcd.com/688/">xkcd #688</a></i>
+</p>
 
 Consider the simplest example, a basic summation:
 ```java
