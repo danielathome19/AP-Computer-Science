@@ -309,6 +309,13 @@ public class SimpleShape {
     calcArea();
   }
   
+  // Overload mutator
+  public void calcArea(int length, int width) {
+    myLength = length;
+    myWidth = width;
+    myArea = length * width;
+  }
+  
   // Accessor
   public int getArea() {
     return myArea;
@@ -333,18 +340,57 @@ System.out.println(shape.getArea());
 shape.setWidth(9);
 shape.setLengthAndRecalculate(20);
 System.out.println(shape.getArea());
+
+shape.calcArea(15, 35);
+System.out.println(shape.getArea());
 ```
 
 
 
 ### Static Variables and Methods
+The **static** keyword is used to define a static member of a class. A static member is a member of a class that belongs to the class itself, rather than to any instance of the class. This means that a static member can be accessed directly on the class, without the need to create an object of the class -- i.e., it is *ready at compile-time*. More simply, the `static` keyword implies that the method/variable belongs to the **Class** itself, rather than a specific *object* or *instance* of that class, meaning that the class does not have to be instantiated for us to use it.
 
-static means it belongs to the type itself rather than a specific object
-does not have to be instantiated
-ready at compile-time
+The `static` keyword can be used to define static variables, static methods, and static inner classes:
+* **Static Variables**: variables that are shared by all instances of a class. They are typically used to store values that are common to all objects of the class, such as constants
+* **Static Methods**: methods that can be called directly on the class, without the need to create an object of the class. They are typically used to implement utility functions or to create methods that can be shared by all instances of a class
+* **Static Inner Classes**: classes that are defined within another class, and are marked with the "static" keyword. These classes are associated with the outer class, rather than with any specific instance of the outer class
+
+In general, the `static` keyword is used to define members of a class that can be accessed without an instance of the class. It is often used to create utility classes (as part of a library/package/module) or to implement methods that are common to all objects of a class.
+
+For example:
+```java:
+public class Counter {
+  // Static variable
+  public static int count = 0;
+
+  // Instance variable
+  private String name;
+
+  // Static method
+  public static void incrementCount() {
+    count++;
+  }
+
+  // Constructor
+  public Counter(String name) {
+    this.name = name;
+    // Increment the static count variable
+    incrementCount();
+  }
+}
+
+// In main...
+// Print the initial value of the count variable
+System.out.println(Counter.count); // Output: 0
+// Create an instance of the MyClass class
+Counter counter = new Counter("John");
+// Print the value of the count variable again
+System.out.println(Counter.count); // Output: 1
+```
 
 
 
+#### Static Methods
 A static method is a method that belongs to a class rather than an instance of the class. This means that a static method can be called directly on the class itself, without the need to create an object of the class. Static methods are typically used to implement utility functions or to create methods that can be shared by all instances of a class.
 
 To define a static method, the `static` keyword is used before the return type in the method declaration. For example:
@@ -355,8 +401,7 @@ public static void printHello() {
 ```
 This method can then be called directly on the class using `MyClass.printHello();`.
 
-Static methods can only access static variables and other static methods. They cannot access instance variables or instance methods because they do not have access to a specific instance of the class.
-
+Static methods can only access static variables and other static methods. They cannot access instance variables or instance methods because they do not have access to a specific instance of the class. This is the cause of the infamous _"Non-static variable cannot be referenced from a static context"_ error -- which we often run into in our favorite `public static void main(String[] args) {}` method.
 
 
 
