@@ -52,7 +52,7 @@ public static int factRec(int n) {
 
 Another extremely popular example of recursion is the **Fibonacci Sequence** -- a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
 
-The Fibonacci numbers $F_n$ are defined by the following recurrence relation:
+The Fibonacci numbers $F_n$ are defined by the following recurrence relation (the $\forall$ means *"for all"*):
 
 $$ F_0 = 0, \quad F_1 = 1, \quad \text{and} \quad F_n = F_{n-1} + F_{n-2} \quad \forall n > 1 $$
 
@@ -71,7 +71,23 @@ public static int fib(int n) {
 
 
 ### Recursive Searching and Improved Binary Search
-...
+Using recursion, we can apply the *divide-and-conquer* approach to improve upon search algorithms like **Binary Search** (along with search algorithms for abstract data structures like *Graphs*).
+
+For example, we can restructure Binary Search to use recursion:
+```java
+public static int binarySearchRec(int[] array, int x, int low, int high) {
+    if (low > high) return -1;
+    int mid = (low + high) / 2;
+    if (array[mid] == x) return mid;
+    if (array[mid] > x) return binarySearchRec(array, x, low, mid - 1);
+    return binarySearchRec(array, x, mid + 1, high);
+}
+
+// Call with binarySearchRec(array, num, 0, array.length)
+// or make a helper method that does this for you
+```
+
+Though they use two different approaches to the same implementation, both *iterative* and *recursive* Binary Search methods share the same **Time Complexity** ( $O(\log n)$ to be precise), so there is not much of a difference in performance. However, the recursive call could also be combined with some **Parallel Processing** method such as [*Multithreading*](https://www.geeksforgeeks.org/multithreading-in-java/) or [*Parallelization*](https://livebook.manning.com/book/java-8-in-action/chapter-7/79) to allow each recursive call to be performed **concurrently**, rather than **iteratively** -- although linear search could also be parallelized, removing the need for the array to be pre-sorted.
 
 
 
