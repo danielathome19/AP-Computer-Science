@@ -310,7 +310,7 @@ public boolean equals(Object other) {
 
 When overriding these methods, it is important to follow the general contract specified in the Object class. For example, the `equals()` method should return `true` if and only if the two objects are equal, and `toString()` should return a string representation of the object that is consistent with its `equals()` method.
 
-Here is a simple class that extends the Object class:
+Consider the following class definition that **explicitly** extends the Object class:
 ```java
 public class SomeClass extends Object {
   // ...
@@ -340,15 +340,81 @@ The **Object** class and its methods are an important part of the object-oriente
 
 
 ## Interfaces and Abstract Classes
-NOT ON THE AP SUBSET BUT USEFUL
+While not currently in the AP subset, two important concepts that extend the concept of inheritance are **Interfaces** and **Abstract Classes**. In Object-Oriented Programming, an **Interface** is a blueprint for a class that specifies the behavior that a class must implement. It defines a set of methods that a class MUST implement, but it does not provide any implementation for those methods. Thus, when a class *implements* an interface, it must implement all of the methods that the interface defined.
 
+An **Abstract Class** is a class that cannot be instantiated, but can be extended by other classes. Abstract classes can contain both concrete (normal) and *abstract* methods (marked with the `abstract` keyword), which are methods that lack an implementation. Unlike interfaces, abstract classes can provide *some* implementations for their methods.
+
+In Java, a class can implement multiple interfaces, but can only extend a single abstract class. This is because Java (unfortunately) does not support multiple inheritance, which is the ability of a class to inherit from multiple classes.
 
 
 ### Interfaces
+In Java, an **Interface** is a reference type that is similar to a **Class**. Put simply, it is a collection of abstract methods and constant values. **A class implements an interface by providing implementations for all of the interface's methods**.
+
+Consider the following example:
+```java
+public interface Shape {
+   double getArea();
+   double getPerimeter();
+}
+```
+A class that implements the Shape interface would need to provide implementations for the `getArea()` and `getPerimeter()` methods -- however, they must also be marked as overridden methods using `@Override`. 
+
+For example:
+```java
+public class Circle implements Shape {
+  private double radius;
+
+  public Circle(double radius) {
+    this.radius = radius;
+  }
+
+  @Override
+  public double getArea() {
+    return Math.PI * radius * radius;
+  }
+
+  @Override
+  public double getPerimeter() {
+    return 2 * Math.PI * radius;
+  }
+}
+```
+Here, the **Circle** class implements the **Shape** interface by providing implementations for the methods that the interface defines.
+
+Another advantage of using interfaces is that a class can implement *multiple interfaces*. For example, a **Square** class that implements the methods of the **Shape** interface, as well as an interface named **Printable**:
+```java
+public interface Printable {
+  void print();
+}
+
+public class Square implements Shape, Printable {
+   private double sideLength;
+
+   public Square(double sideLength) {
+      this.sideLength = sideLength;
+   }
+
+   @Override
+   public double getArea() {
+      return sideLength * sideLength;
+  }
+  
+  @Override
+  public double getPerimeter() {
+    return 4 * sideLength;
+  }
+  
+  @Override
+  public void print() {
+    System.out.println("Side length: " + sideLength);
+  }
+  
+}
+```
 
 
 
-### Abstract Classes
+### Abstract Classes and Methods
 ...
 
 
