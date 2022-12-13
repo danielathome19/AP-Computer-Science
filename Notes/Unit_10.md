@@ -86,6 +86,17 @@ public static int fib(int n) {
 }
 ```
 
+If you find the mathematical notation interesting, we could have also written the factorial function as being the product of the set of all numbers from [1, n] using [**Set Notation**](https://www.mathsisfun.com/sets/symbols.html):
+
+$$
+\begin{align}
+\text{let } \mathbb{Z}^+_n = \\{ 1, 2, 3, \dots, n \\} \\
+n! = \prod^n_{i=1} x_i \quad \forall x \in \mathbb{Z}^+_n
+\end{align}
+$$
+
+Written out, this says that [the set of positive integers](https://en.wikipedia.org/wiki/Integer) (known as $\mathbb{Z^+}$ ) subscript $n$ equals the set of positive numbers from 1 to $n$. Hence, $n!$ is equal to the product $\Pi$ of each number in the set multiplied together (think of $\Pi$ as a **for-each loop** basically).
+
 
 ### Recursive Searching and Improved Binary Search
 Using recursion, we can apply the *divide-and-conquer* approach to improve upon search algorithms like **Binary Search** (along with search algorithms for abstract data structures like *Graphs*).
