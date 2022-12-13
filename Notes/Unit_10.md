@@ -85,6 +85,11 @@ public static int fib(int n) {
     return fib(n-1) + fib(n-2);
 }
 ```
+This series can also be represented as a fraction (much like most sums of a series), the *Golden Ratio*, which is famously represented symbolically by the letter $\phi$:
+
+$$
+  \phi = \frac{1 + \sqrt{5}}{2}
+$$
 
 If you find the mathematical notation interesting, we could have also written the factorial function as being the product of the set of all numbers from [1, n] using [**Set Notation**](https://www.mathsisfun.com/sets/symbols.html):
 
