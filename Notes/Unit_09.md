@@ -124,6 +124,90 @@ However, another extremely important component to writing subclasses is the `sup
 
 
 
+### Overriding Methods
+Method **Overriding** is a feature in Object-Oriented Programming that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its superclasses or parent classes. This allows for subclasses to have their own unique behavior, while still retaining some of the basic behavior of the parent class.
+
+Let's look at an **Animal** class with a `makeNoise()` method that simply outputs the string `"Making noise"`. If you have a **Dog** class that _extends_ **Animal**, you could **override** the `makeNoise()` method in the Dog class to output the string `"Woof!"` instead. This allows the Dog class to have its own unique behavior, while still retaining the basic behavior of the Animal class.
+
+In order to override a method in Java, the following conditions must be met:
+* The method in the subclass must have the same name and parameter list as the method in the superclass
+* The method in the subclass must have the same return type (or a subtype) as the method in the superclass
+* The method in the subclass SHOULD be marked with the @Override annotation. This tells the compiler that the method is intended to override a method in the superclass
+
+Consider the following example:
+```java
+class Animal {
+  public void makeNoise() {
+    System.out.println("Making noise");
+  }
+}
+
+class Dog extends Animal {
+  @Override
+  public void makeNoise() {
+    System.out.println("Woof!");
+  }
+}
+```
+Here, the **Dog** class overrides the `makeNoise()` method from the **Animal** class and provides its own implementation. When `makeNoise()` is called on an instance of the Dog class, it will output the string `"Woof!"` instead of `"Making noise"`.
+
+
+#### Overloading Methods
+It is very important to note that while some people use the terms "Overloading" and "Overriding" synonymously, they are two VERY different concepts in programming. Method **Overloading** refers to the ability of a class to ___have multiple methods with the same name, but with different parameters___. This allows for the creation of methods that can perform similar tasks, but with varying numbers and/or type of arguments. 
+
+For example:
+```java
+public class Calculator {
+  // Method that takes two integers and returns their sum
+  public int add(int a, int b) {
+    return a + b;
+  }
+
+  // Method that takes three integers and returns their sum
+  public int add(int a, int b, int c) {
+    return a + b + c;
+  }
+
+  // Method that takes a list of integers and returns their sum
+  public int add(List<Integer> numbers) {
+    int sum = 0;
+    for (int num : numbers)
+      sum += num;
+    return sum;
+  }
+}
+```
+Here, the **Calculator** class has three methods named `add()`, but each method takes a different number and type of arguments.
+
+Again, method overloading is different from method overriding, which refers to the ability of a subclass to provide a different implementation of a method that is already defined in the superclass. In method overriding, the method signature (i.e., the name and the number and type of arguments) must be the same in both the superclass and the subclass.
+
+For example:
+```java
+public class Shape {
+  // Method that calculates the area of the shape
+  public double getArea() {
+    // Method implementation goes here
+  }
+}
+
+public class Circle extends Shape {
+  private double radius;
+
+  public Circle(double radius) {
+    this.radius = radius;
+  }
+
+  // Overridden method that calculates the area of a circle
+  @Override
+  public double getArea() {
+    return Math.PI * radius * radius;
+  }
+}
+```
+We technically have two implementations of `getArea()`, but since they share the same arguments (none, in this case) and it is inherited, we _Override_ the original implementation from the parent class.
+  
+  
+
 
 ### The *super* Keyword
 The `super` keyword acts a reference variable referring to the immediate parent class object. It is mainly used to access the members (either methods or variables) of a parent class that have been hidden by a child class.
@@ -175,7 +259,7 @@ The **MyAnimal** class has a constructor that takes two arguments, `name` and `a
 
 
 ## Inheritance Hierarchies - The Theory of the Object-Oriented Programming Paradigm
-
+In Object-Oriented Programming, an **Inheritance Hierarchy** refers to the way that classes inherit attributes and behaviors from parent classes. This allows for a hierarchical relationship between classes, where child classes inherit the attributes and behaviors of their parent classes. Inheritance hierarchies can also have multiple levels of inheritance, where a child class inherits from a parent class, which itself inherits from a grandparent class, and so on, enabling a flexible and reusable code structure where common attributes and behaviors can be defined in parent classes and then inherited by child classes.
 
 
 
