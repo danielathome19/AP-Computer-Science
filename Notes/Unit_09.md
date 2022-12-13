@@ -132,7 +132,7 @@ Let's look at an **Animal** class with a `makeNoise()` method that simply output
 In order to override a method in Java, the following conditions must be met:
 * The method in the subclass must have the same name and parameter list as the method in the superclass
 * The method in the subclass must have the same return type (or a subtype) as the method in the superclass
-* The method in the subclass SHOULD be marked with the @Override annotation. This tells the compiler that the method is intended to override a method in the superclass
+* The method in the subclass SHOULD be marked with the `@Override` annotation. This tells the compiler that the method is intended to override a method in the superclass
 
 Consider the following example:
 ```java
