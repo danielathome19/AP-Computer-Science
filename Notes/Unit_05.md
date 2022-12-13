@@ -35,11 +35,74 @@ public int summation(int n) {
 ```
 
 ### Documentation Comments
-...
+Comments are a fundamental need for large projects; unless you use extremely verbose and explicit variable, class, and method names, there will be parts of your code that do not make sense to other readers (including your future self!) especially. As well, we can use comments not only to explain what code does, but what unfinished code WILL do eventually (often marked with `// TODO: _____`) -- for example, before even writing out any code, it is often useful to "sketch" out your program by breaking it down into smaller parts separated by comments describing what happens next.
+
+Another standard in programming is the concept of **documentation comments**, which your text editor or development environment often uses to provide you with mouse-hover hints on what a *method* or *class* does and/or assisting in code-completion. These are multi-line comments that begin with `/**`, a `*` on each line, and end with `*/`. These can be as simple as describing who wrote the program and when, including HTML tags:
+```java
+/**
+* <h1>Hello, World!</h1>
+* The HelloWorld program simply displays "Hello World!" to the standard output.
+* 
+*
+* @author  John Smith
+* @version 1.0
+* @since   2022-01-31
+*/
+public class HelloWorld {
+   public static void main(String[] args) {
+      System.out.println("Hello World!");
+   }
+}
+```
+
+Often, especially on the AP exam, documentation comments are used to explain the conditions for a given function, as well as the expected conditions after a function is ran. These are typically defined as follows:
+* **Precondition**: abc
+* **Postcondition**: abc
+
+For example, an AP-like question:
+```java
+** Constructs a GameBoard object having numRows rows and numCols columns.
+* Precondition: numRows > 0, numCols > 0
+* Postcondition: each tile has a 50% probability of being set to on.
+*/
+public GameBoard(int numRows, int numCols)
+{ /* to be implemented ... */ }
+```
+
+#### Javadoc Tags
+The **javadoc** tool provides a large number of standard annotations for documentation comments, such as `@return`, `@param`, and `@throws`/`@exception`, among [many others](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html#CHDBEFIF) such as the author/version/date annotations we saw previously. These allow us to specify things like descriptions of method parameters and/or what the method returns, if/what exceptions are thrown/what kind/when, deprecated methods, references to see something else, etc.
+
+For example:
+```java
+/**
+ * This method is used to add two integers. It is
+ * a simple class method used to demonstrate the
+ * various common javadoc tags.
+ * @param num1 The first integer parameter.
+ * @param num2 The second integer parameter.
+ * @return int The sum of num1 and num2.
+ */
+ public int addInt(int num1, int num2) {
+    return num1 + num2;
+ }
+
+/**
+ * This is the main method which calls the addInt method.
+ * @param args Unused.
+ * @return Nothing.
+ * @exception IOException On input error.
+ * @see IOException
+ */
+ public static void main(String args[]) throws IOException {
+    int sum = addInt(10, 20);
+    System.out.println("10 + 20 = " + sum);
+ }
+```
+
 
 ## Class Design
 A general-purpose Class (sometimes called a *data class* in other languages) typically consists of the following:
-* **Private Data:** *instance* variables (i.e., variables specific to each object created of the class) which any method in the class can access but cannot be accessed outside the class directly
+* **Private Data:** *instance* variables (i.e., variables specific to each object created of the class) which any method in the class can access but cannot be accessed outside the class directly; in good practice, we typically prefix these variable names with something like "my" or "\_", such as `private int myAge` or `private int _age`.
 * **Constructor(s):** sets up the private data (taking in arguments for some and setting the rest to some default value, like 0)
 * **Mutator (Setter) Methods**: modify private data
 * **Accessor (Getter) Methods:** return private data
@@ -112,23 +175,238 @@ We will break this class down to its components next.
 
 
 ### Constructors
-A **constructor** is a simple function that sets up the private data for a Class.
+A **Constructor** is a simple function that sets up the private data for a Class. It is a special type of method called through the `new CLASSNAME()` keyword (rather than a direct function call) that is used to initialize an object. When an object is created, the constructor is called to initialize the object and allocate memory for it. The constructor sets the initial values for the object's instance variables (the typically-private class data) and performs any other necessary initialization tasks. Constructors are typically defined with the same name as the class, and they do not have a return type.
+
+It is worth noting that we can have multiple constructors -- a process called ***"overloading"*** -- which allow us to take in varying arguments, if any. Sometimes a constructor may not even have any arguments, typically known as the **Default Constructor** since it usually sets up *default* or placeholder values for the class.
+
+For example:
+```java
+public class Dog {
+  private int age;
+  private String name;
+  
+  // Default constructor
+  public Dog() {
+    age = 0;
+    name = "";
+  }
+  
+  // Normal constructor
+  public Dog(int dogAge, String dogName) {
+    age = dogAge;
+    name = dogName;
+  }
+  
+  // Overload constructor
+  public Dog(String dogName) {
+    age = 0;
+    name = dogName;
+  }
+}
+
+
+// Now, construct the class in 3 possible ways
+Dog dog1 = new Dog();
+Dog dog2 = new Dog("Buddy");
+Dog dog3 = new Dog(10, "Bucky");
+```
 
 
 ## Class Methods
+Functions, or **Methods**, serve a variety of purposes. They may provide us with a way to modify some class data, perform some calculations independent of any class data (static methods), or simply return some class data. Just like with constructors, these can also be **overloaded** to consume different arguments. As such, methods in Java classes can generally be classified by one of three possible categories:
+* **Accessor Methods**: return some private class variable (typically) or some result using them; may also be static
+* **Mutator Methods**: modify some private class variable(s) and possibly return something; may also be static
+* **Static Methods**: generally, perform some task independent of any class variables (that are not also static, at least)
 
 
 
 ### Accessor Methods
+In _Object-Oriented Programming_, **Accessor Methods** are functions that are used to retrieve the value of an object's instance variables using the `return` keyword, which sends the value outside of the function so we can store it in a variable. These methods, also known as _getters_, allow other objects to access the value of the instance variable without directly accessing the variable itself. This can be useful for enforcing ***encapsulation***, which is the practice of hiding the internal details of an object and exposing only the necessary information to other objects. Accessor methods are typically named using the "**get**" prefix followed by the variable name, and they return the value of the instance variable. For example, if an object has an instance variable named "_name_", the corresponding accessor method would be called `getName()`. As well, these may also be overloaded from a parent class, such as `Object` which all classes inherit from -- providing us with the `toString()` method that we can customize the behavior of.
 
+Let's look at a very simple example:
+```java
+public class Vector3 {
+  private double _x;
+  private double _y;
+  private double _z;
+  
+  public Vector3(int x, int y, int z) {
+    _x = x;
+    _y = y;
+    _z = z;
+  }
+  
+  // Getters (accessor methods)
+  public double getX() {
+    return _x;
+  }
+  
+  public double getY() {
+    return _y;
+  }
+  
+  public double getZ() {
+    return _z;
+  }
+  
+  // Overload accessor from Object class
+  public String toString() {
+    return String.format("X: %f\t Y: %f\t Z: %f", this.getX(), this.getY(), this.getZ());
+  }
+}
+
+
+// In main...
+Vector3 position = new Vector3(0.5, 0.75, 3);
+
+// Call the accessors and store their return value
+double xPos = position.getX();
+double yPos = position.getY();
+double zPos = position.getZ();
+System.out.println(position.toString());
+// toString is also called implicitly by println, so System.out.println(position); is sufficient
+
+// Or, call the accessors and directly utilize their return values
+System.out.printf("X: %f\t Y: %f\t Z: %f\n", position.getX(), position.getY(), position.getZ());
+```
 
 
 ### Mutator Methods
+Similar to _getters_, **Mutator Methods** are methods that are used to modify the value of an object's instance variables. These methods, also known as _setters_, allow other objects to change the value of the instance variable without directly accessing the variable itself, which can also be useful for enforcing encapsulation. Setters seldom return anything -- as such, we have a special type known as `void` which specifies that it returns nothing; sometimes we may even simply `return;` to exit the function earlier, such as if some condition does not pass. Mutator methods are typically named using the **set** prefix followed by the variable name, and they take a parameter that specifies the new value for the instance variable.For example, if an object has an instance variable named "_name_", the corresponding mutator method would be called `setName(String name)`; however, they may be also named something as simple as `calculate()`, which modifies numerous class variables at once. Again, these may also be overloaded to allow for varying arguments.
 
+Let's look at an example:
+```java
+public class SimpleShape {
+  private int myLength;
+  private int myWidth;
+  private int myArea;
+  
+  public SimpleShape(int length, int width) {
+    myLength = length;
+    myWidth = width;
+    myArea = 0;
+  }
+  
+  // Mutators
+  public void calcArea() {
+    myArea = myLength * myWidth;
+  }
+  
+  public void setLength(int length) {
+    myLength = length;
+  }
+  
+  public void setWidth(int width) {
+    myWidth = width;
+  }
+  
+  // We can also combine these methods
+  public void setLengthAndRecalculate(int length) {
+    myLength = length;
+    calcArea();
+  }
+  
+  public void setWidthAndRecalculate(int width) {
+    myWidth = width;
+    calcArea();
+  }
+  
+  // Overload mutator
+  public void calcArea(int length, int width) {
+    myLength = length;
+    myWidth = width;
+    myArea = length * width;
+  }
+  
+  // Accessor
+  public int getArea() {
+    return myArea;
+  }
+}
+
+
+// In main...
+SimpleShape shape = new SimpleShape(5, 10);
+
+// Call the mutators
+shape.calcArea();
+System.out.println(shape.getArea());
+
+shape.setLength(3);
+shape.setWidth(8);
+shape.calcArea();
+System.out.println(shape.getArea());
+
+shape.setWidthAndRecalculate(16));
+System.out.println(shape.getArea());
+
+shape.setWidth(9);
+shape.setLengthAndRecalculate(20);
+System.out.println(shape.getArea());
+
+shape.calcArea(15, 35);
+System.out.println(shape.getArea());
+```
 
 
 
 ### Static Variables and Methods
+The **static** keyword is used to define a static member of a class. A static member is a member of a class that belongs to the class itself, rather than to any instance of the class. This means that a static member can be accessed directly on the class, without the need to create an object of the class -- i.e., it is *ready at compile-time*. More simply, the `static` keyword implies that the method/variable belongs to the **Class** itself, rather than a specific *object* or *instance* of that class, meaning that the class does not have to be instantiated for us to use it.
+
+The `static` keyword can be used to define static variables, static methods, and static inner classes:
+* **Static Variables**: variables that are shared by all instances of a class. They are typically used to store values that are common to all objects of the class, such as constants
+* **Static Methods**: methods that can be called directly on the class, without the need to create an object of the class. They are typically used to implement utility functions or to create methods that can be shared by all instances of a class
+* **Static Inner Classes**: classes that are defined within another class, and are marked with the "static" keyword. These classes are associated with the outer class, rather than with any specific instance of the outer class
+
+In general, the `static` keyword is used to define members of a class that can be accessed without an instance of the class. It is often used to create utility classes (as part of a library/package/module) or to implement methods that are common to all objects of a class.
+
+For example:
+```java
+public class Counter {
+  // Static variable
+  public static int count = 0;
+
+  // Instance variable
+  private String name;
+
+  // Static method
+  public static void incrementCount() {
+    count++;
+  }
+
+  // Constructor
+  public Counter(String name) {
+    this.name = name;
+    // Increment the static count variable
+    incrementCount();
+  }
+}
+
+
+// In main...
+// Print the initial value of the count variable
+System.out.println(Counter.count); // Output: 0
+// Create an instance of the MyClass class
+Counter counter = new Counter("John");
+// Print the value of the count variable again
+System.out.println(Counter.count); // Output: 1
+```
+
+
+
+#### Static Methods
+A static method is a method that belongs to a class rather than an instance of the class. This means that a static method can be called directly on the class itself, without the need to create an object of the class. Static methods are typically used to implement utility functions or to create methods that can be shared by all instances of a class.
+
+To define a static method, the `static` keyword is used before the return type in the method declaration. For example:
+```java
+public static void printHello() {
+    System.out.println("Hello!");
+}
+```
+This method can then be called directly on the class using `MyClass.printHello();`.
+
+Static methods can only access static variables and other static methods. They cannot access instance variables or instance methods because they do not have access to a specific instance of the class. This is the cause of the infamous _"Non-static variable cannot be referenced from a static context"_ error -- which we often run into in our favorite `public static void main(String[] args) {}` method.
+
 
 
 
@@ -165,7 +443,7 @@ In the code above, we have three different variables, each with different *scope
 The `this` keyword simply refers to the current class when working inside a constructor or method, typically. While it lacks any specific functionality, it is useful for eliminating any possible confusion when variable names are the same between a class variable and a method argument. For example:
 ```java
 public class MyClass {
-  int x;
+  private int x;
 
   public MyClass(int x) {
     this.x = x;

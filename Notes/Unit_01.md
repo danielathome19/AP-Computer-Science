@@ -121,6 +121,16 @@ spans across
 multiple lines
 */
 
+/*
+ * This comment
+ * also spans
+ * multiple lines
+ */
+ 
+/*
+* This comment also spans multiple lines
+*/
+
 // For documentation, these also tend to look like:
 /**
  * Sets the tool tip text.
@@ -138,7 +148,7 @@ input functions which we will use for both user and file input.
 First of all, we need to import the class from the **java.util** library, either using `import java.util.*;` to pull the 
 entire library, or `import java.util.Scanner;` -- either way, this should be your FIRST line of code in an input program.
 
-For user-input, we make a new **Scanner** object and give it a *name*, like "input": `Scanner input = new Scanner(System.in);`
+For user input, we make a new **Scanner** object and give it a *name*, like "input": `Scanner input = new Scanner(System.in);`
 
 Now, we have four major methods that the class provides:
 * `NAME.nextInt()`: get an `int` from the user/file 

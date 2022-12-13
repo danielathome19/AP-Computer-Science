@@ -36,12 +36,14 @@ char ch = chr;
 System.out.println("Value of ch: " + ch);
 System.out.println("Value of gfg: " + gfg);
 ```
+This behavior is also done automatically when using primitive types in **ArrayLists**.
 
 ### Instantiation
 Creating a new ***instance*** of a class is done using the `new` keyword nearly the exact same way as instantiating any other variable 
 (i.e., in the form `ClassName var1 = new ClassName(classArgsHere);`). 
 For example, we can make an instance of the **Scanner** class like so:
 ```java
+// First, import from java.util;
 import java.util.Scanner;
 // ...
 Scanner input = new Scanner();
