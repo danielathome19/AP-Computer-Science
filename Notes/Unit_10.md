@@ -61,7 +61,7 @@ public static int factRec(int n) {
 }
 ```
 
-Like summation, we have an operator for a series of multiplicands as well -- the *Uppercase Pi* (or $\Pi$ for _Product_) operator, which multiplies all the numbers in a series together:
+Like summation, we have an operator for a series of multiplicands as well -- the *Uppercase Pi* (or $\Pi$ for __Product__) operator, which multiplies all the numbers in a series together:
 
 $$
 \text{product} = \prod^n_{i=1} i
