@@ -21,6 +21,10 @@ UNDER CONSTRUCTION
 ...
 
 
+## Enumerations
+...
+
+
 
 ## Generic Typing
 ...
