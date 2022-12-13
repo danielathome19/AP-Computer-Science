@@ -344,11 +344,11 @@ While not currently in the AP subset, two important concepts that extend the con
 
 An **Abstract Class** is a class that cannot be instantiated, but can be extended by other classes. Abstract classes can contain both concrete (normal) and *abstract* methods (marked with the `abstract` keyword), which are methods that lack an implementation. Unlike interfaces, abstract classes can provide *some* implementations for their methods.
 
-In Java, a class can implement multiple interfaces, but can only extend a single abstract class. This is because Java (unfortunately) does not support multiple inheritance, which is the ability of a class to inherit from multiple classes.
+In Java, a class can implement multiple interfaces, but can only extend a single abstract class. This is because Java (unfortunately) does not support multiple inheritance, which is the ability of a class to inherit from multiple classes. However, ***it is very important to note that you cannot make an instance of an abstract class**.
 
 
 ### Interfaces
-In Java, an **Interface** is a reference type that is similar to a **Class**. Put simply, it is a collection of abstract methods and constant values. **A class implements an interface by providing implementations for all of the interface's methods**.
+In Java, an **Interface** is a reference type that is similar to a **Class**. Put simply, it is a collection of abstract methods and constant values. ***A class implements an interface by providing implementations for all of the interface's methods***.
 
 Consider the following example:
 ```java
@@ -357,7 +357,7 @@ public interface Shape {
    double getPerimeter();
 }
 ```
-A class that implements the Shape interface would need to provide implementations for the `getArea()` and `getPerimeter()` methods -- however, they must also be marked as overridden methods using `@Override`. 
+A class that implements the Shape interface (literally, using the `implements` keyword) would need to provide implementations for the `getArea()` and `getPerimeter()` methods -- however, they must also be marked as overridden methods using `@Override`. 
 
 For example:
 ```java
@@ -415,7 +415,34 @@ public class Square implements Shape, Printable {
 
 
 ### Abstract Classes and Methods
-...
+In OOP, an **Abstract Class** is a class that contains one or more abstract methods and possible some concrete methods. An **Abstract Method** is a method that has a declaration but does not have an implementation. This means that the method does not have a body – it just specifies the method's *signature*, including the name of the method, the return type, and the list of parameters.
 
+For example:
+```java
+public abstract class Animal {
+    // Abstract method
+    public abstract void makeSound();
 
+    // Concrete method
+    public void eat() {
+        System.out.println("Eating...");
+    }
+
+}
+```
+
+In this example, the **Animal** class contains one abstract method called `makeSound()`, as well as one **Concrete (normal) Method** called `eat()`. The `makeSound()` is abstract because it does not have an implementation -- it simply specifies that the method will take no parameters and return no value, whereas the `eat()` method is concrete since it has a complete implementation, including a method body.
+
+To use an abstract class, you need to create a subclass that *extends* (like inheritance) the abstract class and provides implementations for all of the abstract methods. For example:
+```java
+public class Dog extends Animal {
+    // Implement the abstract method
+    @Override
+    public void makeSound() {
+        System.out.println("Woof!");
+    }
+
+}
+```
+Here, the **Dog** class extends the **Animal** class and provides an implementation for the `makeSound()` method, meaning we can make instances of dogs and `makeSound()` will have the desired behavior when it is called.
 
