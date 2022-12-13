@@ -291,9 +291,52 @@ Finally, polymorphism can also be achieved through the use of overridden methods
 
 
 ## The *Object* Superclass
+In Java (and many other OOP languages), the **Object** class is the superclass of all other classes. This means that ***every class in Java inherits the methods and fields defined in the Object class***. The class provides a set of methods that are available to all objects regardless of their specific type, including `equals()`, which allows you to compare two objects to see if they are equal, and `toString()`, which returns a String representation of the object.
+The **default value** of an object reference (i.e., a variable that refers to an object) is `null`, which means that it doesn't refer to any object.
 
+To override the `toString()` method, you would declare it as a method in your class that returns a string representation of the object. This method would have the following signature:
+```java
+public String toString() {
+  // ...
+}
+```
 
+Likewise, to override the `equals()` method, you would declare it as a method in your class that takes another object as a parameter and returns a **boolean** indicating whether the two objects are equal. This method would have the following signature:
+```java
+public boolean equals(Object other) {
+  // ...
+}
+```
 
+When overriding these methods, it is important to follow the general contract specified in the Object class. For example, the `equals()` method should return `true` if and only if the two objects are equal, and `toString()` should return a string representation of the object that is consistent with its `equals()` method.
+
+Here is a simple class that extends the Object class:
+```java
+public class SomeClass extends Object {
+  // ...
+}
+```
+Since SomeClass extends the Object class, it automatically has access to the methods defined in the Object class, including `equals()` and `toString()`.
+
+Consider the following example:
+```java
+public class MyClass extends Object {
+  private int x;
+  private int y;
+  
+  public MyClass(int x, int y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  public String toString() {
+    return "MyClass[x=" + x + ",y=" + y + "]";
+  }
+}
+```
+Here, the `toString()` method returns a string representation of a MyClass object that includes the values of the `x` and `y` fields.
+
+The **Object** class and its methods are an important part of the object-oriented nature of Java. They provide a foundation for working with objects in the language and allow you to create classes that can be used in a consistent and predictable way.
 
 
 ## Interfaces and Abstract Classes
