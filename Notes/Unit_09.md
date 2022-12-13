@@ -42,7 +42,7 @@ public class InheritanceTest {
 }
 ```
 
-Note that the `protected` keyword is NOT on the AP subset, but it is useful; it simply implies that **the method/variable is private to everyone except any child classes**.
+Note that the `protected` keyword is NOT on the AP subset, but it is useful; it simply implies that ***the method/variable is private to everyone except any child classes***.
 
 
 
@@ -253,7 +253,7 @@ class Cat extends MyAnimal {
     }
 }
 ```
-The **MyAnimal** class has a constructor that takes two arguments, `name` and `age`, and uses them to initialize the corresponding instance variables. The **Cat** class extends MyAnimal, so it inherits the name and age instance variables. In the Cat class, we have added a new instance variable, `color`, which is not present in the MyAnimal class. To initialize the `name` and `age` variables, which are inherited from MyAnimal, we use the `super` keyword to call the _superclass constructor_. **The super keyword must be used as the first statement in the subclass constructor, and it must pass the values for the name and age variables as arguments**. This ensures that `name` and `age` are properly initialized before the Cat constructor proceeds to initialize the `color` variable.
+The **MyAnimal** class has a constructor that takes two arguments, `name` and `age`, and uses them to initialize the corresponding instance variables. The **Cat** class extends MyAnimal, so it inherits the name and age instance variables. In the Cat class, we have added a new instance variable, `color`, which is not present in the MyAnimal class. To initialize the `name` and `age` variables, which are inherited from MyAnimal, we use the `super` keyword to call the _superclass constructor_. ***The super keyword must be used as the first statement in the subclass constructor, and it must pass the values for the name and age variables as arguments***. This ensures that `name` and `age` are properly initialized before the Cat constructor proceeds to initialize the `color` variable.
 
 
 
@@ -339,12 +339,15 @@ Here, the `toString()` method returns a string representation of a MyClass objec
 The **Object** class and its methods are an important part of the object-oriented nature of Java. They provide a foundation for working with objects in the language and allow you to create classes that can be used in a consistent and predictable way.
 
 
+
 ## Interfaces and Abstract Classes
 While not currently in the AP subset, two important concepts that extend the concept of inheritance are **Interfaces** and **Abstract Classes**. In Object-Oriented Programming, an **Interface** is a blueprint for a class that specifies the behavior that a class must implement. It defines a set of methods that a class MUST implement, but it does not provide any implementation for those methods. Thus, when a class *implements* an interface, it must implement all of the methods that the interface defined.
 
 An **Abstract Class** is a class that cannot be instantiated, but can be extended by other classes. Abstract classes can contain both concrete (normal) and *abstract* methods (marked with the `abstract` keyword), which are methods that lack an implementation. Unlike interfaces, abstract classes can provide *some* implementations for their methods.
 
-In Java, a class can implement multiple interfaces, but can only extend a single abstract class. This is because Java (unfortunately) does not support multiple inheritance, which is the ability of a class to inherit from multiple classes. However, ***it is very important to note that you cannot make an instance of an abstract class**.
+In Java, a class can implement multiple interfaces, but can only extend a single abstract class. This is because Java (unfortunately) does not support multiple inheritance, which is the ability of a class to inherit from multiple classes. However, ***it is very important to note that you cannot make an instance of an abstract class or an interface***, since abstract classes are meant to be a superclass from which other classes can inherit, and interfaces provide no functionality. Since abstract classes can have abstract and non-abstract methods, and the subclasses MUST provide implementations for the abstract methods.
+
+
 
 
 ### Interfaces
@@ -430,7 +433,6 @@ public abstract class Animal {
 
 }
 ```
-
 In this example, the **Animal** class contains one abstract method called `makeSound()`, as well as one **Concrete (normal) Method** called `eat()`. The `makeSound()` is abstract because it does not have an implementation -- it simply specifies that the method will take no parameters and return no value, whereas the `eat()` method is concrete since it has a complete implementation, including a method body.
 
 To use an abstract class, you need to create a subclass that *extends* (like inheritance) the abstract class and provides implementations for all of the abstract methods. For example:
