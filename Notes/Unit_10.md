@@ -1,5 +1,5 @@
 # Unit 10 - Recursion
-The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* -- think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**.
+The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* -- think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**. For one of the most famous examples (often a programming interview question), check out the [**Tower of Hanoi**](https://www.digitalocean.com/community/tutorials/tower-of-hanoi) problem.
 
 <p align="center">
   <img src="https://imgs.xkcd.com/comics/self_description.png"><br/>
@@ -15,6 +15,12 @@ public static int sum(int x) {
   return total;
 }
 ```
+
+In mathematics (especially Calculus and **Discrete Mathematics**), a **Summation** is represented by the *Sigma* (or $\Sigma$ ) operator, which adds all the numbers in a series together:
+
+$$
+\text{total} = \sum^x_{i=1} i
+$$
 
 This is our standard **Iterative** approach. To make it recursive, we first need to imagine running the summation backwards, from the number down to 1 instead of the opposite:
 ```java
@@ -54,6 +60,12 @@ public static int factRec(int n) {
   return n * factRec(n-1);
 }
 ```
+
+Like summation, we have an operator for a series of multiplicands as well -- the *Uppercase Pi* (or $\Pi$ for _Product_) operator, which multiplies all the numbers in a series together:
+
+$$
+\text{product} = \prod^n_{i=1} i
+$$
 
 Another extremely popular example of recursion is the **Fibonacci Sequence** -- a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
 
