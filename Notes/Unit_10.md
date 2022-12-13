@@ -95,7 +95,7 @@ n! = \prod^n_{i=1} x_i \quad \forall x \in \mathbb{Z}^+_n
 \end{align}
 $$
 
-Written out, this says that [the set of positive integers](https://en.wikipedia.org/wiki/Integer) (known as $\mathbb{Z^+}$ ) subscript $n$ equals the set of positive numbers from 1 to $n$. Hence, $n!$ is equal to the product $\Pi$ of each number in the set multiplied together (think of $\Pi$ as a **for-each loop** basically).
+Written out, this says that [the set of positive integers](https://en.wikipedia.org/wiki/Integer) (known as $\mathbb{Z^+}$ ) subscript $n$ equals the set of positive numbers from 1 to $n$. Hence, $n!$ is equal to the product $\Pi$ of each number in the set multiplied together (think of $\Pi$ as a **for-each loop** basically). Also, check out [**Ring Theory**](https://en.wikipedia.org/wiki/Ring_theory)!
 
 
 ### Recursive Searching and Improved Binary Search
