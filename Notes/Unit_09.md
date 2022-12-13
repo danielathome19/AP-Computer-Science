@@ -267,6 +267,11 @@ In Object-Oriented Programming, an **Inheritance Hierarchy** refers to the way t
 
 
 ### Encapsulation
+The idea of **Encapsulation** is one of the most fundamental concepts in Object-Oriented Programming. It is a technique for ensuring that the internal workings of a class are hidden from other classes and external users of an object. In other words, it is the process of enclosing all of the data and behavior of an object within a single, self-contained unit.
+
+In Java (and most C-based programming languages like C++), encapsulation is implemented through the use of access modifiers, such as `private`, `protected`, and `public`. These modifiers determine the visibility and accessibility of the members of a class, such as its fields and methods. For example, a **private field** can only be accessed by the methods of the same class, while a **public field** can be accessed by any other class. This allows the developer to control how the internal data of an object is accessed and modified, and ensures that the object's internal state remains consistent and correct.
+
+Encapsulation has several benefits. It promotes modularity and code reusability, as it allows developers to create self-contained objects that can be easily reused in other parts of the program. It also increases code maintainability, as it allowowing us to make changes to the internal workings of an object without affecting other parts of the program. Finally, it enhances security, as it prevents external code from directly accessing or modifying the internal data of an object, which can help protect against malicious attacks.
 
 
 
@@ -275,11 +280,13 @@ In Object-Oriented Programming, an **Inheritance Hierarchy** refers to the way t
 
 
 ### Polymorphism
+Another important core OOP concept is **Polymorphism** (literally _"many forms"_), which refers to the ability of a variable, object, or function to take on multiple forms or behaviors. In the context of Java, polymorphism refers to the ability of an object to behave differently based on the current context in which it is used. This is achieved through the use of _inheritance_, _interfaces_, and _overridden_ methods, and is extremely valuable in writing flexible and reusable code.
 
+Consider inheritance, which allows a child class to inherit the methods and properties of a parent class. This means that a child class can have its own unique behavior and attributes, while also being able to use the methods and properties of the parent class. For example, a parent class called **Animal** could have a `speak()` method that describes the general behavior of moving, while a child class called **Cat** could inherit the `speak()` method from the Animal class and also have its own unique `purr()` method.
 
+Another way that polymorphism is achieved is through the use of **Interfaces**. An interface defines a set of methods that a class must implement, but it does not provide any implementation for those methods. This means that a class can implement multiple interfaces, each of which defines a different set of methods, and the class can provide its own unique implementation for each of those methods. This allows a single class to have multiple behaviors depending on which interface is being used to access its methods.
 
-
-
+Finally, polymorphism can also be achieved through the use of overridden methods, meaning that a child class can provide its own implementation for a method that it has inherited from a parent class, which allows the child class to have its own unique behavior for that method. This is often used to provide more specific or specialized behavior for a particular child class, while still being able to use the more general behavior defined by the parent class.
 
 
 
