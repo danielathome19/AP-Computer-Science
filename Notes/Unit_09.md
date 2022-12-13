@@ -147,6 +147,30 @@ class B extends A {
 Here the `printMessage()` method of class **B** calls the method of the same name from class A using the `super` keyword and then prints its own message. This allows the `printMessage()` method of class B to both inherit and extend the behavior of the original method from class A.
 
 
+#### Super Constructors
+A **Super Constructor** is a constructor that is used to create an instance of a _subclass_ while setting up the inherited class variables from the _superclass_. It is called using the `super` keyword just like any other inherited member accesses. For example:
+```java
+class MyAnimal {
+    private String name;
+    private int age;
+
+    public MyAnimal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+class Cat extends MyAnimal {
+    private String color;
+
+    public Cat(String name, int age, String color) {
+        super(name, age);
+        this.color = color;
+    }
+}
+```
+The **MyAnimal** class has a constructor that takes two arguments, `name` and `age`, and uses them to initialize the corresponding instance variables. The **Cat** class extends MyAnimal, so it inherits the name and age instance variables. In the Cat class, we have added a new instance variable, `color`, which is not present in the MyAnimal class. To initialize the `name` and `age` variables, which are inherited from MyAnimal, we use the `super` keyword to call the _superclass constructor_. **The super keyword must be used as the first statement in the subclass constructor, and it must pass the values for the name and age variables as arguments**. This ensures that `name` and `age` are properly initialized before the Cat constructor proceeds to initialize the `color` variable.
+
 
 
 
