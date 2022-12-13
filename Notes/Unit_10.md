@@ -69,7 +69,7 @@ $$
 
 Another extremely popular example of recursion is the **Fibonacci Sequence** -- a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
 
-The Fibonacci numbers $F_n$ are defined by the following recurrence relation (the $\forall$ means *"for all"*):
+The Fibonacci numbers $F_n$ are defined by the following recurrence relation (the $\forall$ means *"for all"*, known as the **Universal Quantifier**; the opposite is $\exists$ meaning *"there exists*" called the **Existential Quantifier**):
 
 $$ F_0 = 0, \quad F_1 = 1, \quad \text{and} \quad F_n = F_{n-1} + F_{n-2} \quad \forall n > 1 $$
 
