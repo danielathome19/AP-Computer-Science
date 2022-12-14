@@ -1,9 +1,15 @@
-# Bonus Unit 11 - Useful Java Concepts Not in AP
+# Unit Extras - Useful Non-AP Java Concepts for After the Exam
 UNDER CONSTRUCTION
 
 
 ## The *do-while* Loop
 ...
+
+
+
+### The *break* and *continue* Keywords
+...
+
 
 
 
@@ -18,6 +24,10 @@ UNDER CONSTRUCTION
 
 
 ## The Ternary Operator
+...
+
+
+## Enumerations
 ...
 
 
