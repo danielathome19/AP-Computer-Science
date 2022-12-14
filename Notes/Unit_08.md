@@ -42,7 +42,7 @@ Then, we can access items based on their `[row][column]` index, much like a 1D a
 
 ## Multidimensional and Jagged Arrays
 2D Arrays are often classified into two different categories:
-* **Multidimensional Array (Matrix)**: an $$n \times $m$ matrix (i.e., $$n$$ rows and $$m$$ columns) where all rows have the exact same length; typically declared using the explicit matrix notation or `new DATATYPE[numRows][numCols]`
+* **Multidimensional Array (Matrix)**: an $n \times m$ matrix (i.e., $n$ rows and $m$ columns) where all rows have the exact same length; typically declared using the explicit matrix notation or `new DATATYPE[numRows][numCols]`
 * **Jagged Array**: an array of arrays, where the inner-arrays may possibly vary in length; typically declared using the explicit jagged array notation or `new DATATYPE[numRows][]`
 
 Let's compare the two:
