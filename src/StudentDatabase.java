@@ -20,13 +20,14 @@ public class StudentDatabase {
     }
 
     public static void printStu(Student stu) {
-        System.out.printf("%s\t%s\t%d\t%f\n", stu.getFirstName(),
+        System.out.printf("%s\t%s\t%d\t%.2f\n", stu.getFirstName(),
                 stu.getLastName(), stu.getId(), stu.getGPA());
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        ArrayList<Student> db = new ArrayList<Student>();
         while (true) {
             System.out.println("\nStudent Menu:\n");
             System.out.println("1 - Add new student");
@@ -37,7 +38,6 @@ public class StudentDatabase {
             System.out.println("6 - Remove student (by id)");
             System.out.print("7 - Exit\n\nPlease enter your choice: ");
             int c = input.nextInt();
-            ArrayList<Student> db = new ArrayList<Student>();
 
             if (c == 1) {
                 System.out.print("Enter first name: ");
@@ -51,7 +51,7 @@ public class StudentDatabase {
                 Student st = new Student(first, last, id, gpa);
                 db.add(st);
             } else if (c == 2) {
-                System.out.println("First\nLast\nID\nGPA");
+                System.out.println("First\tLast\tID\tGPA");
                 for (Student stu : db)
                     printStu(stu);
             } else if (c == 3) {
@@ -67,9 +67,23 @@ public class StudentDatabase {
                 if (index != -1) printStu(db.get(index));
                 else System.out.println("No student was found with that last name.");
             } else if (c == 5) {
-
+                System.out.print("Enter student ID: ");
+                int id = input.nextInt();
+                int index = indexOfStu(db, id);
+                if (index == -1) {
+                    System.out.println("No student was found with that ID.");
+                } else {
+                    System.out.print("Enter GPA: ");
+                    double gpa = input.nextDouble();
+                    db.get(index).setGPA(gpa);
+                    System.out.println("GPA updated successfully!");
+                }
             } else if (c == 6) {
-
+                System.out.print("Enter student ID: ");
+                int id = input.nextInt();
+                int index = indexOfStu(db, id);
+                if (index == -1) System.out.println("No student was found with that ID.");
+                else db.remove(index);
             } else if (c == 7) {
                 return;
             }
