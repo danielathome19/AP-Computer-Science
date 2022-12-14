@@ -16,7 +16,7 @@ public static int sum(int x) {
 }
 ```
 
-In mathematics (especially Calculus and **Discrete Mathematics**), a **Summation** is represented by the *Sigma* (or $\Sigma$ ) operator, which adds all the numbers in a series together:
+In mathematics (especially Calculus and **Discrete Mathematics**), a **Summation** is represented by the *Sigma* (or $$\Sigma$$ ) operator, which adds all the numbers in a series together:
 
 $$
 \text{total} = \sum^x_{i=1} i
@@ -44,7 +44,7 @@ As you can see, our `sumRecursive` method follows the same principle as `sumBack
 ## Practical Uses of Recursion
 Recursion is still (typically) iterative, but there are many approaches to recursion that can drastically increase the speed of an algorithm by breaking it down into smaller sub-problems and solving those problems through sub-problems and combining their solutions -- a concept known as the [**Divide-and-Conquer Method**](https://www.programiz.com/dsa/divide-and-conquer), which is extended to even more practical concepts such as [**Dynamic Programming**](https://www.programiz.com/dsa/dynamic-programming) and the [**Greedy Approach**](https://www.programiz.com/dsa/greedy-algorithm). As well, computer scientists study *(Abstract) Data Structures* that are built from recursion, such as the **Linked List** or **Binary Search Tree**, or their core methods rely on recursion such as **Graphs** and their graph search algorithms. These concepts are beyond the scope of this course, but are extremely practical with real-world programs and massive datasets.
 
-One great example of recursion is the **factorial** operator ( $n!$ in mathematics), which returns $n! = n * (n-1) * (n-2) * (n-3) * \dots * (n-(n-1))$. For example, $5! = 5 * 4 * 3 * 2 * 1 \to 120$. Let's look at the code for this, both iteratively and recursively:
+One great example of recursion is the **factorial** operator ( $$n!$$ in mathematics), which returns $$n! = n * (n-1) * (n-2) * (n-3) * \dots * (n-(n-1))$$. For example, $$5! = 5 * 4 * 3 * 2 * 1 \to 120$$. Let's look at the code for this, both iteratively and recursively:
 ```java
 // Iterative
 public static int fact(int n) {
@@ -61,7 +61,7 @@ public static int factRec(int n) {
 }
 ```
 
-Like summation, we have an operator for a series of multiplicands as well -- the *Uppercase Pi* (or $\Pi$ for __Product__) operator, which multiplies all the numbers in a series together:
+Like summation, we have an operator for a series of multiplicands as well -- the *Uppercase Pi* (or $$\Pi$$ for __Product__) operator, which multiplies all the numbers in a series together:
 
 $$
 \text{product} = \prod^n_{i=1} i
@@ -69,7 +69,7 @@ $$
 
 Another extremely popular example of recursion is the **Fibonacci Sequence** -- a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
 
-The Fibonacci numbers $F_n$ are defined by the following recurrence relation (the $\forall$ symbol means *"for all"*; the opposite is $\exists$ meaning *"there exists*"):
+The Fibonacci numbers $$F_n$$ are defined by the following recurrence relation (the $$\forall$$ symbol means *"for all"*; the opposite is $$\exists$$ meaning *"there exists*"):
 
 $$ F_0 = 0, \quad F_1 = 1, \quad \text{and} \quad F_n = F_{n-1} + F_{n-2} \quad \forall n > 1 $$
 
