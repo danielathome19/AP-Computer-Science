@@ -38,7 +38,7 @@ public static int sumRecursive(int x) {
   return x + sumRecursive(x-1);   // Recursive case
 }
 ```
-As you can see, our `sumRecursive` method follows the same principle as `sumBackward`: make sure we haven't reached 0, otherwise add `x-1` to `x`. Hence, $\text{sumRecursive}(5) = 5 + 4 + 3 + 2 + 1 \to 15$.
+As you can see, our `sumRecursive` method follows the same principle as `sumBackward`: make sure we haven't reached 0, otherwise add `x-1` to `x`. Hence, $$\text{sumRecursive}(5) = 5 + 4 + 3 + 2 + 1 \to 15$$.
 
 
 ## Practical Uses of Recursion
