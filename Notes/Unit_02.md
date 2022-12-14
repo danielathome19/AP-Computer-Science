@@ -74,7 +74,7 @@ Note that some methods may not require any arguments; that is, in the above exam
 `System.out.println()` by itself without passing in a String or value. In this case, based on 
 the documentation, we can infer that this will print an empty string followed by a line-break (`"\n"`).
 This is very common within classes, such as the calculation functions we will write in our own classes.
-Another great example is `Math.random()`, which returns a random double within $\[0.0, 1.0\)$ but requires no arguments.
+Another great example is `Math.random()`, which returns a random double within $$\[0.0, 1.0\)$$ but requires no arguments.
 
 ## String Methods
 The *String* class provides a [great number of methods](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) for working with text data. It is worth noting that a String is simply a mask for an array of **chars**, which means we have the ability to work with either the whole text or loop through it one letter at a time. A few of the most important/useful string methods for the AP exam include:
