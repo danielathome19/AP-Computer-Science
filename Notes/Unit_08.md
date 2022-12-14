@@ -1,5 +1,5 @@
 # Unit 8 - 2D Array
-Often called a Matrix from its mathematical derivative, a **2D Array** is an array containing two **dimensions** or *features* of data (here, the term "dimension" is borrowed from dimensions in a *Hilbert Space* from Calculus, i.e., the "size" of a set of vectors, rather than a physical *Euclidian Space* dimension). In simpler terms, it is an array of arrays, which are typically all the same length. Here, we think of each array as being a **row** in the matrix, and each *feature* (position) refers to the **columns** in the matrix. Their mathematical equivalent, matrices, are denoted using italicized uppercase letters, such as $$\textit{A}$$.
+Often called a Matrix from its mathematical derivative, a **2D Array** is an array containing two **dimensions** or *features* of data (here, the term "dimension" is borrowed from dimensions in a *Hilbert Space* from Calculus, i.e., the "size" of a set of vectors, rather than a physical *Euclidian Space* dimension). In simpler terms, it is an array of arrays, which are typically all the same length. Here, we think of each array as being a **row** in the matrix, and each *feature* (position) refers to the **columns** in the matrix. Their mathematical equivalent, matrices, are denoted using italicized uppercase letters, such as $\textit{A}$.
 
 $$
 \begin{bmatrix}
@@ -124,7 +124,7 @@ for (int[] row : jagArr) {
 ```
 
 ## *n*D Arrays/Tensors (3D and Beyond)
-Technically, we can extend the multidimensional array syntax to any number of dimensions, i.e., an *n*D array, often referred to as a **Tensor** (which can technically be any number of dimensions but is often used when $$n > 2$$). For data scientists and machine learning engineers, tensors are one of the most important data structures that exists -- especially because of its use in deep learning/neural networks. Simply add an additional set of `[]` to your array initialization, or painstakingly define a jagged array of arrays explicitly:
+Technically, we can extend the multidimensional array syntax to any number of dimensions, i.e., an *n*D array, often referred to as a **Tensor** (which can technically be any number of dimensions but is often used when $n > 2$). For data scientists and machine learning engineers, tensors are one of the most important data structures that exists -- especially because of its use in deep learning/neural networks. Simply add an additional set of `[]` to your array initialization, or painstakingly define a jagged array of arrays explicitly:
 ```java
 DATATYPE[][][] tensor = new DATATYPE[numRows][numCols][numLayers];
 
