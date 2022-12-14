@@ -2,6 +2,20 @@
 UNDER CONSTRUCTION
 
 
+## Number Bases
+...
+
+
+### Binary Encoding
+...
+
+
+### Hexidecimal Encoding
+...
+
+
+
+
 ## The *do-while* Loop
 ...
 
