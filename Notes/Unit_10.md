@@ -22,7 +22,7 @@ $$
 \text{total} = \sum^x_{i=1} i
 $$
 
-This is our standard **Iterative** approach. To make it recursive, we first need to imagine running the summation backwards, from the number down to 1 instead of the opposite:
+This is our standard **Iterative** approach. To make it recursive, we first need to imagine running the summation backward, from the number down to 1 instead of the opposite:
 ```java
 public static int sumBackward(int x) {
   int total = 0;
@@ -38,11 +38,11 @@ public static int sumRecursive(int x) {
   return x + sumRecursive(x-1);   // Recursive case
 }
 ```
-As you can see, our `sumRecursive` method follows the same principle as `sumBackward`: make sure we haven't reached 0, otherwise add `x-1` to `x`. Hence, $\text{sumRecursive}(5) = 5 + 4 + 3 + 2 + 1 \to 15$.
+As you can see, our `sumRecursive` method follows the same principle as `sumBackward`: make sure we haven't reached 0, otherwise, add `x-1`` to `x`. Hence, $\text{sumRecursive}(5) = 5 + 4 + 3 + 2 + 1 \to 15$.
 
 
 ## Practical Uses of Recursion
-Recursion is still (typically) iterative, but there are many approaches to recursion that can drastically increase the speed of an algorithm by breaking it down into smaller sub-problems and solving those problems through sub-problems and combining their solutions -- a concept known as the [**Divide-and-Conquer Method**](https://www.programiz.com/dsa/divide-and-conquer), which is extended to even more practical concepts such as [**Dynamic Programming**](https://www.programiz.com/dsa/dynamic-programming) and the [**Greedy Approach**](https://www.programiz.com/dsa/greedy-algorithm). As well, computer scientists study *(Abstract) Data Structures* that are built from recursion, such as the **Linked List** or **Binary Search Tree**, or their core methods rely on recursion such as **Graphs** and their graph search algorithms. These concepts are beyond the scope of this course, but are extremely practical with real-world programs and massive datasets.
+Recursion is still (typically) iterative, but there are many approaches to recursion that can drastically increase the speed of an algorithm by breaking it down into smaller sub-problems and solving those problems through sub-problems and combining their solutions -- a concept known as the [**Divide-and-Conquer Method**](https://www.programiz.com/dsa/divide-and-conquer), which is extended to even more practical concepts such as [**Dynamic Programming**](https://www.programiz.com/dsa/dynamic-programming) and the [**Greedy Approach**](https://www.programiz.com/dsa/greedy-algorithm). As well, computer scientists study *(Abstract) Data Structures* that are built from recursions, such as the **Linked List** or **Binary Search Tree**, or their core methods rely on recursions such as **Graphs** and their graph search algorithms. These concepts are beyond the scope of this course but are extremely practical with real-world programs and massive datasets.
 
 One great example of recursion is the **factorial** operator ( $n!$ in mathematics), which returns $n! = n * (n-1) * (n-2) * (n-3) * \dots * (n-(n-1))$. For example, $5! = 5 * 4 * 3 * 2 * 1 \to 120$. Let's look at the code for this, both iteratively and recursively:
 ```java
@@ -73,7 +73,7 @@ The Fibonacci numbers $F_n$ are defined by the following recurrence relation (th
 
 $$ F_0 = 0, \quad F_1 = 1, \quad \text{and} \quad F_n = F_{n-1} + F_{n-2} \quad \forall n > 1 $$
 
-For example, the first 10 Fibonnaci numbers:
+For example, the first 10 Fibonacci numbers:
 | $F_0$ | $F_1$ | $F_2$ | $F_3$ | $F_4$ | $F_5$ | $F_6$ | $F_7$ | $F_8$ | $F_9$ |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 | 0     | 1     | 1     | 2     | 3     | 5     | 8     | 13    | 21    | 34    |
@@ -125,7 +125,7 @@ Though they use two different approaches to the same implementation, both *itera
 
 
 ### Recursive Sorting and Divide-and-Conquer Algorithms
-While not necessary for the AP exam, the [**Quick Sort**](https://www.programiz.com/dsa/quick-sort) and [**Merge Sort**](https://www.programiz.com/dsa/merge-sort) algorithms are extremely important real-world sorting algorithms. There are also sorting algorithms that do not require numeric comparison, such as [**Counting Sort**](https://www.programiz.com/dsa/counting-sort) and [**Radix Sort**](https://www.programiz.com/dsa/radix-sort).
+While not necessary for the AP exam, the [**Quick Sort**](https://www.programiz.com/dsa/quick-sort) and [**Merge Sort**](https://www.programiz.com/dsa/merge-sort) algorithms are extremely important real-world sorting algorithms. There are also sorting algorithms that do not require numeric comparisons, such as [**Counting Sort**](https://www.programiz.com/dsa/counting-sort) and [**Radix Sort**](https://www.programiz.com/dsa/radix-sort).
 
 
 #### Quicksort
@@ -134,7 +134,7 @@ Quicksort is a popular, very efficient sorting algorithm that operates by dividi
 The steps are as follows:
 1. Choose an element from the list, known as the pivot. This element will be used to divide the list into sub-lists
 2. Divide the list into two sub-lists: one that contains all of the elements that are less than or equal to the pivot, and one that contains all of the elements that are greater than the pivot. These sub-lists are known as the left and right partitions, respectively
-3. Sort the left and right partitions by recursively applying the quicksort algorithm to each of them. This means that we will repeat steps 1-3 on each of the sub-lists, until they are each sorted
+3. Sort the left and right partitions by recursively applying the quicksort algorithm to each of them. This means that we will repeat steps 1-3 on each of the sub-lists until they are each sorted
 4. Once the left and right partitions are sorted, merge them together to form a final, sorted list. To do this, we simply combine the left partition, the pivot, and the right partition in that order
 5. The final, sorted list is returned
 

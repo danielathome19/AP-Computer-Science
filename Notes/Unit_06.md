@@ -46,7 +46,7 @@ for (int i = 0; i < nums.length; i++) {
 ```
 Note the usage of `.length` to find the size of the array, and the `[index]` operator to assign and retrieve data from an array. 
 
-There are numerous ways to approaching looping through arrays, either to **populate** or "fill" the list, or to print one or multiple arrays (of the **same size**) at once. For example:
+There are numerous ways to approach looping through arrays, either to **populate** or "fill" the list or to print one or multiple arrays (of the **same size**) at once. For example:
 ```java
 // Make two arrays that store all numbers [1-5]
 int[] list1 = {1, 2, 3, 4, 5};
@@ -103,7 +103,7 @@ for (Person currentperson : people) {
 ```
 
 ### Null-Safe Traversal
-One issue we often encounter with arrays is that we may not always have all slots of an array filled, just like our parking lot example. When working with data files, we typically will keep a *counter* variable to track how many items are ACTUALLY in the array, rather than using the `length` property (which should really be called `capacity` instead). If we read in 50 objects from a data file, but out array has a capacity of 75, then the last 25 slots will all be `null`. If we try to call methods on these `null` objects, the program will crash -- this is a huge problem with us using a **for-each** loop instead of a normal **for** loop with our *counter* variable.
+One issue we often encounter with arrays is that we may not always have all slots of an array filled, just like in our parking lot example. When working with data files, we typically will keep a *counter* variable to track how many items are ACTUALLY in the array, rather than using the `length` property (which should really be called `capacity` instead). If we read in 50 objects from a data file, but our array has a capacity of 75, then the last 25 slots will all be `null`. If we try to call methods on these `null` objects, the program will crash -- this is a huge problem with us using a **for-each** loop instead of a normal **for** loop with our *counter* variable.
 
 Consider a data file (named **mycars.dat**, for example) that looks similar to the following, containing the ID number, make, model, and year for 50 cars:
 ```
@@ -137,7 +137,7 @@ public class Car {
 }
 ```
 
-Once we have our **data class**, we can read in all of the files from the data file. However, in case the size of the data file changes, we need to provide a buffer space (i.e., extra slots in the array) instead of counting the number of cars by hand and updating our code every time it changes -- good luck trying that with a database! Lets make an array of **Car** objects that can hold up to 100 cars, similar to our parking lot example above:
+Once we have our **data class**, we can read in all of the files from the data file. However, in case the size of the data file changes, we need to provide a buffer space (i.e., extra slots in the array) instead of counting the number of cars by hand and updating our code every time it changes -- good luck trying that with a database! Let's make an array of **Car** objects that can hold up to 100 cars, similar to our parking lot example above:
 ```java
 Scanner input = new Scanner(new File("mycars.dat"));
 Car[] parkinglot = new Car[100];
@@ -158,7 +158,7 @@ while (input.hasNext()) {
 }
 ```
 
-Now, we have two options for safely printing out the information on every car without overflowing into our *buffer* space (the `null` slots): either use a **for** loop with our *counter* variable as the maxima, or use a **for-each** loop but check to make sure that the car is not equal to `null` before attempting to call methods on it:
+Now, we have two options for safely printing out the information on every car without overflowing into our *buffer* space (the `null` slots): either use a **for** loop with our *counter* variable as the maxima or use a **for-each** loop but check to make sure that the car is not equal to `null` before attempting to call methods on it:
 ```java
 // Approach 1 (for loop)
 for (int spot = 0; spot < numcars; spot++) {
@@ -190,7 +190,7 @@ Typically, for regular arrays, it's safer to just use a *counter* variable so we
 
 ## Array Algorithms
 Given the amount of data that exists, it is only sensible that computer scientists design standard algorithms for many of the most common needs and operations on such data. The purpose of these algorithms can generally be classified as follows:
-* **Statistical or Property Analysis**: determining/computing the max, min, sum, average, mode, etc., checking for duplicates, or finding items with a particular property or that meet a certain criteria
+* **Statistical or Property Analysis**: determining/computing the max, min, sum, average, mode, etc., checking for duplicates, or finding items with a particular property or that meet certain criteria
 * **Searching**: efficiently finding an item in an array if it exists (linear search, binary search)
 * **Sorting**: efficiently sorting an array in some order, usually ascending or descending (bubble sort, insertion sort, selection sort, quick sort, etc.)
 
@@ -215,7 +215,7 @@ public static int linearSearch(int[] array, int x) {
 
 
 #### Binary Search
-Binary search is a slightly more complicated search algorithm that excels when the list is already sorted. The idea is much like that of finding a page in a textbook -- start by checking the middle of the list, compare the item to be found to see if we need to look on right right or left half of the list, then traverse down that half onward. Continuously check the middle item and traverse down the "hot" half until the item is found. While this algorithm is often implemented recursively (a function that calls itself; see Unit 10), we will see its iterative implementation for now.
+Binary search is a slightly more complicated search algorithm that excels when the list is already sorted. The idea is much like that of finding a page in a textbook -- start by checking the middle of the list, compare the item to be found to see if we need to look on the right or left half of the list, then traverse down that half onward. Continuously check the middle item and traverse down the "hot" half until the item is found. While this algorithm is often implemented recursively (a function that calls itself; see Unit 10), we will see its iterative implementation for now.
 
 ```java
 public static int binarySearch(int[] array, int x) {
@@ -242,7 +242,7 @@ Let's look at a few of the most elementary sorting algorithms -- bubble sort, in
 If you want to truly understand when and why we use certain algorithms over others, you'll need to learn a topic called [Asymptotic Analysis](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation), or [Big-O Notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf), which provides us a means of mathematically analyzing how functions grow over time (and space) as the amount of data increases. This is typically the first true Computer Science topic that college majors learn in an infamous class known as ***Data Structures and Algorithms***.
 
 #### Bubble Sort
-Bubble sort is the most crude array sorting algorithm; it is impractical for large datasets and generally slow even for small ones. However, its steps are so simple that it provides a good baseline for understanding the principles of designing sorting algorithms. The algorithm simply compares two adjacent values and swaps them until the entire list is sorted, *bubbling* them to the end of the list in sorted order.
+Bubble sort is the crudest array sorting algorithm; it is impractical for large datasets and generally slow even for small ones. However, its steps are so simple that it provides a good baseline for understanding the principles of designing sorting algorithms. The algorithm simply compares two adjacent values and swaps them until the entire list is sorted, *bubbling* them to the end of the list in sorted order.
 
 The steps are as follows:
 1. Compare the first two items in the list. If the first item is greater than the second item, swap them

@@ -6,7 +6,7 @@ as our **if** statements; however, the conditions for a loop tend to be much sim
 
 
 ## The *while* Loop
-A **while** loop is the closest type of statement to **if** statements -- their job is use nearly the 
+A **while** loop is the closest type of statement to **if** statements -- their job is to use nearly the 
 same notation as an **if** statement, but continue looping the contained code *while* the given condition
 continues to be ***true***. It's more common to use these where a condition is not numeric (i.e., not 
 looping through a list or using a counter of some sort), but instead where a condition is simply deterministic.
@@ -31,7 +31,7 @@ while (counter < 10) {
 
 
 ## The *for* Loop
-A **for** loop is a shorthand, counter-based loop (i.e., rather than being iterating specifically on a condition only, we iterate based on some counter variable). It allows us to declare a counter, check the condition for the counter, and increment/decrement the counter all in one line of code (similar to the **while** loop example above). For example:
+A **for** loop is a shorthand, counter-based loop (i.e., rather than iterating specifically on a condition only, we iterate based on some counter variable). It allows us to declare a counter, check the condition for the counter, and increment/decrement the counter all in one line of code (similar to the **while** loop example above). For example:
 ```java
 for (int counter = 0; counter < 10; counter++) {
   // Run some code repeatedly, 10 times in total (same as the while loop example)
@@ -49,7 +49,7 @@ for (int i = 0; i < 10; i++)
   System.out.println(i * 2);
 ```
 
-If you need to iterate backwards, there are two ways that work well; for example, printing the numbers from 10 to 0 (inclusive). First, the standard approach:
+If you need to iterate backward, there are two ways that work well; for example, printing the numbers from 10 to 0 (inclusive). First, the standard approach:
 ```java
 for (int i = 10; i >= 0; i--) {
   System.out.println(i);
@@ -58,7 +58,7 @@ for (int i = 10; i >= 0; i--) {
 
 In Unit 6, we *enhance* this syntax for usage with arrays to create the **for-each** loop.
 
-Secondly, we can use the `--` operator in conjunction with the `>` operator to form a sort-of *step-down* **for** loop:
+Secondly, we can use the `--` operator in conjunction with the `>` operator to form a sort of *step-down* **for** loop:
 ```java
 for (int i = 11; i --> 0;) {
   System.out.println(i);
@@ -84,8 +84,8 @@ for (int lcv = 0; lcv < hello.length(); lcv++)
 ```
 
 ## Iterating Through Files
-While not on the AP subset, this is an extremely useful (and real-world) skill that happens to be easier in Java than many other languages. 
-However, this also requrires that we understand basic exception handling, as working with files is a task prone to many errors.
+While not on the AP subset, this is an extremely useful (and real-world) skill that happens to be easier in Java than in many other languages. 
+However, this also requires that we understand basic exception handling, as working with files is a task prone to many errors.
 The `Scanner` class graciously provides us the ability to work with both user input AND files, so long as we pass in a `File` object 
 rather than `System.in`.
 
@@ -115,7 +115,7 @@ try {
 
 
 ### Exception Handling
-The concept of **Exception Handling** refers to the process of responding to some event in the code that may be unintentional/unexpected, etc. Put simply, it is a way of preventing a program from crashing when a specified error occurs, and instead allows us to decide what to do if an **Exception** is caught. **Again, this is not on the AP subset, but is extremely useful for practical programs.** This is done using a ***try-catch*** statement, where `try` will attempt to run a block of (possibly) erroneous code, and `catch (SomeException ex)` tells us what to do if *SomeException* occurs while running the code in the `try` block. For example, catching a division by 0 error using the generic `Exception` type exception:
+The concept of **Exception Handling** refers to the process of responding to some event in the code that may be unintentional/unexpected, etc. Put simply, it is a way of preventing a program from crashing when a specified error occurs and instead allows us to decide what to do if an **Exception** is caught. **Again, this is not on the AP subset, but is extremely useful for practical programs.** This is done using a ***try-catch*** statement, where `try` will attempt to run a block of (possibly) erroneous code, and `catch (SomeException ex)` tells us what to do if *SomeException* occurs while running the code in the `try` block. For example, catching a division by 0 error using the generic `Exception` type exception:
 ```java
 try {
   // Run some code that may or may not throw an error
