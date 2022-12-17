@@ -145,14 +145,14 @@ public class Derivatives {
 
 We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html) (also known as the *Antiderivative*) using the *Right Hand Rule* and some arbitrarily large number of divisions $n = 10^{\varepsilon}$ to approximate:
 
-$$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_i) \Delta{x}$$
+$$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_{i+1}) \Delta{x}$$
 
 where
 
 $$
 \begin{align}
 \Delta{x} = \frac{b-a}{n}  \\
-c_i \approx a + i * \Delta{x}
+c_{i+1} \approx a + (i+1) * \Delta{x}
 \end{align}
 $$
 
@@ -169,14 +169,14 @@ public class Integrals {
         double sum = 0;
         double deltaX = (b - a) / n;
         for (int i = 0; i < n; i++) 
-            sum += f(a + i * deltaX) * deltaX;
+            sum += f(a + (i+1) * deltaX) * deltaX;
         return sum;
     }
 
     public static void main(String[] args) {
         double a = 1;
         double b = 5;
-        int n = 1000000;
+        int n = 10000000;
         System.out.printf("a = %f\tb = %f\n", a, b);
         System.out.println("Does integrate(f,x) match the power rule? By the Fundamental Theorem,");
         System.out.println("\tf(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): " + ((Math.pow(b, 4) / 4) - (Math.pow(a, 4) / 4)));
@@ -189,9 +189,15 @@ public class Integrals {
    Does integrate(f,x) match the power rule? By the Fundamental Theorem,
            f(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): 156.0
    f(x) = 64.0
-   F(x) = 155.99975200010095
+   F(x) = 156.00002480000964
 */
 ```
+
+Note that you could modify the Riemann estimation to use different approximation rules by simply changing the line inside the *for* loop and modifying $n$:
+* **Left Hand Rule**: `sum += f(a + i * deltaX) * deltaX;`
+* **Right Hand Rule**: `sum += f(a + (i+1) * deltaX) * deltaX;`
+* **Midpoint Rule**: `sum += f(((a + i * deltaX) + (a + (i + 1) * deltaX)) / 2) * deltaX;`
+
 
 
 ### Anonymous Functions and Lambda Expressions
