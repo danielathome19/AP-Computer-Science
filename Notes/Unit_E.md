@@ -109,7 +109,7 @@ $$
 f'(x) = \frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
 $$
 
-This definition provides an approach to evaluating the slope (or rate of change) at any point within a function $f(x)$. Using function pointers, we can make a method and use the pointer to that method to calculate its derivative at some point using an arbitrarily small number $h \approx 0.000\dots1$ for the limit.
+This definition provides an approach to evaluating the slope (or rate of change) at any point within a function $f(x)$. Using function pointers, we can make a method and use the pointer to that method to calculate its derivative at some point using an arbitrarily small number $h \approx \text{0.000...1}$ for the limit.
 
 Consider the following example using $x=5$, $f(x)=x^3$, and by the *Power Rule*, $f'(x)=3x^2$:
 ```java
