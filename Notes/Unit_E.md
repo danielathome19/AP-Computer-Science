@@ -136,9 +136,8 @@ public class Integrals {
     public static double integrate(Function<Double, Double> f, double a, double b, int n) {
         double sum = 0;
         double deltaX = (b - a) / n;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) 
             sum += f(a + i * deltaX) * deltaX;
-        }
         return sum;
     }
 
