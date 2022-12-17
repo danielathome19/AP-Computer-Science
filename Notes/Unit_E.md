@@ -63,15 +63,47 @@ UNDER CONSTRUCTION
 
 
 ### Function Pointers or Functions as Objects
-...
+One extremely useful concept of FP is the idea of **Function Pointers**, also known as function references or function handles, which are references to functions that can be stored, passed around, and invoked. To use them, we can import the `java.util.function.Function` interface to ***define or store functions as variables***.
 
-use functions as variables
-need to import using `import java.util.function.Function;`
+For example, you can use the **Function** interface to define a function pointer that takes an integer as input and returns a string:
+```java
+import java.util.function.Function;
 
+public class FuncPointerExamples {
+    public static void main(String[] args) {
+        // Define a function pointer that takes an integer and returns a string
+        Function<Integer, String> intToStr = i -> String.valueOf(i);
+
+        // Use the function pointer to convert an integer to a string
+        String str = intToStr.apply(123);
+        System.out.println(str);
+    }
+}
+```
+
+You can also use *Method References* to create function pointers:
+```java
+import java.util.function.Function;
+
+public class MethodRefPointers {
+    public static double Exp(double n) {
+        return Math.Exp(n);
+    }
+    
+    public static void main(String[] args) {
+        Function<String, Integer> strLen = String::length;
+        int length = stringLengthFunc.apply("hello");
+        System.out.println(length);
+        
+        Function<Double, Double> myExp = MethodRefPointers::Exp;
+        double result = myexp.apply(3);
+        System.out.println(result);
+    }
+}
+```
 
 #### Definitions of Derivative and Integral
-...
-For example, consider the [Definition of the **Derivative**](https://tutorial.math.lamar.edu/classes/calci/defnofderivative.aspx) from Calculus:
+One of the most practical ways we can use function pointers is to make methods that take functions as arguments. For example, consider the [Definition of the **Derivative**](https://tutorial.math.lamar.edu/classes/calci/defnofderivative.aspx) from Calculus:
 
 $$
 f'(x) = \frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
