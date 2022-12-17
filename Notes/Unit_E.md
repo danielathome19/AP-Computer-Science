@@ -87,16 +87,16 @@ import java.util.function.Function;
 
 public class MethodRefPointers {
     public static double Exp(double n) {
-        return Math.Exp(n);
+        return Math.exp(n);
     }
     
     public static void main(String[] args) {
         Function<String, Integer> strLen = String::length;
-        int length = stringLengthFunc.apply("hello");
+        int length = strLen.apply("hello");
         System.out.println(length);
         
         Function<Double, Double> myExp = MethodRefPointers::Exp;
-        double result = myexp.apply(3);
+        double result = myExp.apply(3.0);
         System.out.println(result);
     }
 }
