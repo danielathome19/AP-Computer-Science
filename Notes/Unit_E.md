@@ -177,7 +177,7 @@ public class Integrals {
     public static void main(String[] args) {
         double a = 1;
         double b = 5;
-        int n = 10000000;
+        int n = 100000000;
         System.out.printf("a = %f\tb = %f\n", a, b);
         System.out.println("Does integrate(f,x) match the power rule? By the Fundamental Theorem,");
         System.out.println("\tf(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): " + ((Math.pow(b, 4) / 4) - (Math.pow(a, 4) / 4)));
@@ -190,7 +190,7 @@ public class Integrals {
    Does integrate(f,x) match the power rule? By the Fundamental Theorem,
            f(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): 156.0
    f(x) = 64.0
-   F(x) = 155.9999999999961
+   F(x) = 156.0000000000034
 */
 ```
 
