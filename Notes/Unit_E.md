@@ -147,7 +147,7 @@ We can also apply this same concept to the [Definition of the **Definite Integra
 
 $$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_i) \Delta{x}$$
 
-$\text{where}$
+where
 
 $$
 \begin{align}
