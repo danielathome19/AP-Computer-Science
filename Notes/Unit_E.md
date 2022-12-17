@@ -111,7 +111,7 @@ public class Derivatives {
 ```
 
 
-We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html) (also known as the *Antiderivative*) using the *Right Hand Rule* and some arbitrarily large number of divisions $n$ to approximate:
+We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html) (also known as the *Antiderivative*) using the *Right Hand Rule* and some arbitrarily large number of divisions $n = 10^{\varepsilon}$ to approximate:
 
 $$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_i) \Delta{x}$$
 
