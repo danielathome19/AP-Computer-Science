@@ -143,16 +143,17 @@ public class Derivatives {
 ```
 
 
-We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html) (also known as the *Antiderivative*) using the *Right Hand Rule* and some arbitrarily large number of divisions $n = 10^{\varepsilon}$ to approximate:
+We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html) (also known as the *Antiderivative*) using the *Midpoint Rule* and some arbitrarily large number of divisions $n = 10^{\varepsilon}$ to approximate:
 
-$$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_{i+1}) \Delta{x}$$
+$$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_{i}) \Delta{x}$$
 
 where
 
 $$
 \begin{align}
-\Delta{x} = \frac{b-a}{n}  \\
-c_{i+1} \approx a + (i+1) * \Delta{x}
+\Delta{x} = \frac{b-a}{n} \\
+x_i \approx a + i * \Delta{x} \\
+c_{i} = \frac{x_i + x_{i+1}}{2}
 \end{align}
 $$
 
@@ -169,7 +170,7 @@ public class Integrals {
         double sum = 0;
         double deltaX = (b - a) / n;
         for (int i = 0; i < n; i++) 
-            sum += f(a + (i+1) * deltaX) * deltaX;
+            sum += f(((a + i * deltaX) + (a + (i + 1) * deltaX)) / 2) * deltaX;
         return sum;
     }
 
@@ -189,7 +190,7 @@ public class Integrals {
    Does integrate(f,x) match the power rule? By the Fundamental Theorem,
            f(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): 156.0
    f(x) = 64.0
-   F(x) = 156.00002480000964
+   F(x) = 155.9999999999961
 */
 ```
 
