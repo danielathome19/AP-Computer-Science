@@ -136,7 +136,7 @@ public class Derivatives {
 
 /* Displays the following:
    x = 5.0
-   Does derive(f,x) match the power rule? f(x)=x^3 so f'(x)=3x^2: 75.0
+   Does derive(f, x) match the power rule? f(x)=x^3 so f'(x)=3x^2: 75.0
    f(x) = 125.0
    f'(x) = 75.00000165805432
 */
@@ -187,7 +187,7 @@ public class Integrals {
 }
 /* Displays the following:
    a = 1.000000    b = 5.000000
-   Does integrate(f,x) match the power rule? By the Fundamental Theorem,
+   Does integrate(f, x) match the power rule? By the Fundamental Theorem,
            f(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): 156.0
    f(x) = 64.0
    F(x) = 155.9999999999961
