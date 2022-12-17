@@ -81,7 +81,7 @@ public class FuncPointerExamples {
 }
 ```
 
-You can also use *Method References* to create function pointers:
+You can also use *Method References* to create function pointers using the `::` operator in the form `CLASSNAME::METHODNAME`:
 ```java
 import java.util.function.Function;
 
