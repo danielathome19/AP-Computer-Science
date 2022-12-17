@@ -394,8 +394,8 @@ public class VectorLib {
     return c;
   }
   
-  public static double argmax(double[] a) {
-    double max = 0;
+  public static int argmax(double[] a) {
+    int max = 0;
     for (int i = 1; i < a.length; i++) 
       if (a[i] > a[max]) max = i;
     return max;
