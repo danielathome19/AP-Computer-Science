@@ -157,6 +157,8 @@ c_{i} = \frac{x_i + x_{i+1}}{2}
 \end{align}
 $$
 
+This definition provides an approach to evaluating the area under a curve between two interval points $[a,b]$ below a function $f(x)$.
+
 Consider the following example using $a=1$, $b=5$, $f(x)=x^3$, and by the *Power Rule* and *the Fundamental Theorem of Calculus*, $F(x) = \int_a^b x^{3}dx = \[\frac{x^4}{4}\]^b_a = \frac{b^4}{4} - \frac{a^4}{4}$:
 ```java
 import java.util.function.Function;
