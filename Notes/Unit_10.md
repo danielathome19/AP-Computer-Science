@@ -64,8 +64,10 @@ public static int factRec(int n) {
 Like summation, we have an operator for a series of multiplicands as well -- the *Uppercase Pi* (or $\Pi$ for __Product__) operator, which multiplies all the numbers in a series together:
 
 $$
-\text{product} = \prod^n_{i=1} i
+\text{product} = n! = \prod^n_{i=1} i
 $$
+
+Also see the [**Gamma Function**](https://en.wikipedia.org/wiki/Gamma_function) $\gamma(n)$ which extends the factorial function to complex numbers as well!
 
 Another extremely popular example of recursion is the **Fibonacci Sequence** -- a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
 
