@@ -124,6 +124,10 @@ public class Derivatives {
         final double h = 0.0000001;
         return (f(x + h) - f(x)) / h;
     }
+    
+    public static double derive(Function<Double, Double> f, double x, double h) {
+        return (f(x + h) - f(x)) / h;
+    }
 
     public static double deriveN(Function<Double, Double> f, double x, int n) {
         final double h = 1/Math.pow(10, n);
@@ -155,7 +159,7 @@ public class Derivatives {
    f'''(x) = 6.011191544530448
 */
 ```
-
+Here we overload the `derive` method to either accept a value for $h$ or use the arbitrarily small default value provided in the first definition, which can be useful if a certain function necessitates a different value.
 
 We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html) (also known as the *Antiderivative*) using the *Midpoint Rule* and some arbitrarily large number of divisions $n = 10^{\varepsilon}$ to approximate:
 
