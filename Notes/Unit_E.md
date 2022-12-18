@@ -109,9 +109,9 @@ $$
 f'(x) = \frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
 $$
 
-This definition provides an approach to evaluating the slope (or rate of change) at any point within a function $f(x)$. Using function pointers, we can make a method and use the pointer to that method to calculate its derivative at some point using an arbitrarily small number $h \approx \text{0.000...1} \equiv 10^{-\varepsilon}$ for the limit.
+This definition provides an approach to evaluating the slope (or rate of change) at any point within a function $f(x)$. Using function pointers, we can make a method and use the pointer to that method to calculate its derivative at some point using an arbitrarily small number $h \approx \text{0.000...1} \equiv 10^{-\varepsilon}$ for the limit. Likewise, we can find the $n\text{th}$ derivative (written $f^{(n)}(x)$ or $\frac{d^nf}{dx^n}$) by recursively taking the derivative of the derivative $n$ times and approximating a good $h$ value as $h \approx \frac{1}{10^n}$.
 
-Consider the following example using $x=5$, $f(x)=x^3$, and by the *Power Rule*, $f'(x)=3x^2$:
+Consider the following example using $x=5$, $f(x)=x^3$, and by the *Power Rule*, $f'(x)=3x^2$, $f''(x)=6x$, and $f'''(x)=6$:
 ```java
 import java.util.function.Function;
 
@@ -125,20 +125,34 @@ public class Derivatives {
         return (f(x + h) - f(x)) / h;
     }
 
+    public static double deriveN(Function<Double, Double> f, double x, int n) {
+        final double h = 1/Math.pow(10, n);
+        if (n == 1) return derive(f, x);
+        else return (deriveN(f, x + h, n - 1) - deriveN(f, x, n - 1)) / h;
+    }
+
     public static void main(String[] args) {
         double x = 5;
         System.out.println("x = " + x);
         System.out.println("Does derive(f,x) match the power rule? f(x)=x^3 so f'(x)=3x^2: " + (3 * Math.pow(x, 2)));
         System.out.println("f(x) = " + f(x));
         System.out.println("f'(x) = " + derive(Derivatives::f, x));
+        System.out.println("The second derivative using the power rule yields f''(x)=6x: " + (6 * x));
+        System.out.println("f''(x) = " + deriveN(Derivatives::f, x, 2));
+        System.out.println("The third derivative using the power rule yields f'''(x)=6: " + 6);
+        System.out.println("f'''(x) = " + deriveN(Derivatives::f, x, 3));   
     }
 }
 
 /* Displays the following:
    x = 5.0
-   Does derive(f,x) match the power rule? f(x)=x^3 so f'(x)=3x^2: 75.0
+   Does derive(f,x) match the power rule? f(x)=x^3 so f'(x)=3x^2: 75.0  
    f(x) = 125.0
    f'(x) = 75.00000165805432
+   The second derivative using the power rule yields f''(x)=6x: 30.0    
+   f''(x) = 30.029994491087564
+   The third derivative using the power rule yields f'''(x)=6: 6        
+   f'''(x) = 6.011191544530448
 */
 ```
 
