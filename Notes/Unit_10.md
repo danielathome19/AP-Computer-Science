@@ -67,7 +67,7 @@ $$
 \text{product} = n! = \prod^n_{i=1} i
 $$
 
-Also see the [**Gamma Function**](https://en.wikipedia.org/wiki/Gamma_function) $\gamma(n)$ which extends the factorial function to complex numbers as well!
+Also see the [**Gamma Function**](https://en.wikipedia.org/wiki/Gamma_function) $\Gamma(n)$ which extends the factorial function to complex numbers as well!
 
 Another extremely popular example of recursion is the **Fibonacci Sequence** -- a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
 
