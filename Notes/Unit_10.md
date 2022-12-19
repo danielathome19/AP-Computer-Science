@@ -97,8 +97,8 @@ If you find the mathematical notation interesting, we could have also written th
 
 $$
 \begin{align}
-\text{let } \mathbb{Z}^+_n = \\{ 1, 2, 3, \dots, n \\} \\
-n! = \prod^n_{i=1} x_i \quad \forall x \in \mathbb{Z}^+_n
+\text{let } \mathbb{Z}^+_n &= \\{ 1, 2, 3, \dots, n \\} \\
+n! &= \prod^n_{i=1} x_i \quad \forall x \in \mathbb{Z}^+_n
 \end{align}
 $$
 
