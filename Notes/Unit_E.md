@@ -18,10 +18,10 @@ To convert a number from **decimal to binary**, you can divide the number by 2 a
 
 $$
 \begin{align}
-11 / 2 = 5 \text{ remainder } 1\\
-5 / 2 = 2  \text{ remainder } 1\\
-2 / 2 = 1  \text{ remainder } 0\\
-1 / 2 = 0  \text{ remainder } 1
+11 / 2 &= 5 \text{ remainder } 1\\
+5 / 2 &= 2  \text{ remainder } 1\\
+2 / 2 &= 1  \text{ remainder } 0\\
+1 / 2 &= 0  \text{ remainder } 1
 \end{align}
 $$
 
@@ -40,8 +40,8 @@ To convert a number from **decimal to hexadecimal**, you can divide the number b
 
 $$
 \begin{align}
-28 / 16 = 1 \text{ remainder } 12\\
-1 / 16 = 0  \text{ remainder } 1
+28 / 16 &= 1 \text{ remainder } 12\\
+1 / 16 &= 0  \text{ remainder } 1
 \end{align}
 $$
 
@@ -424,9 +424,9 @@ where
 
 $$
 \begin{align}
-\Delta{x} = \frac{b-a}{n} \\
-x_i \approx a + i * \Delta{x} \\
-c_{i} = \frac{x_i + x_{i+1}}{2}
+\Delta{x} &= \frac{b-a}{n} \\
+x_i &\approx a + i * \Delta{x} \\
+c_{i} &= \frac{x_i + x_{i+1}}{2}
 \end{align}
 $$
 
