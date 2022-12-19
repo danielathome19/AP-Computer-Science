@@ -55,6 +55,7 @@ public class BigArray2 {
 
             // 3. The last cat has gained 10 pounds. Update the weight on the object. Print the new weight.
             cats[numCats-1].setWeight(cats[numCats-1].getWeight() + 10);
+            System.out.println("3. The updated weight is: " + cats[numCats-1].getWeight());
 
             // 4. The cat named Rascal died. Find that cat and remove it from the list.
             int rascalIndex = 0;
@@ -149,6 +150,8 @@ Taffy	24.5	 10	56.89
 Toby	17.2	 10	37.57
 
 2. The third cat is named: Rascal
+
+3. The updated weight is: 27.2
 
 7. The updated list is:
 Name	Weight	Age	Cost
