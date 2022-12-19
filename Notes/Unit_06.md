@@ -3,7 +3,7 @@ Sometimes called a 1D Array or Vector, an **array** is simply a list of items (t
 
 Arrays are essentially lists of **objects** -- they allow us to store multiple variables inside of one variable (i.e., an object that holds more objects). Hence, they can hold either primitive types/objects (`int`, `double`, `char`, etc.) or objects of classes (**String** and any other class we define).
 
-Their mathematical equivalent, vectors, are typically denoted with a lowercase letter either with a right-pointing arrow above them or bolded (if the arrow sign is unavailable), such as $\vec{a}$. While in math these are typically seen as *column vectors* (where index 1 is the top of the vector and increasing indices are stacked below), we express these as *row vectors* (where index 1 starts from the left and increasing indices are stacked to the right).
+Their mathematical equivalent, vectors, are typically denoted with a lowercase letter either with a right-pointing arrow above them or bolded (if the arrow sign is unavailable), such as $\vec{v}$ or $\textbf{v}$. While in math these are typically seen as *column vectors* (where index 1 is the top of the vector and increasing indices are stacked below), we express these as *row vectors* (where index 1 starts from the left and increasing indices are stacked to the right).
 
 Row vector (typical array):
 
