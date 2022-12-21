@@ -17,12 +17,12 @@ To represent a number in binary, you can use a series of digits to represent the
 To convert a number from **decimal to binary**, you can divide the number by 2 and keep track of the remainder until the result is 0. For example, to convert the decimal number 11 to binary:
 
 $$
-\begin{align}
+\begin{align*}
 11 / 2 &= 5 \text{ remainder } 1\\
 5 / 2 &= 2  \text{ remainder } 1\\
 2 / 2 &= 1  \text{ remainder } 0\\
 1 / 2 &= 0  \text{ remainder } 1
-\end{align}
+\end{align*}
 $$
 
 Hence, the binary representation of 11 is 1011.
@@ -39,10 +39,10 @@ Hexadecimal is one of the most important number systems that is used in computin
 To convert a number from **decimal to hexadecimal**, you can divide the number by 16 and keep track of the remainder until the result is 0. For example, to convert the decimal number 28 to hexadecimal:
 
 $$
-\begin{align}
+\begin{align*}
 28 / 16 &= 1 \text{ remainder } 12\\
 1 / 16 &= 0  \text{ remainder } 1
-\end{align}
+\end{align*}
 $$
 
 Hence, the hexadecimal representation of 28 is 1C.
@@ -424,11 +424,11 @@ $$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_{i}) \Delt
 where
 
 $$
-\begin{align}
+\begin{align*}
 \Delta{x} &= \frac{b-a}{n} \\
 x_i &\approx a + i * \Delta{x} \\
 c_{i} &= \frac{x_i + x_{i+1}}{2}
-\end{align}
+\end{align*}
 $$
 
 This definition provides an approach to evaluating the area under a curve between two interval points $[a,b]$ below a function $f(x)$.
