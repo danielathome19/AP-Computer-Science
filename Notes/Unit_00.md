@@ -9,3 +9,8 @@
 
 ## Installing a Text Editor or Development Environment (IDE)
 ...
+
+
+
+## Setting up Git and GitHub for Version Control
+...
