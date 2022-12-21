@@ -90,7 +90,7 @@ for (int i = 0; i < 10; i++) {
 ```
 The loop will iterate from 0 to 9, but it will break out of the loop when `i` is equal to 5; hence, the output will be "0, 1, 2, 3, 4".
 
-Likewise, `continue can be used in a very similar manner:
+Likewise, `continue` can be used in a very similar manner:
 ```java
 for (int i = 0; i < 10; i++) {
     if (i % 2 == 0) {
