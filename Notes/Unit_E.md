@@ -358,7 +358,8 @@ public class MethodRefPointers {
 
 
 #### Definitions of Derivative and Integral
-One of the most practical ways we can use function pointers is to make methods that take functions as arguments. For example, consider the [Definition of the **Derivative**](https://tutorial.math.lamar.edu/classes/calci/defnofderivative.aspx) from Calculus:
+One of the most practical ways we can use function pointers is to make methods that take functions as arguments. For example, consider the [Definition of the **Derivative**](https://tutorial.math.lamar.edu/classes/calci/defnofderivative.aspx)[^1] from Calculus:
+[^1]: https://tutorial.math.lamar.edu/classes/calci/defnofderivative.aspx
 
 $$
 f'(x) = \frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
