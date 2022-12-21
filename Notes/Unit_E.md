@@ -148,7 +148,7 @@ Here, the `day` variable is 3, so the code inside the `case 3:` block will be ex
 In many programming languages, the `var` type name is used to declare a variable with an inferred type. It was introduced as a way to reduce the verbosity of code by allowing the compiler to implicitly determine the type of a variable based on the initializer expression.
 
 For example:
-```
+```java
 public class MyClass {
   public static void main(String[] args) {
     var myStr = "Hello, world!";
