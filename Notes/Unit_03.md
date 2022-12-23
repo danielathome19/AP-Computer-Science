@@ -125,7 +125,7 @@ if (!allHomeworkCompleted()) {
 
 ### Truth Tables
 Truth tables are a method of breaking down compound conditions into each of their smaller parts to deduce their result based on all possible combinations of **true** and **false**. 
-For example: the truth table for the statement ```if (A or B) and (!A and B)```
+For example, the truth table for the statement ```if (A or B) and (!A and B)```:
 
 <table>
     <thead>
