@@ -226,10 +226,9 @@ private static void merge(int arr[], int p, int q, int r) {
   for (int j = 0; j < n2; j++)
     M[j] = arr[q + 1 + j];
 
-  int i, j, k;
-  i = 0;
-  j = 0;
-  k = p;
+  int i = 0;
+  int j = 0;
+  int k = p;
 
   while (i < n1 && j < n2) {
     if (L[i] <= M[j]) {
