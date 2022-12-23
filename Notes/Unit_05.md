@@ -70,7 +70,8 @@ public GameBoard(int numRows, int numCols)
 ```
 
 #### Javadoc Tags
-The **javadoc** tool provides a large number of standard annotations for documentation comments, such as `@return`, `@param`, and `@throws`/`@exception`, among [many others](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html#CHDBEFIF) such as the author/version/date annotations we saw previously. These allow us to specify things like descriptions of method parameters and/or what the method returns, if/what exceptions are thrown/what kind/when, deprecated methods, references to see something else, etc.
+The **javadoc** tool provides a large number of standard annotations for documentation comments, such as `@return`, `@param`, and `@throws`/`@exception`, among [many others](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html#CHDBEFIF)[^1] such as the author/version/date annotations we saw previously. These allow us to specify things like descriptions of method parameters and/or what the method returns, if/what exceptions are thrown/what kind/when, deprecated methods, references to see something else, etc.
+[^1]: https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html#CHDBEFIF
 
 For example:
 ```java

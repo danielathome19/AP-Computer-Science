@@ -66,10 +66,11 @@ print it by itself, such as `System.out.println(xyz);` or append it to the end o
 `System.out.println("num = " + num);` or `System.out.println("x = " + x + "\ty = " + y);`.
 
 It's less common, but we can also use `System.out.printf("some formatting: %.3f\n", doubleval);` to 
-print out variables with specific formats (see [Format Specifiers](https://www.geeksforgeeks.org/format-specifiers-in-java/)) 
+print out variables with specific formats (see [Format Specifiers](https://www.geeksforgeeks.org/format-specifiers-in-java/))[^1] 
 -- note that this function also does not append a line-break unless you put "\n", or "\t" for a tab-space. 
 Likewise, if you wanted to print a double or String, or a mix of all, you simply write out the string followed 
 by a comma-separated list of the arguments you want displayed in order of the format specifier:
+[^1]: https://www.geeksforgeeks.org/format-specifiers-in-java/
 ```java
 int a = 50;
 double b = 3.14159;
@@ -95,7 +96,8 @@ System.out.printf("%,d\n", x);
 // 1,000,000
 ```
 
-You can even [write out large numbers](https://docs.oracle.com/javase/7/docs/technotes/guides/language/underscores-literals.html) with the `_` separator:
+You can even [write out large numbers](https://docs.oracle.com/javase/7/docs/technotes/guides/language/underscores-literals.html)[^2] with the `_` separator:
+[^2]: https://docs.oracle.com/javase/7/docs/technotes/guides/language/underscores-literals.html
 ```java
 double salary = 1_234_567.890;
 System.out.printf("%,.2f\n", salary);
@@ -154,7 +156,8 @@ Now, we have four major methods that the class provides:
 * `NAME.nextInt()`: get an `int` from the user/file 
 * `NAME.nextDouble()`: get a `double` from the user/file
 * `NAME.nextLine()`: read an entire line of text (include the line-feed) as a `String`
-* `NAME.next()`: reads one word (token) at a time from a line of text separated by a space (see [Example 1](https://www.javatpoint.com/post/java-scanner-next-method))
+* `NAME.next()`: reads one word (token) at a time from a line of text separated by a space (see [Example 1](https://www.javatpoint.com/post/java-scanner-next-method)[^3])
+[^3]: https://www.javatpoint.com/post/java-scanner-next-method
 
 For example, a file named *Prog52a.java*:
 ```java

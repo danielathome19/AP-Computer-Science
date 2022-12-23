@@ -172,13 +172,15 @@ For example: the truth table for the statement ```if (A or B) and (!A and B)```
 
 
 ### Equivalent Conditions
-One thing we can do to make our code easier to read and organize is to optimize conditions to their reduced equivalent, often seen in the technique known as [**Guard Clauses**](https://www.youtube.com/shorts/Zmx0Ou5TNJs) (a technique often used to prevent/decrease nested *if* statements). By rewriting a condition as their opposite form, we can often drastically reduce code and/or increase readability (and possibly performance!).
+One thing we can do to make our code easier to read and organize is to optimize conditions to their reduced equivalent, often seen in the technique known as [**Guard Clauses**](https://www.youtube.com/shorts/Zmx0Ou5TNJs)[^1] (a technique often used to prevent/decrease nested *if* statements). By rewriting a condition as their opposite form, we can often drastically reduce code and/or increase readability (and possibly performance!).
+[^1]: https://www.youtube.com/shorts/Zmx0Ou5TNJs
 
 For example:
 * *Greater Than* `>` is the direct opposite of *Less Than or Equal to* `<=` (and vice versa), so `!(x > y)` is the same as `(x <= y)`.
 * Not true `!true` is the same as `false`, and vice versa.
 
-Also check out [De Morgan's Law](https://blog.penjee.com/what-is-demorgans-law-in-programming-answered-with-pics/) for one of the most important rules in *Discrete Mathematics* to get a better idea of how, when, and where this is applied!
+Also check out [De Morgan's Law](https://blog.penjee.com/what-is-demorgans-law-in-programming-answered-with-pics/)[^2] for one of the most important rules in *Discrete Mathematics* to get a better idea of how, when, and where this is applied!
+[^2]: https://blog.penjee.com/what-is-demorgans-law-in-programming-answered-with-pics/
 
 ## Comparing Objects
 Perhaps the most important occurrence of object comparison in most Java programs is that of comparing **Strings**. Since a **String** is NOT a primitive type (i.e., it's a *class* that we instantiate as an ***object***), we have to use the `.equals(anotherStr)` to check if two strings contain the same exact text, case-sensitive. Using `==` on an ***object*** checks to see if two things share the exact same **memory address** in RAM.

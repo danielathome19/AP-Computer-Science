@@ -53,10 +53,10 @@ int x = input.nextInt();
 ## Calling Void Methods
 A **void** method is simply a function that does not return anything (contrary to something like a 
 mathematical function, which would return the result of its computation).
-Perhaps the [most common example](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println()) 
+Perhaps the [most common example](https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println())[^1] 
 is the `System.out.println(...)` method, which prints to the console but does not return a value that 
 needs to be stored in a variable or used in a calculation, like `Math.sin(x)`.
-
+[^1]: https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println()
 To actually call a void method, we simply type out the method anywhere in the code that we want it to 
 execute — typically on its own separate line since it cannot be used in a calculation:
 ```java
@@ -77,7 +77,8 @@ This is very common within classes, such as the calculation functions we will wr
 Another great example is `Math.random()`, which returns a random double within $\[0.0, 1.0\)$ but requires no arguments.
 
 ## String Methods
-The *String* class provides a [great number of methods](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html) for working with text data. It is worth noting that a String is simply a mask for an array of **chars**, which means we have the ability to work with either the whole text or loop through it one letter at a time. A few of the most important/useful string methods for the AP exam include:
+The *String* class provides a [great number of methods](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)[^2] for working with text data. It is worth noting that a String is simply a mask for an array of **chars**, which means we have the ability to work with either the whole text or loop through it one letter at a time. A few of the most important/useful string methods for the AP exam include:
+[^2]: https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 * `x.length()`: returns the length of the string (i.e., the total number of characters)
 * `x.isEmpty()`: returns **true** if the length of the String is 0 (i.e., the String is empty)
 * `x.substring(end)` or `x.substring(start, end)`: returns a slice of a string either 
@@ -85,12 +86,13 @@ The *String* class provides a [great number of methods](https://docs.oracle.com/
 * `x.indexOf(string)`: returns the **first** index of *string* ~~or *char*~~ in the String, otherwise returns -1
 * `x.lastIndexOf(string)`: returns the **last** index of *string* ~~or *char*~~ in the String, otherwise returns -1
 * `x.trim()`: returns a copy of the String with leading and trailing whitespace omitted
-* `x.split(delimiter)`: returns an array of Strings split by either some delimiter (e.g., `","`, `" "`, or ";") or [regular expression](https://cheatography.com/davechild/cheat-sheets/regular-expressions/); useful for splitting a sentence into an array of individual words, for example
-
+* `x.split(delimiter)`: returns an array of Strings split by either some delimiter (e.g., `","`, `" "`, or ";") or [regular expression](https://cheatography.com/davechild/cheat-sheets/regular-expressions/)[^3]; useful for splitting a sentence into an array of individual words, for example
+[^3]: https://cheatography.com/davechild/cheat-sheets/regular-expressions/
 * `x.toLowerCase()`: returns the String in all-lowercase form
 * `x.toUpperCase()`: returns the String in all-uppercase form
 * `x.contains(string)`: returns **true** iff (if and only if) the entirety of **string** is found in the String (case-sensitive)
-* `x.compareTo(string)`: returns a [lexicographical comparison](https://www.w3schools.com/java/ref_string_compareto.asp) of the Strings — i.e., returns 0 if the Strings are exactly equal (case-sensitive); otherwise, returns 1 or -1
+* `x.compareTo(string)`: returns a [lexicographical comparison](https://www.w3schools.com/java/ref_string_compareto.asp)[^4] of the Strings — i.e., returns 0 if the Strings are exactly equal (case-sensitive); otherwise, returns 1 or -1
+[^4]: https://www.w3schools.com/java/ref_string_compareto.asp
 * `x.equals(string)`: returns **true** iff the entirety of **string** equals the String (case-sensitive) 
 * `x.equalsIgnoreCase(string)`: returns **true** iff the entirety of **string** equals the String (_NOT_ case-sensitive)
 * ~~`x.charAt(index)`~~ (**_WARNING_**: *NOT IN AP SUBSET*): returns the char at position *index* (within \[0, `x.length()` - 1\])
@@ -146,7 +148,8 @@ You can also find the size (in bytes) of either data type using `Integer.SIZE` a
 ## The *Math* Class
 The **Math** class provide
 s constant definitions for $\pi$ (Math.PI) and $e$ (Math.E) a great number of methods,
-as seen in the [documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html). A few important ones include:
+as seen in the [documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html)[^5]. A few important ones include:
+[^5]: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
 * `Math.abs(a)`: returns the absolute value of some variable `a`
 * `Math.ceil(a)`: rounds `a` ALWAYS UPWARD toward the closest integer ( ⌈ $a$ ⌉ )
 * `Math.exp(a)`: returns $e^a$

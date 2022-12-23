@@ -198,8 +198,8 @@ Although technically part of Unit 7, searching and sorting algorithms (which we 
 
 
 ### Array Searching Algorithms
-Search algorithms are simply methods that provide us with different ways to find an item in an array if it exists. There are two common algorithms we typically use, either **Linear Search** for unsorted data or **Binary Search** for sorted data. You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/Search.html).
-
+Search algorithms are simply methods that provide us with different ways to find an item in an array if it exists. There are two common algorithms we typically use, either **Linear Search** for unsorted data or **Binary Search** for sorted data. You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/Search.html)[^1].
+[^1]: https://www.cs.usfca.edu/~galles/visualization/Search.html
 
 #### Linear Search
 Linear search is our typical sequential array iteration that many jump to for a simple search function. We simply iterate through the entire array from start to finish, checking to see if we find the index where the item is stored — otherwise, we usually return -1 or `null` (depending on the type).
@@ -235,11 +235,15 @@ public static int binarySearch(int[] array, int x) {
 
 ### Array Sorting Algorithms
 Sorting algorithms provide us with different approaches to sorting an array — of which there are MANY different possible choices. For now, we will learn strictly **comparison-based sorting** methods; i.e., comparing numbers and placing them in either *ascending* (least to greatest) or *descending* (greatest to least) order. Again, many of these algorithms can be performed recursively, but we will focus on their iterative implementation for now.
-You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html) or [here (alongside the running code)](https://visualgo.net/en/sorting).
+You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)[^2] or [here (alongside the running code)](https://visualgo.net/en/sorting)[^3].
+[^2]: https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html 
+[^3]: https://visualgo.net/en/sorting
 
 Let's look at a few of the most elementary sorting algorithms — bubble sort, insertion sort, and selection sort. These implementations are all in ascending order, but you can easily change them to descending order by changing the comparison operator inside the conditional statement from `>` to `<`.
 
-If you want to truly understand when and why we use certain algorithms over others, you'll need to learn a topic called [Asymptotic Analysis](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation), or [Big-O Notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf), which provides us a means of mathematically analyzing how functions grow over time (and space) as the amount of data increases. This is typically the first true Computer Science topic that college majors learn in an infamous class known as ***Data Structures and Algorithms***.
+If you want to truly understand when and why we use certain algorithms over others, you'll need to learn a topic called [Asymptotic Analysis](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)[^4], or [Big-O Notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf)[^5], which provides us a means of mathematically analyzing how functions grow over time (and space) as the amount of data increases. This is typically the first true Computer Science topic that college majors learn in an infamous class known as ***Data Structures and Algorithms***.
+[^4]: https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation
+[^5]: http://web.mit.edu/16.070/www/lecture/big_o.pdf
 
 #### Bubble Sort
 Bubble sort is the crudest array sorting algorithm; it is impractical for large datasets and generally slow even for small ones. However, its steps are so simple that it provides a good baseline for understanding the principles of designing sorting algorithms. The algorithm simply compares two adjacent values and swaps them until the entire list is sorted, *bubbling* them to the end of the list in sorted order.

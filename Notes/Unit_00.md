@@ -26,7 +26,9 @@ Once you have completed these steps, you should be ready to start writing and ru
 
 Two of the most popular software development programs for Java include:
 * **IntelliJ (Community Edition is free):** https://www.jetbrains.com/idea/download/ — very useful since it will also install the **Java Development Kit** for you
-* **Visual Studio Code:** https://code.visualstudio.com/download — you'll also likely want a few extensions like [**Code Runner**](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) and the [**Extension Pack for Java**](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+* **Visual Studio Code:** https://code.visualstudio.com/download — you'll also likely want a few extensions like [**Code Runner**](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)[^1] and the [**Extension Pack for Java**](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)[^2]
+[^1]: https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+[^2]: https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
 
 While not nearly as popular today, **Eclipse** (https://www.eclipse.org/downloads/) used to be one of the most used free Java editors for quite some time and still has a large following. Another free (archaic) Java IDE often used in schools is **BlueJ** (https://www.bluej.org/), though its interface is not quite as friendly. You can also use various online editors such as https://replit.com to make a new Java project and run the code instantly, which is a useful option for cloud or browser-based devices such as Chromebooks. If you're on a Unix-based operating system, check out **Nano**, **Vim**, **Emacs**, or **Neovim** for terminal-based code editors.
 
@@ -79,7 +81,9 @@ Also note that whenever we enter a new set of curly braces `{}``, we typically i
 ## Setting up Git and GitHub for Version Control
 One of the best ways to organize programming portfolios and large software projects is by using the **Git** Version Control System (VCS)** (https://git-scm.com/) along with the website **GitHub** (https://github.com). Git is a version control system that allows you to track changes made to files and coordinate work on those files among multiple people, and GitHub is a web-based hosting service for Git repositories that provides version control, collaboration, and project management features. There are many good online tutorials on setting up various text editors and IDEs with Git, but if you simply want to get started right away, you can check out the following video on using the web editor https://replit.com/ with GitHub: https://youtu.be/sTh6B-KyCjA
 
-You can also check out the official documentation for [VS Code](https://code.visualstudio.com/docs/sourcecontrol/github) or [IntelliJ](https://www.jetbrains.com/help/idea/using-git-integration.html) to find steps on connecting to and/or sharing remote repositories.
+You can also check out the official documentation for [VS Code](https://code.visualstudio.com/docs/sourcecontrol/github)[^3] or [IntelliJ](https://www.jetbrains.com/help/idea/using-git-integration.html)[^4] to find steps on connecting to and/or sharing remote repositories.
+[^3]: https://code.visualstudio.com/docs/sourcecontrol/github
+[^4]: https://www.jetbrains.com/help/idea/using-git-integration.html
 
 In general, to set up Git and GitHub, you will need to follow these steps:
 1. Install Git on your computer: You can download the latest version of Git from the official website (https://git-scm.com/) and follow the instructions to install it on your computer
