@@ -555,7 +555,7 @@ These functions can even be composed together to perform more complex operations
 
 
 ## Miscellaneous
-If you want to go even further into computer science, I have additional lesson plans on my website, including:
+If you want to go even further into computer science, I have additional lesson plans on [my website](http://danielszelogowski.com/education.php), including:
 * **AI and Machine Learning for AP:** http://danielszelogowski.com/resources/apcsamachinelearning/
 * **Python Crash Course for AP:** http://danielszelogowski.com/resources/PythonCrashCourseForAP.html
 * **Taking Programming Language Notes using Jupyter Notebooks:** http://danielszelogowski.com/resources/JupyterLanguageNotebooks.pdf
