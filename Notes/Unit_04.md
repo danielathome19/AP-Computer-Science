@@ -101,15 +101,15 @@ For example, consider a data file, named **mydatafile.txt** in a folder called *
 Consider that each row in the data file contains 3 numbers: an **int**, an **int**, and a **double**. We can grab this data using a `Scanner` and a loop that scans `while (input.hasNext())` as follows:
 ```java
 try {
-    Scanner input = new Scanner(new File("datafolder/mydatafile.txt"));
-    while (input.hasNext()) {
-        int num1 = input.nextInt();
-        int num2 = input.nextInt();
-        double num3 = input.nextDouble();
-        // Do stuff with the data here
-    }
+  Scanner input = new Scanner(new File("datafolder/mydatafile.txt"));
+  while (input.hasNext()) {
+    int num1 = input.nextInt();
+    int num2 = input.nextInt();
+    double num3 = input.nextDouble();
+    // Do stuff with the data here
+  }
 } catch (IOException e) {
-    System.out.println("Can't find data file!");
+  System.out.println("Can't find data file!");
 }
 ```
 
