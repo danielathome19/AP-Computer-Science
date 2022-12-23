@@ -1,4 +1,4 @@
-# Unit 11 (Extras) - Useful Non-AP Java Concepts for After the Exam
+# Unit 11 - Useful Non-AP Java Concepts for After the Exam
 There are many programming and Computer Science concepts that the AP exam leaves out that, while not necessary for the test, are extremely useful in real-world software. The most important of these is the concept of **Number Bases**, which describe how numbers are represented in various contexts within computing systems. As well, there are many types of statements and keywords, such as **switch** statements, generic typing, and **Functional Programming** concepts that are used constantly in real applications, but are left out of the exam. We will survey many of the most common ones here; though while not discussed, additional concepts to know include sockets and networking, cryptography, graphics libraries (such as JavaFX and Swing), game development, and web applications.
 
 
@@ -554,7 +554,7 @@ These functions can even be composed together to perform more complex operations
 
 
 ## Miscellaneous
-If you want to go even further into computer science, I have additional lesson plans on [my website](http://danielszelogowski.com/education.php)[^5], including:
+If you want to go even further into computer science, I have additional lesson plans on [my website](http://danielszelogowski.com/education.php),[^5] including:
 * **AI and Machine Learning for AP:** http://danielszelogowski.com/resources/apcsamachinelearning/
 * **Python Crash Course for AP:** http://danielszelogowski.com/resources/PythonCrashCourseForAP.html
 * **Taking Programming Language Notes using Jupyter Notebooks:** http://danielszelogowski.com/resources/JupyterLanguageNotebooks.pdf
