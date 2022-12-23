@@ -42,7 +42,7 @@ Find the **"Run"** button on your code editor to compile and run your program, o
 
 All Java programs follow this same set of steps:
 1. Make a new file named `Your_Filename_Here.java` (name it whatever you want with the `.java` extension)
-2. Type out the following code template (where `Your_Filename_Here` matches the **exact** filename minus the extension, case-sensitive):
+2. Type out the following **code template** (where `Your_Filename_Here` matches the **exact** filename minus the extension, case-sensitive):
 ```java
 public class Your_Filename_Here {
   public static void main(String[] args) {
