@@ -45,7 +45,8 @@ int x = 5;
 int y = 5;
 
 if (x == y) {
-  // The code between these curly braces will only run if x is exactly equal to y
+  // The code between these curly braces
+  // will only run if x is exactly equal to y
   System.out.println("x and y are equal!");
 }
 
@@ -58,9 +59,11 @@ By attaching an *else* block/statement to the end of an *if* statement, we can c
 For example:
 ```java
 if (x > y) {
-  // The code between these curly braces will only run if x is greater than y
+  // The code between these curly braces 
+  // will only run if x is greater than y
 } else {  // Otherwise...
-  // The code between these curly braces will only run if x is less than or equal to y
+  // The code between these curly braces 
+  // will only run if x is less than or equal to y
 }
 ```
 
@@ -108,7 +111,8 @@ int age = 18;
 int time = 2000;
 
 if (age == 18 && time >= 2000) {
-  System.out.println("You're an adult and it's past 8 PM, might as well go to sleep!");
+  System.out.println("You're an adult and it's past 8 PM, "
+        + "might as well go to sleep!");
 }
 ```
 
