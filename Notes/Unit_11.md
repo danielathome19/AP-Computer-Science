@@ -417,7 +417,8 @@ public class Derivatives {
 ```
 Here we overload the `derive` method to either accept a value for $h$ or use the arbitrarily small default value provided in the first definition, which can be useful if a certain function necessitates a different value.
 
-We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html) (also known as the *Antiderivative*) using the *Midpoint Rule* and some arbitrarily large number of divisions $n = 10^{\varepsilon}$ to approximate:
+We can also apply this same concept to the [Definition of the **Definite Integral** as the Limit of a Riemann Sum](https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html)[^2] (also known as the *Antiderivative*) using the *Midpoint Rule* and some arbitrarily large number of divisions $n = 10^{\varepsilon}$ to approximate:
+[^2]: https://www.sfu.ca/math-coursenotes/Math%20158%20Course%20Notes/sec_riemann.html
 
 $$F(x) = \int_{a}^{b} f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(c_{i}) \Delta{x}$$
 
@@ -478,7 +479,8 @@ Note that you could modify the Riemann estimation to use different approximation
 
 
 ### Anonymous Functions and Lambda Expressions
-An **Anonymous Function** is simply a function without a name. It is defined and used in a single statement, typically as an argument to a method or constructor. These are also known as **Lambda Expressions**, coming from their origin of [*Lambda Calculus*](https://en.wikipedia.org/wiki/Lambda_calculus).
+An **Anonymous Function** is simply a function without a name. It is defined and used in a single statement, typically as an argument to a method or constructor. These are also known as **Lambda Expressions**, coming from their origin of [*Lambda Calculus*](https://en.wikipedia.org/wiki/Lambda_calculus)[^3].
+[^3]: https://en.wikipedia.org/wiki/Lambda_calculus
 
 Consider the following anonymous function that defines a function to add two integers and returns the result:
 ```java
@@ -527,7 +529,8 @@ Runnable r = () -> System.out.println("Running!");
 
 ### Map, Reduce, and Filter
 In functional programming, **Map**, **Reduce**, and **Filter** are ***Higher-Order Functions*** (functions that take another function as an argument) that allow you to apply a function to a collection of elements and produce a new collection as a result. These three functions are the pillars of FP — their proper usage enables very powerful, concise code, especially when applied to large collections of data.
-* Map applies a function to each element in a collection and returns a new collection with the results (coming from the [*map* operation](https://en.wikipedia.org/wiki/Map_(mathematics)) in Discrete Math denoted by the $\mapsto$ operator). For example, given a list of numbers, you can use `map` to apply a function that increases each number by 1:
+* Map applies a function to each element in a collection and returns a new collection with the results (coming from the [*map* operation](https://en.wikipedia.org/wiki/Map_(mathematics))[^4] in Discrete Math denoted by the $\mapsto$ operator). For example, given a list of numbers, you can use `map` to apply a function that increases each number by 1:
+[^4]: https://en.wikipedia.org/wiki/Map_(mathematics)
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
 List<Integer> incremented = numbers.stream()
@@ -555,7 +558,8 @@ These functions can even be composed together to perform more complex operations
 
 
 ## Miscellaneous
-If you want to go even further into computer science, I have additional lesson plans on [my website](http://danielszelogowski.com/education.php), including:
+If you want to go even further into computer science, I have additional lesson plans on [my website](http://danielszelogowski.com/education.php)[^5], including:
+[^5]: http://danielszelogowski.com/education.php
 * **AI and Machine Learning for AP:** http://danielszelogowski.com/resources/apcsamachinelearning/
 * **Python Crash Course for AP:** http://danielszelogowski.com/resources/PythonCrashCourseForAP.html
 * **Taking Programming Language Notes using Jupyter Notebooks:** http://danielszelogowski.com/resources/JupyterLanguageNotebooks.pdf
