@@ -74,7 +74,7 @@ public class PrintingTest {
 }
 ```
 
-Also note that whenever we enter a new set of curly braces `{}``, we typically indent our code one tab space (with the **Tab** key).
+Also note that whenever we enter a new set of curly braces `{}`, we typically indent our code one tab space (with the **Tab** key).
 
 ## Setting up Git and GitHub for Version Control
 One of the best ways to organize programming portfolios and large software projects is by using the **Git** Version Control System (VCS)** (https://git-scm.com/) along with the website **GitHub** (https://github.com). Git is a version control system that allows you to track changes made to files and coordinate work on those files among multiple people, and GitHub is a web-based hosting service for Git repositories that provides version control, collaboration, and project management features. There are many good online tutorials on setting up various text editors and IDEs with Git, but if you simply want to get started right away, you can check out the following video on using the web editor https://replit.com/ with GitHub: https://youtu.be/sTh6B-KyCjA
