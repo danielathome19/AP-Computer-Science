@@ -483,7 +483,7 @@ Consider the following anonymous function that defines a function to add two int
 ```java
 ((int x, int y) -> x + y);
 ```
-This function takes two integer arguments `x and `y` and returns their sum.
+This function takes two integer arguments `x` and `y` and returns their sum.
 
 We can also use this with the `Collections.sort()` method to define a custom sorting behavior for a list or array, such as in descending order:
 ```java
