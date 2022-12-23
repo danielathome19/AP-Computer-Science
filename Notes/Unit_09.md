@@ -1,7 +1,7 @@
 # Unit 9 - Inheritance
 Inheritance is a fundamental concept in **Object-Oriented Programming (OOP)** languages, such as Java, C++, and Python. It allows one class (also known as a **"parent"** or _"super"_ class) to pass on its attributes and behaviors to another class (known as a **"child"** or _"sub"_ class). This allows the child class to reuse the functionality of the parent class while also adding its own unique features, as well as more efficient and organized code because it allows for code reuse and reduces duplication. It also provides better organization of related classes and makes it easier to create and maintain large programs.
 
-For example, a **Dog** class could inherit from a more general **Animal** class. The Animal class might have a `move()` method that defines the general behavior for moving, while the Dog class could override this method to include specific behavior for how a dog moves. For example:
+Put simply, a **Dog** class could inherit from a more general **Animal** class. The Animal class might have a `move()` method that defines the general behavior for moving, while the Dog class could override this method to include specific behavior for how a dog moves. For example:
 ```java
 public class Animal {
   protected String name;
