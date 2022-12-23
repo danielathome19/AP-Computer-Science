@@ -50,7 +50,7 @@ public class Your_Filename_Here {
   }
 }
 ```
-3. Write some code in the blank lines between the `public static void main(String[] args) {` and the penultimate `}`
+3. Write some code in the blank line(s) between the `public static void main(String[] args) {` and the penultimate `}`
 4. Run your program either with your editor's Run button or by typing `java YOUR_FILENAME_HERE.java` in the command line
 5. Repeat!
 
