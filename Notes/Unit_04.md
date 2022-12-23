@@ -28,6 +28,7 @@ while (counter < 10) {
 }
 ```
 
+Here, counter is acting as our **Look Control Variable (LCV)**; while we often use names like _counter_, _cnt_, _i_, _index_, etc. for our loop controller, ***lcv*** is a great alternative that is also easy for graders to read on paper
 
 ## The *for* Loop
 A **for** loop is a shorthand, counter-based loop (i.e., rather than iterating specifically on a condition only, we iterate based on some counter variable). It allows us to declare a counter, check the condition for the counter, and increment/decrement the counter all in one line of code (similar to the **while** loop example above). For example:
@@ -42,11 +43,11 @@ Again, one must be careful (especially in hand-written code) with its use, but a
 ```java
 while (true) System.out.println("Infinite loop");
 // Or...
-for (int i = 0; i < 10; i++) System.out.println(i);
+for (int lcv = 0; lcv < 10; lcv++) System.out.println(lcv);
 
 // Many people will also indent the inner-code, in a Pythonic-style
-for (int i = 0; i < 10; i++)
-  System.out.println(i * 2);
+for (int lcv = 0; lcv < 10; lcv++)
+  System.out.println(lcv * 2);
 ```
 
 If you need to iterate backward, there are two ways that work well; for example, printing the numbers from 10 to 0 (inclusive). First, the standard approach:
