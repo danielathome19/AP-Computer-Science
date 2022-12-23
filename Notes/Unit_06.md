@@ -24,7 +24,7 @@ m
 $$
 
 ## Array/Vector Creation and Access
-To declare an array, we use the `new` keyword just as if we were declaring a new Class object (like **Scanner**) along with the array *"bracket operator"* `[]`. However, we must also have a capacity in mind — regardless of if all slots are full, we need to specify a minimum size, which **CANNOT be modified** later. This is similar to a bookshelf or a permit-only parking lot: the parking lot has 100 spots, each numbered uniquely from 0 to 99; spots may not always be full, but we cannot add or remove spots without rebuilding the lot (theoretically). **Whenever a spot in the parking lot is empty, it has the value `null` meaning *nothing***, which we will look at a solution for below.
+To declare an array, we use the `new` keyword just as if we were declaring a new Class object (like **Scanner**) along with the array *"bracket operator"* `[]`. However, we must also have a capacity in mind — regardless of if all slots are full, we need to specify a minimum size, which **CANNOT be modified** later. This is similar to a bookshelf or a permit-only parking lot: the parking lot has 100 spots, each numbered uniquely from 0 to 99; spots may not always be full, but we cannot add or remove spots without rebuilding the lot (theoretically). **Whenever a spot in the parking lot is empty, it has the value `null` meaning *nothing***, which we will look at a solution for below. ***For primitive types, Java will fill the empty slots with "0".***
 
 The following syntax is used to declare an array:
 ```java
