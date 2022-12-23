@@ -103,7 +103,6 @@ public class Circle extends Shape {
   private int radius;
     
   public Circle(int radius) {
-    // constructor for Circle objects
     this.radius = radius;
   }
 }
@@ -113,7 +112,6 @@ public class Rectangle extends Shape {
   private int height;
   
   public Rectangle(int width, int height) {
-    // constructor for Rectangle objects
     this.width = width;
     this.height = height;
   }
