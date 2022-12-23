@@ -447,7 +447,7 @@ public static void main(String[] args) {
   }  
 }
 ```
-In the code above, we have three different variables, each with different *scopes*:
+In the preceding code, we have three different variables, each with different *scopes*:
 * `lcv` can be accessed from anywhere within `main` because it is declared outside of any block statements, such as a loop or condition (i.e, its "parent curly-braces" are the entirety of `main`)
 * `i` can only be accessed within the `for` loop because it was declared inside of the loop — so, anything inside the `for` loop can also access `i`
 * `temp` can only be accessed within the `if` statement inside the `for` loop — its "parent curly-braces" are the `if` statement, whose "parent curly-braces" are the `for` loop; so, every time the loop starts a new iteration, a new `int temp` will be made inside the `if` statement
