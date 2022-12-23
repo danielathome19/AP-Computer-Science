@@ -551,3 +551,11 @@ List<Integer> evens = numbers.stream()
 ```
 
 These functions can even be composed together to perform more complex operations on collections. You can use `filter` to select a subset of a collection, then `map` to transform the elements in that subset, and finally `reduce` to combine the transformed elements into a single value.
+
+
+
+## Miscellaneous
+If you want to go even further into computer science, I have additional lesson plans on my website, including:
+* **AI and Machine Learning for AP:** http://danielszelogowski.com/resources/apcsamachinelearning/
+* **Python Crash Course for AP:** http://danielszelogowski.com/resources/PythonCrashCourseForAP.html
+* **Taking Programming Language Notes using Jupyter Notebooks:** http://danielszelogowski.com/resources/JupyterLanguageNotebooks.pdf
