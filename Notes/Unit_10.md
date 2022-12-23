@@ -112,8 +112,8 @@ For example, the first 10 Fibonacci numbers:
 We can easily implement this using recursion as follows:
 ```java
 public static int fib(int n) {
-    if (n <= 1) return n;
-    return fib(n-1) + fib(n-2);
+  if (n <= 1) return n;
+  return fib(n-1) + fib(n-2);
 }
 ```
 This series can also be represented as a fraction (much like most sums of a series), the *Golden Ratio*, which is famously represented symbolically by the letter $\phi$:
@@ -140,11 +140,11 @@ Using recursion, we can apply the *divide-and-conquer* approach to improve upon 
 For example, we can restructure Binary Search to use recursion:
 ```java
 public static int binarySearchRec(int[] array, int x, int low, int high) {
-    if (low > high) return -1;
-    int mid = (low + high) / 2;
-    if (array[mid] == x) return mid;
-    if (array[mid] > x) return binarySearchRec(array, x, low, mid - 1);
-    return binarySearchRec(array, x, mid + 1, high);
+  if (low > high) return -1;
+  int mid = (low + high) / 2;
+  if (array[mid] == x) return mid;
+  if (array[mid] > x) return binarySearchRec(array, x, low, mid - 1);
+  return binarySearchRec(array, x, mid + 1, high);
 }
 
 // Call with binarySearchRec(array, num, 0, array.length)
