@@ -71,6 +71,7 @@ print out variables with specific formats (see [Format Specifiers](https://www.g
 Likewise, if you wanted to print a double or String, or a mix of all, you simply write out the string followed 
 by a comma-separated list of the arguments you want displayed in order of the format specifier:
 [^1]: https://www.geeksforgeeks.org/format-specifiers-in-java/
+
 ```java
 int a = 50;
 double b = 3.14159;
@@ -98,6 +99,7 @@ System.out.printf("%,d\n", x);
 
 You can even [write out large numbers](https://docs.oracle.com/javase/7/docs/technotes/guides/language/underscores-literals.html)[^2] with the `_` separator:
 [^2]: https://docs.oracle.com/javase/7/docs/technotes/guides/language/underscores-literals.html
+
 ```java
 double salary = 1_234_567.890;
 System.out.printf("%,.2f\n", salary);
