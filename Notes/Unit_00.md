@@ -104,7 +104,7 @@ git commit -m "Commit message"
 The `git add` command stages the changes you have made to the file, and the `git commit` command records the changes and adds a message describing the changes
 
 6. Push to GitHub: To upload your local commits to the remote repository on GitHub, use the following command:
-```java
+```bash
 git push origin master
 ```
 This will upload your commits to the **master** branch of the repository on GitHub.
