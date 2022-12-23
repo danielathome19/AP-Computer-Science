@@ -6,9 +6,17 @@ A **method**, also known as a function or procedure, is a block of related lines
 
 Methods generally follow the following format:
 ```java
-<access_level: public or private (or protected, but not on AP subset)> <static or blank> <datatype> <method_name>(<datatype arg1, datatype arg2, etc.>) {
+<access_level: public or private (or protected, but not on AP subset)>
+<static or blank> <datatype (return type)> 
+<method_name>(<datatype arg1, datatype arg2, etc.>) {
   // ...
   // If not void: return datatype;
+}
+
+// or, simpler:
+<access_level> <static/blank> <type> <name>(<type arg1, type arg2, ...>) {
+  // Some code here
+  // return varOfType;
 }
 ```
 
@@ -33,6 +41,8 @@ public int summation(int n) {
   return sum;
 }
 ```
+
+If a method's return type is `void`, it simply means that we are not required to return anything — though, often it is used to exit the method early.
 
 ### Documentation Comments
 Comments are a fundamental need for large projects; unless you use extremely verbose and explicit variable, class, and method names, there will be parts of your code that do not make sense to other readers (including your future self!) especially. As well, we can use comments not only to explain what code does, but what unfinished code WILL do eventually (often marked with `// TODO: _____`) — for example, before even writing out any code, it is often useful to "sketch" out your program by breaking it down into smaller parts separated by comments describing what happens next.
