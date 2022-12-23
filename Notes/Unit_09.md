@@ -313,7 +313,7 @@ public class CheckSuperInstance {
 
 
 
-## Inheritance Hierarchies - The Theory of the Object-Oriented Programming Paradigm
+## Inheritance Hierarchies - The Theory of Object-Oriented Programming
 In Object-Oriented Programming, an **Inheritance Hierarchy** refers to the way that classes inherit attributes and behaviors from parent classes. This allows for a hierarchical relationship between classes, where child classes inherit the attributes and behaviors of their parent classes. Inheritance hierarchies can also have multiple levels of inheritance, where a child class inherits from a parent class, which itself inherits from a grandparent class, and so on, enabling a flexible and reusable code structure where common attributes and behaviors can be defined in parent classes and then inherited by child classes.
 
 
