@@ -123,12 +123,53 @@ if (!allHomeworkCompleted()) {
 Truth tables are a method of breaking down compound conditions into each of their smaller parts to deduce their result based on all possible combinations of **true** and **false**. 
 For example: the truth table for the statement ```if (A or B) and (!A and B)```
 
-| A | B | !A | A or B | (!A and B) | (A or B) and (!A and B) |
-|---|---|----|--------|------------|-------------------------|
-| T | T | F  | T      | F          | F                       |
-| T | F | F  | T      | F          | F                       |
-| F | T | T  | T      | T          | T                       |
-| F | F | T  | F      | F          | F                       |
+<table>
+    <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>!A</th>
+            <th>A or B</th>
+            <th>(!A and B)</th>
+            <th>(A or B) and (!A and B)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>T</td>
+            <td>T</td>
+            <td>F</td>
+            <td>T</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>T</td>
+            <td>F</td>
+            <td>F</td>
+            <td>T</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>T</td>
+            <td>T</td>
+            <td>T</td>
+            <td>T</td>
+            <td>T</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>T</td>
+            <td>F</td>
+            <td>F</td>
+            <td>F</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Equivalent Conditions
 One thing we can do to make our code easier to read and organize is to optimize conditions to their reduced equivalent, often seen in the technique known as [**Guard Clauses**](https://www.youtube.com/shorts/Zmx0Ou5TNJs) (a technique often used to prevent/decrease nested *if* statements). By rewriting a condition as their opposite form, we can often drastically reduce code and/or increase readability (and possibly performance!).
