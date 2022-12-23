@@ -57,6 +57,7 @@ Perhaps the [most common example](https://docs.oracle.com/javase/7/docs/api/java
 is the `System.out.println(...)` method, which prints to the console but does not return a value that 
 needs to be stored in a variable or used in a calculation, like `Math.sin(x)`.
 [^1]: https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println()
+
 To actually call a void method, we simply type out the method anywhere in the code that we want it to 
 execute — typically on its own separate line since it cannot be used in a calculation:
 ```java
