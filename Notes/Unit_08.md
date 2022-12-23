@@ -68,7 +68,7 @@ int[][] ja2 = {
 ```
 
 ### Nested Iteration for Matrix Traversal
-To both populate and traverse matrices and jagged arrays, we must use a **_for loop inside_ another _for loop_** for simplicity. For a traditional matrix (multidimensional array) where the number of columns is the same for all rows, we can loop using `matrixName.length` for the rows and `matrixName[0].length` for the columns; otherwise, we might need to use our row counter to find the length of the current row (i.e., `multiDimArrName[row].length` if we have a jagged array. We typically loop through 2D arrays in a style known as ***Row-Major Order***, where we start at the first item of the first row, traverse to the end of the row, then start the next row at its first item (i.e., nest the *column* loop inside the *row* loop). If we nested our *row* loop inside the *column* loop instead, this would become ***Column-Major Order***.
+To both populate and traverse matrices and jagged arrays, we must use a **_for loop inside_ another _for loop_** for simplicity. For a traditional matrix (multidimensional array) where the number of columns is the same for all rows, we can loop using `matrixName.length` for the rows and `matrixName[0].length` for the columns; otherwise, we might need to use our row counter to find the length of the current row (i.e., `multiDimArrName[row].length` if we have a jagged array). We typically loop through 2D arrays in a style known as ***Row-Major Order***, where we start at the first item of the first row, traverse to the end of the row, then start the next row at its first item (i.e., nest the *column* loop inside the *row* loop). If we nested our *row* loop inside the *column* loop instead, this would become ***Column-Major Order***.
 
 For example:
 ```java
