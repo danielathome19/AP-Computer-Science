@@ -67,7 +67,7 @@ print it by itself, such as `System.out.println(xyz);` or append it to the end o
 
 It's less common, but we can also use `System.out.printf("some formatting: %.3f\n", doubleval);` to 
 print out variables with specific formats (see [Format Specifiers](https://www.geeksforgeeks.org/format-specifiers-in-java/))[^1] 
--- note that this function also does not append a line-break unless you put "\n", or "\t" for a tab-space. 
+— note that this function also does not append a line-break unless you put "\n", or "\t" for a tab-space. 
 Likewise, if you wanted to print a double or String, or a mix of all, you simply write out the string followed 
 by a comma-separated list of the arguments you want displayed in order of the format specifier:
 ```java
