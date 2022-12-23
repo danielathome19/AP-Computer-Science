@@ -10,11 +10,15 @@ import java.util.ArrayList;
 // ...
 ArrayList<DATATYPE> varname = new ArrayList<DATATYPE>();
 ```
+We can also instantiate an ArrayList as an instance of the **List** interface, which is more common for code compatibility:
+```java
+List<DATATYPE> listname = new ArrayList<DATATYPE>();
+```
 Like arrays, ArrayLists can store any singular type of data or class. However, the one disadvantage with this class is that **to use an ArrayList with a primitive type, you __MUST__ use the wrapper class for that type**; i.e., **Integer** for `int`, **Double** for `double`, **Character** for `char`, etc. When we add and retrieve these primitive values back from the list, Java will automatically **autobox** and **unbox** the objects to their primitive form. For everything else, like **String**, the name of the class is sufficient.
 
 Like a normal array, we can easily populate an ArrayList using a **for** loop and the `add()` method (however, we need to specify the end number of elements, since an ArrayList's size is unrelated to its current capacity):
 ```java
-ArrayList<Integer> nums = new ArrayList<Integer>();
+List<Integer> nums = new ArrayList<Integer>();
 for (int i = 0; i < 100; i++) {
   nums.add(i);
 }
@@ -36,7 +40,7 @@ import java.util.ArrayList;
 public class ArrayListExamples {
   public static void main(String[] args) {
     // Create an ArrayList of Strings
-    ArrayList<String> list = new ArrayList<String>();
+    List<String> list = new ArrayList<String>();
 
     // Add elements to the list
     list.add("apple");
