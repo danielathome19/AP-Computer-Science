@@ -33,7 +33,8 @@ while (counter < 10) {
 A **for** loop is a shorthand, counter-based loop (i.e., rather than iterating specifically on a condition only, we iterate based on some counter variable). It allows us to declare a counter, check the condition for the counter, and increment/decrement the counter all in one line of code (similar to the **while** loop example above). For example:
 ```java
 for (int counter = 0; counter < 10; counter++) {
-  // Run some code repeatedly, 10 times in total (same as the while loop example)
+  // Run some code repeatedly, 10 times in total 
+  // (same as the while loop example)
 }
 ```
 
@@ -129,14 +130,16 @@ try {
 
 We typically use this when working with files to prevent an exception when a file is missing:
 ```java
-try {  // On Replit, may need to put "../data/prog285b.dat", or use the absolute (exact) path if neither work
-    Scanner input = new Scanner(new File("data/prog285b.dat"));
+try {
+  // On some systems, may need to put "../data/prog285b.dat",
+  // or use the absolute (exact) path if neither work
+  Scanner input = new Scanner(new File("data/prog285b.dat"));
     
-    while (input.hasNext()) {
-      // ...
-    }
+  while (input.hasNext()) {
+    // ...
+  }
 } catch (IOException e) {
-    System.out.println("Can't find data file!");
+  System.out.println("Can't find data file!");
 }
 ```
 
