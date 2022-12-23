@@ -51,7 +51,7 @@ Another standard in programming is the concept of **documentation comments**, wh
 ```java
 /**
 * <h1>Hello, World!</h1>
-* The HelloWorld program simply displays "Hello World!" to the standard output.
+* The HelloWorld program simply displays "Hello World!" to the console.
 * 
 *
 * @author  John Smith
@@ -153,7 +153,8 @@ public class CLASS_NAME {
   
   // Override Method
   public String toString() {
-    return String.format("Var1: %FORMAT   Var2: %FORMAT   Var3: %FORMAT", myVar1, myVar2, myVar3);
+    return String.format("Var1: %FORMAT   Var2: %FORMAT   Var3: %FORMAT", 
+                 myVar1, myVar2, myVar3);
   }
   
   // Easy Print Method
@@ -261,7 +262,8 @@ public class Vector3 {
   
   // Overload accessor from Object class
   public String toString() {
-    return String.format("X: %f\t Y: %f\t Z: %f", this.getX(), this.getY(), this.getZ());
+    return String.format("X: %f\t Y: %f\t Z: %f", 
+                 this.getX(), this.getY(), this.getZ());
   }
 }
 
@@ -274,10 +276,12 @@ double xPos = position.getX();
 double yPos = position.getY();
 double zPos = position.getZ();
 System.out.println(position.toString());
-// toString is also called implicitly by println, so System.out.println(position); is sufficient
+// toString() is also called implicitly by println, 
+// so `System.out.println(position);` is sufficient
 
 // Or, call the accessors and directly utilize their return values
-System.out.printf("X: %f\t Y: %f\t Z: %f\n", position.getX(), position.getY(), position.getZ());
+System.out.printf("X: %f\t Y: %f\t Z: %f\n",
+      position.getX(), position.getY(), position.getZ());
 ```
 
 
