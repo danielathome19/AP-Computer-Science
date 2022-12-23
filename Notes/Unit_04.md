@@ -115,7 +115,7 @@ try {
 
 
 ### Exception Handling
-The concept of **Exception Handling** refers to the process of responding to some event in the code that may be unintentional/unexpected, etc. Put simply, it is a way of preventing a program from crashing when a specified error occurs and instead allows us to decide what to do if an **Exception** is caught. **Again, this is not on the AP subset, but is extremely useful for practical programs.** This is done using a ***try-catch*** statement, where `try` will attempt to run a block of (possibly) erroneous code, and `catch (SomeException ex)` tells us what to do if *SomeException* occurs while running the code in the `try` block. For example, catching a division by 0 error using the generic `Exception` type exception:
+The concept of **Exception Handling** refers to the process of responding to some event in the code that may be unintentional/unexpected, etc. Put simply, it is a way of preventing a program from crashing when a specified error occurs and instead allows us to decide what to do if an **Exception** is caught. **Again, this is not on the AP subset but is extremely useful for practical programs.** This is done using a ***try-catch*** statement, where `try` will attempt to run a block of (possibly) erroneous code, and `catch (SomeException ex)` tells us what to do if *SomeException* occurs while running the code in the `try` block. For example, catching a division by 0 error using the generic `Exception` type exception:
 ```java
 try {
   // Run some code that may or may not throw an error

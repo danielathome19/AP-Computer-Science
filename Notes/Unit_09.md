@@ -1,5 +1,5 @@
 # Unit 9 - Inheritance
-Inheritance is a fundamental concept in **Object-Oriented Programming (OOP)** languages, such as Java, C++, and Python. It allows one class (also known as a **"parent"** or _"super"_ class) to pass on its attributes and behaviors to another class (known as a **"child"** or _"sub"_ class). This allows the child class to reuse the functionality of the parent class while also adding its own unique features, as well for more efficient and organized code because it allows for code reuse and reduces duplication. It also provides better organization of related classes and makes it easier to create and maintain large programs.
+Inheritance is a fundamental concept in **Object-Oriented Programming (OOP)** languages, such as Java, C++, and Python. It allows one class (also known as a **"parent"** or _"super"_ class) to pass on its attributes and behaviors to another class (known as a **"child"** or _"sub"_ class). This allows the child class to reuse the functionality of the parent class while also adding its own unique features, as well as more efficient and organized code because it allows for code reuse and reduces duplication. It also provides better organization of related classes and makes it easier to create and maintain large programs.
 
 For example, a **Dog** class could inherit from a more general **Animal** class. The Animal class might have a `move()` method that defines the general behavior for moving, while the Dog class could override this method to include specific behavior for how a dog moves. For example:
 ```java
@@ -153,7 +153,7 @@ Here, the **Dog** class overrides the `makeNoise()` method from the **Animal** c
 
 
 #### Overloading Methods
-It is very important to note that while some people use the terms "Overloading" and "Overriding" synonymously, they are two VERY different concepts in programming. Method **Overloading** refers to the ability of a class to ___have multiple methods with the same name, but with different parameters___. This allows for the creation of methods that can perform similar tasks, but with varying numbers and/or type of arguments. 
+It is very important to note that while some people use the terms "Overloading" and "Overriding" synonymously, they are two VERY different concepts in programming. Method **Overloading** refers to the ability of a class to ___have multiple methods with the same name, but with different parameters___. This allows for the creation of methods that can perform similar tasks, but with varying numbers and/or types of arguments. 
 
 For example:
 ```java
@@ -210,9 +210,9 @@ We technically have two implementations of `getArea()`, but since they share the
 
 
 ### The *super* Keyword
-The `super` keyword acts a reference variable referring to the immediate parent class object. It is mainly used to access the members (either methods or variables) of a parent class that have been hidden by a child class.
+The `super` keyword acts as a reference variable referring to the immediate parent class object. It is mainly used to access the members (either methods or variables) of a parent class that has been hidden by a child class.
 
-For example, if a class **A** is the parent of class **B**, and both classes have a method named `printMessage()`, the `printMessage()` method in class B can call the `printMessage()` method of class A using the `super` keyword:
+For example, if class **A** is the parent of class **B**, and both classes have a method named `printMessage()`, the `printMessage()` method in class B can call the `printMessage()` method of class A using the `super` keyword:
 ```java
 class A {
    public void printMessage() {
@@ -275,7 +275,7 @@ if (str instanceof String) {
 ```
 Here, `instanceof` is used to check if the `str` object is an instance of the **String** class. Since this is true, the code will print _"str is an instance of String"_ to the console.
 
-You can also use the instanceof operator to check if an object implements a particular interface. For example:
+You can also use the `instanceof` operator to check if an object implements a particular interface. For example:
 ```java
 // Create an object of the ArrayList class
 List<String> list = new ArrayList<>();
@@ -326,9 +326,9 @@ In Object-Oriented Programming, an **Inheritance Hierarchy** refers to the way t
 ### Encapsulation
 The idea of **Encapsulation** is one of the most fundamental concepts in Object-Oriented Programming. It is a technique for ensuring that the internal workings of a class are hidden from other classes and external users of an object. In other words, it is the process of enclosing all of the data and behavior of an object within a single, self-contained unit.
 
-In Java (and most C-based programming languages like C++), encapsulation is implemented through the use of access modifiers, such as `private`, `protected`, and `public`. These modifiers determine the visibility and accessibility of the members of a class, such as its fields and methods. For example, a **private field** can only be accessed by the methods of the same class, while a **public field** can be accessed by any other class. This allows the developer to control how the internal data of an object is accessed and modified, and ensures that the object's internal state remains consistent and correct.
+In Java (and most C-based programming languages like C++), encapsulation is implemented through the use of access modifiers, such as `private`, `protected`, and `public`. These modifiers determine the visibility and accessibility of the members of a class, such as its fields and methods. For example, a **private field** can only be accessed by the methods of the same class, while a **public field** can be accessed by any other class. This allows the developer to control how the internal data of an object is accessed and modified and ensures that the object's internal state remains consistent and correct.
 
-Encapsulation has several benefits. It promotes modularity and code reusability, as it allows developers to create self-contained objects that can be easily reused in other parts of the program. It also increases code maintainability, as it allowowing us to make changes to the internal workings of an object without affecting other parts of the program. Finally, it enhances security, as it prevents external code from directly accessing or modifying the internal data of an object, which can help protect against malicious attacks.
+Encapsulation has several benefits. It promotes modularity and code reusability, as it allows developers to create self-contained objects that can be easily reused in other parts of the program. It also increases code maintainability, as it allows us to make changes to the internal workings of an object without affecting other parts of the program. Finally, it enhances security, as it prevents external code from directly accessing or modifying the internal data of an object, which can help protect against malicious attacks.
 
 
 
@@ -400,9 +400,9 @@ The **Object** class and its methods are an important part of the object-oriente
 ## Interfaces and Abstract Classes
 While not currently in the AP subset, two important concepts that extend the concept of inheritance are **Interfaces** and **Abstract Classes**. In Object-Oriented Programming, an **Interface** is a blueprint for a class that specifies the behavior that a class must implement. It defines a set of methods that a class MUST implement, but it does not provide any implementation for those methods. Thus, when a class *implements* an interface, it must implement all of the methods that the interface defined.
 
-An **Abstract Class** is a class that cannot be instantiated, but can be extended by other classes. Abstract classes can contain both concrete (normal) and *abstract* methods (marked with the `abstract` keyword), which are methods that lack an implementation. Unlike interfaces, abstract classes can provide *some* implementations for their methods.
+An **Abstract Class** is a class that cannot be instantiated but can be extended by other classes. Abstract classes can contain both concrete (normal) and *abstract* methods (marked with the `abstract` keyword), which are methods that lack implementation. Unlike interfaces, abstract classes can provide *some* implementations for their methods.
 
-In Java, a class can implement multiple interfaces, but can only extend a single abstract class. This is because Java (unfortunately) does not support multiple inheritance, which is the ability of a class to inherit from multiple classes. However, ***it is very important to note that you cannot make an instance of an abstract class or an interface***, since abstract classes are meant to be a superclass from which other classes can inherit, and interfaces provide no functionality. Since abstract classes can have abstract and non-abstract methods, and the subclasses MUST provide implementations for the abstract methods.
+In Java, a class can implement multiple interfaces, but can only extend a single abstract class. This is because Java (unfortunately) does not support multiple inheritance, which is the ability of a class to inherit from multiple classes. However, ***it is very important to note that you cannot make an instance of an abstract class or an interface***, since abstract classes are meant to be a superclass from which other classes can inherit, and interfaces provide no functionality. Since abstract classes can have abstract and non-abstract methods, the subclasses MUST provide implementations for the abstract methods.
 
 
 
@@ -475,7 +475,7 @@ public class Square implements Shape, Printable {
 
 
 ### Abstract Classes and Methods
-In OOP, an **Abstract Class** is a class that contains one or more abstract methods and possible some concrete methods. An **Abstract Method** is a method that has a declaration but does not have an implementation. This means that the method does not have a body – it just specifies the method's *signature*, including the name of the method, the return type, and the list of parameters.
+In OOP, an **Abstract Class** is a class that contains one or more abstract methods and possibly some concrete methods. An **Abstract Method** is a method that has a declaration but does not have an implementation. This means that the method does not have a body – it just specifies the method's *signature*, including the name of the method, the return type, and the list of parameters.
 
 For example:
 ```java

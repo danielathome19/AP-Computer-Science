@@ -55,7 +55,7 @@ public class HelloWorld {
 }
 ```
 
-Often, especially on the AP exam, documentation comments are used to explain the conditions for a given function, as well as the expected conditions after a function is ran. These are typically defined as follows:
+Often, especially on the AP exam, documentation comments are used to explain the conditions for a given function, as well as the expected conditions after a function is run. These are typically defined as follows:
 * **Precondition**: abc
 * **Postcondition**: abc
 
@@ -106,7 +106,7 @@ A general-purpose Class (sometimes called a *data class* in other languages) typ
 * **Constructor(s):** sets up the private data (taking in arguments for some and setting the rest to some default value, like 0)
 * **Mutator (Setter) Methods**: modify private data
 * **Accessor (Getter) Methods:** return private data
-* *Sometimes* **Override Methods (such as `toString()`):** overidden methods from the **Object** class — usually some accessor method(s)
+* *Sometimes* **Override Methods (such as `toString()`):** overridden methods from the **Object** class — usually some accessor method(s)
 
 The general layout for classes is as follows:
 ```java

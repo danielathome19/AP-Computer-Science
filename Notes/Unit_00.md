@@ -4,7 +4,7 @@ Java is a popular **Object-Oriented Programming (OOP)** language that runs on a 
 To set up Java on your computer, you need to follow these steps:
 1. Download and install the **Java Development Kit (JDK)**. The JDK is a software development kit that includes the tools you need to compile and run Java programs. You can download the JDK (not the Java Runtime Environment/JRE) from the Oracle website (https://www.oracle.com/java/technologies/javase-downloads.html) or from OpenJDK (https://openjdk.org/)
 2. Once the download is complete, run the installer and follow the prompts to install the JDK
-3. After the installation is complete, you need to set the PATH environment variable to include the directory where the JDK was installed, which is necessary to allow the **Java Compiler** (`javac`) and **Java Runtime** (`java`) to be found from any directory on your machine. First, run the command ``java -version` in your command line/terminal; if it runs successfully, you can skip the next two steps; otherwise (if you get an error like _"command not found"_), follow the next steps to properly setup the PATH variable for Java
+3. After the installation is complete, you need to set the PATH environment variable to include the directory where the JDK was installed, which is necessary to allow the **Java Compiler** (`javac`) and **Java Runtime** (`java`) to be found from any directory on your machine. First, run the command ``java -version` in your command line/terminal; if it runs successfully, you can skip the next two steps; otherwise (if you get an error like _"command not found"_), follow the next steps to properly set up the PATH variable for Java
 4. To set the PATH environment variable on **Windows**, open the Control Panel, click on "System and Security," and then click on "System." From there, click on "Advanced system settings," and then click on the "Environment Variables" button. Under the "System variables" section, find the "Path" variable and click on "Edit." Add the path to the JDK bin directory to the end of the "Variable value" field, separated by a semicolon
 5. To set the PATH environment variable on **macOS** or **Linux**, open your terminal and enter the following command:
 ```bash
@@ -54,7 +54,7 @@ public class Your_Filename_Here {
 4. Run your program either with your editor's Run button or by typing `java YOUR_FILENAME_HERE.java` in the command line
 5. Repeat!
 
-You can find a brief tutorial on writing and running your first program at ----------. Note that many of the code examples provided are "snippets" of programs (i.e., parts of the code necessary to run a program) rather than every detail (such as the `public class` and `public static void main...` declarations). For all intents and purposes, assume that any code snippets may be ran by pasting them into a new program using the aforementioned template in the blank space in the middle. For example:
+You can find a brief tutorial on writing and running your first program at ----------. Note that many of the code examples provided are "snippets" of programs (i.e., parts of the code necessary to run a program) rather than every detail (such as the `public class` and `public static void main...` declarations). For all intents and purposes, assume that any code snippets may be run by pasting them into a new program using the aforementioned template in the blank space in the middle. For example:
 
 _To print out some text to the console, use `System.out.println("YOUR TEXT GOES HERE IN THE QUOTES");`, making sure each line ends with a semicolon `;`:_
 ```java
@@ -63,7 +63,7 @@ System.out.println("My name is NAME");
 System.out.println("This is a simple Java program!");
 ```
 
-This code could be ran in a Java file, named **PrintingTest.java** for example, by pasting the code snippet into our template as follows:
+This code could be run in a Java file, named **PrintingTest.java** for example, by pasting the code snippet into our template as follows:
 ```java
 public class PrintingTest {
   public static void main(String[] args) {
@@ -74,10 +74,10 @@ public class PrintingTest {
 }
 ```
 
-Also note that whenever we enter a new set of curly-braces `{}`, we typically indent our code one tab-space (with the **Tab** key).
+Also note that whenever we enter a new set of curly braces `{}``, we typically indent our code one tab space (with the **Tab** key).
 
 ## Setting up Git and GitHub for Version Control
-One of the best ways to organize programming portfolios and large software projects is using the **Git Version Control System (VCS)** (https://git-scm.com/) along with the website **GitHub** (https://github.com). Git is a version control system that allows you to track changes made to files and coordinate work on those files among multiple people and GitHub is a web-based hosting service for Git repositories that provides version control, collaboration, and project management features. There are many good online tutorials on setting up various text editors and IDEs with Git, but if you simply want to get started right away, you can check out the following video on using the web editor https://replit.com/ with GitHub: https://youtu.be/sTh6B-KyCjA
+One of the best ways to organize programming portfolios and large software projects is by using the **Git** Version Control System (VCS)** (https://git-scm.com/) along with the website **GitHub** (https://github.com). Git is a version control system that allows you to track changes made to files and coordinate work on those files among multiple people, and GitHub is a web-based hosting service for Git repositories that provides version control, collaboration, and project management features. There are many good online tutorials on setting up various text editors and IDEs with Git, but if you simply want to get started right away, you can check out the following video on using the web editor https://replit.com/ with GitHub: https://youtu.be/sTh6B-KyCjA
 
 You can also check out the official documentation for [VS Code](https://code.visualstudio.com/docs/sourcecontrol/github) or [IntelliJ](https://www.jetbrains.com/help/idea/using-git-integration.html) to find steps on connecting to and/or sharing remote repositories.
 

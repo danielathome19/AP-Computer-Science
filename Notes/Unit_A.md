@@ -27,8 +27,8 @@ This appendix contains a quick reference for the major keywords, operators, esca
 * `()`: parenthesis
 * `[]`: array subscript (index operator)
 * `.`: object member selection
-* `+`: unary plus (represent number as positive `+2`)
-* `-`: unary minus (represent number as negative `-2`)
+* `+`: unary plus (represent a number as positive `+2`)
+* `-`: unary minus (represent a number as negative `-2`)
 * `(type)`: type cast
 
 
