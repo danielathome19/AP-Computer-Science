@@ -113,7 +113,8 @@ The **Integer** and **Double** classes are wrappers to wrap the primitive types 
 the **String** class, which is simply a wrapper for a `char[]` (i.e., a mask to make it easier to work with the entire text while also providing
 additional helper methods). For example:
 ```java
-// To create an instance of these classes, we can either provide a value or variable
+// To create an instance of these classes,
+// we can either provide a value or variable
 Integer x = new Integer(5);
 // Or...
 int y = 150;
@@ -182,7 +183,8 @@ String sf = String.format("value is %.2f", x);
 System.out.println(sf);
 
 // Or...
-System.out.println("X rounded to two decimals: " + String.format("%.2f", x) + " is a simple example.");
+System.out.println("X rounded to two decimals: " 
+      + String.format("%.2f", x) + " is a simple example.");
 ```
 
 If you want to *clamp* your decimal to a number of decimals in the actual variable itself, one way that works for
