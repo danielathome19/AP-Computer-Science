@@ -96,27 +96,27 @@ Recall that a constructor is a special method that is used to initialize an obje
 For example, consider a simple class hierarchy with a base class called **Shape** and two subclasses called **Circle** and **Rectangle**:
 ```java
 public class Shape {
-    // Base class for shapes
+  // Base class for shapes
 }
 
 public class Circle extends Shape {
-    private int radius;
+  private int radius;
     
-    public Circle(int radius) {
-        // constructor for Circle objects
-        this.radius = radius;
-    }
+  public Circle(int radius) {
+    // constructor for Circle objects
+    this.radius = radius;
+  }
 }
 
 public class Rectangle extends Shape {
-    private int width;
-    private int height;
-    
-    public Rectangle(int width, int height) {
-        // constructor for Rectangle objects
-        this.width = width;
-        this.height = height;
-    }
+  private int width;
+  private int height;
+  
+  public Rectangle(int width, int height) {
+    // constructor for Rectangle objects
+    this.width = width;
+    this.height = height;
+  }
 }
 ```
 
@@ -235,22 +235,22 @@ Here the `printMessage()` method of class **B** calls the method of the same nam
 A **Super Constructor** is a constructor that is used to create an instance of a _subclass_ while setting up the inherited class variables from the _superclass_. It is called using the `super` keyword just like any other inherited member accesses. For example:
 ```java
 class MyAnimal {
-    private String name;
-    private int age;
+  private String name;
+  private int age;
 
-    public MyAnimal(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+  public MyAnimal(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
 }
 
 class Cat extends MyAnimal {
-    private String color;
+  private String color;
 
-    public Cat(String name, int age, String color) {
-        super(name, age);
-        this.color = color;
-    }
+  public Cat(String name, int age, String color) {
+    super(name, age);
+    this.color = color;
+  }
 }
 ```
 The **MyAnimal** class has a constructor that takes two arguments, `name` and `age`, and uses them to initialize the corresponding instance variables. The **Cat** class extends MyAnimal, so it inherits the name and age instance variables. In the Cat class, we have added a new instance variable, `color`, which is not present in the MyAnimal class. To initialize the `name` and `age` variables, which are inherited from MyAnimal, we use the `super` keyword to call the _superclass constructor_. ***The super keyword must be used as the first statement in the subclass constructor, and it must pass the values for the name and age variables as arguments***. This ensures that `name` and `age` are properly initialized before the Cat constructor proceeds to initialize the `color` variable.
@@ -413,8 +413,8 @@ In Java, an **Interface** is a reference type that is similar to a **Class**. Pu
 Consider the following example:
 ```java
 public interface Shape {
-   double getArea();
-   double getPerimeter();
+  double getArea();
+  double getPerimeter();
 }
 ```
 A class that implements the Shape interface (literally, using the `implements` keyword) would need to provide implementations for the `getArea()` and `getPerimeter()` methods — however, they must also be marked as overridden methods using `@Override`. 
@@ -448,15 +448,15 @@ public interface Printable {
 }
 
 public class Square implements Shape, Printable {
-   private double sideLength;
+  private double sideLength;
 
-   public Square(double sideLength) {
-      this.sideLength = sideLength;
-   }
+  public Square(double sideLength) {
+    this.sideLength = sideLength;
+  }
 
-   @Override
-   public double getArea() {
-      return sideLength * sideLength;
+  @Override
+  public double getArea() {
+    return sideLength * sideLength;
   }
   
   @Override
@@ -468,7 +468,6 @@ public class Square implements Shape, Printable {
   public void print() {
     System.out.println("Side length: " + sideLength);
   }
-  
 }
 ```
 
@@ -480,14 +479,13 @@ In OOP, an **Abstract Class** is a class that contains one or more abstract meth
 For example:
 ```java
 public abstract class Animal {
-    // Abstract method
-    public abstract void makeSound();
+  // Abstract method
+  public abstract void makeSound();
 
-    // Concrete method
-    public void eat() {
-        System.out.println("Eating...");
-    }
-
+  // Concrete method
+  public void eat() {
+    System.out.println("Eating...");
+  }
 }
 ```
 In this example, the **Animal** class contains one abstract method called `makeSound()`, as well as one **Concrete (normal) Method** called `eat()`. The `makeSound()` is abstract because it does not have an implementation — it simply specifies that the method will take no parameters and return no value, whereas the `eat()` method is concrete since it has a complete implementation, including a method body.
@@ -495,12 +493,11 @@ In this example, the **Animal** class contains one abstract method called `makeS
 To use an abstract class, you need to create a subclass that *extends* (like inheritance) the abstract class and provides implementations for all of the abstract methods. For example:
 ```java
 public class Dog extends Animal {
-    // Implement the abstract method
-    @Override
-    public void makeSound() {
-        System.out.println("Woof!");
-    }
-
+  // Implement the abstract method
+  @Override
+  public void makeSound() {
+    System.out.println("Woof!");
+  }
 }
 ```
 Here, the **Dog** class extends the **Animal** class and provides an implementation for the `makeSound()` method, meaning we can make instances of dogs and `makeSound()` will have the desired behavior when it is called.
