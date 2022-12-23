@@ -54,7 +54,7 @@ public class Your_Filename_Here {
 4. Run your program either with your editor's Run button or by typing `java YOUR_FILENAME_HERE.java` in the command line
 5. Repeat!
 
-You can find a brief tutorial on writing and running your first program at ----------. Note that many of the code examples provided are "snippets" of programs (i.e., parts of the code necessary to run a program) rather than every detail (such as the `public class` and `public static void main...` declarations). For all intents and purposes, assume that any code snippets may be run by pasting them into a new program using the aforementioned template in the blank space in the middle. For example:
+You can find a brief tutorial on writing and running your first program at https://youtu.be/xGy5dKKFF3Y. Note that many of the code examples provided are "snippets" of programs (i.e., parts of the code necessary to run a program) rather than every detail (such as the `public class` and `public static void main...` declarations). For all intents and purposes, assume that any code snippets may be run by pasting them into a new program using the aforementioned template in the blank space in the middle. For example:
 
 _To print out some text to the console, use `System.out.println("YOUR TEXT GOES HERE IN THE QUOTES");`, making sure each line ends with a semicolon `;`:_
 ```java
