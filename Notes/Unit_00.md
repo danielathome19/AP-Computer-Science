@@ -1,5 +1,5 @@
 # Unit 0 - Java Development Setup and Installation
-Java is a popular **Object-Oriented Programming (OOP)** language that runs on a wide variety of platforms. It is commonly used for building web and mobile applications, as well as for developing desktop and server-side applications. Today, it is especially popular because it is easy to learn and transfer concepts to other programming languages, has a large and active community of developers, and continues to be used in enterprise applications due in part to it being cross-platform (i.e., usable on any operating system where the Java Runtime is installed). Before doing anything, you first need to install Java and a code editor of your choice.
+Java is a popular **Object-Oriented Programming (OOP)** language that runs on a wide variety of platforms. It is commonly used for building web and mobile applications, as well as for developing desktop and server-side applications. Today, it is especially popular because it is easy to learn and transfer concepts to other programming languages, has a large and active community of developers, and continues to be used in enterprise applications due in part to it being cross-platform (i.e., usable on any operating system where the Java Runtime is installed) since it runs on a compatibility layer known as the **Java Virtual Machine (JVM)**. Before doing anything, you first need to install Java and a code editor of your choice.
 
 To set up Java on your computer, you need to follow these steps:
 1. Download and install the **Java Development Kit (JDK)**. The JDK is a software development kit that includes the tools you need to compile and run Java programs. You can download the JDK (not the Java Runtime Environment/JRE) from the Oracle website (https://www.oracle.com/java/technologies/javase-downloads.html) or from OpenJDK (https://openjdk.org/)
@@ -54,6 +54,27 @@ public class Your_Filename_Here {
 4. Run your program either with your editor's Run button or by typing `java YOUR_FILENAME_HERE.java` in the command line
 5. Repeat!
 
+You can find a brief tutorial on writing and running your first program at ----------. Note that many of the code examples provided are "snippets" of programs (i.e., parts of the code necessary to run a program) rather than every detail (such as the `public class` and `public static void main...` declarations). For all intents and purposes, assume that any code snippets may be ran by pasting them into a new program using the aforementioned template in the blank space in the middle. For example:
+
+_To print out some text to the console, use `System.out.println("YOUR TEXT GOES HERE IN THE QUOTES");`, making sure each line ends with a semicolon `;`:_
+```java
+System.out.println("Hello, world!");
+System.out.println("My name is NAME");
+System.out.println("This is a simple Java program!");
+```
+
+This code could be ran in a Java file, named **PrintingTest.java** for example, by pasting the code snippet into our template as follows:
+```java
+public class PrintingTest {
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+    System.out.println("My name is NAME");
+    System.out.println("This is a simple Java program!");
+  }
+}
+```
+
+Also note that whenever we enter a new set of curly-braces `{}`, we typically indent our code one tab-space (with the **Tab** key).
 
 ## Setting up Git and GitHub for Version Control
 One of the best ways to organize programming portfolios and large software projects is using the **Git Version Control System (VCS)** (https://git-scm.com/) along with the website **GitHub** (https://github.com). Git is a version control system that allows you to track changes made to files and coordinate work on those files among multiple people and GitHub is a web-based hosting service for Git repositories that provides version control, collaboration, and project management features. There are many good online tutorials on setting up various text editors and IDEs with Git, but if you simply want to get started right away, you can check out the following video on using the web editor https://replit.com/ with GitHub: https://youtu.be/sTh6B-KyCjA
