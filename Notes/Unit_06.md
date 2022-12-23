@@ -57,7 +57,8 @@ for (int lcv = 1; lcv <= 5; lcv++)
 
 // Print the arrays
 for (int i = 0; i < 5; i++)
-  System.out.printf("list1[%d] = %d,\tlist2[%d] = %d\n", i, list1[i], i, list2[i]);
+  System.out.printf("list1[%d] = %d,\tlist2[%d] = %d\n",
+        i, list1[i], i, list2[i]);
 ```
 
 ## Array Traversal
@@ -150,7 +151,8 @@ while (input.hasNext()) {
   String model = input.next();
   int year = input.nextInt();
   
-  // Make a new "Car object" using the information of the current car we just read in
+  // Make a new "Car object" using the information 
+  // of the current car we just read in
   Car parkedcar = new Car(id, make, model, year);
   
   // Increment the number of parked cars in the parking lot;
