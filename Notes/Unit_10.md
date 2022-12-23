@@ -1,9 +1,10 @@
 # Unit 10 - Recursion
 The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* — think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**. For one of the most famous examples (often a programming interview question), check out the [**Tower of Hanoi**](https://www.digitalocean.com/community/tutorials/tower-of-hanoi)[^1] problem.
 
+[^2]
 <p align="center">
   <img src="https://imgs.xkcd.com/comics/self_description.png"><br/>
-  <i>From <a href="https://xkcd.com/688/">xkcd #688</a></i>[^2]
+  <i>From <a href="https://xkcd.com/688/">xkcd #688</a></i>
 </p>
 
 Consider the simplest example, a basic summation:
