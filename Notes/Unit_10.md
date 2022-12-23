@@ -3,8 +3,8 @@ The concept of **Recursion** can be seen in countless real-life examples; simply
 
 <p align="center">
   <img src="https://imgs.xkcd.com/comics/self_description.png"><br/>
-  <i>From <a href="https://xkcd.com/688/">xkcd #688</a></i>
-</p>[^2]
+  <i>From <a href="https://xkcd.com/688/">xkcd #688</a></i>[^2]
+</p>
 
 Consider the simplest example, a basic summation:
 ```java
