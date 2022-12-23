@@ -164,14 +164,14 @@ It's important to note that `var` can ***only be used to declare local variables
 Consider the following *appropriate* example:
 ```java
 var url = new URL("https://google.com/"); 
-var conn = url.openConnection(); 
-var reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+var con = url.openConnection(); 
+var rdr = new BufferedReader(new InputStreamReader(con.getInputStream()));
 ```
 Here, it is much clearer and easier to read our code if the left-hand side is less cluttered, which would normally look as follows:
 ```java
 URL url = new URL("https://google.com/"); 
-URLConnection conn = url.openConnection(); 
-Reader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+URLConnection con = url.openConnection(); 
+Reader rdr = new BufferedReader(new InputStreamReader(con.getInputStream()));
 ```
 
 
@@ -233,8 +233,9 @@ System.out.println("Today is " + today);
 Enums can also have additional methods and fields, and you can use them in a similar way to classes. For example:
 ```java
 public enum Day {
-    MONDAY("Monday"), TUESDAY("Tuesday"), WEDNESDAY("Wednesday"), THURSDAY("Thursday"),
-    FRIDAY("Friday"), SATURDAY("Saturday"), SUNDAY("Sunday");
+    MONDAY("Monday"), TUESDAY("Tuesday"), WEDNESDAY("Wednesday"), 
+    THURSDAY("Thursday"), FRIDAY("Friday"), SATURDAY("Saturday"), 
+    SUNDAY("Sunday");
 
     private final String fullName;
 
@@ -278,8 +279,9 @@ Here, the class MyClass has a *generic type* `T`. The `T` can be replaced with a
 ```java
 MyClass<String> stringClass = new MyClass<>("hello");
 MyClass<Integer> intClass = new MyClass<>(123);
-// Note that with generic classes, we can technically drop including the type on the right-hand side
-// as long as we define it on the left — i.e., if we are not using `var`
+// Note that with generic classes, we can technically drop including 
+// the type on the right-hand side as long as we define it 
+// on the left — i.e., if we are not using `var`
 ```
 The `T` type is used in the method `getValue()`, which returns an object of type `T`.
 
@@ -324,7 +326,8 @@ import java.util.function.Function;
 
 public class FuncPointerExamples {
     public static void main(String[] args) {
-        // Define a function pointer that takes an integer and returns a string
+        // Define a function pointer that takes 
+        // an integer argument and returns a string
         Function<Integer, String> intToStr = i -> String.valueOf(i);
 
         // Use the function pointer to convert an integer to a string
