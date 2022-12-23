@@ -59,9 +59,9 @@ Another standard in programming is the concept of **documentation comments**, wh
 * @since   2022-01-31
 */
 public class HelloWorld {
-   public static void main(String[] args) {
-      System.out.println("Hello World!");
-   }
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
 }
 ```
 
@@ -93,7 +93,7 @@ For example:
  * @return int The sum of num1 and num2.
  */
  public int addInt(int num1, int num2) {
-    return num1 + num2;
+   return num1 + num2;
  }
 
 /**
@@ -104,8 +104,8 @@ For example:
  * @see IOException
  */
  public static void main(String args[]) throws IOException {
-    int sum = addInt(10, 20);
-    System.out.println("10 + 20 = " + sum);
+   int sum = addInt(10, 20);
+   System.out.println("10 + 20 = " + sum);
  }
 ```
 
