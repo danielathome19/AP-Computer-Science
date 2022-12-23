@@ -414,7 +414,7 @@ A static method is a method that belongs to a class rather than an instance of t
 To define a static method, the `static` keyword is used before the return type in the method declaration. For example:
 ```java
 public static void printHello() {
-    System.out.println("Hello!");
+  System.out.println("Hello!");
 }
 ```
 This method can then be called directly on the class using `MyClass.printHello();`.
