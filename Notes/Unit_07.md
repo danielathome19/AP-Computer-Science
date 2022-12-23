@@ -25,7 +25,6 @@ for (int i = 0; i < 100; i++) {
 ```
 
 ArrayLists provide us with [a great number of built-in methods](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)[^1] for working with lists of data, though we only really need to know the following:
-[^1]: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
 * `x.size()`: return the number of values/objects stored in the list
 * `x.add(obj)`: appends an object to the end of the list
 * `x.get(index)`: returns the item stored at the specified index.
@@ -73,7 +72,6 @@ public class ArrayListExamples {
 ```
 
 The **ArrayList** class is a type of ***generic class*** (sometimes ***template class***, such as in C++), meaning it works with any possible type of data. Generic typing is not on the AP subset, but it is extremely useful and practical (see the [Java documentation on Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/types.html)[^2]). For reference, the class signature might look something like `public class ArrayList<T> { ... }` and contain a private array of the generic type `T` like `private T[] myArray`.
-[^2]: https://docs.oracle.com/javase/tutorial/java/generics/types.html
 
 ## Traversing ArrayLists
 At its simplest, traversing an ArrayList is no different than traversing a normal array. Either start a loop at some index and increment/decrement to some end index, then *get* the item at that index to use it, or simply use a **for-each** loop if the index does not matter.
@@ -92,3 +90,8 @@ System.out.println();
 
 ### ArrayList Algorithms
 ArrayLists often utilize the same algorithms that we learn with *arrays* in Unit 6 — statistical or property analysis (max, min, average, duplicates, etc.), linear/binary search, and all of the many sorting algorithms still apply. However, it is much less common to see examples of searching and sorting algorithms being applied to ArrayLists as opposed to arrays, since we often perform those algorithms on intentionally-capped lists of data and/or learn them using arrays that are entirely full of data. Regardless, if you can write an algorithm for an array, it is nearly identical to writing the same algorithm for an ArrayList and vice versa.
+
+
+
+[^1]: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+[^2]: https://docs.oracle.com/javase/tutorial/java/generics/types.html

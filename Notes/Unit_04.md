@@ -3,7 +3,6 @@ Loops are an extension of **if** statements, simply continuing to run the code w
 (inside their curly braces `{}`) until the given condition becomes false. Noting this, we can use
 the same [conditional and logic operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html)[^1] 
 as our **if** statements; however, the conditions for a loop tend to be much simpler.
-[^1]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html
 
 ## The *while* Loop
 A **while** loop is the closest type of statement to **if** statements — their job is to use nearly the 
@@ -140,3 +139,6 @@ try {  // On Replit, may need to put "../data/prog285b.dat", or use the absolute
     System.out.println("Can't find data file!");
 }
 ```
+
+
+[^1]: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html
