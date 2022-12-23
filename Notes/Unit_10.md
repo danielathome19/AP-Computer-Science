@@ -125,10 +125,10 @@ $$
 If you find the mathematical notation interesting, we could have also written the factorial function as being the product of the set of all numbers from [1, n] using [**Set Notation**](https://www.mathsisfun.com/sets/symbols.html)[^8]:
 
 $$
-\begin{align}
-\text{let } \mathbb{Z}^+_n &= \\{ 1, 2, 3, \dots, n \\} \\
+\begin{align*}
+\text{let } \mathbb{Z}^+_n &= 1, 2, 3, \dots, n \\
 n! &= \prod^n_{i=1} x_i \quad \forall x \in \mathbb{Z}^+_n
-\end{align}
+\end{align*}
 $$
 
 Written out, this says that [the set of positive integers](https://en.wikipedia.org/wiki/Integer)[^9] (known as $\mathbb{Z^+}$ ) subscript $n$ equals the set of positive numbers from 1 to $n$. Hence, $n!$ is equal to the product $\Pi$ of each number in the set multiplied together, where $x_i$ is the value $x$ at index $i$ in the set (think of $\Pi$ as a **for-each loop** basically). Also, check out [**Ring Theory**](https://en.wikipedia.org/wiki/Ring_theory)[^10]!
