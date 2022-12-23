@@ -76,9 +76,37 @@ The Fibonacci numbers $F_n$ are defined by the following recurrence relation (th
 $$ F_0 = 0, \quad F_1 = 1, \quad \text{and} \quad F_n = F_{n-1} + F_{n-2} \quad \forall n > 1 $$
 
 For example, the first 10 Fibonacci numbers:
-| $F_0$ | $F_1$ | $F_2$ | $F_3$ | $F_4$ | $F_5$ | $F_6$ | $F_7$ | $F_8$ | $F_9$ |
-|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-| 0     | 1     | 1     | 2     | 3     | 5     | 8     | 13    | 21    | 34    |
+
+<table>
+    <thead>
+        <tr>
+            <th>$F_0$</th>
+            <th>$F_1$</th>
+            <th>$F_2$</th>
+            <th>$F_3$</th>
+            <th>$F_4$</th>
+            <th>$F_5$</th>
+            <th>$F_6$</th>
+            <th>$F_7$</th>
+            <th>$F_8$</th>
+            <th>$F_9$</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>8</td>
+            <td>13</td>
+            <td>21</td>
+            <td>34</td>
+        </tr>
+    </tbody>
+</table>
 
 We can easily implement this using recursion as follows:
 ```java
