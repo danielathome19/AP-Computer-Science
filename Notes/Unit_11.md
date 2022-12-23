@@ -58,7 +58,7 @@ $$
 A **do-while** loop is a simple looping structure that runs a block of code *at least once*, then repeatedly executes the block as long as a condition is true. The syntax is simply a **while** loop upside-down, where the condition is checked at the end of the loop (after iterating):
 ```java
 do {
-   // code block to be executed
+  // code block to be executed
 } while (condition);
 ```
 
@@ -66,8 +66,8 @@ The code block inside the loop will be executed at least once, even if the condi
 ```java
 int count = 10;
 do {
-   System.out.println(count);
-   count--;
+  System.out.println(count);
+  count--;
 } while (count > 0);
 ```
 Here, the code inside the loop will be executed 10 times because the condition `count > 0` is initially true. On each iteration, the value of count is decreased by 1 until it becomes 0, at which point the loop will terminate; hence, the loop prints out all the numbers from 10 to 1 (inclusive).
@@ -82,10 +82,10 @@ The `break` and `continue` keywords are simple but powerful statements used to a
 For example, using `break`:
 ```java
 for (int i = 0; i < 10; i++) {
-    if (i == 5) {
-        break;
-    }
-    System.out.println(i);
+  if (i == 5) {
+    break;
+  }
+  System.out.println(i);
 }
 ```
 The loop will iterate from 0 to 9, but it will break out of the loop when `i` is equal to 5; hence, the output will be "0, 1, 2, 3, 4".
@@ -93,10 +93,10 @@ The loop will iterate from 0 to 9, but it will break out of the loop when `i` is
 Likewise, `continue` can be used in a very similar manner:
 ```java
 for (int i = 0; i < 10; i++) {
-    if (i % 2 == 0) {
-        continue;
-    }
-    System.out.println(i);
+  if (i % 2 == 0) {
+    continue;
+  }
+  System.out.println(i);
 }
 ```
 Here, the loop loop iterates from 0 to 9, but it skips printing the value of `i` when it is even. Thus, the output of this loop will be "1, 3, 5, 7, 9".
@@ -221,7 +221,7 @@ In Java, an `enum` (or **enumeration**) is a special data type that represents a
 For example:
 ```java
 public enum Day {
-    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+  MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 }
 
 // In main...
@@ -233,19 +233,19 @@ System.out.println("Today is " + today);
 Enums can also have additional methods and fields, and you can use them in a similar way to classes. For example:
 ```java
 public enum Day {
-    MONDAY("Monday"), TUESDAY("Tuesday"), WEDNESDAY("Wednesday"), 
-    THURSDAY("Thursday"), FRIDAY("Friday"), SATURDAY("Saturday"), 
-    SUNDAY("Sunday");
+  MONDAY("Monday"), TUESDAY("Tuesday"), WEDNESDAY("Wednesday"), 
+  THURSDAY("Thursday"), FRIDAY("Friday"), SATURDAY("Saturday"), 
+  SUNDAY("Sunday");
 
-    private final String fullName;
+  private final String fullName;
 
-    private Day(String fullName) {
-        this.fullName = fullName;
-    }
+  private Day(String fullName) {
+    this.fullName = fullName;
+  }
 
-    public String getFullName() {
-        return fullName;
-    }
+  public String getFullName() {
+    return fullName;
+  }
 }
 
 Day today = Day.MONDAY;
@@ -264,15 +264,15 @@ In Java, **Generics** (sometimes called *Templates* from C++) allow you to write
 Consider the following simple example:
 ```java
 public class MyClass<T> {
-    private T value;
+  private T value;
 
-    public MyClass(T value) {
-        this.value = value;
-    }
+  public MyClass(T value) {
+    this.value = value;
+  }
 
-    public T getValue() {
-        return value;
-    }
+  public T getValue() {
+    return value;
+  }
 }
 ```
 Here, the class MyClass has a *generic type* `T`. The `T` can be replaced with any type when the class is instantiated. For example:
@@ -288,7 +288,7 @@ The `T` type is used in the method `getValue()`, which returns an object of type
 We can also make generic methods:
 ```java
 public static <T>T getMiddleElement(T[] array) {
-    return array[array.length / 2];
+  return array[array.length / 2];
 }
 ```
 The `getMiddleElement()` method has a generic type `T`, which represents the type of the elements in the array. The method can be called with any type of array, given that the type is compatible with the return type of the method:
@@ -325,15 +325,15 @@ For example, you can use the **Function** interface to define a function pointer
 import java.util.function.Function;
 
 public class FuncPointerExamples {
-    public static void main(String[] args) {
-        // Define a function pointer that takes 
-        // an integer argument and returns a string
-        Function<Integer, String> intToStr = i -> String.valueOf(i);
+  public static void main(String[] args) {
+    // Define a function pointer that takes 
+    // an integer argument and returns a string
+    Function<Integer, String> intToStr = i -> String.valueOf(i);
 
-        // Use the function pointer to convert an integer to a string
-        String str = intToStr.apply(123);
-        System.out.println(str);
-    }
+    // Use the function pointer to convert an integer to a string
+    String str = intToStr.apply(123);
+    System.out.println(str);
+  }
 }
 ```
 
@@ -342,19 +342,19 @@ You can also use *Method References* to create function pointers using the `::` 
 import java.util.function.Function;
 
 public class MethodRefPointers {
-    public static double Exp(double n) {
-        return Math.exp(n);
-    }
-    
-    public static void main(String[] args) {
-        Function<String, Integer> strLen = String::length;
-        int length = strLen.apply("hello");
-        System.out.println(length);
-        
-        Function<Double, Double> myExp = MethodRefPointers::Exp;
-        double result = myExp.apply(3.0);
-        System.out.println(result);
-    }
+  public static double Exp(double n) {
+    return Math.exp(n);
+  }
+  
+  public static void main(String[] args) {
+    Function<String, Integer> strLen = String::length;
+    int length = strLen.apply("hello");
+    System.out.println(length);
+      
+    Function<Double, Double> myExp = MethodRefPointers::Exp;
+    double result = myExp.apply(3.0);
+    System.out.println(result);
+  }
 }
 ```
 
@@ -374,36 +374,41 @@ Consider the following example using $x=5$, $f(x)=x^3$, and by the *Power Rule*,
 import java.util.function.Function;
 
 public class Derivatives {
-    public static double f(double x) {
-        return Math.pow(x, 3);
-    }
+  public static double f(double x) {
+    return Math.pow(x, 3);
+  }
 
-    public static double derive(Function<Double, Double> f, double x) {
-        final double h = 0.0000001;
-        return (f(x + h) - f(x)) / h;
-    }
-    
-    public static double derive(Function<Double, Double> f, double x, double h) {
-        return (f(x + h) - f(x)) / h;
-    }
+  public static double derive(Function<Double, Double> f, double x) {
+    final double h = 0.0000001;
+    return (f(x + h) - f(x)) / h;
+  }
+  
+  public static double 
+  derive(Function<Double, Double> f, double x, double h) {
+    return (f(x + h) - f(x)) / h;
+  }
 
-    public static double deriveN(Function<Double, Double> f, double x, int n) {
-        final double h = 1/Math.pow(10, n);
-        if (n == 1) return derive(f, x);
-        else return (deriveN(f, x + h, n - 1) - deriveN(f, x, n - 1)) / h;
-    }
+  public static double 
+  deriveN(Function<Double, Double> f, double x, int n) {
+    final double h = 1/Math.pow(10, n);
+    if (n == 1) return derive(f, x);
+    else return (deriveN(f, x + h, n - 1) - deriveN(f, x, n - 1)) / h;
+  }
 
-    public static void main(String[] args) {
-        double x = 5;
-        System.out.println("x = " + x);
-        System.out.println("Does derive(f,x) match the power rule? f(x)=x^3 so f'(x)=3x^2: " + (3 * Math.pow(x, 2)));
-        System.out.println("f(x) = " + f(x));
-        System.out.println("f'(x) = " + derive(Derivatives::f, x));
-        System.out.println("The second derivative using the power rule yields f''(x)=6x: " + (6 * x));
-        System.out.println("f''(x) = " + deriveN(Derivatives::f, x, 2));
-        System.out.println("The third derivative using the power rule yields f'''(x)=6: " + 6);
-        System.out.println("f'''(x) = " + deriveN(Derivatives::f, x, 3));   
-    }
+  public static void main(String[] args) {
+    double x = 5;
+    System.out.println("x = " + x);
+    System.out.println("Does derive(f,x) match the power rule? "
+          + "f(x)=x^3 so f'(x)=3x^2: " + (3 * Math.pow(x, 2)));
+    System.out.println("f(x) = " + f(x));
+    System.out.println("f'(x) = " + derive(Derivatives::f, x));
+    System.out.println("The second derivative using the power rule "
+          + "yields f''(x)=6x: " + (6 * x));
+    System.out.println("f''(x) = " + deriveN(Derivatives::f, x, 2));
+    System.out.println("The third derivative using the power rule "
+          + "yields f'''(x)=6: " + 6);
+    System.out.println("f'''(x) = " + deriveN(Derivatives::f, x, 3));   
+  }
 }
 
 /* Displays the following:
@@ -440,28 +445,31 @@ Consider the following example using $a=1$, $b=5$, $f(x)=x^3$, and by the *Power
 import java.util.function.Function;
 
 public class Integrals {
-    public static double f(double x) {
-        return Math.pow(x, 3);
-    }
+  public static double f(double x) {
+    return Math.pow(x, 3);
+  }
 
-    public static double integrate(Function<Double, Double> f, double a, double b, int n) {
-        double sum = 0;
-        double deltaX = (b - a) / n;
-        for (int i = 0; i < n; i++) 
-            sum += f(((a + i * deltaX) + (a + (i + 1) * deltaX)) / 2) * deltaX;
-        return sum;
-    }
+  public static double 
+  integrate(Function<Double, Double> f, double a, double b, int n) {
+    double sum = 0;
+    double deltaX = (b - a) / n;
+    for (int i = 0; i < n; i++) 
+      sum += f(((a + i * deltaX) + (a + (i + 1) * deltaX)) / 2) * deltaX;
+    return sum;
+  }
 
-    public static void main(String[] args) {
-        double a = 1;
-        double b = 5;
-        int n = 100000000;
-        System.out.printf("a = %f\tb = %f\n", a, b);
-        System.out.println("Does integrate(f,x) match the power rule? By the Fundamental Theorem,");
-        System.out.println("\tf(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): " + ((Math.pow(b, 4) / 4) - (Math.pow(a, 4) / 4)));
-        System.out.println("f(x) = " + f(b - a));
-        System.out.println("F(x) = " + integrate(Integrals::f, a, b, n));
-    }
+  public static void main(String[] args) {
+    double a = 1;
+    double b = 5;
+    int n = 100000000;
+    System.out.printf("a = %f\tb = %f\n", a, b);
+    System.out.println("Does integrate(f,x) match the power rule? "
+          + "By the Fundamental Theorem,");
+    System.out.println("\tf(x)=x^3 so F(x)[a,b]=(b^4/4)-(a^4/4): " 
+          + ((Math.pow(b, 4) / 4) - (Math.pow(a, 4) / 4)));
+    System.out.println("f(x) = " + f(b - a));
+    System.out.println("F(x) = " + integrate(Integrals::f, a, b, n));
+  }
 }
 /* Displays the following:
    a = 1.000000    b = 5.000000
