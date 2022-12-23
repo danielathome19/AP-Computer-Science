@@ -27,7 +27,7 @@ ArrayLists provide us with [a great number of built-in methods](https://docs.ora
 * `x.set(index, obj)`: replace the item at the specified index with the provided object
 * `x.remove(index)`: remove the item at the specified index and shift all proceeding elements down 1 position in the list
 
-Other useful methods include `contains(object)`, `indexOf(object)`, `toArray()`, and `addAll()`. **Take careful note that ArrayLists do not support the array `[]` operators -- you have to use `.get(index)` instead.**
+Other useful methods include `contains(object)`, `indexOf(object)`, `toArray()`, and `addAll()`. **Take careful note that ArrayLists do not support the array `[]` operators — you have to use `.get(index)` instead.**
 
 Let's look at an example of these various method calls:
 ```java
@@ -85,4 +85,4 @@ System.out.println();
 ```
 
 ### ArrayList Algorithms
-ArrayLists often utilize the same algorithms that we learn with *arrays* in Unit 6 -- statistical or property analysis (max, min, average, duplicates, etc.), linear/binary search, and all of the many sorting algorithms still apply. However, it is much less common to see examples of searching and sorting algorithms being applied to ArrayLists as opposed to arrays, since we often perform those algorithms on intentionally-capped lists of data and/or learn them using arrays that are entirely full of data. Regardless, if you can write an algorithm for an array, it is nearly identical to writing the same algorithm for an ArrayList and vice versa.
+ArrayLists often utilize the same algorithms that we learn with *arrays* in Unit 6 — statistical or property analysis (max, min, average, duplicates, etc.), linear/binary search, and all of the many sorting algorithms still apply. However, it is much less common to see examples of searching and sorting algorithms being applied to ArrayLists as opposed to arrays, since we often perform those algorithms on intentionally-capped lists of data and/or learn them using arrays that are entirely full of data. Regardless, if you can write an algorithm for an array, it is nearly identical to writing the same algorithm for an ArrayList and vice versa.

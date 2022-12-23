@@ -1,7 +1,7 @@
 # Unit 6 - Array
-Sometimes called a 1D Array or Vector, an **array** is simply a list of items (typically) of the same data type. Each item is assigned a unique **index**, or *slot*, acting as a sort-of "lookup table" for the items -- however, indices begin counting at 0 in Java, rather than 1 in other languages such as Lua, R, Julia, and MATLAB/Octave.
+Sometimes called a 1D Array or Vector, an **array** is simply a list of items (typically) of the same data type. Each item is assigned a unique **index**, or *slot*, acting as a sort-of "lookup table" for the items — however, indices begin counting at 0 in Java, rather than 1 in other languages such as Lua, R, Julia, and MATLAB/Octave.
 
-Arrays are essentially lists of **objects** -- they allow us to store multiple variables inside of one variable (i.e., an object that holds more objects). Hence, they can hold either primitive types/objects (`int`, `double`, `char`, etc.) or objects of classes (**String** and any other class we define).
+Arrays are essentially lists of **objects** — they allow us to store multiple variables inside of one variable (i.e., an object that holds more objects). Hence, they can hold either primitive types/objects (`int`, `double`, `char`, etc.) or objects of classes (**String** and any other class we define).
 
 Their mathematical equivalent, vectors, are typically denoted with a lowercase letter either with a right-pointing arrow above them or bolded (if the arrow sign is unavailable), such as $\vec{v}$ or $\textbf{v}$. While in math these are typically seen as *column vectors* (where index 1 is the top of the vector and increasing indices are stacked below), we express these as *row vectors* (where index 1 starts from the left and increasing indices are stacked to the right).
 
@@ -24,7 +24,7 @@ m
 $$
 
 ## Array/Vector Creation and Access
-To declare an array, we use the `new` keyword just as if we were declaring a new Class object (like **Scanner**) along with the array *"bracket operator"* `[]`. However, we must also have a capacity in mind -- regardless of if all slots are full, we need to specify a minimum size, which **CANNOT be modified** later. This is similar to a bookshelf or a permit-only parking lot: the parking lot has 100 spots, each numbered uniquely from 0 to 99; spots may not always be full, but we cannot add or remove spots without rebuilding the lot (theoretically). **Whenever a spot in the parking lot is empty, it has the value `null` meaning *nothing***, which we will look at a solution for below.
+To declare an array, we use the `new` keyword just as if we were declaring a new Class object (like **Scanner**) along with the array *"bracket operator"* `[]`. However, we must also have a capacity in mind — regardless of if all slots are full, we need to specify a minimum size, which **CANNOT be modified** later. This is similar to a bookshelf or a permit-only parking lot: the parking lot has 100 spots, each numbered uniquely from 0 to 99; spots may not always be full, but we cannot add or remove spots without rebuilding the lot (theoretically). **Whenever a spot in the parking lot is empty, it has the value `null` meaning *nothing***, which we will look at a solution for below.
 
 The following syntax is used to declare an array:
 ```java
@@ -61,7 +61,7 @@ for (int i = 0; i < 5; i++)
 ```
 
 ## Array Traversal
-The term ***traversal*** refers to the act of *iterating* through an array -- that is, checking multiple spots in an array using a loop, typically. This can of course be done with the `.length` property, or using a variable that is keeping track of the current size of the array (so as to not go into the "empty"/*null* slots, or some form of `0` for **primitive types**), but Java also provides us with a simpler syntax.
+The term ***traversal*** refers to the act of *iterating* through an array — that is, checking multiple spots in an array using a loop, typically. This can of course be done with the `.length` property, or using a variable that is keeping track of the current size of the array (so as to not go into the "empty"/*null* slots, or some form of `0` for **primitive types**), but Java also provides us with a simpler syntax.
 
 ### The *for-each* Loop (Enhanced For)
 The **Enhanced For** loop, or **for-each** loop, is a simpler syntax for a **for** loop that iterates through an entire array without the need for an index. Instead, it gives us direct access to each object in the array sequentially.
@@ -103,7 +103,7 @@ for (Person currentperson : people) {
 ```
 
 ### Null-Safe Traversal
-One issue we often encounter with arrays is that we may not always have all slots of an array filled, just like in our parking lot example. When working with data files, we typically will keep a *counter* variable to track how many items are ACTUALLY in the array, rather than using the `length` property (which should really be called `capacity` instead). If we read in 50 objects from a data file, but our array has a capacity of 75, then the last 25 slots will all be `null`. If we try to call methods on these `null` objects, the program will crash -- this is a huge problem with us using a **for-each** loop instead of a normal **for** loop with our *counter* variable.
+One issue we often encounter with arrays is that we may not always have all slots of an array filled, just like in our parking lot example. When working with data files, we typically will keep a *counter* variable to track how many items are ACTUALLY in the array, rather than using the `length` property (which should really be called `capacity` instead). If we read in 50 objects from a data file, but our array has a capacity of 75, then the last 25 slots will all be `null`. If we try to call methods on these `null` objects, the program will crash — this is a huge problem with us using a **for-each** loop instead of a normal **for** loop with our *counter* variable.
 
 Consider a data file (named **mycars.dat**, for example) that looks similar to the following, containing the ID number, make, model, and year for 50 cars:
 ```
@@ -137,7 +137,7 @@ public class Car {
 }
 ```
 
-Once we have our **data class**, we can read in all of the files from the data file. However, in case the size of the data file changes, we need to provide a buffer space (i.e., extra slots in the array) instead of counting the number of cars by hand and updating our code every time it changes -- good luck trying that with a database! Let's make an array of **Car** objects that can hold up to 100 cars, similar to our parking lot example above:
+Once we have our **data class**, we can read in all of the files from the data file. However, in case the size of the data file changes, we need to provide a buffer space (i.e., extra slots in the array) instead of counting the number of cars by hand and updating our code every time it changes — good luck trying that with a database! Let's make an array of **Car** objects that can hold up to 100 cars, similar to our parking lot example above:
 ```java
 Scanner input = new Scanner(new File("mycars.dat"));
 Car[] parkinglot = new Car[100];
@@ -183,7 +183,7 @@ for (Car currentcar : parkinglot) {
 }
 ```
 
-Typically, for regular arrays, it's safer to just use a *counter* variable so we know that we won't overflow into the empty slots. However, what if we intentionally set a slot in the middle of the array to `null` like `parkinglot[5] = null;` (i.e., a parked car leaves the lot at random)? Then we have to account for null-checking even inside of our regular **for** loop! So, there are many factors we can take into account, but unless we know that we will not be removing anything from the array, it's a bit more flexible to just use a normal **for** loop with a *counter* -- then we also have the index on hand in case we need to modify our code to use it at some point later on.
+Typically, for regular arrays, it's safer to just use a *counter* variable so we know that we won't overflow into the empty slots. However, what if we intentionally set a slot in the middle of the array to `null` like `parkinglot[5] = null;` (i.e., a parked car leaves the lot at random)? Then we have to account for null-checking even inside of our regular **for** loop! So, there are many factors we can take into account, but unless we know that we will not be removing anything from the array, it's a bit more flexible to just use a normal **for** loop with a *counter* — then we also have the index on hand in case we need to modify our code to use it at some point later on.
 
 
 
@@ -202,7 +202,7 @@ Search algorithms are simply methods that provide us with different ways to find
 
 
 #### Linear Search
-Linear search is our typical sequential array iteration that many jump to for a simple search function. We simply iterate through the entire array from start to finish, checking to see if we find the index where the item is stored -- otherwise, we usually return -1 or `null` (depending on the type).
+Linear search is our typical sequential array iteration that many jump to for a simple search function. We simply iterate through the entire array from start to finish, checking to see if we find the index where the item is stored — otherwise, we usually return -1 or `null` (depending on the type).
 
 ```java
 public static int linearSearch(int[] array, int x) {
@@ -215,7 +215,7 @@ public static int linearSearch(int[] array, int x) {
 
 
 #### Binary Search
-Binary search is a slightly more complicated search algorithm that excels when the list is already sorted. The idea is much like that of finding a page in a textbook -- start by checking the middle of the list, compare the item to be found to see if we need to look on the right or left half of the list, then traverse down that half onward. Continuously check the middle item and traverse down the "hot" half until the item is found. While this algorithm is often implemented recursively (a function that calls itself; see Unit 10), we will see its iterative implementation for now.
+Binary search is a slightly more complicated search algorithm that excels when the list is already sorted. The idea is much like that of finding a page in a textbook — start by checking the middle of the list, compare the item to be found to see if we need to look on the right or left half of the list, then traverse down that half onward. Continuously check the middle item and traverse down the "hot" half until the item is found. While this algorithm is often implemented recursively (a function that calls itself; see Unit 10), we will see its iterative implementation for now.
 
 ```java
 public static int binarySearch(int[] array, int x) {
@@ -234,10 +234,10 @@ public static int binarySearch(int[] array, int x) {
 
 
 ### Array Sorting Algorithms
-Sorting algorithms provide us with different approaches to sorting an array -- of which there are MANY different possible choices. For now, we will learn strictly **comparison-based sorting** methods; i.e., comparing numbers and placing them in either *ascending* (least to greatest) or *descending* (greatest to least) order. Again, many of these algorithms can be performed recursively, but we will focus on their iterative implementation for now.
+Sorting algorithms provide us with different approaches to sorting an array — of which there are MANY different possible choices. For now, we will learn strictly **comparison-based sorting** methods; i.e., comparing numbers and placing them in either *ascending* (least to greatest) or *descending* (greatest to least) order. Again, many of these algorithms can be performed recursively, but we will focus on their iterative implementation for now.
 You can find visualizations of these algorithms [here](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html) or [here (alongside the running code)](https://visualgo.net/en/sorting).
 
-Let's look at a few of the most elementary sorting algorithms -- bubble sort, insertion sort, and selection sort. These implementations are all in ascending order, but you can easily change them to descending order by changing the comparison operator inside the conditional statement from `>` to `<`.
+Let's look at a few of the most elementary sorting algorithms — bubble sort, insertion sort, and selection sort. These implementations are all in ascending order, but you can easily change them to descending order by changing the comparison operator inside the conditional statement from `>` to `<`.
 
 If you want to truly understand when and why we use certain algorithms over others, you'll need to learn a topic called [Asymptotic Analysis](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation), or [Big-O Notation](http://web.mit.edu/16.070/www/lecture/big_o.pdf), which provides us a means of mathematically analyzing how functions grow over time (and space) as the amount of data increases. This is typically the first true Computer Science topic that college majors learn in an infamous class known as ***Data Structures and Algorithms***.
 

@@ -124,7 +124,7 @@ for (int[] row : jagArr) {
 ```
 
 ## *n*D Arrays/Tensors (3D and Beyond)
-Technically, we can extend the multidimensional array syntax to any number of dimensions, i.e., an *n*D array, often referred to as a **Tensor** (which can technically be any number of dimensions but is often used when $n > 2$). For data scientists and machine learning engineers, tensors are one of the most important data structures that exists -- especially because of its use in deep learning/neural networks. Simply add an additional set of `[]` to your array initialization, or painstakingly define a jagged array of arrays explicitly:
+Technically, we can extend the multidimensional array syntax to any number of dimensions, i.e., an *n*D array, often referred to as a **Tensor** (which can technically be any number of dimensions but is often used when $n > 2$). For data scientists and machine learning engineers, tensors are one of the most important data structures that exists — especially because of its use in deep learning/neural networks. Simply add an additional set of `[]` to your array initialization, or painstakingly define a jagged array of arrays explicitly:
 ```java
 DATATYPE[][][] tensor = new DATATYPE[numRows][numCols][numLayers];
 

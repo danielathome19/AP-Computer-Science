@@ -1,4 +1,4 @@
-# Unit Extras - Useful Non-AP Java Concepts for After the Exam
+# Unit 11 (Extras) - Useful Non-AP Java Concepts for After the Exam
 There are many programming and Computer Science concepts that the AP exam leaves out that, while not necessary for the test, are extremely useful in real-world software. The most important of these is the concept of **Number Bases**, which describe how numbers are represented in various contexts within computing systems. As well, there are many types of statements and keywords, such as **switch** statements, generic typing, and **Functional Programming** concepts that are used constantly in real applications, but are left out of the exam. We will survey many of the most common ones here; though while not discussed, additional concepts to know include sockets and networking, cryptography, graphics libraries (such as JavaFX and Swing), game development, and web applications.
 
 
@@ -106,7 +106,7 @@ Here, the loop loop iterates from 0 to 9, but it skips printing the value of `i`
 
 
 ## The *switch* Statement
-One very useful statement Java inherits from C, the **switch** statement, is used to execute a block of code based on the value of a given expression. It is similar to having multiple **if/else-if/else** statements, but it is often more efficient when you have a large number of possible conditions for one variable. We simply make a `switch` on the variable we want to check, and make a `case` for all possible values for that variable -- however, we also need to `break` at the end of the case, or we can actually fall into the next case down. As well, we can also provide an optional `default` case which acts as our **else** condition if no other cases match.
+One very useful statement Java inherits from C, the **switch** statement, is used to execute a block of code based on the value of a given expression. It is similar to having multiple **if/else-if/else** statements, but it is often more efficient when you have a large number of possible conditions for one variable. We simply make a `switch` on the variable we want to check, and make a `case` for all possible values for that variable — however, we also need to `break` at the end of the case, or we can actually fall into the next case down. As well, we can also provide an optional `default` case which acts as our **else** condition if no other cases match.
 
 For example:
 ```java
@@ -159,7 +159,7 @@ public class MyClass {
 }
 ```
 
-It's important to note that `var` can ***only be used to declare local variables and cannot be used to declare class-level variables or method parameters***. Additionally, the type must be inferable from the initializer expression, so it cannot be used to declare variables with an initial value of null. While a matter of preference, the most appropriate use case for `var` would be for variables that are instances of classes or variables returned from methods, especially with extremely long names -- however, ***almost NEVER should you use this with primitive types or inherited, abstract, or interface classes***, as the behavior may not be what you expect. As such, you should avoid using `var` until you have a strong grasp of inheritance and mental type inference (or look at the documentation!) especially.
+It's important to note that `var` can ***only be used to declare local variables and cannot be used to declare class-level variables or method parameters***. Additionally, the type must be inferable from the initializer expression, so it cannot be used to declare variables with an initial value of null. While a matter of preference, the most appropriate use case for `var` would be for variables that are instances of classes or variables returned from methods, especially with extremely long names — however, ***almost NEVER should you use this with primitive types or inherited, abstract, or interface classes***, as the behavior may not be what you expect. As such, you should avoid using `var` until you have a strong grasp of inheritance and mental type inference (or look at the documentation!) especially.
 
 Consider the following *appropriate* example:
 ```java
@@ -216,7 +216,7 @@ is equivalent to the previous code using the ternary operator.
 
 
 ## Enumerations
-In Java, an `enum` (or **enumeration**) is a special data type that represents a fixed set of values. It is used to define a list of predefined constants, which can be useful when you want to define a set of values that a variable can take on and you want to ensure that the variable can only be assigned one of those specific values. One such example is the set of possible keys a user may press in a video game -- which is extremely useful when paired with a `switch` statement.
+In Java, an `enum` (or **enumeration**) is a special data type that represents a fixed set of values. It is used to define a list of predefined constants, which can be useful when you want to define a set of values that a variable can take on and you want to ensure that the variable can only be assigned one of those specific values. One such example is the set of possible keys a user may press in a video game — which is extremely useful when paired with a `switch` statement.
 
 For example:
 ```java
@@ -279,7 +279,7 @@ Here, the class MyClass has a *generic type* `T`. The `T` can be replaced with a
 MyClass<String> stringClass = new MyClass<>("hello");
 MyClass<Integer> intClass = new MyClass<>(123);
 // Note that with generic classes, we can technically drop including the type on the right-hand side
-// as long as we define it on the left -- i.e., if we are not using `var`
+// as long as we define it on the left — i.e., if we are not using `var`
 ```
 The `T` type is used in the method `getValue()`, which returns an object of type `T`.
 
@@ -526,7 +526,7 @@ Runnable r = () -> System.out.println("Running!");
 
 
 ### Map, Reduce, and Filter
-In functional programming, **Map**, **Reduce**, and **Filter** are ***Higher-Order Functions*** (functions that take another function as an argument) that allow you to apply a function to a collection of elements and produce a new collection as a result. These three functions are the pillars of FP -- their proper usage enables very powerful, concise code, especially when applied to large collections of data.
+In functional programming, **Map**, **Reduce**, and **Filter** are ***Higher-Order Functions*** (functions that take another function as an argument) that allow you to apply a function to a collection of elements and produce a new collection as a result. These three functions are the pillars of FP — their proper usage enables very powerful, concise code, especially when applied to large collections of data.
 * Map applies a function to each element in a collection and returns a new collection with the results (coming from the [*map* operation](https://en.wikipedia.org/wiki/Map_(mathematics)) in Discrete Math denoted by the $\mapsto$ operator). For example, given a list of numbers, you can use `map` to apply a function that increases each number by 1:
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4);

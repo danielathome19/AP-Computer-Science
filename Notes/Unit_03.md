@@ -37,7 +37,7 @@ Java supports the following conditional/relational operators (use ONLY for primi
 Note the important distinction between `==` being our **equality** operator, versus `=`, our **assignment** operator.
 
 ## Conditional (*if*) Statements
-The *if* statement is the simplest form of conditional statement. It's usage is the same as written language -- *if* a condition is **true**, then we'll run the code inside its curly braces. Otherwise, we'll do something else or nothing at all.
+The *if* statement is the simplest form of conditional statement. It's usage is the same as written language — *if* a condition is **true**, then we'll run the code inside its curly braces. Otherwise, we'll do something else or nothing at all.
 
 For example:
 ```java
@@ -65,7 +65,7 @@ if (x > y) {
 ```
 
 ### Using *else if* Statements
-The *else if* statement allows us to add additional chains of conditions to our *if* statement -- if the first *if* statement is false, we'll check the next *else if* statement to see if it's true. If it's still false, we'll either:
+The *else if* statement allows us to add additional chains of conditions to our *if* statement — if the first *if* statement is false, we'll check the next *else if* statement to see if it's true. If it's still false, we'll either:
   * Check another *else if* condition,
   * Fallback to an *else* statement (if one is provided), or,
   * Do nothing at all (if there are no more *else if* or *else* statements.
@@ -95,7 +95,7 @@ if (condition1) {
 ```
 
 ## Compound Conditions and Logical Operators
-More often than not, one condition is not enough to validate if we should run some snippet of code -- a realistic example would be logging in to a website: `if (username is correct AND password is correct) then log in`. We create these *compound conditional statements* using operators for **boolean operations** such as `AND`, `OR`, and `NOT`.
+More often than not, one condition is not enough to validate if we should run some snippet of code — a realistic example would be logging in to a website: `if (username is correct AND password is correct) then log in`. We create these *compound conditional statements* using operators for **boolean operations** such as `AND`, `OR`, and `NOT`.
 
 Java provides 3 logical operators for compound and negated conditions:
 * `&&`: AND

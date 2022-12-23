@@ -6,7 +6,7 @@ as our **if** statements; however, the conditions for a loop tend to be much sim
 
 
 ## The *while* Loop
-A **while** loop is the closest type of statement to **if** statements -- their job is to use nearly the 
+A **while** loop is the closest type of statement to **if** statements — their job is to use nearly the 
 same notation as an **if** statement, but continue looping the contained code *while* the given condition
 continues to be ***true***. It's more common to use these where a condition is not numeric (i.e., not 
 looping through a list or using a counter of some sort), but instead where a condition is simply deterministic.
@@ -75,7 +75,7 @@ for (int lcv = text.length(); lcv --> 0;) {
 ```
 
 ## Iterating Through Strings
-Iterating through each individual character in a **String** can be done in multiple ways (such as the `str.charAt(index)` method, but this is not on the AP subset), though we will only focus on the use of substrings. To select one character at a time, we can use `str.substring(index, index + 1)` in a **for** loop -- remember that the `substring(start, end)` method does NOT include the *end* index in the slice of the String, so we can safely iterate from index 0 to the length of the String. For example:
+Iterating through each individual character in a **String** can be done in multiple ways (such as the `str.charAt(index)` method, but this is not on the AP subset), though we will only focus on the use of substrings. To select one character at a time, we can use `str.substring(index, index + 1)` in a **for** loop — remember that the `substring(start, end)` method does NOT include the *end* index in the slice of the String, so we can safely iterate from index 0 to the length of the String. For example:
 ```java
 // Print each letter of the text "Hello, world!" on a separate line
 String hello = "Hello, world!";

@@ -1,5 +1,5 @@
 # Unit 10 - Recursion
-The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* -- think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**. For one of the most famous examples (often a programming interview question), check out the [**Tower of Hanoi**](https://www.digitalocean.com/community/tutorials/tower-of-hanoi) problem.
+The concept of **Recursion** can be seen in countless real-life examples; simply put, it is a function that calls itself. Many everyday concepts are *recursive* — think of Russian nesting dolls (a doll inside a doll inside a doll...), Ouroboros (the serpent eating its own tail), sourdough starter (which can be kept forever so long as you continue to add more over time), two mirrors facing each other, and in particular, **fractals**. For one of the most famous examples (often a programming interview question), check out the [**Tower of Hanoi**](https://www.digitalocean.com/community/tutorials/tower-of-hanoi) problem.
 
 <p align="center">
   <img src="https://imgs.xkcd.com/comics/self_description.png"><br/>
@@ -42,7 +42,7 @@ As you can see, our `sumRecursive` method follows the same principle as `sumBack
 
 
 ## Practical Uses of Recursion
-Recursion is still (typically) iterative, but there are many approaches to recursion that can drastically increase the speed of an algorithm by breaking it down into smaller sub-problems and solving those problems through sub-problems and combining their solutions -- a concept known as the [**Divide-and-Conquer Method**](https://www.programiz.com/dsa/divide-and-conquer), which is extended to even more practical concepts such as [**Dynamic Programming**](https://www.programiz.com/dsa/dynamic-programming) and the [**Greedy Approach**](https://www.programiz.com/dsa/greedy-algorithm). As well, computer scientists study *(Abstract) Data Structures* that are built from recursions, such as the **Linked List** or **Binary Search Tree**, or their core methods rely on recursions such as **Graphs** and their graph search algorithms. These concepts are beyond the scope of this course but are extremely practical with real-world programs and massive datasets.
+Recursion is still (typically) iterative, but there are many approaches to recursion that can drastically increase the speed of an algorithm by breaking it down into smaller sub-problems and solving those problems through sub-problems and combining their solutions — a concept known as the [**Divide-and-Conquer Method**](https://www.programiz.com/dsa/divide-and-conquer), which is extended to even more practical concepts such as [**Dynamic Programming**](https://www.programiz.com/dsa/dynamic-programming) and the [**Greedy Approach**](https://www.programiz.com/dsa/greedy-algorithm). As well, computer scientists study *(Abstract) Data Structures* that are built from recursions, such as the **Linked List** or **Binary Search Tree**, or their core methods rely on recursions such as **Graphs** and their graph search algorithms. These concepts are beyond the scope of this course but are extremely practical with real-world programs and massive datasets.
 
 One great example of recursion is the **factorial** operator ( $n!$ in mathematics), which returns $n! = n * (n-1) * (n-2) * (n-3) * \dots * 1$. For example, $5! = 5 * 4 * 3 * 2 * 1 \to 120$. Let's look at the code for this, both iteratively and recursively:
 ```java
@@ -61,7 +61,7 @@ public static int factRec(int n) {
 }
 ```
 
-Like summation, we have an operator for a series of multiplicands as well -- the *Uppercase Pi* (or $\Pi$ for __Product__) operator, which multiplies all the numbers in a series together:
+Like summation, we have an operator for a series of multiplicands as well — the *Uppercase Pi* (or $\Pi$ for __Product__) operator, which multiplies all the numbers in a series together:
 
 $$
 \text{product} = n! = \prod^n_{i=1} i
@@ -69,7 +69,7 @@ $$
 
 Also see the [**Gamma Function**](https://en.wikipedia.org/wiki/Gamma_function) $\Gamma(n)$ which extends the factorial function to complex numbers as well!
 
-Another extremely popular example of recursion is the **Fibonacci Sequence** -- a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
+Another extremely popular example of recursion is the **Fibonacci Sequence** — a sequence of numbers that form the [*Fibonacci spiral* and the *Golden Ratio*](https://en.wikipedia.org/wiki/Fibonacci_number).
 
 The Fibonacci numbers $F_n$ are defined by the following recurrence relation (the $\forall$ symbol means *"for all"*; the opposite is $\exists$ meaning *"there exists*"):
 
@@ -122,7 +122,7 @@ public static int binarySearchRec(int[] array, int x, int low, int high) {
 // or make a helper method that does this for you
 ```
 
-Though they use two different approaches to the same implementation, both *iterative* and *recursive* Binary Search methods share the same **Time Complexity** ( $O(\log n)$ to be precise), so there is not much of a difference in performance. However, the recursive call could also be combined with some **Parallel Processing** method such as [*Multithreading*](https://www.geeksforgeeks.org/multithreading-in-java/) or [*Parallelization*](https://livebook.manning.com/book/java-8-in-action/chapter-7/79) to allow each recursive call to be performed **concurrently**, rather than **iteratively** -- although linear search could also be parallelized, removing the need for the array to be pre-sorted.
+Though they use two different approaches to the same implementation, both *iterative* and *recursive* Binary Search methods share the same **Time Complexity** ( $O(\log n)$ to be precise), so there is not much of a difference in performance. However, the recursive call could also be combined with some **Parallel Processing** method such as [*Multithreading*](https://www.geeksforgeeks.org/multithreading-in-java/) or [*Parallelization*](https://livebook.manning.com/book/java-8-in-action/chapter-7/79) to allow each recursive call to be performed **concurrently**, rather than **iteratively** — although linear search could also be parallelized, removing the need for the array to be pre-sorted.
 
 
 
@@ -131,7 +131,7 @@ While not necessary for the AP exam, the [**Quick Sort**](https://www.programiz.
 
 
 #### Quicksort
-Quicksort is a popular, very efficient sorting algorithm that operates by dividing a list of items into two smaller sub-lists, sorting those sub-lists, and then merging the sorted sub-lists back together to form a final, sorted list. The key to quicksort is the way it divides the list into sub-lists -- a process known as partitioning. This approach to sorting through solving smaller sub-problems is known as the ***divide-and-conquer*** method. Its efficiency makes it extremely *quick* even for large datasets, making it very applicable to real-world data.
+Quicksort is a popular, very efficient sorting algorithm that operates by dividing a list of items into two smaller sub-lists, sorting those sub-lists, and then merging the sorted sub-lists back together to form a final, sorted list. The key to quicksort is the way it divides the list into sub-lists — a process known as partitioning. This approach to sorting through solving smaller sub-problems is known as the ***divide-and-conquer*** method. Its efficiency makes it extremely *quick* even for large datasets, making it very applicable to real-world data.
 
 The steps are as follows:
 1. Choose an element from the list, known as the pivot. This element will be used to divide the list into sub-lists

@@ -1,5 +1,5 @@
 # Unit 5 - Writing Classes
-Classes are the heart of Object-Oriented Programming (OOP) -- in languages like Java, we divide programs up into multiple components, called **Classes**, to keep code organized and emphasize code reusability. Put simply, a Class is a thing that contains other things -- be it a set of functions (or *methods*), public/private variables, or simply our ***Main*** method (known as the _"Entry Point"_). Some classes may also be instantiated as *objects*, such as the **Scanner** class.
+Classes are the heart of Object-Oriented Programming (OOP) — in languages like Java, we divide programs up into multiple components, called **Classes**, to keep code organized and emphasize code reusability. Put simply, a Class is a thing that contains other things — be it a set of functions (or *methods*), public/private variables, or simply our ***Main*** method (known as the _"Entry Point"_). Some classes may also be instantiated as *objects*, such as the **Scanner** class.
 
 ## Writing Methods
 A **method**, also known as a function or procedure, is a block of related lines of code that may contain any valid Java syntax. Methods may or may not also return a value (such as `Math.sin(x)` which returns a double, compared to `System.out.println()` which returns nothing). As such, we can flexibly use them as reusable snippets of code as desired, allowing us to make programs more efficient.
@@ -35,7 +35,7 @@ public int summation(int n) {
 ```
 
 ### Documentation Comments
-Comments are a fundamental need for large projects; unless you use extremely verbose and explicit variable, class, and method names, there will be parts of your code that do not make sense to other readers (including your future self!) especially. As well, we can use comments not only to explain what code does, but what unfinished code WILL do eventually (often marked with `// TODO: _____`) -- for example, before even writing out any code, it is often useful to "sketch" out your program by breaking it down into smaller parts separated by comments describing what happens next.
+Comments are a fundamental need for large projects; unless you use extremely verbose and explicit variable, class, and method names, there will be parts of your code that do not make sense to other readers (including your future self!) especially. As well, we can use comments not only to explain what code does, but what unfinished code WILL do eventually (often marked with `// TODO: _____`) — for example, before even writing out any code, it is often useful to "sketch" out your program by breaking it down into smaller parts separated by comments describing what happens next.
 
 Another standard in programming is the concept of **documentation comments**, which your text editor or development environment often uses to provide you with mouse-hover hints on what a *method* or *class* does and/or assist in code completion. These are multi-line comments that begin with `/**`, a `*` on each line, and end with `*/`. These can be as simple as describing who wrote the program and when, including HTML tags:
 ```java
@@ -106,7 +106,7 @@ A general-purpose Class (sometimes called a *data class* in other languages) typ
 * **Constructor(s):** sets up the private data (taking in arguments for some and setting the rest to some default value, like 0)
 * **Mutator (Setter) Methods**: modify private data
 * **Accessor (Getter) Methods:** return private data
-* *Sometimes* **Override Methods (such as `toString()`):** overidden methods from the **Object** class -- usually some accessor method(s)
+* *Sometimes* **Override Methods (such as `toString()`):** overidden methods from the **Object** class — usually some accessor method(s)
 
 The general layout for classes is as follows:
 ```java
@@ -177,7 +177,7 @@ We will break this class down to its components next.
 ### Constructors
 A **Constructor** is a simple function that sets up the private data for a Class. It is a special type of method called through the `new CLASSNAME()` keyword (rather than a direct function call) that is used to initialize an object. When an object is created, the constructor is called to initialize the object and allocate memory for it. The constructor sets the initial values for the object's instance variables (the typically-private class data) and performs any other necessary initialization tasks. Constructors are typically defined with the same name as the class, and they do not have a return type.
 
-It is worth noting that we can have multiple constructors -- a process called ***"overloading"*** -- which allow us to take in varying arguments if any. Sometimes a constructor may not even have any arguments, typically known as the **Default Constructor** since it usually sets up *default* or placeholder values for the class.
+It is worth noting that we can have multiple constructors — a process called ***"overloading"*** — which allow us to take in varying arguments if any. Sometimes a constructor may not even have any arguments, typically known as the **Default Constructor** since it usually sets up *default* or placeholder values for the class.
 
 For example:
 ```java
@@ -221,7 +221,7 @@ Functions, or **Methods**, serve a variety of purposes. They may provide us with
 
 
 ### Accessor Methods
-In _Object-Oriented Programming_, **Accessor Methods** are functions that are used to retrieve the value of an object's instance variables using the `return` keyword, which sends the value outside of the function so we can store it in a variable. These methods, also known as _getters_, allow other objects to access the value of the instance variable without directly accessing the variable itself. This can be useful for enforcing ***encapsulation***, which is the practice of hiding the internal details of an object and exposing only the necessary information to other objects. Accessor methods are typically named using the "**get**" prefix followed by the variable name, and they return the value of the instance variable. For example, if an object has an instance variable named "_name_", the corresponding accessor method would be called `getName()`. As well, these may also be overloaded from a parent class, such as `Object` which all classes inherit from -- providing us with the `toString()` method that we can customize the behavior of.
+In _Object-Oriented Programming_, **Accessor Methods** are functions that are used to retrieve the value of an object's instance variables using the `return` keyword, which sends the value outside of the function so we can store it in a variable. These methods, also known as _getters_, allow other objects to access the value of the instance variable without directly accessing the variable itself. This can be useful for enforcing ***encapsulation***, which is the practice of hiding the internal details of an object and exposing only the necessary information to other objects. Accessor methods are typically named using the "**get**" prefix followed by the variable name, and they return the value of the instance variable. For example, if an object has an instance variable named "_name_", the corresponding accessor method would be called `getName()`. As well, these may also be overloaded from a parent class, such as `Object` which all classes inherit from — providing us with the `toString()` method that we can customize the behavior of.
 
 Let's look at a very simple example:
 ```java
@@ -272,7 +272,7 @@ System.out.printf("X: %f\t Y: %f\t Z: %f\n", position.getX(), position.getY(), p
 
 
 ### Mutator Methods
-Similar to _getters_, **Mutator Methods** are methods that are used to modify the value of an object's instance variables. These methods, also known as _setters_, allow other objects to change the value of the instance variable without directly accessing the variable itself, which can also be useful for enforcing encapsulation. Setters seldom return anything -- as such, we have a special type known as `void` which specifies that it returns nothing; sometimes we may even simply `return;` to exit the function earlier, such as if some condition does not pass. Mutator methods are typically named using the **set** prefix followed by the variable name, and they take a parameter that specifies the new value for the instance variable. For example, if an object has an instance variable named "_name_", the corresponding mutator method would be called `setName(String name)`; however, they may be also named something as simple as `calculate()`, which modifies numerous class variables at once. Again, these may also be overloaded to allow for varying arguments.
+Similar to _getters_, **Mutator Methods** are methods that are used to modify the value of an object's instance variables. These methods, also known as _setters_, allow other objects to change the value of the instance variable without directly accessing the variable itself, which can also be useful for enforcing encapsulation. Setters seldom return anything — as such, we have a special type known as `void` which specifies that it returns nothing; sometimes we may even simply `return;` to exit the function earlier, such as if some condition does not pass. Mutator methods are typically named using the **set** prefix followed by the variable name, and they take a parameter that specifies the new value for the instance variable. For example, if an object has an instance variable named "_name_", the corresponding mutator method would be called `setName(String name)`; however, they may be also named something as simple as `calculate()`, which modifies numerous class variables at once. Again, these may also be overloaded to allow for varying arguments.
 
 Let's look at an example:
 ```java
@@ -351,7 +351,7 @@ System.out.println(shape.getArea());
 
 
 ### Static Variables and Methods
-The **static** keyword is used to define a static member of a class. A static member is a member of a class that belongs to the class itself, rather than to any instance of the class. This means that a static member can be accessed directly on the class, without the need to create an object of the class -- i.e., it is *ready at compile-time*. More simply, the `static` keyword implies that the method/variable belongs to the **Class** itself, rather than a specific *object* or *instance* of that class, meaning that the class does not have to be instantiated for us to use it.
+The **static** keyword is used to define a static member of a class. A static member is a member of a class that belongs to the class itself, rather than to any instance of the class. This means that a static member can be accessed directly on the class, without the need to create an object of the class — i.e., it is *ready at compile-time*. More simply, the `static` keyword implies that the method/variable belongs to the **Class** itself, rather than a specific *object* or *instance* of that class, meaning that the class does not have to be instantiated for us to use it.
 
 The `static` keyword can be used to define static variables, static methods, and static inner classes:
 * **Static Variables**: variables that are shared by all instances of a class. They are typically used to store values that are common to all objects of the class, such as constants
@@ -405,13 +405,13 @@ public static void printHello() {
 ```
 This method can then be called directly on the class using `MyClass.printHello();`.
 
-Static methods can only access static variables and other static methods. They cannot access instance variables or instance methods because they do not have access to a specific instance of the class. This is the cause of the infamous _"Non-static variable cannot be referenced from a static context"_ error -- which we often run into in our favorite `public static void main(String[] args) {}` method.
+Static methods can only access static variables and other static methods. They cannot access instance variables or instance methods because they do not have access to a specific instance of the class. This is the cause of the infamous _"Non-static variable cannot be referenced from a static context"_ error — which we often run into in our favorite `public static void main(String[] args) {}` method.
 
 
 
 
 ## Scope and Access
-***Access*** refers to the level of accessibility of a variable or method within a class. If a method or class variable is `public`, then it can be accessed from anywhere -- within or outside of the class, including in other classes/methods. Likewise, a method/variable marked as `private` can only be accessed within its containing class.
+***Access*** refers to the level of accessibility of a variable or method within a class. If a method or class variable is `public`, then it can be accessed from anywhere — within or outside of the class, including in other classes/methods. Likewise, a method/variable marked as `private` can only be accessed within its containing class.
 
 Similarly, ***scope*** refers to where exactly in the code something (usually a *variable*) is accessible. Typically, this refers to the set of curly braces that contain the variable.
 Consider the following example:
@@ -435,8 +435,8 @@ public static void main(String[] args) {
 ```
 In the code above, we have three different variables, each with different *scopes*:
 * `lcv` can be accessed from anywhere within `main` because it is declared outside of any block statements, such as a loop or condition (i.e, its "parent curly-braces" are the entirety of `main`)
-* `i` can only be accessed within the `for` loop because it was declared inside of the loop -- so, anything inside the `for` loop can also access `i`
-* `temp` can only be accessed within the `if` statement inside the `for` loop -- its "parent curly-braces" are the `if` statement, whose "parent curly-braces" are the `for` loop; so, every time the loop starts a new iteration, a new `int temp` will be made inside the `if` statement
+* `i` can only be accessed within the `for` loop because it was declared inside of the loop — so, anything inside the `for` loop can also access `i`
+* `temp` can only be accessed within the `if` statement inside the `for` loop — its "parent curly-braces" are the `if` statement, whose "parent curly-braces" are the `for` loop; so, every time the loop starts a new iteration, a new `int temp` will be made inside the `if` statement
 
 
 ### The *this* Keyword

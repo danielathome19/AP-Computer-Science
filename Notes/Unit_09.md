@@ -360,7 +360,7 @@ public interface Shape {
    double getPerimeter();
 }
 ```
-A class that implements the Shape interface (literally, using the `implements` keyword) would need to provide implementations for the `getArea()` and `getPerimeter()` methods -- however, they must also be marked as overridden methods using `@Override`. 
+A class that implements the Shape interface (literally, using the `implements` keyword) would need to provide implementations for the `getArea()` and `getPerimeter()` methods — however, they must also be marked as overridden methods using `@Override`. 
 
 For example:
 ```java
@@ -433,7 +433,7 @@ public abstract class Animal {
 
 }
 ```
-In this example, the **Animal** class contains one abstract method called `makeSound()`, as well as one **Concrete (normal) Method** called `eat()`. The `makeSound()` is abstract because it does not have an implementation -- it simply specifies that the method will take no parameters and return no value, whereas the `eat()` method is concrete since it has a complete implementation, including a method body.
+In this example, the **Animal** class contains one abstract method called `makeSound()`, as well as one **Concrete (normal) Method** called `eat()`. The `makeSound()` is abstract because it does not have an implementation — it simply specifies that the method will take no parameters and return no value, whereas the `eat()` method is concrete since it has a complete implementation, including a method body.
 
 To use an abstract class, you need to create a subclass that *extends* (like inheritance) the abstract class and provides implementations for all of the abstract methods. For example:
 ```java

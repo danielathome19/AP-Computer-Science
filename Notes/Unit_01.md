@@ -1,5 +1,5 @@
 # Unit 1 - Primitive Types
-In programming, whenever we store data in a variable (like a mathematical variable where values can change or be immutable like $\pi$), we divide that data into various classifications -- is it a number, text, or something else? Numbers, two of our **primitive** types, are separated by computers into being either whole numbers or numbers that may have a decimal. Individual characters of text are also **primitive**, but not used in the AP subset; however, combinations (or *strings*) of characters do have a special **class** of their own, known as a **String** *object*.
+In programming, whenever we store data in a variable (like a mathematical variable where values can change or be immutable like $\pi$), we divide that data into various classifications — is it a number, text, or something else? Numbers, two of our **primitive** types, are separated by computers into being either whole numbers or numbers that may have a decimal. Individual characters of text are also **primitive**, but not used in the AP subset; however, combinations (or *strings*) of characters do have a special **class** of their own, known as a **String** *object*.
 There are three primitive types that the AP subset focuses on, along with one additional useful type that Java provides:
 * **int**: any whole number (Integer), positive or negative
 * **double**: any Real number (with or without a decimal), positive or negative; short-hand for "double-precision floating-point number"
@@ -7,7 +7,7 @@ There are three primitive types that the AP subset focuses on, along with one ad
 * **~~char~~** (**_WARNING_**: *NOT IN AP SUBSET*): a single (keyboard) character wrapped in apostraphes/single-quotes, including numbers, letters, special characters, 
 and escape characters (like `'\n'` for a newline, `'\t'` for a tab space); not tested on the AP subset but can be extremely useful
 
-While not a *primitive* type, the **String** *class* is extremely important -- i.e., a "string" of characters, wrapped in quotes,
+While not a *primitive* type, the **String** *class* is extremely important — i.e., a "string" of characters, wrapped in quotes,
 such as `"Hello, world!"`.
 
 Variables, equivalent to a mathematical variable, are defined in the sequence `<TYPE> <NAME> = <VALUE>;`, such as `int x = 5;`.
@@ -44,7 +44,7 @@ just caused a **"Not Initialized" error** which will cost you points on the ques
 Every Java program must start with `public class FILENAME {...}`, where **FILENAME** is the exact name of the *.java* file, minus the file-extension (case-sensitive).
 Recall that Java is a case-sensitive language, but not whitespace-sensitive, also.
 
-Most of our programs will include a `main` function, with the signature `public static void main(String[] args) {...}` -- this is where Java
+Most of our programs will include a `main` function, with the signature `public static void main(String[] args) {...}` — this is where Java
 looks for what code we actually want to run. Hence, it's given the name "entry-point" by most compilers.
 
 Each line of code must end in a semicolon (;) unless it ends in a curly-brace ({ or }).
@@ -85,7 +85,7 @@ A few of the most important format specifiers to remember are:
 * `%c`: char
 * `%s`: String
 
-This technique of formatting a String (alongside the same with the String.format() function) is known as ***string interpolation*** -- we specify inside the string what type of variable we want in that spot in the text, and pass in the variable(s) as arguments in the order we want them to appear.
+This technique of formatting a String (alongside the same with the String.format() function) is known as ***string interpolation*** — we specify inside the string what type of variable we want in that spot in the text, and pass in the variable(s) as arguments in the order we want them to appear.
 
 You can also use the `","` format specifier to separate a large number with commas every third digit from the right (like hand-written numbers):
 ```java
@@ -105,7 +105,7 @@ System.out.printf("%,.2f\n", salary);
 
 ## Comments
 There are two ways to leave a comment in Java (i.e., some text that only we can see; the compiler will 
-delete it from the actual program) -- either a line-comment (by itself or appearing at the end 
+delete it from the actual program) — either a line-comment (by itself or appearing at the end 
 of a line of code) or a block comment (spans multiple lines, or can appear within a line of code):
 * `// This is a single-line comment`
 * `int x = y;  // set x equal to y`
@@ -146,7 +146,7 @@ User input is also not on the AP subset, but again, is extremely useful to know.
 input functions which we will use for both user and file input. 
 
 First of all, we need to import the class from the **java.util** library, either using `import java.util.*;` to pull the 
-entire library, or `import java.util.Scanner;` -- either way, this should be your FIRST line of code in an input program.
+entire library, or `import java.util.Scanner;` — either way, this should be your FIRST line of code in an input program.
 
 For user input, we make a new **Scanner** object and give it a *name*, like "input": `Scanner input = new Scanner(System.in);`
 
@@ -202,7 +202,7 @@ Java supports 5 different elementary arithmetic operations:
 * `-`: minus
 * `*`: times
 * `/`: divide
-* `%`: modulus (or MOD) -- returns the remainder from long (integer) division
+* `%`: modulus (or MOD) — returns the remainder from long (integer) division
 
 Remember that the result of these operations returns the same **type** as the variables; an `int + int` operation will
 return an `int`. To get a `double`, **one** or **both** values must be defined as or *casted* as a `double`:

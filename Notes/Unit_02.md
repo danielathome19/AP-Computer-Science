@@ -1,5 +1,5 @@
 # Unit 2 - Using Objects
-Objects, by definition, are *instances* of **Classes**, many of which are built into the language which we frequently use (i.e., **Scanner**, **File**, **Exception**, etc.) given the convenience they provide. A ***Class***, put simply, is a collection of methods/functions and/or variables -- **Scanner** provides us with all of the methods necessary to work with user and file input. One of the most important concepts to remember is that *objects* cannot use the traditional `==` operator -- we need to use `obj1.equals(obj2)` instead, because `==` compares memory addresses; likewise, for making objects into Strings we need to use `obj.toString()` or we need implement a `toString()` method for the Class ourselves. 
+Objects, by definition, are *instances* of **Classes**, many of which are built into the language which we frequently use (i.e., **Scanner**, **File**, **Exception**, etc.) given the convenience they provide. A ***Class***, put simply, is a collection of methods/functions and/or variables — **Scanner** provides us with all of the methods necessary to work with user and file input. One of the most important concepts to remember is that *objects* cannot use the traditional `==` operator — we need to use `obj1.equals(obj2)` instead, because `==` compares memory addresses; likewise, for making objects into Strings we need to use `obj.toString()` or we need implement a `toString()` method for the Class ourselves. 
 
 ## Objects
 All types in Java are extensions of the **Object** class (for all primitive types and classes). This means that anything can be converted to an object through casting (known as **Boxing**) and back (**Unboxing**):
@@ -58,7 +58,7 @@ is the `System.out.println(...)` method, which prints to the console but does no
 needs to be stored in a variable or used in a calculation, like `Math.sin(x)`.
 
 To actually call a void method, we simply type out the method anywhere in the code that we want it to 
-execute -- typically on its own separate line since it cannot be used in a calculation:
+execute — typically on its own separate line since it cannot be used in a calculation:
 ```java
 public class Hello {
   public static void main(String[] args) {
@@ -90,7 +90,7 @@ The *String* class provides a [great number of methods](https://docs.oracle.com/
 * `x.toLowerCase()`: returns the String in all-lowercase form
 * `x.toUpperCase()`: returns the String in all-uppercase form
 * `x.contains(string)`: returns **true** iff (if and only if) the entirety of **string** is found in the String (case-sensitive)
-* `x.compareTo(string)`: returns a [lexicographical comparison](https://www.w3schools.com/java/ref_string_compareto.asp) of the Strings -- i.e., returns 0 if the Strings are exactly equal (case-sensitive); otherwise, returns 1 or -1
+* `x.compareTo(string)`: returns a [lexicographical comparison](https://www.w3schools.com/java/ref_string_compareto.asp) of the Strings — i.e., returns 0 if the Strings are exactly equal (case-sensitive); otherwise, returns 1 or -1
 * `x.equals(string)`: returns **true** iff the entirety of **string** equals the String (case-sensitive) 
 * `x.equalsIgnoreCase(string)`: returns **true** iff the entirety of **string** equals the String (_NOT_ case-sensitive)
 * ~~`x.charAt(index)`~~ (**_WARNING_**: *NOT IN AP SUBSET*): returns the char at position *index* (within \[0, `x.length()` - 1\])
@@ -156,9 +156,9 @@ as seen in the [documentation](https://docs.oracle.com/javase/8/docs/api/java/la
 * `Math.max(a, b)`: returns the greater of two values
 * `Math.min(a, b)`: returns the smaller of two values
 * `Math.pow(a, b)`: returns $a^b$
-* `Math.random()`: returns a random `double` in the range $\[0.0, 1.0\)$ -- i.e., $\ge 0$ but $< 1$
+* `Math.random()`: returns a random `double` in the range $\[0.0, 1.0\)$ — i.e., $\ge 0$ but $< 1$
 * `Math.round(a)`: rounds `a` by the standard elementary rounding definition: if a decimal is .5 or greater, round up (ceil);
-  otherwise, round down (floor) -- ( ⌊ $a$ ⌉ )
+  otherwise, round down (floor) — ( ⌊ $a$ ⌉ )
 * `Math.sqrt(a)`: returns $\sqrt{a}$
 
 ### Random Integer Generation
@@ -188,5 +188,5 @@ System.out.println("X rounded to two decimals: " + String.format("%.2f", x) + " 
 
 If you want to *clamp* your decimal to a number of decimals in the actual variable itself, one way that works for
 a large majority of cases is to do `double xroundedtotwodecimals = Math.round(x * 100.0) / 100.0;`, where the number of 0's
-corresponds to the number of decimal places (i.e., 1000 is 3 decimal places, 10 is 1 decimal place, etc.) -- however, note that
+corresponds to the number of decimal places (i.e., 1000 is 3 decimal places, 10 is 1 decimal place, etc.) — however, note that
 there are equally many edge-cases that this will fail due to the *roundoff error*.
