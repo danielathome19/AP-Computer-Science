@@ -258,6 +258,63 @@ The **MyAnimal** class has a constructor that takes two arguments, `name` and `a
 
 
 
+## The *instanceof* Operator
+In Java, the `instanceof` operator is a conditional operator used to determine if an object is an instance of a particular class or if it implements a particular interface. It returns a boolean value indicating whether or not the object is an instance of the specified class or interface.
+
+Consider the following example:
+```java
+// Create an object of the String class
+String str = "Hello, World!";
+
+// Check if str is an instance of the String class
+if (str instanceof String) {
+  System.out.println("str is an instance of String");
+} else {
+  System.out.println("str is not an instance of String");
+}
+```
+Here, `instanceof` is used to check if the `str` object is an instance of the **String** class. Since this is true, the code will print _"str is an instance of String"_ to the console.
+
+You can also use the instanceof operator to check if an object implements a particular interface. For example:
+```java
+// Create an object of the ArrayList class
+List<String> list = new ArrayList<>();
+
+// Check if list implements the List interface
+if (list instanceof List) {
+  System.out.println("list implements the List interface");
+} else {
+  System.out.println("list does not implement the List interface");
+}
+```
+Here, we check if the list object implements the List interface. Since the **ArrayList** class implements the **List** interface, the code will print _"list implements the List interface"_. Also note that ***when making an instance of a class that implements an interface or inherits from a superclass, we often declare the inherited or implemented class on the left-hand side and specify the object type with the `new` keyword***. For example:
+```java
+class Animal { }
+class Dog extends Animal { }
+class Cat extends Animal { }
+
+public class CheckSuperInstance {
+  public static void main(String[] args) {
+    // Create a Dog object
+    Animal animal = new Dog();
+
+    // Check if animal is an instance of the Dog class
+    if (animal instanceof Dog)
+      System.out.println("animal is an instance of Dog");
+    else
+      System.out.println("animal is not an instance of Dog");
+
+    // Check if animal is an instance of the Cat class
+    if (animal instanceof Cat)
+      System.out.println("animal is an instance of Cat");
+    else
+      System.out.println("animal is not an instance of Cat");
+  }
+}
+```
+
+
+
 ## Inheritance Hierarchies - The Theory of the Object-Oriented Programming Paradigm
 In Object-Oriented Programming, an **Inheritance Hierarchy** refers to the way that classes inherit attributes and behaviors from parent classes. This allows for a hierarchical relationship between classes, where child classes inherit the attributes and behaviors of their parent classes. Inheritance hierarchies can also have multiple levels of inheritance, where a child class inherits from a parent class, which itself inherits from a grandparent class, and so on, enabling a flexible and reusable code structure where common attributes and behaviors can be defined in parent classes and then inherited by child classes.
 
