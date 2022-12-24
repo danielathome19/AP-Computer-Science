@@ -537,7 +537,7 @@ Runnable r = () -> System.out.println("Running!");
 
 ### Map, Reduce, and Filter
 In functional programming, **Map**, **Reduce**, and **Filter** are ***Higher-Order Functions*** (functions that take another function as an argument) that allow you to apply a function to a collection of elements and produce a new collection as a result. These three functions are the pillars of FP — their proper usage enables very powerful, concise code, especially when applied to large collections of data.
-* Map applies a function to each element in a collection and returns a new collection with the results (coming from the [*map* operation](https://en.wikipedia.org/wiki/Map_(mathematics))[^4] in Discrete Math denoted by the $\mapsto$ operator). For example, given a list of numbers, you can use `map` to apply a function that increases each number by 1:
+* **Map** applies a function to each element in a collection and returns a new collection with the results (coming from the [*map* operation](https://en.wikipedia.org/wiki/Map_(mathematics))[^4] in Discrete Math denoted by the $\mapsto$ operator). For example, given a list of numbers, you can use `map` to apply a function that increases each number by 1:
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
 List<Integer> incremented = numbers.stream()
@@ -545,13 +545,13 @@ List<Integer> incremented = numbers.stream()
                                    .collect(Collectors.toList());
 // incremented = [2, 3, 4, 5]
 ```
-* Reduce combines all the elements in a collection into a single value by applying a function to the elements in a specific order. For example, given a list of numbers, you can use `reduce` to sum them up:
+* **Reduce** combines all the elements in a collection into a single value by applying a function to the elements in a specific order. For example, given a list of numbers, you can use `reduce` to sum them up:
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
 int sum = numbers.stream().reduce(0, (x, y) -> x + y);
 // sum = 10
 ```
-* Filter returns a new collection that includes only the elements that meet a certain condition. For example, given a list of numbers, you can use `filter` to select only the even numbers:
+* **Filter** returns a new collection that includes only the elements that meet a certain condition. For example, given a list of numbers, you can use `filter` to select only the even numbers:
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
 List<Integer> evens = numbers.stream()
