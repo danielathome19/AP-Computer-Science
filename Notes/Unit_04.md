@@ -28,7 +28,7 @@ while (counter < 10) {
 }
 ```
 
-Here, counter is acting as our **Look Control Variable (LCV)**; while we often use names like _counter_, _cnt_, _i_, _index_, etc. for our loop controller, ***lcv*** is a great alternative that is also easy for graders to read on paper
+Here, _counter_ is acting as our **Look Control Variable (LCV)**; while we often use names like _counter_, _cnt_, _i_, _index_, etc. for our loop controller, ***lcv*** is a great alternative that is also easy for graders to read on paper
 
 ## The *for* Loop
 A **for** loop is a shorthand, counter-based loop (i.e., rather than iterating specifically on a condition only, we iterate based on some counter variable). It allows us to declare a counter, check the condition for the counter, and increment/decrement the counter all in one line of code (similar to the **while** loop example above). For example:
