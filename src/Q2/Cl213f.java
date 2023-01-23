@@ -1,3 +1,5 @@
+package Q2;
+
 // Daniel Szelogowski
 // Prog213f
 // 11/8/2022

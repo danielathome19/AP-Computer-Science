@@ -1,4 +1,4 @@
-// Daniel Szelogowski
+package Q2;// Daniel Szelogowski
 // 11/16/2022
 // Big Array Part II
 import java.io.*;

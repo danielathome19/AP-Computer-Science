@@ -1,10 +1,10 @@
-// Daniel Szelogowski
+package Q2;// Daniel Szelogowski
 // 1/3/2023
-// Prog505a
+// Q2.Prog505a
 
 
 /**
- * The Book class for Prog505a
+ * The Book class for Q2.Prog505a
  */
 public class Cl505a {
     private String myName;

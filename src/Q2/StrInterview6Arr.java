@@ -1,4 +1,4 @@
-// Daniel Szelogowski
+package Q2;// Daniel Szelogowski
 // 11/28/2022
 // String Interview Question 6 Arrays
 import java.util.Scanner;

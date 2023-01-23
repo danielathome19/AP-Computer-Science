@@ -242,16 +242,16 @@ class MyAnimal {
   }
 }
 
-class Cat extends MyAnimal {
+class Q2.Cat extends MyAnimal {
   private String color;
 
-  public Cat(String name, int age, String color) {
+  public Q2.Cat(String name, int age, String color) {
     super(name, age);
     this.color = color;
   }
 }
 ```
-The **MyAnimal** class has a constructor that takes two arguments, `name` and `age`, and uses them to initialize the corresponding instance variables. The **Cat** class extends MyAnimal, so it inherits the name and age instance variables. In the Cat class, we have added a new instance variable, `color`, which is not present in the MyAnimal class. To initialize the `name` and `age` variables, which are inherited from MyAnimal, we use the `super` keyword to call the _superclass constructor_. ***The super keyword must be used as the first statement in the subclass constructor, and it must pass the values for the name and age variables as arguments***. This ensures that `name` and `age` are properly initialized before the Cat constructor proceeds to initialize the `color` variable.
+The **MyAnimal** class has a constructor that takes two arguments, `name` and `age`, and uses them to initialize the corresponding instance variables. The **Q2.Cat** class extends MyAnimal, so it inherits the name and age instance variables. In the Q2.Cat class, we have added a new instance variable, `color`, which is not present in the MyAnimal class. To initialize the `name` and `age` variables, which are inherited from MyAnimal, we use the `super` keyword to call the _superclass constructor_. ***The super keyword must be used as the first statement in the subclass constructor, and it must pass the values for the name and age variables as arguments***. This ensures that `name` and `age` are properly initialized before the Q2.Cat constructor proceeds to initialize the `color` variable.
 
 
 
@@ -289,7 +289,7 @@ Here, we check if the list object implements the List interface. Since the **Arr
 ```java
 class Animal { }
 class Dog extends Animal { }
-class Cat extends Animal { }
+class Q2.Cat extends Animal { }
 
 public class CheckSuperInstance {
   public static void main(String[] args) {
@@ -302,11 +302,11 @@ public class CheckSuperInstance {
     else
       System.out.println("animal is not an instance of Dog");
 
-    // Check if animal is an instance of the Cat class
-    if (animal instanceof Cat)
-      System.out.println("animal is an instance of Cat");
+    // Check if animal is an instance of the Q2.Cat class
+    if (animal instanceof Q2.Cat)
+      System.out.println("animal is an instance of Q2.Cat");
     else
-      System.out.println("animal is not an instance of Cat");
+      System.out.println("animal is not an instance of Q2.Cat");
   }
 }
 ```
@@ -337,7 +337,7 @@ Encapsulation has several benefits. It promotes modularity and code reusability,
 ### Polymorphism
 Another important core OOP concept is **Polymorphism** (literally _"many forms"_), which refers to the ability of a variable, object, or function to take on multiple forms or behaviors. In the context of Java, polymorphism refers to the ability of an object to behave differently based on the current context in which it is used. This is achieved through the use of _inheritance_, _interfaces_, and _overridden_ methods, and is extremely valuable in writing flexible and reusable code.
 
-Consider inheritance, which allows a child class to inherit the methods and properties of a parent class. This means that a child class can have its own unique behavior and attributes, while also being able to use the methods and properties of the parent class. For example, a parent class called **Animal** could have a `speak()` method that describes the general behavior of moving, while a child class called **Cat** could inherit the `speak()` method from the Animal class and also have its own unique `purr()` method.
+Consider inheritance, which allows a child class to inherit the methods and properties of a parent class. This means that a child class can have its own unique behavior and attributes, while also being able to use the methods and properties of the parent class. For example, a parent class called **Animal** could have a `speak()` method that describes the general behavior of moving, while a child class called **Q2.Cat** could inherit the `speak()` method from the Animal class and also have its own unique `purr()` method.
 
 Another way that polymorphism is achieved is through the use of **Interfaces**. An interface defines a set of methods that a class must implement, but it does not provide any implementation for those methods. This means that a class can implement multiple interfaces, each of which defines a different set of methods, and the class can provide its own unique implementation for each of those methods. This allows a single class to have multiple behaviors depending on which interface is being used to access its methods.
 

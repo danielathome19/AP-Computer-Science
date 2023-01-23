@@ -1,5 +1,5 @@
-// Daniel Szelogowski
-// Prog213b
+package Q2;// Daniel Szelogowski
+// Q2.Prog213b
 // 11/7/2015
 import java.io.*;
 import java.util.Scanner;

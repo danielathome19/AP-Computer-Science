@@ -1,6 +1,6 @@
-// Daniel Szelogowski
+package Q2;// Daniel Szelogowski
 // 1/5/2023
-// Prog470c
+// Q2.Prog470c
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

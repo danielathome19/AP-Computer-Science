@@ -1,5 +1,7 @@
+package Q2;
+
 /**
- * Cat
+ * Q2.Cat
  * Use with Cats with BigArrayLists
  */
 public class Cat {

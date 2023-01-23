@@ -1,6 +1,6 @@
-// Daniel Szelogowski
+package Q2;// Daniel Szelogowski
 // 12/5/2022
-// Prog213v
+// Q2.Prog213v
 import java.io.*;
 import java.util.*;
 

@@ -1,3 +1,5 @@
+package Q2;
+
 // Daniel Szelogowski
 // 11/15/2022
 // Big Array Part I

@@ -1,6 +1,6 @@
-// Daniel Szelogowski
+package Q2;// Daniel Szelogowski
 // 1/4/2023
-// Prog464a
+// Q2.Prog464a
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

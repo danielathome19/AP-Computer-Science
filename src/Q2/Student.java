@@ -1,3 +1,5 @@
+package Q2;
+
 public class Student {
     private String myFirstName;
     private String myLastName;

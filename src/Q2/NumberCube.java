@@ -1,3 +1,5 @@
+package Q2;
+
 public class NumberCube {
     /** @return an integer value between 1 and 6, inclusive
      */

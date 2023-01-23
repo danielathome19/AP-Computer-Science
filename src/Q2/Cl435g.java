@@ -1,5 +1,7 @@
+package Q2;
+
 // Daniel Szelogowski
-// Prog435g
+// Q2.Prog435g
 // 11/10/2022
 public class Cl435g {
     private int myScore;

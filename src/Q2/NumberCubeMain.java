@@ -1,10 +1,12 @@
+package Q2;
+
 public class NumberCubeMain {
     private int notReady;
     private static int isReady = 18;
 
     /** Returns an array of the values obtained by tossing
      * a number cube numTosses times.
-     * @param cube a NumberCube
+     * @param cube a Q2.NumberCube
      * @param numTosses the number of tosses to be recorded
      * Precondition: numTosses > 0
      * @return an array of numTosses values

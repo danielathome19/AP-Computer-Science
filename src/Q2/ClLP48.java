@@ -1,3 +1,5 @@
+package Q2;
+
 public class ClLP48 {
     private final int myA;
     private final int myC;

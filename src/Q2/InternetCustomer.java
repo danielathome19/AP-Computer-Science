@@ -1,6 +1,8 @@
+package Q2;
+
 // Daniel Szelogowski
 // 11/30/2022
-// Prog602b
+// Q2.Prog602b
 public class InternetCustomer {
     private int myAcc;
     private double myHours;

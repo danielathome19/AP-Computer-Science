@@ -1,5 +1,7 @@
+package Q2;
+
 // Daniel Szelogowski
-// Prog213b
+// Q2.Prog213b
 // 11/7/2015
 public class Cl213b {
     private int myQuant;

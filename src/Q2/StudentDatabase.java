@@ -1,5 +1,5 @@
-// Daniel Szelogowski
-// Student Database
+package Q2;// Daniel Szelogowski
+// Q2.Student Database
 // 12/13/2022
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class StudentDatabase {
 
         ArrayList<Student> db = new ArrayList<Student>();
         while (true) {
-            System.out.println("\nStudent Menu:\n");
+            System.out.println("\nQ2.Student Menu:\n");
             System.out.println("1 - Add new student");
             System.out.println("2 - Display all students");
             System.out.println("3 - Search for student (by id)");

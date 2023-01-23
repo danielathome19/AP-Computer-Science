@@ -1,9 +1,11 @@
+package Q2;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
 // Daniel Szelogowski
-// Prog435g
+// Q2.Prog435g
 // 11/10/2022
 public class Prog435g {
     public static void main(String[] args) {

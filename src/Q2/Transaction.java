@@ -1,6 +1,8 @@
+package Q2;
+
 // Daniel Szelogowski
 // 12/5/2022
-// Prog213v
+// Q2.Prog213v
 public class Transaction {
     private String myType;
     private double myAmount;

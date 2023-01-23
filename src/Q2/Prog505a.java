@@ -1,6 +1,6 @@
-// Daniel Szelogowski
+package Q2;// Daniel Szelogowski
 // 1/3/2023
-// Prog505a
+// Q2.Prog505a
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
