@@ -54,7 +54,7 @@ public class Prog701g {
             }
 
             System.out.println("Average student GPA: " + String.format("%.2f", (tot/cnt)));
-            System.out.println("Total num of students taught by teachers: " + totstus);
+            System.out.println("Total number of students taught by teachers: " + totstus);
             System.out.println("Smallest favorite admin word: " + sm);
             System.out.println("Largest favorite admin word: " + large);
 
@@ -63,3 +63,9 @@ public class Prog701g {
         }
     }
 }
+/*
+Average student GPA: 3.06
+Total number of students taught by teachers: 316
+Smallest favorite admin word: done
+Largest favorite admin word: coolbeans
+*/
