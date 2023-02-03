@@ -1,4 +1,4 @@
-package Prog701g;
+package Q3.Prog701g;
 
 public class Teacher extends Person {
     private int myNumStuds;

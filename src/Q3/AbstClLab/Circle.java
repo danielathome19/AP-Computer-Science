@@ -1,4 +1,4 @@
-package AbstClLab;
+package Q3.AbstClLab;
 
 public class Circle implements Shape {
     private double radius;

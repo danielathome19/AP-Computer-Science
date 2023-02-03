@@ -1,4 +1,4 @@
-package Prog701g;
+package Q3.Prog701g;
 
 // An interface guarantees that anything that
 // implements it will have to implement

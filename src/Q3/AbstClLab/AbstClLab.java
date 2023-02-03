@@ -1,4 +1,4 @@
-package AbstClLab;
+package Q3.AbstClLab;
 
 import java.util.Scanner;
 

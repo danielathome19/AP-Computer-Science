@@ -1,4 +1,4 @@
-package Prog701g;
+package Q3.Prog701g;
 
 import java.io.File;
 import java.io.IOException;

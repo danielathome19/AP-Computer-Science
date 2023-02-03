@@ -1,4 +1,4 @@
-package AbstClLab;
+package Q3.AbstClLab;
 
 public class Rectangle extends NotCircle {
     private double width;

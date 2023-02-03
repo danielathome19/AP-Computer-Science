@@ -1,4 +1,4 @@
-package Prog701g;
+package Q3.Prog701g;
 
 public class Person implements names {
     private String myFirst;
