@@ -71,8 +71,22 @@ public class Gene extends Fasta {
                 alignment2 = other.getSequence().substring(j-1,j) + alignment2;
                 i--;
                 j--;
+            } else if (matrix[i][j] == left) {
+                alignment1 = "_" + alignment1;
+                alignment2 = other.getSequence().substring(j-1,j) + alignment2;
+                j--;
+            } else if (matrix[i][j] == up) {
+                alignment1 = this.getSequence().substring(i-1,i) + alignment1;
+                alignment2 = "_" + alignment2;
+                i--;
             }
         }
-        return -1;
+
+        // Print alignment
+        int score = matrix[matrix.length-1][matrix[0].length-1];
+        System.out.println(this.organism + " gene " + this.geneID + ": \n\t" + alignment1);
+        System.out.println(other.organism + " gene " + other.geneID + ": \n\t" + alignment2);
+        System.out.println("Alignment score: " + score);
+        return score;
     }
 }
