@@ -4,7 +4,7 @@
 import java.util.Scanner;
 public class Prog162aRecursive {
     public static int factorial(int n) {
-        if (n == 1) return n;              // Base/ending Case
+        if (n == 1) return n;               // Base/ending Case
         else return n * factorial(n-1);  // Recursive Case
     }
 
