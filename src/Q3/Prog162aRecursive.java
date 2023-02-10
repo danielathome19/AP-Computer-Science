@@ -1,4 +1,4 @@
-// Daniel Szelogowski
+package Q3;// Daniel Szelogowski
 // 2/8/2023
 // Prog162a with Recursion
 import java.util.Scanner;
