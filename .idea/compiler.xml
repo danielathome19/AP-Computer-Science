@@ -2,17 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity1StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity2StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity3StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity4StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity5StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity6StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity7StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity8StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity9StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity10StarterCode" includeSubdirectories="true" />
-      <directory url="file://$PROJECT_DIR$/src/Q3/ElevensLab/Elevens/ActivityStarterCode/Activity11StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity1StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity2StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity3StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity4StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity5StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity6StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity7StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity8StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity9StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity10StarterCode" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/src/Q4/ElevensLab/Elevens/ActivityStarterCode/Activity11StarterCode" includeSubdirectories="true" />
     </excludeFromCompile>
   </component>
 </project>
