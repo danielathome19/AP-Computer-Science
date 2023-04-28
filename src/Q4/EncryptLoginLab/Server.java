@@ -1,6 +1,4 @@
-package Q4.EncryptLoginLab;
-
-/*
+package Q4.EncryptLoginLab;/*
 	Program:	Log in server
 				This program implements the authentication server
 				Protocol message format: "[Type of Message];[data];[data]"
@@ -28,7 +26,7 @@ public class Server {
         ServerSocket welcomeSocket = new ServerSocket(PORT);
         System.out.println("Now listening at " + welcomeSocket.getLocalSocketAddress());
 
-        while(true){//Server runs an infinite loop to provide service at any time
+        while(true){//Q4.EncryptLoginLab.Server runs an infinite loop to provide service at any time
             //setup communication with client
             Socket connectionSocket = welcomeSocket.accept(); //session socket
             System.out.println("Connected to " + connectionSocket.getInetAddress());
@@ -40,6 +38,7 @@ public class Server {
             //Receive and parse protocol message
             String protocolMessage = inFromClient.readLine();
             /**TODO: Decrypt the message *****/
+            protocolMessage = EncryptDecrypt.decrypt(protocolMessage);
             System.out.println("Received from client: " + protocolMessage);
             String[] parsedProtocolMessage = protocolMessage.split(";");
 
@@ -79,7 +78,7 @@ public class Server {
 
         try{
             //read the file searching for username/password combo
-            File myFile = new File("usernamepassword.txt");
+            File myFile = new File("data/usernamepassword.txt");
             Scanner myScanner = new Scanner(myFile);
             while(myScanner.hasNextLine()){
                 String line = myScanner.nextLine();

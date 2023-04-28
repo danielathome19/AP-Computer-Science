@@ -1,6 +1,4 @@
-package Q4.EncryptLoginLab;
-
-/*
+package Q4.EncryptLoginLab;/*
 	Program:	Log in client
 				This program implements the client side (i.e. app) of log in
 				Protocol message format: "[Type of Message];[data];[data]"
@@ -46,7 +44,7 @@ public class Client {
         String protocolMessage = "loginRequest;" + username + ";" + password;
         System.out.print("Sending request to host...");
         /**TODO: Encrypt the message before sending out *********/
-        outToServer.writeBytes(protocolMessage + "\n");
+        outToServer.writeBytes(EncryptDecrypt.encrypt(protocolMessage) + "\n");
         System.out.println(" Sent.");
 
         //Handle response from server
