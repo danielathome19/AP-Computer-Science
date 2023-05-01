@@ -26,7 +26,7 @@ public class Server {
         ServerSocket welcomeSocket = new ServerSocket(PORT);
         System.out.println("Now listening at " + welcomeSocket.getLocalSocketAddress());
 
-        while(true){//Q4.EncryptLoginLab.Server runs an infinite loop to provide service at any time
+        while(true){//Server runs an infinite loop to provide service at any time
             //setup communication with client
             Socket connectionSocket = welcomeSocket.accept(); //session socket
             System.out.println("Connected to " + connectionSocket.getInetAddress());
