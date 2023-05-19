@@ -28,5 +28,12 @@ public class Prog7300p {
 
 
         // Make neurons for OR, NOT, NAND, and NOR
+
+        // NOT dataset
+        X_train = new double[][]{
+                {0},
+                {1}
+        };
+        y_train = new double[]{1, 0};
     }
 }
