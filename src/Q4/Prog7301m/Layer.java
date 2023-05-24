@@ -2,9 +2,9 @@ package Q4.Prog7301m;
 
 public class Layer {
     class Neuron {
-        public double Value;  // a_i^(l)
         public double[] Weights;
         public double Bias;
+        public double Value;  // a_i^(l)
         public double Delta;
 
         public Neuron(int prevLayerSize) {

@@ -13,7 +13,7 @@ public class Activations {
 
     public static class Tanh implements Activation {
         public double activate(double value) { return Math.tanh(value); }
-        public double activateDeriv(double value) { return 1 - Math.pow(value, 2); }
+        public double activateDeriv(double value) { return 1-Math.pow(value, 2); }
     }
 
     public static class ReLU implements Activation {
