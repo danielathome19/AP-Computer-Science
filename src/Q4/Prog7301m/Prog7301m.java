@@ -93,6 +93,7 @@ public class Prog7301m {
             for (int i = 0; i < 28; i++)
                 for (int j = 0; j < 28; j++)
                     image.setRGB(j, i, (int)X_val[i * 28 + j]);
+            
             var frame = new JFrame("Image");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.add(new JLabel(new ImageIcon(image)));
