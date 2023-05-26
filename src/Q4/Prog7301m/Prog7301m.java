@@ -103,10 +103,4 @@ public class Prog7301m {
             System.out.println("Can't find data file!");
         }
     }
-
-
-
-
-
-
 }
