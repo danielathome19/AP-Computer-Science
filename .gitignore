@@ -1,6 +1,7 @@
 ### IntelliJ IDEA ###
 out/
-src/ignore/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 ### Eclipse ###
 .apt_generated
@@ -11,6 +12,8 @@ src/ignore/
 .springBeans
 .sts4-cache
 bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -24,7 +27,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-/src/Q1/SPC22Starter.java
-/src/SPC22Grader.java
-/src/SPC22Grader.form
-/src/ignore/
