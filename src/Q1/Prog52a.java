@@ -1,3 +1,5 @@
+package Q1;
+
 public class Prog52a {
     public static void main(String[] args) {
         int length = 143;
