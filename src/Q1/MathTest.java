@@ -26,5 +26,7 @@ public class MathTest {
 
         System.out.println(myWRounded);
         System.out.printf("mywRounded = %.2f\n", myWallet);  // %.#f  # of decimals
+
+        final double PI = 3.14159;
     }
 }
