@@ -69,13 +69,112 @@ public class BigArray {
         System.out.println("The number that was ousted is " + myThird);
 
         // 10. What numbers are in the 50s?
+        for (int num : array) {
+            if (num >= 50 && num <= 59)
+                System.out.print(num + " ");
+        }
+        System.out.println();
+
         // 11. What numbers are multiples of 4?
+        for (int lcv = 0; lcv < array.length; lcv++) {
+            if (array[lcv] % 4 == 0) {
+                System.out.print(array[lcv] + " ");
+            }
+        }
+        System.out.println();
+
         // 12. Is there a 60 in the list?
-        // 13. Check to see if all the elements from front to back are in the same order from back to front
+        boolean sixty = false;
+        for (int temp : array) {
+            if (temp == 60) sixty = true;
+        }
+        System.out.println("Is 60 in the list? " + sixty);
+
+        // 13. Check to see if all the elements from front to back
+        // are in the same order from back to front
+        boolean same = true;
+        for (int lcv = 0; lcv < array.length; lcv++ ) {
+            if (array[lcv] != array[array.length - 1 - lcv])
+                same = false;
+        }
+        System.out.println("Is the array palindromic? " + same);
+
         // 14. How many numbers are greater than the average?
+        double average = 0;
+        for (int x : array)
+            average += x;
+        average /= array.length;
+
+        int count = 0;
+        for (int x : array)
+            if (x > average) count++;
+        System.out.printf("There are %d numbers greater than the average\n", count);
+
         // 15. How many of the numbers are even?
-        // 16. Copy all of the elements of the array into a new array but in reverse order
-        // 17. Write a program to shift every element of an array circularly right. E.g.-INPUT : 1 2 3 4 5 OUTPUT : 5 1 2 3 4
-        // 18. Find the sum of all of the digits of all of the elements
+        int evens = 0;
+        for (int num : array)
+            if (num % 2 == 0) evens++;
+        System.out.printf("There are %d even numbers\n", evens);
+
+        // 16. Copy all the elements of the array into a new array but in reverse order
+        int[] array2 = new int[array.length];
+        for (int lcv = 0; lcv < array.length; lcv++)
+            array2[lcv] = array[array.length - 1 - lcv];
+
+        for (int n : array2)
+            System.out.print(n + " ");
+        System.out.println();
+
+        // 17. Write a program to shift every element of an array circularly right.
+        // E.g.-INPUT : 1 2 3 4 5 OUTPUT : 5 1 2 3 4
+        int[] shiftArr = circularShiftRight(array);
+        for (int n : shiftArr)
+            System.out.print(n + " ");
+        System.out.println();
+
+        // 18. Find the sum of all the digits of all the elements
+        int sum = 0;
+        for (int num : array) {
+            int digitsum = 0;
+            int temp = num;
+            while (temp > 0) {
+                int n = temp % 10;
+                temp /= 10;
+                digitsum += n;
+            }
+            sum += digitsum;
+        }
+        System.out.println("Sum of all digits of all elements = " + sum);
+    }
+
+    public static int[] circularShiftRight(int[] arr) {
+        int temp = arr[arr.length - 1];
+        int[] shifted = new int[arr.length];
+        for (int lcv = 1; lcv < arr.length; lcv++)
+            shifted[lcv] = arr[lcv-1];
+        shifted[0] = temp;
+        return shifted;
     }
 }
+
+/*
+38 28 35 38 54 66 39 70 32 61 32 32 75 48 54 46 47 24 58
+38 28 35 38 54 66 39 70 32 61 32 32 75 48 54 46 47 24 58
+The middle number is 61
+Average of the first, middle, and last numbers is 52.333333333333336
+The smallest number is 24
+The largest number is 75
+38 28 35 38 54 66 39 70 32 61 32 32 24 48 54 46 47 75 58
+38 28 35 38 54 66 39 70 32 3 32 32 24 48 54 46 47 75 58
+48 38 45 48 64 76 49 80 42 13 42 42 34 58 64 56 57 85 68
+The number that was ousted is 45
+58 56 57
+48 48 64 76 80 64 56 68
+Is 60 in the list? false
+Is the array palindromic? false
+There are 9 numbers greater than the average
+There are 14 even numbers
+68 85 57 56 64 58 34 42 42 13 42 80 49 76 64 48 5 38 48
+68 48 38 5 48 64 76 49 80 42 13 42 42 34 58 64 56 57 85
+Sum of all digits of all elements = 186
+*/
