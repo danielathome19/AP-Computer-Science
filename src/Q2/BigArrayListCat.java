@@ -101,3 +101,37 @@ public class BigArrayListCat {
         }
     }
 }
+
+/*
+1. All the cats:
+Name	Weight	Age	Cost
+Inky	15.69	2	35.79
+Panda	14.30	6	15.03
+Rascal	21.10	21	0.00
+Blacky	13.99	3	26.89
+Taffy	24.50	10	56.89
+Toby	17.20	10	37.57
+
+2. The third cat is named: Rascal
+
+3. The updated weight is: 27.2
+
+7. The updated list is:
+Name	Weight	Age	Cost
+Inky	15.69	2	35.79
+Angel	3.60	1	25.99
+Panda	14.30	6	15.03
+Blacky	13.99	3	26.89
+Taffy	24.50	10	56.89
+Toby	27.20	10	37.57
+Gimpy	14.30	10	29.99
+
+10. The current cat names are:
+Inky	Blacky	Sugar	Angel	Taffy	Toby	Gimpy	Panda
+
+11. The costs of the remaining cats are:
+35.79 26.89 33.25 56.89 37.57 29.99
+
+12. The cats being put on a diet are:
+Inky	Sugar	Taffy	Toby
+*/
