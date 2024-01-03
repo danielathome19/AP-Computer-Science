@@ -8,7 +8,7 @@ public class Prog464d {
     /**
      * Performs matrix transposition on a 2D array of integers.
      * @param mat   The 2D array to be transposed
-     * @return      The transposition of &nbsp; {@code mat}
+     * @return      The transposition of mat
      */
     public static int[][] transpose(int[][] mat) {
         int[][] transposed = new int[mat[0].length][mat.length];
