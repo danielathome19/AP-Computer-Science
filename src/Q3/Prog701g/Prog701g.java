@@ -65,3 +65,10 @@ public class Prog701g {
         }
     }
 }
+
+/*
+Average student GPA: 3.06
+Total number of students taught by teachers: 316
+Smallest favorite admin word: done
+Largest favorite admin word: coolbeans
+*/
