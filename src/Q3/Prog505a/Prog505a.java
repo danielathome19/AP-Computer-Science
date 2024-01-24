@@ -50,3 +50,14 @@ public class Prog505a {
         }
     }
 }
+
+/*
+Sam Summer	4	45
+Linda Lazy	2	20
+Paul Prodder	5	60
+K.C. Master	8	115
+Richie Reader	6	75
+
+Average points: 63.0
+The winner is: K.C. Master
+*/
