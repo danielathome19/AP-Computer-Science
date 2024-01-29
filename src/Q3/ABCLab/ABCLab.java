@@ -1,4 +1,4 @@
-package Q3.AbstClLab;
+package Q3.ABCLab;
 
 // https://www.cs.colostate.edu/~cs163/.Fall20/001/labs/16AbstractClasses
 import java.util.Scanner;

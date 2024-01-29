@@ -1,4 +1,4 @@
-package Q3.AbstClLab;
+package Q3.ABCLab;
 
 public interface Shape {
     public void calculateArea();

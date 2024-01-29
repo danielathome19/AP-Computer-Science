@@ -1,4 +1,4 @@
-package Q3.AbstClLab;
+package Q3.ABCLab;
 
 public class Triangle extends NotCircle {
     private double base;
