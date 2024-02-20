@@ -43,7 +43,7 @@ public class Prog505w {
                     int cornEaten = input.nextInt();
                     int rides = input.nextInt();
                     double rideCost = input.nextDouble();
-                    Horse fred = new Horse(name, weight, hayEaten, cornEaten, rides, rideCost);
+                    Horse fred = new Horse(name, weight, cornEaten, hayEaten, rides, rideCost);
                     animals.add(fred);
                     hay -= hayEaten;
                     corn -= cornEaten;
