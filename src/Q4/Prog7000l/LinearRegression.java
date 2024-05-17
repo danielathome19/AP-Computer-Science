@@ -35,7 +35,15 @@ public class LinearRegression {
                 theta0 -= (1.0/m) * alpha * temp0;
                 theta1 -= (1.0/m) * alpha * temp1;
             }
-            // TODO: calculate error/cost and repeat
+            for (int i = 0; i < m; i++)
+                e[i] = (theta1 * X_train[i][0] + theta0) - y_train[i];  // J(TH0, TH1)
+            double obj = 0;
+            for (int i = 0; i < m; i++)
+                obj += e[i] * e[i];
+            objective[epoch] = obj;
+
+            if (epoch > 1 && Math.abs(objective[epoch]-objective[epoch-1]) < tolerance)
+                break;
         }
     }
 
