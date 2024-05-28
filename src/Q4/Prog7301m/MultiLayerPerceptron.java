@@ -22,7 +22,7 @@ public class MultiLayerPerceptron {
         for (int i = 0; i < fLayers[0].Size; i++) fLayers[0].Neurons[i].Value = X[i];
         for (int k = 1; k < fLayers.length; k++) {
             for (int i = 0; i < fLayers[k].Size; i++) {
-                result = 0.0;
+                result = 0;
                 for (int j = 0; j < fLayers[k-1].Size; j++)
                     result += fLayers[k].Neurons[i].Weights[j] *
                               fLayers[k-1].Neurons[j].Value;
@@ -38,7 +38,7 @@ public class MultiLayerPerceptron {
 
     public double backPropagate(double[] X, double[] output) {
         double[] result = feedForward(X);
-        double error = 0.0;
+        double error = 0;
         int outputSize = fLayers[fLayers.length-1].Size;
 
         for (int i = 0; i < outputSize; i++) {
@@ -65,7 +65,7 @@ public class MultiLayerPerceptron {
             }
         }
 
-        error = 0.0;
+        error = 0;
         for (int i = 0; i < output.length; i++) error += Math.abs(result[i]-output[i]);
         return error / output.length;
     }
