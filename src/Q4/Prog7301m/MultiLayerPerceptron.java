@@ -39,9 +39,8 @@ public class MultiLayerPerceptron {
     public double backPropagate(double[] X, double[] output) {
         double[] result = feedForward(X);
         double error = 0;
-        int outputSize = fLayers[fLayers.length-1].Size;
 
-        for (int i = 0; i < outputSize; i++) {
+        for (int i = 0; i < fLayers[fLayers.length-1].Size; i++) {
             error = output[i] - result[i];
             fLayers[fLayers.length-1].Neurons[i].Delta =
                     error * fActivation.activateDeriv(result[i]);
