@@ -92,13 +92,4 @@ public class Prog7301m {
         frame.pack();
         frame.setVisible(true);
     }
-
-
-
-
-
-
-
-
-
 }
