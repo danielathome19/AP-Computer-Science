@@ -78,6 +78,8 @@ public class Prog7301m {
         model.train(X_train, y_train, 10);
         System.out.println("Final Accuracy: " + model.accuracy(X_test, y_test));
 
+        model.saveModel("Langdat/prog7301m_model.ser");
+
         // Pick a random image from the test set (validation)
         int index = (int)(Math.random() * X_test.length);
         double[] X_val = X_test[index];
