@@ -99,7 +99,7 @@ public class Prog7301m {
 
         var frame = new JFrame("Image");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(new JLabel(new ImageIcon(img)));
+        frame.add(new JLabel(new ImageIcon(img.getScaledInstance(256, 256, 4))));
         frame.pack();
         frame.setVisible(true);
     }
