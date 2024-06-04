@@ -44,6 +44,7 @@ public class Iris {
         var y = encodeLabels(y_str, classes);
 
         // Split the data into training/testing sets
+        // TODO: shuffle X and y (in the same order) for better performance
         int ntr = (int)(X.size() * 0.8);
         var Xtr = X.subList(0, ntr);
         var ytr = y.subList(0, ntr);
