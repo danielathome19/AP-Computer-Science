@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 9/5">
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog58i.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 9/9">
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog88a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,24 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MathTest.executor": "Run",
-    "Application.Prog54a.executor": "Run",
-    "Application.Prog58i.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MathTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog54a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog58i.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Prog58i">
+}</component>
+  <component name="RunManager" selected="Application.Prog88a">
     <configuration name="MathTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q1.MathTest" />
       <module name="AP-Computer-Science" />
@@ -104,8 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Prog88a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q1.Prog88a" />
+      <module name="AP-Computer-Science" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Q1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog88a" />
         <item itemvalue="Application.Prog58i" />
         <item itemvalue="Application.MathTest" />
         <item itemvalue="Application.Prog54a" />
@@ -130,7 +145,11 @@
       <updated>1725467196015</updated>
       <workItem from="1725467197675" duration="652000" />
       <workItem from="1725550840413" duration="2708000" />
-      <workItem from="1725896712968" duration="1123000" />
+      <workItem from="1725896712968" duration="2678000" />
+      <workItem from="1725902712677" duration="872000" />
+      <workItem from="1725974691095" duration="84000" />
+      <workItem from="1725985952211" duration="22000" />
+      <workItem from="1726070278414" duration="821000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -148,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725551892165</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update 9/9">
+      <option name="closed" value="true" />
+      <created>1725897902402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725897902402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +184,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update 9/4" />
     <MESSAGE value="Update 9/5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 9/5" />
+    <MESSAGE value="Update 9/9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 9/9" />
   </component>
 </project>
