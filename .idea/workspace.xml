@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 9/13">
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog115a.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 9/16">
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog166e.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +53,7 @@
     "Application.GradeCalc.executor": "Run",
     "Application.MathTest.executor": "Run",
     "Application.Prog115a.executor": "Run",
+    "Application.Prog166e.executor": "Run",
     "Application.Prog54a.executor": "Run",
     "Application.Prog58i.executor": "Run",
     "Application.Prog88a.executor": "Run",
@@ -71,7 +73,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Prog115a">
+  <component name="RunManager" selected="Application.Prog166e">
     <configuration name="GradeCalc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q1.GradeCalc" />
       <module name="AP-Computer-Science" />
@@ -85,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q1.MathTest" />
+    <configuration name="Prog115a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q1.Prog115a" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prog115a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q1.Prog115a" />
+    <configuration name="Prog166e" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q1.Prog166e" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
@@ -139,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog166e" />
         <item itemvalue="Application.Prog115a" />
         <item itemvalue="Application.GradeCalc" />
         <item itemvalue="Application.Prog88a" />
         <item itemvalue="Application.Prog58i" />
-        <item itemvalue="Application.MathTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +173,10 @@
       <workItem from="1725985952211" duration="22000" />
       <workItem from="1726070278414" duration="1636000" />
       <workItem from="1726243873799" duration="1509000" />
-      <workItem from="1726500491170" duration="1103000" />
+      <workItem from="1726500491170" duration="3555000" />
+      <workItem from="1726678008870" duration="1670000" />
+      <workItem from="1726680631753" duration="5000" />
+      <workItem from="1726760431922" duration="685000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -213,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726244565260</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update 9/16">
+      <option name="closed" value="true" />
+      <created>1726501756677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726501756677</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +238,7 @@
     <MESSAGE value="Update 9/9" />
     <MESSAGE value="Update 9/11" />
     <MESSAGE value="Update 9/13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 9/13" />
+    <MESSAGE value="Update 9/16" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 9/16" />
   </component>
 </project>
