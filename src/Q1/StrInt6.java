@@ -9,9 +9,9 @@ public class StrInt6 {
         String text = wow.nextLine().toLowerCase().trim();
 
         // NO ARRAYS!!!!! maybe
-        int ACount = 0;
-        int BCount = 0;
-        int CCount = 0;
+        int Acount = 0;
+        int Bcount = 0;
+        int Ccount = 0;
 
         for (int lcv = 0; lcv < text.length(); lcv++) {
             // Maybe substring will work better than char?

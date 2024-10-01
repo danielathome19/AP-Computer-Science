@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 9/27">
-      <change afterPath="$PROJECT_DIR$/src/Q1/StrInt6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/StrInt7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,7 +181,7 @@
       <workItem from="1727278060920" duration="3568000" />
       <workItem from="1727365112792" duration="1048000" />
       <workItem from="1727451820967" duration="2450000" />
-      <workItem from="1727796772067" duration="1338000" />
+      <workItem from="1727796772067" duration="1532000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -251,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727453696822</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update 10/1">
+      <option name="closed" value="true" />
+      <created>1727798171024</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727798171024</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +270,7 @@
     <MESSAGE value="Update 9/16" />
     <MESSAGE value="Update 9/25" />
     <MESSAGE value="Update 9/27" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 9/27" />
+    <MESSAGE value="Update 10/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 10/1" />
   </component>
 </project>
