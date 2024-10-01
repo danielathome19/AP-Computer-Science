@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 9/25">
-      <change afterPath="$PROJECT_DIR$/src/Q1/StrInt1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/StrInt2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/StrInt3.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 9/27">
+      <change afterPath="$PROJECT_DIR$/src/Q1/StrInt6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q1/StrInt7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +61,7 @@
     "Application.StrInt1.executor": "Run",
     "Application.StrInt2.executor": "Run",
     "Application.StrInt3.executor": "Run",
+    "Application.StrInt7.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -78,22 +78,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.StrInt3">
+  <component name="RunManager" selected="Application.StrInt7">
     <configuration name="MSOE20141" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q1.MSOE20141" />
-      <module name="AP-Computer-Science" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Q1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Prog166e" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q1.Prog166e" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
@@ -144,13 +131,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StrInt7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q1.StrInt7" />
+      <module name="AP-Computer-Science" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Q1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StrInt7" />
         <item itemvalue="Application.StrInt3" />
         <item itemvalue="Application.StrInt2" />
         <item itemvalue="Application.StrInt1" />
         <item itemvalue="Application.MSOE20141" />
-        <item itemvalue="Application.Prog166e" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +184,8 @@
       <workItem from="1726760431922" duration="685000" />
       <workItem from="1727278060920" duration="3568000" />
       <workItem from="1727365112792" duration="1048000" />
-      <workItem from="1727451820967" duration="1832000" />
+      <workItem from="1727451820967" duration="2450000" />
+      <workItem from="1727796772067" duration="1338000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -242,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727280025482</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update 9/27">
+      <option name="closed" value="true" />
+      <created>1727453696822</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727453696822</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +265,7 @@
     <MESSAGE value="Update 9/13" />
     <MESSAGE value="Update 9/16" />
     <MESSAGE value="Update 9/25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 9/25" />
+    <MESSAGE value="Update 9/27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 9/27" />
   </component>
 </project>
