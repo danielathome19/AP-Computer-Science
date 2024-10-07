@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/1" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/1">
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog52aCl/Cl52a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog52aCl/Prog52aCl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +55,7 @@
     "Application.MathTest.executor": "Run",
     "Application.Prog115a.executor": "Run",
     "Application.Prog166e.executor": "Run",
+    "Application.Prog52aCl.executor": "Run",
     "Application.Prog54a.executor": "Run",
     "Application.Prog58i.executor": "Run",
     "Application.Prog88a.executor": "Run",
@@ -74,13 +79,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.StrInt7">
-    <configuration name="MSOE20141" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q1.MSOE20141" />
+  <component name="RunManager" selected="Application.Prog52aCl">
+    <configuration name="Prog52aCl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q1.Prog52aCl.Prog52aCl" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q1.*" />
+          <option name="PATTERN" value="Q1.Prog52aCl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog52aCl" />
         <item itemvalue="Application.StrInt7" />
         <item itemvalue="Application.StrInt3" />
         <item itemvalue="Application.StrInt2" />
         <item itemvalue="Application.StrInt1" />
-        <item itemvalue="Application.MSOE20141" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +186,8 @@
       <workItem from="1727278060920" duration="3568000" />
       <workItem from="1727365112792" duration="1048000" />
       <workItem from="1727451820967" duration="2450000" />
-      <workItem from="1727796772067" duration="1532000" />
+      <workItem from="1727796772067" duration="2201000" />
+      <workItem from="1728308866713" duration="3052000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -255,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727798171024</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update 10/1">
+      <option name="closed" value="true" />
+      <created>1727798331730</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727798331730</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
