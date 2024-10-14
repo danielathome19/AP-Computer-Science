@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/1">
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog52aCl/Cl52a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog52aCl/Prog52aCl.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/7">
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog93aCl/Cl93a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog93aCl/Prog93aCl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +59,7 @@
     "Application.Prog54a.executor": "Run",
     "Application.Prog58i.executor": "Run",
     "Application.Prog88a.executor": "Run",
+    "Application.Prog93aCl.executor": "Run",
     "Application.StrInt1.executor": "Run",
     "Application.StrInt2.executor": "Run",
     "Application.StrInt3.executor": "Run",
@@ -79,7 +80,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Prog52aCl">
+  <component name="RunManager" selected="Application.Prog93aCl">
     <configuration name="Prog52aCl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q1.Prog52aCl.Prog52aCl" />
       <module name="AP-Computer-Science" />
@@ -93,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StrInt1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q1.StrInt1" />
+    <configuration name="Prog93aCl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q1.Prog93aCl.Prog93aCl" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q1.*" />
+          <option name="PATTERN" value="Q1.Prog93aCl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog93aCl" />
         <item itemvalue="Application.Prog52aCl" />
         <item itemvalue="Application.StrInt7" />
         <item itemvalue="Application.StrInt3" />
         <item itemvalue="Application.StrInt2" />
-        <item itemvalue="Application.StrInt1" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +188,8 @@
       <workItem from="1727365112792" duration="1048000" />
       <workItem from="1727451820967" duration="2450000" />
       <workItem from="1727796772067" duration="2201000" />
-      <workItem from="1728308866713" duration="3052000" />
+      <workItem from="1728308866713" duration="4048000" />
+      <workItem from="1728920198686" duration="861000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -269,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727798331730</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update 10/7">
+      <option name="closed" value="true" />
+      <created>1728317694596</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728317694596</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +295,7 @@
     <MESSAGE value="Update 9/25" />
     <MESSAGE value="Update 9/27" />
     <MESSAGE value="Update 10/1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 10/1" />
+    <MESSAGE value="Update 10/7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 10/7" />
   </component>
 </project>
