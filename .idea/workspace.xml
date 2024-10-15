@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/7">
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog93aCl/Cl93a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog93aCl/Prog93aCl.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/14">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Q1/Prog93aCl/Cl93a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q1/Prog93aCl/Cl93a.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,38 +47,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GradeCalc.executor": "Run",
-    "Application.MSOE20141.executor": "Run",
-    "Application.MathTest.executor": "Run",
-    "Application.Prog115a.executor": "Run",
-    "Application.Prog166e.executor": "Run",
-    "Application.Prog52aCl.executor": "Run",
-    "Application.Prog54a.executor": "Run",
-    "Application.Prog58i.executor": "Run",
-    "Application.Prog88a.executor": "Run",
-    "Application.Prog93aCl.executor": "Run",
-    "Application.StrInt1.executor": "Run",
-    "Application.StrInt2.executor": "Run",
-    "Application.StrInt3.executor": "Run",
-    "Application.StrInt7.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GradeCalc.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MSOE20141.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MathTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog115a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog166e.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog52aCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog54a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog58i.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog88a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog93aCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt7.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Prog93aCl">
     <configuration name="Prog52aCl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q1.Prog52aCl.Prog52aCl" />
@@ -189,7 +188,8 @@
       <workItem from="1727451820967" duration="2450000" />
       <workItem from="1727796772067" duration="2201000" />
       <workItem from="1728308866713" duration="4048000" />
-      <workItem from="1728920198686" duration="861000" />
+      <workItem from="1728920198686" duration="1023000" />
+      <workItem from="1729006676881" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -279,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728317694596</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update 10/14">
+      <option name="closed" value="true" />
+      <created>1728921087610</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728921087610</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +304,7 @@
     <MESSAGE value="Update 9/27" />
     <MESSAGE value="Update 10/1" />
     <MESSAGE value="Update 10/7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 10/7" />
+    <MESSAGE value="Update 10/14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 10/14" />
   </component>
 </project>

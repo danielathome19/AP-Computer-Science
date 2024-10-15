@@ -17,7 +17,6 @@ public class Cl93a {
         lateTotal = 0;
     }
 
-
     public void calc() {}  // TODO
 
     public String toString() {
