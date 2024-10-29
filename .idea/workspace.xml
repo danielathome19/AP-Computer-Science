@@ -4,266 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/14">
-      <change afterPath="$PROJECT_DIR$/Langdat/DATA2A.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Data2a.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Lang1050.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/MSOE2018_Ans_prob5_M.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/MSOE2018_Ans_prob6_msoe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/MSOE2018_prob6_M_Data_File.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/MSOE2018prob5_msoe__Data_File.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/NUMS3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Nums3.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/P412a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/P412a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/P415z.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/P415z.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/PROG127A.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Pel53.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Pelican46.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog127a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog141.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog141.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog310h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog310h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog310hlines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog327a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog327a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog435a.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog478a.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Prog480a-2.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/Waittime2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/bank.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/bank.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/bginvtry.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/bigarraylist.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/bluepelican46" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/buysell.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/cats.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/dale-chall-word-list.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/exam.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/fashion-mnist.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/h1-0homosapiens.fna" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/h1-0musmusculus.fna" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/h1-0pantroglodytes.fna" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/invntory.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/invntory.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/jobs_in_data_science.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge2.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge3.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge4.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/merge4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/numsort.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/numsort.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/p402a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg1050a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg1060z.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg1061h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg1061h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg1071a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg1071a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg402a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg402a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg402aa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg404a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg404a1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg404a2.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg404a2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg408a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg408a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg470t1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg470t1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg470t2.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prg470t2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog155t.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog155t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog1999.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog19999.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog206.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog206.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog206a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog206a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213alines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213e.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213f.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213g.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213g.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213t.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213v.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog213v.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214b.ddd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214bb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214blines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214c.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214clines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog214clines2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog215a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog215a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog215h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog215i.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog215i.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog215iliner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog215ilines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog230t.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog230t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog260a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog260a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog260alines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog275d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog280a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog280a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog285b(1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog285b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog285b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog285blines.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog335f.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog335f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog408b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog415h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog415h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog433b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog433b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435alines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435g.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435g.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435m.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435m.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435t.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog435t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog462a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog462a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog464a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog464a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog464lalines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465alines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog465h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog469z.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog475a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog475a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog477a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog477a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog477alines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog480h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog480h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog480t.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog480t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog480u.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog480u.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog485a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog485a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog490h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog490h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog492h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog492h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog492hnum.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog492hnumlines.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog5000d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog501a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog501a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog501alines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog501alines2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog501alinesssss.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505alines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505c.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505t.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505u.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505w.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog505w.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog506t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog506w.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog507a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog512c.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog512c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog512d.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog512d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog512h.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog512h.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog514a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog514a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog515a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog515a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog570a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog570a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog575a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog575a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog602b(1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog602b.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog602b.bak 2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog602b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog602b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog602blines.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog603b.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog603b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog605a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog605a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog619t.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog619t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog619u.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog619u.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog619v.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog619v.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog7000l.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog701g(1).dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog701g(1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog701g.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog701g.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog702q(1).txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog702q.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog703s.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog705x.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog7301m_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog7301m_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog901a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/prog901a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/rates.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/rates.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/senator.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/sort.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/sort.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/starbucks.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/stuff1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/survey.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/survey.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/survey2.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/survey2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/text1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/transact.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/transact.dat 2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/transact.dat 3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/transact.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/video_game_sales.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/waittime.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langdat/words" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog285bCl/Prog285bCl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog285bCl/Salesperson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dfile.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/15">
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog213bCl/Cl213b.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q1/Prog213bCl/Prog213bCl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -312,6 +55,7 @@
     "Application.MathTest.executor": "Run",
     "Application.Prog115a.executor": "Run",
     "Application.Prog166e.executor": "Run",
+    "Application.Prog213bCl.executor": "Run",
     "Application.Prog285bCl.executor": "Run",
     "Application.Prog52aCl.executor": "Run",
     "Application.Prog54a.executor": "Run",
@@ -344,7 +88,20 @@
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Prog285bCl">
+  <component name="RunManager" selected="Application.Prog213bCl">
+    <configuration name="Prog213bCl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q1.Prog213bCl.Prog213bCl" />
+      <module name="AP-Computer-Science" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Q1.Prog213bCl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Prog285bCl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q1.Prog285bCl.Prog285bCl" />
       <module name="AP-Computer-Science" />
@@ -384,19 +141,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StrInt3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q1.StrInt3" />
-      <module name="AP-Computer-Science" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Q1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StrInt7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q1.StrInt7" />
       <module name="AP-Computer-Science" />
@@ -412,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog213bCl" />
         <item itemvalue="Application.Prog285bCl" />
         <item itemvalue="Application.Prog93aCl" />
         <item itemvalue="Application.Prog52aCl" />
         <item itemvalue="Application.StrInt7" />
-        <item itemvalue="Application.StrInt3" />
       </list>
     </recent_temporary>
   </component>
@@ -454,7 +198,9 @@
       <workItem from="1727796772067" duration="2201000" />
       <workItem from="1728308866713" duration="4048000" />
       <workItem from="1728920198686" duration="1023000" />
-      <workItem from="1729006676881" duration="2246000" />
+      <workItem from="1729006676881" duration="2781000" />
+      <workItem from="1729528129672" duration="43000" />
+      <workItem from="1730216631136" duration="1040000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -560,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729006707615</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update 10/15">
+      <option name="closed" value="true" />
+      <created>1729008989146</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729008989146</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,6 +332,7 @@
     <MESSAGE value="Update 10/1" />
     <MESSAGE value="Update 10/7" />
     <MESSAGE value="Update 10/14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 10/14" />
+    <MESSAGE value="Update 10/15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 10/15" />
   </component>
 </project>
