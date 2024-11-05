@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/15">
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog213bCl/Cl213b.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q1/Prog213bCl/Prog213bCl.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 10/29">
+      <change afterPath="$PROJECT_DIR$/src/Q2/Junk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q2/Prog213fArray/Cl213f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q2/Prog213fArray/Prog213fArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,41 +49,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GradeCalc.executor": "Run",
-    "Application.MSOE20141.executor": "Run",
-    "Application.MathTest.executor": "Run",
-    "Application.Prog115a.executor": "Run",
-    "Application.Prog166e.executor": "Run",
-    "Application.Prog213bCl.executor": "Run",
-    "Application.Prog285bCl.executor": "Run",
-    "Application.Prog52aCl.executor": "Run",
-    "Application.Prog54a.executor": "Run",
-    "Application.Prog58i.executor": "Run",
-    "Application.Prog88a.executor": "Run",
-    "Application.Prog93aCl.executor": "Run",
-    "Application.StrInt1.executor": "Run",
-    "Application.StrInt2.executor": "Run",
-    "Application.StrInt3.executor": "Run",
-    "Application.StrInt7.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/daniel.szelogowsk/Desktop/AP-Computer-Science",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GradeCalc.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MSOE20141.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MathTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog115a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog166e.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog213bCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog285bCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog52aCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog54a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog58i.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog88a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog93aCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt7.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/daniel.szelogowsk/Desktop/AP-Computer-Science&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
@@ -167,8 +168,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
@@ -200,7 +201,10 @@
       <workItem from="1728920198686" duration="1023000" />
       <workItem from="1729006676881" duration="2781000" />
       <workItem from="1729528129672" duration="43000" />
-      <workItem from="1730216631136" duration="1040000" />
+      <workItem from="1730216631136" duration="1165000" />
+      <workItem from="1730217832460" duration="985000" />
+      <workItem from="1730221776819" duration="6000" />
+      <workItem from="1730824826312" duration="2012000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -314,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729008989146</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update 10/29">
+      <option name="closed" value="true" />
+      <created>1730217805936</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1730217805936</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +345,7 @@
     <MESSAGE value="Update 10/7" />
     <MESSAGE value="Update 10/14" />
     <MESSAGE value="Update 10/15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 10/15" />
+    <MESSAGE value="Update 10/29" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 10/29" />
   </component>
 </project>
