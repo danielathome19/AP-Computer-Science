@@ -69,16 +69,97 @@ public class BigArray {
         array[2] = 5;
         System.out.println("The number that was ousted is " + myThird);
 
-        // TODO
         // 10. What numbers are in the 50s?
-        // 11. What numbers are multiples of 4?
-        // 12. Is there a 60 in the list?
-        // 13. Check to see if all of the elements from front to back are in the same order from back to front
-        // 14. How many numbers are greater than the average?
-        // 15. How many of the numbers are even?
-        // 16. Copy all of the elements of the array into a new array but in reverse order
-        // 17. Write a program to shift every element of an array circularly right. E.g.-INPUT : 1 2 3 4 5 OUTPUT : 5 1 2 3 4
-        // 18. Find the sum of all of the digits of all of the elements
+        for (int num : array)
+            if (num >= 50 && num <= 59)
+                System.out.print(num + " ");
+        System.out.println();
 
+        // 11. What numbers are multiples of 4?
+        for (int i = 0; i < array.length; i++)
+            if (array[i] % 4 == 0)
+                System.out.print(array[i] + " ");
+        System.out.println();
+
+        // 12. Is there a 60 in the list?
+        boolean sixty = false;
+        for (int n : array)
+            if (n == 60) sixty = true;
+        System.out.println("Is 60 in the list: " + sixty);
+
+        // 13. Check to see if all of the elements from front to back
+        // are in the same order from back to front
+        boolean same = true;
+        for (int lcv = 0; lcv < array.length; lcv++)
+            if (array[lcv] != array[(array.length-1) - lcv])
+                same = false;
+        System.out.println("Is the array palindromic: " + same);
+
+        // 14. How many numbers are greater than the average?
+        double average = 0;
+        for (int x : array)
+            average += x;
+        average /= array.length;
+
+        int avgCount = 0;
+        for (int x : array)
+            if (x > average) avgCount++;
+        System.out.printf("There are %d numbers greater than the average\n", avgCount);
+
+        // 15. How many of the numbers are even?
+        int evens = 0;
+        for (int num : array)
+            if (num % 2 == 0) evens++;
+        System.out.printf("There are %d even numbers\n", evens);
+
+        // 16. Copy all of the elements of the array into a new array but in reverse order
+        int[] array2 = new int[array.length];
+        for (int i = 0; i < array.length; i++)
+            array2[i] = array[(array.length-1) - i];
+
+        for (int n : array2)
+            System.out.print(n + " ");
+        System.out.println();
+
+        // 17. Write a program to shift every element of an array circularly right.
+        // E.g.-INPUT : 1 2 3 4 5 OUTPUT : 5 1 2 3 4
+        int[] shiftArr = circularShiftRight(array);
+        for (int n : shiftArr)
+            System.out.print(n + " ");
+        System.out.println();
+
+        // 18. Find the sum of all of the digits of all of the elements
+        int sum = 0;
+        for (int num : array) {
+            int digitsum = 0;
+            int temp = num;
+            while (temp > 0) {
+                int n = temp % 10;
+                temp /= 10;
+                digitsum += n;
+            }
+            sum += digitsum;
+        }
+        System.out.println("Sum of all digits of all elements: " + sum);
+    }
+
+    public static int[] circularShiftRight(int[] arr) {
+        int temp = arr[arr.length - 1];
+        int[] shifted = new int[arr.length];
+        for (int lcv = 1; lcv < arr.length; lcv++)
+            shifted[lcv] = arr[lcv-1];
+        shifted[0] = temp;
+        return shifted;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
