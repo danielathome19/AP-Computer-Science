@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 11/19">
-      <change afterPath="$PROJECT_DIR$/src/Q2/StrInt6Arr.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 11/25">
+      <change afterPath="$PROJECT_DIR$/src/Q2/ArrayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q2/ArrayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ArrayListTest.executor": "Run",
     "Application.BigArray.executor": "Run",
     "Application.BigArray2.executor": "Run",
     "Application.FFTExample.executor": "Run",
@@ -95,7 +97,20 @@
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StrInt6Arr">
+  <component name="RunManager" selected="Application.ArrayListTest">
+    <configuration name="ArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q2.ArrayListTest" />
+      <module name="AP-Computer-Science" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Q2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BigArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q2.BigArray" />
       <module name="AP-Computer-Science" />
@@ -135,19 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FFTVisualizationApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2.FFTVisualizationApp" />
-      <module name="AP-Computer-Science" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Q2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StrInt6Arr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q2.StrInt6Arr" />
       <module name="AP-Computer-Science" />
@@ -163,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayListTest" />
         <item itemvalue="Application.StrInt6Arr" />
         <item itemvalue="Application.BigArray2" />
         <item itemvalue="Application.BigArray" />
         <item itemvalue="Application.FFTExample" />
-        <item itemvalue="Application.FFTVisualizationApp" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +222,8 @@
       <workItem from="1732034377735" duration="1523000" />
       <workItem from="1732036837601" duration="37000" />
       <workItem from="1732040223552" duration="16000" />
-      <workItem from="1732552338957" duration="1343000" />
+      <workItem from="1732552338957" duration="2207000" />
+      <workItem from="1733755814365" duration="3954000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -390,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732035313609</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update 11/25">
+      <option name="closed" value="true" />
+      <created>1732553709679</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1732553709679</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +427,8 @@
     <MESSAGE value="Update 11/12" />
     <MESSAGE value="Update 11/18" />
     <MESSAGE value="Update 11/19" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 11/19" />
+    <MESSAGE value="Update 11/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 11/25" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
