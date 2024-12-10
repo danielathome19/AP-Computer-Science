@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 11/25">
-      <change afterPath="$PROJECT_DIR$/src/Q2/ArrayListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q2/ArrayTest.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 12/9">
+      <change afterPath="$PROJECT_DIR$/src/Q2/ArrayListLab/MyArrayListLab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q2/Prog602b/InternetCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q2/Prog602b/Prog602b.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +67,7 @@
     "Application.Prog52aCl.executor": "Run",
     "Application.Prog54a.executor": "Run",
     "Application.Prog58i.executor": "Run",
+    "Application.Prog602b.executor": "Run",
     "Application.Prog88a.executor": "Run",
     "Application.Prog93aCl.executor": "Run",
     "Application.StrInt1.executor": "Run",
@@ -97,7 +99,7 @@
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArrayListTest">
+  <component name="RunManager" selected="Application.Prog602b">
     <configuration name="ArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q2.ArrayListTest" />
       <module name="AP-Computer-Science" />
@@ -137,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FFTExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2.FFTExample" />
+    <configuration name="Prog602b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q2.Prog602b.Prog602b" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q2.*" />
+          <option name="PATTERN" value="Q2.Prog602b.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog602b" />
         <item itemvalue="Application.ArrayListTest" />
         <item itemvalue="Application.StrInt6Arr" />
         <item itemvalue="Application.BigArray2" />
         <item itemvalue="Application.BigArray" />
-        <item itemvalue="Application.FFTExample" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +225,8 @@
       <workItem from="1732036837601" duration="37000" />
       <workItem from="1732040223552" duration="16000" />
       <workItem from="1732552338957" duration="2207000" />
-      <workItem from="1733755814365" duration="3954000" />
+      <workItem from="1733755814365" duration="4068000" />
+      <workItem from="1733848526612" duration="1719000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -401,7 +404,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732553709679</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update 12/9">
+      <option name="closed" value="true" />
+      <created>1733765239725</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1733765239725</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +439,8 @@
     <MESSAGE value="Update 11/18" />
     <MESSAGE value="Update 11/19" />
     <MESSAGE value="Update 11/25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 11/25" />
+    <MESSAGE value="Update 12/9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 12/9" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
