@@ -27,7 +27,6 @@ public class Prog213v {
 
             System.out.println("The final balance is: $" + bank.getAmount());
             // TODO: the rest
-
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
