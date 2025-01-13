@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 12/16">
-      <change afterPath="$PROJECT_DIR$/src/Q2/BigArrayListCat.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 1/6">
+      <change afterPath="$PROJECT_DIR$/src/Q2/Prog464a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q2/Prog464d.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +65,8 @@
     "Application.Prog213v.executor": "Run",
     "Application.Prog285bCl.executor": "Run",
     "Application.Prog435g.executor": "Run",
+    "Application.Prog464a.executor": "Run",
+    "Application.Prog464d.executor": "Run",
     "Application.Prog52aCl.executor": "Run",
     "Application.Prog54a.executor": "Run",
     "Application.Prog58i.executor": "Run",
@@ -101,20 +104,7 @@
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BigArrayListCat">
-    <configuration name="ArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2.ArrayListTest" />
-      <module name="AP-Computer-Science" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Q2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Prog464d">
     <configuration name="BigArrayListCat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q2.BigArrayListCat" />
       <module name="AP-Computer-Science" />
@@ -141,12 +131,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prog602b" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2.Prog602b.Prog602b" />
+    <configuration name="Prog464a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q2.Prog464a" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q2.Prog602b.*" />
+          <option name="PATTERN" value="Q2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prog464d" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q2.Prog464d" />
+      <module name="AP-Computer-Science" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Q2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog464d" />
+        <item itemvalue="Application.Prog464a" />
         <item itemvalue="Application.BigArrayListCat" />
         <item itemvalue="Application.StudentDatabase" />
         <item itemvalue="Application.Prog213v" />
-        <item itemvalue="Application.Prog602b" />
-        <item itemvalue="Application.ArrayListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +235,8 @@
       <workItem from="1733935082914" duration="2841000" />
       <workItem from="1734110002115" duration="164000" />
       <workItem from="1734366963122" duration="2483000" />
-      <workItem from="1736181553493" duration="2106000" />
+      <workItem from="1736181553493" duration="2515000" />
+      <workItem from="1736786299154" duration="2135000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -442,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734369123651</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update 1/6">
+      <option name="closed" value="true" />
+      <created>1736183729151</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736183729151</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +485,8 @@
     <MESSAGE value="Update 12/10" />
     <MESSAGE value="Update 12/11" />
     <MESSAGE value="Update 12/16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 12/16" />
+    <MESSAGE value="Update 1/6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 1/6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
