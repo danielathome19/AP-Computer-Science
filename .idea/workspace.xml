@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 1/13">
-      <change afterPath="$PROJECT_DIR$/src/Q2/Prog470c.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 1/14">
+      <change afterPath="$PROJECT_DIR$/src/Q3/Junk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q3/Prog505a/BookPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q3/Prog505a/Prog505a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +69,7 @@
     "Application.Prog464a.executor": "Run",
     "Application.Prog464d.executor": "Run",
     "Application.Prog470c.executor": "Run",
+    "Application.Prog505a.executor": "Run",
     "Application.Prog52aCl.executor": "Run",
     "Application.Prog54a.executor": "Run",
     "Application.Prog58i.executor": "Run",
@@ -104,7 +107,7 @@
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Prog470c">
+  <component name="RunManager" selected="Application.Prog505a">
     <configuration name="BigArrayListCat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q2.BigArrayListCat" />
       <module name="AP-Computer-Science" />
@@ -157,12 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2.StudentDB.StudentDatabase" />
+    <configuration name="Prog505a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q3.Prog505a.Prog505a" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q2.StudentDB.*" />
+          <option name="PATTERN" value="Q3.Prog505a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog505a" />
         <item itemvalue="Application.Prog470c" />
         <item itemvalue="Application.Prog464d" />
         <item itemvalue="Application.Prog464a" />
         <item itemvalue="Application.BigArrayListCat" />
-        <item itemvalue="Application.StudentDatabase" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +240,9 @@
       <workItem from="1734366963122" duration="2483000" />
       <workItem from="1736181553493" duration="2515000" />
       <workItem from="1736786299154" duration="3137000" />
-      <workItem from="1736876000379" duration="873000" />
+      <workItem from="1736876000379" duration="1391000" />
+      <workItem from="1737127645735" duration="483000" />
+      <workItem from="1737995801390" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -463,14 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1736788724970</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Update 1/14">
+      <option name="closed" value="true" />
+      <created>1736876896239</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1736876896239</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 9/5" />
     <MESSAGE value="Update 9/9" />
     <MESSAGE value="Update 9/11" />
     <MESSAGE value="Update 9/13" />
@@ -495,7 +507,8 @@
     <MESSAGE value="Update 12/16" />
     <MESSAGE value="Update 1/6" />
     <MESSAGE value="Update 1/13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 1/13" />
+    <MESSAGE value="Update 1/14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 1/14" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
