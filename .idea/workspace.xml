@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 1/14">
-      <change afterPath="$PROJECT_DIR$/src/Q3/Junk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q3/Prog505a/BookPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q3/Prog505a/Prog505a.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 1/27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +239,7 @@
       <workItem from="1736786299154" duration="3137000" />
       <workItem from="1736876000379" duration="1391000" />
       <workItem from="1737127645735" duration="483000" />
-      <workItem from="1737995801390" duration="2272000" />
+      <workItem from="1737995801390" duration="2751000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -476,14 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1736876896239</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Update 1/27">
+      <option name="closed" value="true" />
+      <created>1737998133827</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1737998133827</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 9/9" />
     <MESSAGE value="Update 9/11" />
     <MESSAGE value="Update 9/13" />
     <MESSAGE value="Update 9/16" />
@@ -508,7 +512,8 @@
     <MESSAGE value="Update 1/6" />
     <MESSAGE value="Update 1/13" />
     <MESSAGE value="Update 1/14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 1/14" />
+    <MESSAGE value="Update 1/27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 1/27" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
