@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 2/3">
-      <change afterPath="$PROJECT_DIR$/src/Q3/Prog162aRecursive.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 2/10">
+      <change afterPath="$PROJECT_DIR$/src/Q3/Prog460a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q3/SearchAlgs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Q3/Junk.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +62,13 @@
     "Application.MSOE20141.executor": "Run",
     "Application.MathTest.executor": "Run",
     "Application.Prog115a.executor": "Run",
+    "Application.Prog162aRecursive.executor": "Run",
     "Application.Prog166e.executor": "Run",
     "Application.Prog213bCl.executor": "Run",
     "Application.Prog213v.executor": "Run",
     "Application.Prog285bCl.executor": "Run",
     "Application.Prog435g.executor": "Run",
+    "Application.Prog460a.executor": "Run",
     "Application.Prog464a.executor": "Run",
     "Application.Prog464d.executor": "Run",
     "Application.Prog470c.executor": "Run",
@@ -109,7 +111,7 @@
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Prog162aRecursive">
+  <component name="RunManager" selected="Application.Prog460a">
     <configuration name="ABCLab" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q3.ABCLab.ABCLab" />
       <module name="AP-Computer-Science" />
@@ -136,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prog470c" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q2.Prog470c" />
+    <configuration name="Prog460a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q3.Prog460a" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q2.*" />
+          <option name="PATTERN" value="Q3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog460a" />
         <item itemvalue="Application.Prog162aRecursive" />
         <item itemvalue="Application.ABCLab" />
         <item itemvalue="Application.Prog701g" />
         <item itemvalue="Application.Prog505a" />
-        <item itemvalue="Application.Prog470c" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +252,8 @@
       <workItem from="1738088079526" duration="31000" />
       <workItem from="1738168503453" duration="2348000" />
       <workItem from="1738946363955" duration="2713000" />
-      <workItem from="1739205268442" duration="1435000" />
+      <workItem from="1739205268442" duration="2892000" />
+      <workItem from="1739465524130" duration="1314000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -508,14 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1738948298964</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Update 2/10">
+      <option name="closed" value="true" />
+      <created>1739207016994</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1739207016994</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 9/16" />
     <MESSAGE value="Update 9/25" />
     <MESSAGE value="Update 9/27" />
     <MESSAGE value="Update 10/1" />
@@ -540,7 +550,8 @@
     <MESSAGE value="Update 1/27" />
     <MESSAGE value="Update 1/29" />
     <MESSAGE value="Update 2/3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 2/3" />
+    <MESSAGE value="Update 2/10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 2/10" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
