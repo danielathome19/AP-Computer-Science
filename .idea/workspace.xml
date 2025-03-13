@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 2/24">
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 2/25">
+      <change afterPath="$PROJECT_DIR$/src/Q3/Prog52aForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q3/Prog52aForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Q3/Farm/Prog505w.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q3/Farm/Prog505w.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +75,7 @@
     "Application.Prog505a.executor": "Run",
     "Application.Prog505w.executor": "Run",
     "Application.Prog52aCl.executor": "Run",
+    "Application.Prog52aForm.executor": "Run",
     "Application.Prog54a.executor": "Run",
     "Application.Prog58i.executor": "Run",
     "Application.Prog602b.executor": "Run",
@@ -89,6 +91,7 @@
     "Application.StudentDatabase.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "236",
     "full.screen.before.presentation.mode": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -112,20 +115,7 @@
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Prog505w">
-    <configuration name="ABCLab" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q3.ABCLab.ABCLab" />
-      <module name="AP-Computer-Science" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Q3.ABCLab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Prog52aForm">
     <configuration name="Prog162aRecursive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q3.Prog162aRecursive" />
       <module name="AP-Computer-Science" />
@@ -165,6 +155,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Prog52aForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q3.Prog52aForm" />
+      <module name="AP-Computer-Science" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Q3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Prog910a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Q3.Prog910a" />
       <module name="AP-Computer-Science" />
@@ -180,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prog52aForm" />
         <item itemvalue="Application.Prog505w" />
         <item itemvalue="Application.Prog910a" />
         <item itemvalue="Application.Prog460a" />
         <item itemvalue="Application.Prog162aRecursive" />
-        <item itemvalue="Application.ABCLab" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +261,9 @@
       <workItem from="1739810573909" duration="1184000" />
       <workItem from="1739813499643" duration="47000" />
       <workItem from="1740415065528" duration="2849000" />
-      <workItem from="1740501062089" duration="1910000" />
+      <workItem from="1740501062089" duration="2283000" />
+      <workItem from="1741023203099" duration="517000" />
+      <workItem from="1741880363952" duration="1360000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -548,14 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1740417085733</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Update 2/25">
+      <option name="closed" value="true" />
+      <created>1740503052669</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1740503052669</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 10/7" />
     <MESSAGE value="Update 10/14" />
     <MESSAGE value="Update 10/15" />
     <MESSAGE value="Update 10/29" />
@@ -580,7 +592,8 @@
     <MESSAGE value="Update 2/13" />
     <MESSAGE value="Update 2/17" />
     <MESSAGE value="Update 2/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 2/24" />
+    <MESSAGE value="Update 2/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 2/25" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
