@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 3/13" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 4/7">
+      <change afterPath="$PROJECT_DIR$/src/Q4/GenericsAndTernary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +104,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;settings.editor.splitter.proportion&quot;: &quot;0.2701325&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -110,14 +113,17 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science\src" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Prog52aForm">
-    <configuration name="Prog162aRecursive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Q3.Prog162aRecursive" />
+  <component name="RunManager" selected="Application.GenericsAndTernary">
+    <configuration name="GenericsAndTernary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Q4.GenericsAndTernary" />
       <module name="AP-Computer-Science" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Q3.*" />
+          <option name="PATTERN" value="Q4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GenericsAndTernary" />
         <item itemvalue="Application.Prog52aForm" />
         <item itemvalue="Application.Prog505w" />
         <item itemvalue="Application.Prog910a" />
         <item itemvalue="Application.Prog460a" />
-        <item itemvalue="Application.Prog162aRecursive" />
       </list>
     </recent_temporary>
   </component>
@@ -261,6 +267,10 @@
       <workItem from="1741023203099" duration="517000" />
       <workItem from="1741880363952" duration="1648000" />
       <workItem from="1742229517063" duration="30000" />
+      <workItem from="1744040592394" duration="76000" />
+      <workItem from="1744041238034" duration="142000" />
+      <workItem from="1744300183563" duration="164000" />
+      <workItem from="1747064208461" duration="2360000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -566,14 +576,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741881789200</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Update 4/7">
+      <option name="closed" value="true" />
+      <created>1744040660541</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1744040660541</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 10/15" />
     <MESSAGE value="Update 10/29" />
     <MESSAGE value="Update 11/5" />
     <MESSAGE value="Update 11/6" />
@@ -598,7 +615,8 @@
     <MESSAGE value="Update 2/24" />
     <MESSAGE value="Update 2/25" />
     <MESSAGE value="Update 3/13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 3/13" />
+    <MESSAGE value="Update 4/7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 4/7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
