@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 4/7">
-      <change afterPath="$PROJECT_DIR$/src/Q4/GenericsAndTernary.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 5/12">
+      <change afterPath="$PROJECT_DIR$/src/Q4/Prog7000l/LinearRegression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +57,7 @@
     &quot;Application.BigArrayListCat.executor&quot;: &quot;Run&quot;,
     &quot;Application.FFTExample.executor&quot;: &quot;Run&quot;,
     &quot;Application.FFTVisualizationApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GenericsAndTernary.executor&quot;: &quot;Run&quot;,
     &quot;Application.GradeCalc.executor&quot;: &quot;Run&quot;,
     &quot;Application.MSOE20141.executor&quot;: &quot;Run&quot;,
     &quot;Application.MathTest.executor&quot;: &quot;Run&quot;,
@@ -270,7 +271,8 @@
       <workItem from="1744040592394" duration="76000" />
       <workItem from="1744041238034" duration="142000" />
       <workItem from="1744300183563" duration="164000" />
-      <workItem from="1747064208461" duration="2360000" />
+      <workItem from="1747064208461" duration="2923000" />
+      <workItem from="1747842784524" duration="1719000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -584,14 +586,21 @@
       <option name="project" value="LOCAL" />
       <updated>1744040660541</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Update 5/12">
+      <option name="closed" value="true" />
+      <created>1747066685535</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1747066685535</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 10/29" />
     <MESSAGE value="Update 11/5" />
     <MESSAGE value="Update 11/6" />
     <MESSAGE value="Update 11/11" />
@@ -616,7 +625,8 @@
     <MESSAGE value="Update 2/25" />
     <MESSAGE value="Update 3/13" />
     <MESSAGE value="Update 4/7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 4/7" />
+    <MESSAGE value="Update 5/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 5/12" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
