@@ -51,5 +51,9 @@ public class LinearRegression {
     public double getIntercept()    { return theta0; }
     public double getSlope()        { return theta1; }
 
-    // TODO: toString()
+    public String toString() {
+        return "Regression line: y = " + theta1 + " * x + " + theta0 +
+               "\nObjective: " + Arrays.toString(objective) +
+               "\nMin. Objective: " + Arrays.stream(objective).min().getAsDouble();
+    }
 }
