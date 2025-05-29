@@ -24,5 +24,30 @@ public class Perceptron {
         return activation.apply(dot_product + bias);
     }
 
-    // TODO: predict and fit
+    public double[] predict(double[][] X_test) {
+        double[] predictions = new double[X_test.length];
+        for (int i = 0; i < X_test.length; i++)
+            predictions[i] = forward(X_test[i]);
+        return predictions;
+    }
+
+    public void fit(double[][] X_train, double[] y_train,
+                    int epochs, double learning_rate) {
+        weights = new double[X_train[0].length];
+        for (int i = 0; i < weights.length; i++)
+            weights[i] = Math.random() - 0.5;
+        int n_samples = X_train.length;
+        for (int epoch = 0; epoch < epochs; epoch++) {
+            double loss = 0;
+            for (int i = 0; i < n_samples; i++) {
+                double y_pred = forward(X_train[i]);
+                double error = y_train[i] - y_pred;
+                loss = Math.pow(error, 2);
+                for (int j = 0; j < weights.length; j++)
+                    weights[j] += learning_rate * error * X_train[i][j];
+                bias += learning_rate * error;
+            }
+            System.out.println("Epoch " + (epoch+1) + " - Loss: " + (loss/n_samples));
+        }
+    }
 }
