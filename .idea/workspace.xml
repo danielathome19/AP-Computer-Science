@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 5/28">
-      <change afterPath="$PROJECT_DIR$/src/Q4/Prog7300p/Prog7000lPerceptron/PerceptronRegressor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q4/Prog7300p/Prog7000lPerceptron/Prog7000l.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q4/Prog7300p/Prog7300p.java" afterDir="false" />
+    <list default="true" id="fd4ea37a-9745-4c46-8607-2daf08e138ba" name="Changes" comment="Update 5/29">
+      <change afterPath="$PROJECT_DIR$/src/Q4/Prog7301m/Activations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q4/Prog7301m/Layer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Q4/Prog7301m/MultiLayerPerceptron.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Q4/Prog7300p/Perceptron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q4/Prog7300p/Perceptron.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,71 +50,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ABCLab.executor": "Run",
-    "Application.ArrayListTest.executor": "Run",
-    "Application.BigArray.executor": "Run",
-    "Application.BigArray2.executor": "Run",
-    "Application.BigArrayListCat.executor": "Run",
-    "Application.FFTExample.executor": "Run",
-    "Application.FFTVisualizationApp.executor": "Run",
-    "Application.GenericsAndTernary.executor": "Run",
-    "Application.GradeCalc.executor": "Run",
-    "Application.LRTest.executor": "Run",
-    "Application.MSOE20141.executor": "Run",
-    "Application.MathTest.executor": "Run",
-    "Application.Prog115a.executor": "Run",
-    "Application.Prog162aRecursive.executor": "Run",
-    "Application.Prog166e.executor": "Run",
-    "Application.Prog213bCl.executor": "Run",
-    "Application.Prog213v.executor": "Run",
-    "Application.Prog285bCl.executor": "Run",
-    "Application.Prog435g.executor": "Run",
-    "Application.Prog460a.executor": "Run",
-    "Application.Prog464a.executor": "Run",
-    "Application.Prog464d.executor": "Run",
-    "Application.Prog470c.executor": "Run",
-    "Application.Prog505a.executor": "Run",
-    "Application.Prog505w.executor": "Run",
-    "Application.Prog52aCl.executor": "Run",
-    "Application.Prog52aForm.executor": "Run",
-    "Application.Prog54a.executor": "Run",
-    "Application.Prog58i.executor": "Run",
-    "Application.Prog602b.executor": "Run",
-    "Application.Prog7000l.executor": "Run",
-    "Application.Prog701g.executor": "Run",
-    "Application.Prog7300p.executor": "Run",
-    "Application.Prog88a.executor": "Run",
-    "Application.Prog910a.executor": "Run",
-    "Application.Prog93aCl.executor": "Run",
-    "Application.StrInt1.executor": "Run",
-    "Application.StrInt2.executor": "Run",
-    "Application.StrInt3.executor": "Run",
-    "Application.StrInt6Arr.executor": "Run",
-    "Application.StrInt7.executor": "Run",
-    "Application.StudentDatabase.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "236",
-    "full.screen.before.presentation.mode": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/daniel.szelogowsk/Desktop/AP-Computer-Science",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "settings.editor.splitter.proportion": "0.2701325",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ABCLab.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BigArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BigArray2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BigArrayListCat.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FFTExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FFTVisualizationApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GenericsAndTernary.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GradeCalc.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LRTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MSOE20141.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MathTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog115a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog162aRecursive.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog166e.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog213bCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog213v.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog285bCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog435g.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog460a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog464a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog464d.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog470c.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog505a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog505w.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog52aCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog52aForm.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog54a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog58i.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog602b.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog7000l.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog701g.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog7300p.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog88a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog910a.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Prog93aCl.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q4.Prog7300p.Prog7000lPerceptron.Prog7000l.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt6Arr.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StrInt7.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentDatabase.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;236&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/daniel.szelogowsk/Desktop/AP-Computer-Science&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2701325&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\daniel.szelogowsk\Desktop\AP-Computer-Science" />
@@ -281,7 +281,8 @@
       <workItem from="1747842784524" duration="2035000" />
       <workItem from="1747928157436" duration="3068000" />
       <workItem from="1748448064243" duration="1290000" />
-      <workItem from="1748532867760" duration="1631000" />
+      <workItem from="1748532867760" duration="2730000" />
+      <workItem from="1748878203654" duration="1919000" />
     </task>
     <task id="LOCAL-00001" summary="Update 9/4">
       <option name="closed" value="true" />
@@ -627,14 +628,21 @@
       <option name="project" value="LOCAL" />
       <updated>1748450682515</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Update 5/29">
+      <option name="closed" value="true" />
+      <created>1748534554307</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1748534554307</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update 11/12" />
     <MESSAGE value="Update 11/18" />
     <MESSAGE value="Update 11/19" />
     <MESSAGE value="Update 11/25" />
@@ -659,7 +667,8 @@
     <MESSAGE value="Update 5/21" />
     <MESSAGE value="Update 5/22" />
     <MESSAGE value="Update 5/28" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 5/28" />
+    <MESSAGE value="Update 5/29" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 5/29" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
